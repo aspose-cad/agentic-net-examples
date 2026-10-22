@@ -1,0 +1,83 @@
+name: Validate CAD examples
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "13 10 * * 0"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cad-examples-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    env:
+      CI_PIPELINE_ID: ${{ github.run_id }}-${{ github.run_attempt }}
+      ASPOSE_CAD_NUGET_VERSION: "26.9.0"
+      DOTNET_CLI_TELEMETRY_OPTOUT: "1"
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify manifest and catalog coverage
+        run: python .github/scripts/check_manifest.py
+      - name: Compile and run this shard
+        run: >-
+          python .github/scripts/validate_example_corpus.py
+          --repo . --shards 8 --shard ${{ matrix.shard }}
+          --cad-version "$ASPOSE_CAD_NUGET_VERSION"
+          --out validation/shard-${{ matrix.shard }}.json
+          --junit validation/junit-${{ matrix.shard }}.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cad-validation-${{ matrix.shard }}
+          path: validation/
+          if-no-files-found: error
+          retention-days: 30
+
+  validation-gate:
+    if: always()
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: cad-validation-*
+          path: validation
+          merge-multiple: true
+      - name: Require every example to compile and run
+        run: |
+          python .github/scripts/aggregate_corpus_validation.py validation/shard-*.json \
+            --expected-shards 8 --threshold 1.0 \
+            --out validation/summary.json --markdown validation/summary.md \
+            --html validation/summary.html --junit validation/gate.xml
+          cat validation/summary.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cad-validation-summary
+          path: validation/
+          retention-days: 90

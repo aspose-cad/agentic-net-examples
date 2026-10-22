@@ -1,0 +1,8 @@
+validation/
+**/bin/
+**/obj/
+__pycache__/
+*.pyc
+*.user
+.env
+*.lic
