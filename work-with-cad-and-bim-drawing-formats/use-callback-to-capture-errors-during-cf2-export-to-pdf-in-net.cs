@@ -30,7 +30,7 @@ class CadToPdfWithErrorCallback
 
         try
         {
-            var cadImage = Image.Load(inputPath, loadOptions) as CadImage;
+            var cadImage = Image.Load(inputPath, loadOptions) ;
             if (cadImage == null)
             {
                 Console.Error.WriteLine("Failed to load CAD image.");

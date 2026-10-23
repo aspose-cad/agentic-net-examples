@@ -6,19 +6,19 @@ Build-validated Aspose.CAD for .NET examples for `delete-entities-inside-a-recta
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 29
+- Examples: 30
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (29 example(s))
-- `System.IO` (29 example(s))
-- `Aspose.CAD` (28 example(s))
-- `Aspose.CAD.FileFormats.Cad` (28 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (28 example(s))
-- `System.Collections.Generic` (25 example(s))
-- `System.Linq` (22 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects.Polylines` (17 example(s))
+- `System` (30 example(s))
+- `System.IO` (30 example(s))
+- `Aspose.CAD` (29 example(s))
+- `Aspose.CAD.FileFormats.Cad` (29 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (29 example(s))
+- `System.Collections.Generic` (26 example(s))
+- `System.Linq` (23 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects.Polylines` (18 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -34,10 +34,10 @@ Build-validated Aspose.CAD for .NET examples for `delete-entities-inside-a-recta
 | [Create A Hatch Filled Rectangle Polyline and Use It to Identify Intersecting Entities](./create-a-hatch-filled-rectangle-polyline-and-use-it-to-identify-intersecting-entities.cs) | Cad.CadConsts | a, aspose-cad, cad, cadconsts, cadobjects, csharp, delete, dotnet8 |
 | [Create A Polyline Rectangle Apply Hatch Fill and Delete All Intersecting Entities](./create-a-polyline-rectangle-apply-hatch-fill-and-delete-all-intersecting-entities.cs) | ImageOptions | a, aspose-cad, cad, cadobjects, csharp, delete, dotnet8, entities |
 | [Create A Rectangle as A Polyline Fill It with Hatch Then Batch Remove Entities Inside The Hatch](./create-a-rectangle-as-a-polyline-fill-it-with-hatch-then-batch-remove-entities-inside-the-hatch.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, csharp, delete, dotnet8 |
+| [Create A Rectangle as A Polyline Fill with Hatch and Remove All Entities That Lie Within The Hatch](./create-a-rectangle-as-a-polyline-fill-with-hatch-and-remove-all-entities-that-lie-within-the-hatch.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, csharp, delete, dotnet8 |
 | [Create A Rectangle Defined as A Polyline to Serve as The Deletion Region](./create-a-rectangle-defined-as-a-polyline-to-serve-as-the-deletion-region.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, csharp, delete, dotnet8 |
 | [Delete All Entities That Fall Inside That Layout Region using Batch Removal](./delete-all-entities-that-fall-inside-that-layout-region-using-batch-removal.cs) | Cad | a, aspose-cad, cad, cadobjects, cadtables, csharp, delete, dotnet8 |
 | [Delete Qualifying Block Object Entities in Bulk After Rectangle Evaluation](./delete-qualifying-block-object-entities-in-bulk-after-rectangle-evaluation.cs) | Cad.CadConsts | a, aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, delete |
-| [Determine If Entities Are Inside A Rectangle and Delete Them using A Single Batch Operation](./determine-if-entities-are-inside-a-rectangle-and-delete-them-using-a-single-batch-operation.cs) | Cad.CadObjects.Vertices | a, aspose-cad, cad, cadobjects, csharp, delete, dotnet8, entities |
 
 ## Agent Guidance
 - Prefer the local `AGENTS.md` instructions for category-specific rules.

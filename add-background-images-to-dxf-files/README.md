@@ -6,16 +6,16 @@ Build-validated Aspose.CAD for .NET examples for `add-background-images-to-dxf-f
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 29
+- Examples: 30
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (29 example(s))
-- `System.IO` (29 example(s))
-- `Aspose.CAD` (26 example(s))
-- `Aspose.CAD.FileFormats.Cad` (24 example(s))
-- `Aspose.CAD.ImageOptions` (21 example(s))
+- `System` (30 example(s))
+- `System.IO` (30 example(s))
+- `Aspose.CAD` (27 example(s))
+- `Aspose.CAD.FileFormats.Cad` (25 example(s))
+- `Aspose.CAD.ImageOptions` (22 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (20 example(s))
 - `System.Collections.Generic` (13 example(s))
 - `System.Linq` (13 example(s))

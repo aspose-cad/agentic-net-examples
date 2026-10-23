@@ -6,18 +6,18 @@ Build-validated Aspose.CAD for .NET examples for `work-with-3d-cad-files`.
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 31
+- Examples: 32
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (31 example(s))
-- `System.IO` (31 example(s))
-- `Aspose.CAD` (29 example(s))
-- `Aspose.CAD.ImageOptions` (25 example(s))
+- `System` (32 example(s))
+- `System.IO` (32 example(s))
+- `Aspose.CAD` (30 example(s))
+- `Aspose.CAD.ImageOptions` (26 example(s))
 - `Aspose.CAD.FileFormats.Cad` (14 example(s))
-- `Aspose.CAD.FileFormats` (7 example(s))
-- `System.Collections.Generic` (3 example(s))
+- `Aspose.CAD.FileFormats` (8 example(s))
+- `System.Collections.Generic` (4 example(s))
 - `System.Linq` (2 example(s))
 
 ## Representative Examples

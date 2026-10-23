@@ -18,17 +18,20 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - Files are standalone `.cs` examples stored directly in this folder.
 
 ## Required Namespaces
-- `using System;` (33 file(s))
-- `using System.IO;` (33 file(s))
-- `using Aspose.CAD;` (33 file(s))
+- `using System;` (35 file(s))
+- `using System.IO;` (35 file(s))
+- `using Aspose.CAD;` (35 file(s))
 - `using Aspose.CAD.FileFormats.Cad;` (28 file(s))
-- `using Aspose.CAD.ImageOptions;` (22 file(s))
+- `using Aspose.CAD.ImageOptions;` (24 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadObjects;` (15 file(s))
+- `using System.Linq;` (7 file(s))
 - `using System.Collections.Generic;` (7 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadConsts;` (6 file(s))
-- `using System.Linq;` (6 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;` (3 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadTables;` (3 file(s))
+- `using Aspose.CAD.FileFormats.Dwf;` (2 file(s))
+- `using Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.Text;` (2 file(s))
+- `using Aspose.CAD.FileFormats.Dwf.Whip.Objects;` (1 file(s))
 - `using Aspose.CAD.Primitives;` (1 file(s))
 
 ## Files in this folder
@@ -39,6 +42,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [adjust-arc-quality-options-to-medium-level-to-balance-performance-and-visual-fidelity-in-svg-output.cs](./adjust-arc-quality-options-to-medium-level-to-balance-performance-and-visual-fidelity-in-svg-output.cs) | adjust arc quality options to medium level to balance performance and visual fidelity in svg output |
 | [adjust-quality-options-for-arcs-to-maintain-smooth-curvature-in-rasterized-output.cs](./adjust-quality-options-for-arcs-to-maintain-smooth-curvature-in-rasterized-output.cs) | adjust quality options for arcs to maintain smooth curvature in rasterized output |
 | [adjust-textheight-for-a-group-of-text-entities-to-achieve-uniform-scaling-across-the-drawing.cs](./adjust-textheight-for-a-group-of-text-entities-to-achieve-uniform-scaling-across-the-drawing.cs) | adjust textheight for a group of text entities to achieve uniform scaling across the drawing |
+| [adjust-the-position-of-an-existing-dwfwhiptext-element-by-modifying-its-coordinates.cs](./adjust-the-position-of-an-existing-dwfwhiptext-element-by-modifying-its-coordinates.cs) | adjust the position of an existing dwfwhiptext element by modifying its coordinates |
 | [change-the-textheight-property-of-a-text-entity-to-increase-its-displayed-size.cs](./change-the-textheight-property-of-a-text-entity-to-increase-its-displayed-size.cs) | change the textheight property of a text entity to increase its displayed size |
 | [check-each-layer-for-existing-text-elements-before-adding-new-annotations-to-avoid-duplication.cs](./check-each-layer-for-existing-text-elements-before-adding-new-annotations-to-avoid-duplication.cs) | check each layer for existing text elements before adding new annotations to avoid duplication |
 | [combine-adding-and-removing-text-elements-in-a-single-workflow-to-replace-outdated-annotations.cs](./combine-adding-and-removing-text-elements-in-a-single-workflow-to-replace-outdated-annotations.cs) | combine adding and removing text elements in a single workflow to replace outdated annotations |
@@ -58,6 +62,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [list-layers-identify-those-containing-text-and-increase-textheight-for-those-specific-layers.cs](./list-layers-identify-those-containing-text-and-increase-textheight-for-those-specific-layers.cs) | list layers identify those containing text and increase textheight for those specific layers |
 | [load-a-cad-drawing-while-providing-callbacks-to-handle-import-errors-gracefully.cs](./load-a-cad-drawing-while-providing-callbacks-to-handle-import-errors-gracefully.cs) | load a cad drawing while providing callbacks to handle import errors gracefully |
 | [remove-all-dwfwhiptext-elements-from-a-drawing-to-prepare-a-clean-version-for-review.cs](./remove-all-dwfwhiptext-elements-from-a-drawing-to-prepare-a-clean-version-for-review.cs) | remove all dwfwhiptext elements from a drawing to prepare a clean version for review |
+| [remove-an-unwanted-dwfwhiptext-object-from-the-drawing-using-the-removeelement-method.cs](./remove-an-unwanted-dwfwhiptext-object-from-the-drawing-using-the-removeelement-method.cs) | remove an unwanted dwfwhiptext object from the drawing using the removeelement method |
 | [retrieve-layout-names-from-the-drawing-to-identify-available-sections-for-processing.cs](./retrieve-layout-names-from-the-drawing-to-identify-available-sections-for-processing.cs) | retrieve layout names from the drawing to identify available sections for processing |
 | [retrieve-the-current-textheight-parameter-from-a-text-entity-to-assess-its-scaling.cs](./retrieve-the-current-textheight-parameter-from-a-text-entity-to-assess-its-scaling.cs) | retrieve the current textheight parameter from a text entity to assess its scaling |
 | [set-high-quality-options-for-text-hatches-and-arcs-simultaneously-to-produce-premium-rendering-output.cs](./set-high-quality-options-for-text-hatches-and-arcs-simultaneously-to-produce-premium-rendering-output.cs) | set high quality options for text hatches and arcs simultaneously to produce premium rendering output |
@@ -69,7 +74,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [validate-external-file-references-after-loading-a-drawing-to-ensure-all-linked-files-are-accessible.cs](./validate-external-file-references-after-loading-a-drawing-to-ensure-all-linked-files-are-accessible.cs) | validate external file references after loading a drawing to ensure all linked files are accessible |
 
 ## Category Statistics
-- Total examples: 33
+- Total examples: 35
 
 ## General Tips
 - Follow root boundaries and testing guide.
@@ -78,5 +83,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-22 | `cad-catalog-2026-10-22` | [examples/batch-cad-catalog-2026-10-22](https://github.com/aspose-cad/agentic-net-examples/tree/examples/batch-cad-catalog-2026-10-22) |
+| 2026-10-23 | `cad-withheld-repairs-2026-10-23` | examples/repair-withheld-cad-2026-10-23 |
 <!-- AUTOGENERATED:END -->

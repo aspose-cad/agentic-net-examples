@@ -1,8 +1,7 @@
 using System;
 using System.IO;
 using Aspose.CAD;
-using Aspose.CAD.FileFormats.Cad;
-using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Dwf;
 
 class Program
 {
@@ -20,20 +19,19 @@ class Program
         {
             using (Image image = Image.Load(sourcePath))
             {
-                if (image is CadImage cadImage)
+                if (image is DwfImage dwfImage)
                 {
                     Console.WriteLine("Layers in the DWF file:");
-                    foreach (CadLayerTable layerObj in cadImage.Layers)
+                    // Get layer names without modifying the original file
+                    var layerNames = dwfImage.Layers.GetLayersNames();
+                    foreach (var name in layerNames)
                     {
-                        if (layerObj is CadLayerTable layer)
-                        {
-                            Console.WriteLine("- " + layer.Name);
-                        }
+                        Console.WriteLine("- " + name);
                     }
                 }
                 else
                 {
-                    Console.Error.WriteLine("Loaded image is not a CAD image.");
+                    Console.Error.WriteLine("Loaded image is not a DWF image.");
                 }
             }
         }

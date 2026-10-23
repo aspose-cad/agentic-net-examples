@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Aspose.CAD;
@@ -26,41 +27,29 @@ class Program
                 // Cast to CadImage to access CAD-specific members
                 CadImage cadImage = (CadImage)image;
 
+                // Get mutable list of entities
+                List<CadEntityBase> entities = cadImage.Entities.ToList();
+
                 // Locate the index of the first line entity to remove
-                int indexToRemove = -1;
-                var entitiesArray = cadImage.Entities.ToArray();
+                int indexToRemove = entities.FindIndex(e => e is CadLine);
 
-                for (int i = 0; i < entitiesArray.Length; i++)
-                {
-                    if (entitiesArray[i] is CadLine)
-                    {
-                        indexToRemove = i;
-                        break;
-                    }
-                }
-
-                // Remove the entity if found (by recreating the collection without it)
                 if (indexToRemove >= 0)
                 {
-                    var updatedEntities = entitiesArray
-                        .Where((e, idx) => idx != indexToRemove)
-                        .ToArray();
-
-                    // Reassign the filtered entities back to the image (using reflection as the setter is internal)
-                    var entitiesField = typeof(CadImage).GetField("_entities", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-                    if (entitiesField != null)
-                    {
-                        entitiesField.SetValue(cadImage, updatedEntities);
-                        Console.WriteLine($"Entity at index {indexToRemove} removed.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Unable to modify entities collection; removal not performed.");
-                    }
+                    entities.RemoveAt(indexToRemove);
+                    // Reassign the updated collection preserving other entities
+                    cadImage.Entities = entities.ToArray();
+                    Console.WriteLine($"Entity at index {indexToRemove} removed.");
                 }
                 else
                 {
                     Console.WriteLine("No matching entity found to remove.");
+                }
+
+                // Ensure output directory exists
+                string? outputDir = Path.GetDirectoryName(outputPath);
+                if (!string.IsNullOrEmpty(outputDir))
+                {
+                    Directory.CreateDirectory(outputDir);
                 }
 
                 // Save the modified drawing

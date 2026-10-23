@@ -4,9 +4,9 @@
   "framework": "net8.0",
   "package": "Aspose.CAD",
   "package_version": "26.9.0",
-  "total_examples": 1864,
+  "total_examples": 1910,
   "total_categories": 45,
-  "last_updated": "2026-10-22",
+  "last_updated": "2026-10-23",
   "categories": [
     {
       "name": "access-entities-inside-block-objects",
@@ -1549,7 +1549,7 @@
     },
     {
       "name": "access-polyline-and-3dface-vertices",
-      "file_count": 26,
+      "file_count": 29,
       "files": [
         "access-vertices-of-3dface-entities-by-iterating-through-drawing-entities-and-filtering-for-3dface-types.cs",
         "adjust-hatch-origin-point-before-extracting-vertices-to-ensure-hatch-patterns-do-not-interfere-with-geometry-analysis.cs",
@@ -1566,14 +1566,17 @@
         "insert-a-dxf-dwg-drawing-into-another-drawing-and-then-extract-vertices-from-the-combined-polyline-entities.cs",
         "iterate-through-drawing-entities-to-find-polyline-objects-and-collect-their-entity-identifiers-for-further-processing.cs",
         "load-a-cad-drawing-into-the-application-and-verify-successful-initialization-of-the-drawing-object.cs",
+        "move-drawing-objects-to-adjust-title-position-and-verify-that-vertex-coordinates-remain-unchanged-after-movement.cs",
         "obtain-references-to-external-files-linked-in-a-drawing-to-ensure-all-geometry-sources-are-accessible.cs",
         "retrieve-3d-face-geometry-from-3dface-entities-and-compute-surface-area-for-each-face.cs",
         "retrieve-3d-face-geometry-from-3dface-entities-and-validate-normal-vectors-for-correctness.cs",
+        "retrieve-broken-line-geometry-from-polyline-entities-and-calculate-total-length-for-each-polyline.cs",
         "retrieve-broken-line-geometry-from-polyline-entities-and-compare-it-with-expected-geometric-specifications.cs",
         "retrieve-layout-names-from-a-drawing-and-log-each-layout-for-debugging-vertex-extraction-processes.cs",
         "set-quality-options-for-text-hatches-and-arcs-to-improve-rendering-before-exporting-vertex-data.cs",
         "use-drawing-entity-navigation-to-access-nested-entities-inside-block-references-and-extract-their-vertices.cs",
         "use-drawing-entity-navigation-to-locate-block-references-containing-polylines-and-extract-their-vertex-data.cs",
+        "work-with-3d-files-within-the-cad-environment-to-extract-3dface-vertex-data-for-three-dimensional-modeling.cs",
         "work-with-cad-entity-collections-to-batch-process-vertex-extraction-for-all-polyline-and-3dface-objects.cs",
         "work-with-cad-entity-collections-to-filter-entities-by-layer-name-before-extracting-vertex-coordinates.cs",
         "work-with-entities-to-modify-geometry-by-translating-vertex-coordinates-of-selected-polyline-objects.cs"
@@ -2220,6 +2223,54 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Move Drawing Objects to Adjust Title Position and Verify That Vertex Coordinates Remain Unchanged After Movement",
+          "category": "access-polyline-and-3dface-vertices",
+          "path": "access-polyline-and-3dface-vertices/move-drawing-objects-to-adjust-title-position-and-verify-that-vertex-coordinates-remain-unchanged-after-movement.cs",
+          "file": "move-drawing-objects-to-adjust-title-position-and-verify-that-vertex-coordinates-remain-unchanged-after-movement.cs",
+          "api_area": "Cad",
+          "tags": [
+            "3dface",
+            "access",
+            "and",
+            "aspose-cad",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "polyline",
+            "polylines",
+            "standalone-example",
+            "vertices"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Move Drawing Objects to Adjust Title Position and Verify That Vertex Coordinates Remain Unchanged After Movement in C#",
+            "Move Drawing Objects to Adjust Title Position and Verify That Vertex Coordinates Remain Unchanged After Movement using Aspose.CAD for .NET",
+            "Move Drawing Objects to Adjust Title Position and Verify That Vertex Coordinates Remain Unchanged After Movement Aspose.CAD .NET example",
+            "AI generated .net code to Move Drawing Objects to Adjust Title Position and Verify That Vertex Coordinates Remain Unchanged After Movement",
+            "Aspose.CAD for .NET access-polyline-and-3dface-vertices example"
+          ],
+          "namespaces": [
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
+            "Aspose.CAD.ImageOptions",
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "System.Linq"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Obtain References to External Files Linked in A Drawing to Ensure All Geometry Sources Are Accessible",
           "category": "access-polyline-and-3dface-vertices",
           "path": "access-polyline-and-3dface-vertices/obtain-references-to-external-files-linked-in-a-drawing-to-ensure-all-geometry-sources-are-accessible.cs",
@@ -2340,6 +2391,57 @@
             "Aspose.CAD",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Retrieve Broken Line Geometry from Polyline Entities and Calculate Total Length for Each Polyline",
+          "category": "access-polyline-and-3dface-vertices",
+          "path": "access-polyline-and-3dface-vertices/retrieve-broken-line-geometry-from-polyline-entities-and-calculate-total-length-for-each-polyline.cs",
+          "file": "retrieve-broken-line-geometry-from-polyline-entities-and-calculate-total-length-for-each-polyline.cs",
+          "api_area": "Cad",
+          "tags": [
+            "3dface",
+            "access",
+            "and",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "polyline",
+            "polylines",
+            "primitives",
+            "standalone-example",
+            "vertices"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Retrieve Broken Line Geometry from Polyline Entities and Calculate Total Length for Each Polyline in C#",
+            "Retrieve Broken Line Geometry from Polyline Entities and Calculate Total Length for Each Polyline using Aspose.CAD for .NET",
+            "Retrieve Broken Line Geometry from Polyline Entities and Calculate Total Length for Each Polyline Aspose.CAD .NET example",
+            "AI generated .net code to Retrieve Broken Line Geometry from Polyline Entities and Calculate Total Length for Each Polyline",
+            "Aspose.CAD for .NET access-polyline-and-3dface-vertices example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "System.Linq",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
+            "Aspose.CAD.Primitives",
+            "var cadImage = (CadImage)Image.Load(inputPath)"
           ],
           "standalone": true,
           "validated": true,
@@ -2557,6 +2659,49 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Work with 3d Files Within The CAD Environment to Extract 3dface Vertex Data for Three Dimensional Modeling",
+          "category": "access-polyline-and-3dface-vertices",
+          "path": "access-polyline-and-3dface-vertices/work-with-3d-files-within-the-cad-environment-to-extract-3dface-vertex-data-for-three-dimensional-modeling.cs",
+          "file": "work-with-3d-files-within-the-cad-environment-to-extract-3dface-vertex-data-for-three-dimensional-modeling.cs",
+          "api_area": "Cad",
+          "tags": [
+            "3dface",
+            "access",
+            "and",
+            "aspose-cad",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "polyline",
+            "standalone-example",
+            "vertices"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Work with 3d Files Within The CAD Environment to Extract 3dface Vertex Data for Three Dimensional Modeling in C#",
+            "Work with 3d Files Within The CAD Environment to Extract 3dface Vertex Data for Three Dimensional Modeling using Aspose.CAD for .NET",
+            "Work with 3d Files Within The CAD Environment to Extract 3dface Vertex Data for Three Dimensional Modeling Aspose.CAD .NET example",
+            "AI generated .net code to Work with 3d Files Within The CAD Environment to Extract 3dface Vertex Data for Three Dimensional Modeling",
+            "Aspose.CAD for .NET access-polyline-and-3dface-vertices example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Work with CAD Entity Collections to Batch Process Vertex Extraction for All Polyline and 3dface Objects",
           "category": "access-polyline-and-3dface-vertices",
           "path": "access-polyline-and-3dface-vertices/work-with-cad-entity-collections-to-batch-process-vertex-extraction-for-all-polyline-and-3dface-objects.cs",
@@ -2687,30 +2832,38 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 26
+          "count": 29
         },
         {
           "name": "System.IO",
-          "count": 26
+          "count": 29
         },
         {
           "name": "Aspose.CAD",
-          "count": 23
+          "count": 26
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 22
+          "count": 25
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 20
+          "count": 23
         },
         {
           "name": "System.Collections.Generic",
-          "count": 11
+          "count": 13
         },
         {
           "name": "Aspose.CAD.ImageOptions",
+          "count": 7
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+          "count": 6
+        },
+        {
+          "name": "System.Linq",
           "count": 6
         },
         {
@@ -2718,16 +2871,8 @@
           "count": 6
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-          "count": 4
-        },
-        {
-          "name": "System.Linq",
-          "count": 3
-        },
-        {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-          "count": 2
+          "count": 5
         },
         {
           "name": "System.Collections",
@@ -2744,6 +2889,18 @@
         {
           "name": "System.Text",
           "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
+        },
+        {
+          "name": "var cadImage = (CadImage)Image.Load(inputPath)",
+          "count": 1
         }
       ],
       "key_apis": [
@@ -2751,15 +2908,17 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.ImageOptions",
-        "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+        "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-        "Aspose.CAD.WatermarkGuard"
+        "Aspose.CAD.WatermarkGuard",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.Primitives"
       ]
     },
     {
       "name": "add-background-images-to-dwg-files",
-      "file_count": 30,
+      "file_count": 32,
       "files": [
         "add-a-cadbaseobject-first-then-attach-a-cadrasterimage-to-the-same-drawing-objects-collection.cs",
         "add-a-cadbaseobject-that-references-the-cadrasterimage-to-establish-a-relationship-between-them.cs",
@@ -2776,6 +2935,7 @@
         "ensure-each-added-cadrasterimage-references-its-own-cadrasterimagedef-without-sharing-definitions.cs",
         "ensure-the-image-file-path-set-on-cadrasterimagedef-points-to-a-valid-external-image-file.cs",
         "export-the-dwg-with-the-new-background-image-to-a-different-location-using-the-save-method.cs",
+        "implement-error-handling-when-the-image-file-path-on-cadrasterimagedef-is-missing-or-invalid.cs",
         "insert-multiple-cadrasterimage-objects-as-layered-backgrounds-by-adding-each-to-cadimage-objects.cs",
         "instantiate-a-cadrasterimage-object-and-link-it-to-the-previously-created-cadrasterimagedef.cs",
         "load-a-dwg-file-into-a-cadimage-instance-before-adding-a-background-image.cs",
@@ -2786,6 +2946,7 @@
         "save-the-modified-dwg-file-after-processing-the-added-background-objects-successfully.cs",
         "update-the-cadblocktableobject-with-the-new-cadrasterimage-and-cadbaseobject-to-finalize-changes.cs",
         "use-a-loop-to-add-several-cadrasterimagedef-and-cadrasterimage-pairs-as-sequential-backgrounds.cs",
+        "use-cadblocktableobject-to-batch-process-multiple-background-image-insertions-in-one-operation.cs",
         "use-cadblocktableobject-to-commit-changes-after-updating-cadimage-objects-with-background-elements-successfully.cs",
         "use-cadblocktableobject-to-process-added-objects-after-adding-both-cadrasterimage-and-cadbaseobject.cs",
         "validate-that-cadimage-objects-contains-both-cadrasterimage-and-cadbaseobject-after-insertion-and-before-saving.cs",
@@ -3447,6 +3608,48 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Implement Error Handling When The Image File Path On Cadrasterimagedef Is Missing or Invalid",
+          "category": "add-background-images-to-dwg-files",
+          "path": "add-background-images-to-dwg-files/implement-error-handling-when-the-image-file-path-on-cadrasterimagedef-is-missing-or-invalid.cs",
+          "file": "implement-error-handling-when-the-image-file-path-on-cadrasterimagedef-is-missing-or-invalid.cs",
+          "api_area": "Cad",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "background",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "dwg",
+            "fileformats",
+            "files",
+            "images",
+            "standalone-example",
+            "to"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Implement Error Handling When The Image File Path On Cadrasterimagedef Is Missing or Invalid in C#",
+            "Implement Error Handling When The Image File Path On Cadrasterimagedef Is Missing or Invalid using Aspose.CAD for .NET",
+            "Implement Error Handling When The Image File Path On Cadrasterimagedef Is Missing or Invalid Aspose.CAD .NET example",
+            "AI generated .net code to Implement Error Handling When The Image File Path On Cadrasterimagedef Is Missing or Invalid",
+            "Aspose.CAD for .NET add-background-images-to-dwg-files example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Insert Multiple Cadrasterimage Objects as Layered Backgrounds By Adding Each to Cadimage Objects",
           "category": "add-background-images-to-dwg-files",
           "path": "add-background-images-to-dwg-files/insert-multiple-cadrasterimage-objects-as-layered-backgrounds-by-adding-each-to-cadimage-objects.cs",
@@ -3888,6 +4091,54 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Use Cadblocktableobject to Batch Process Multiple Background Image Insertions in One Operation",
+          "category": "add-background-images-to-dwg-files",
+          "path": "add-background-images-to-dwg-files/use-cadblocktableobject-to-batch-process-multiple-background-image-insertions-in-one-operation.cs",
+          "file": "use-cadblocktableobject-to-batch-process-multiple-background-image-insertions-in-one-operation.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "background",
+            "cad",
+            "cadobjects",
+            "cadtables",
+            "csharp",
+            "dotnet8",
+            "dwg",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "images",
+            "standalone-example",
+            "to"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Use Cadblocktableobject to Batch Process Multiple Background Image Insertions in One Operation in C#",
+            "Use Cadblocktableobject to Batch Process Multiple Background Image Insertions in One Operation using Aspose.CAD for .NET",
+            "Use Cadblocktableobject to Batch Process Multiple Background Image Insertions in One Operation Aspose.CAD .NET example",
+            "AI generated .net code to Use Cadblocktableobject to Batch Process Multiple Background Image Insertions in One Operation",
+            "Aspose.CAD for .NET add-background-images-to-dwg-files example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "System.Linq",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadTables"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Use Cadblocktableobject to Commit Changes After Updating Cadimage Objects with Background Elements Successfully",
           "category": "add-background-images-to-dwg-files",
           "path": "add-background-images-to-dwg-files/use-cadblocktableobject-to-commit-changes-after-updating-cadimage-objects-with-background-elements-successfully.cs",
@@ -4118,39 +4369,39 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 30
+          "count": 32
         },
         {
           "name": "System.IO",
-          "count": 30
+          "count": 32
         },
         {
           "name": "Aspose.CAD",
-          "count": 27
+          "count": 29
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 26
+          "count": 28
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 23
+          "count": 25
         },
         {
           "name": "System.Linq",
-          "count": 20
+          "count": 21
         },
         {
           "name": "System.Collections.Generic",
-          "count": 16
+          "count": 17
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 15
+          "count": 16
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 2
+          "count": 3
         }
       ],
       "key_apis": [
@@ -4163,7 +4414,7 @@
     },
     {
       "name": "add-background-images-to-dxf-files",
-      "file_count": 29,
+      "file_count": 30,
       "files": [
         "access-entities-inside-a-block-add-a-background-image-and-then-adjust-hatch-origin-point.cs",
         "access-entities-inside-a-block-to-modify-their-appearance-after-adding-a-background-image.cs",
@@ -4180,6 +4431,7 @@
         "get-references-to-external-files-linked-in-a-dxf-that-includes-a-background-image.cs",
         "get-the-list-of-all-layers-present-in-a-dxf-drawing-with-a-background-image.cs",
         "get-the-size-of-the-layout-after-inserting-the-background-image-and-text-entities.cs",
+        "handle-callback-errors-during-both-export-and-load-when-processing-a-dxf-with-a-background-image.cs",
         "handle-callback-errors-during-export-of-the-dxf-file-that-contains-the-background-image.cs",
         "handle-callback-errors-during-load-of-a-dxf-file-that-includes-a-background-image.cs",
         "insert-a-dwg-drawing-inside-a-dxf-file-that-also-includes-a-background-image.cs",
@@ -4863,6 +5115,51 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Handle Callback Errors During Both Export and Load When Processing A DXF with A Background Image",
+          "category": "add-background-images-to-dxf-files",
+          "path": "add-background-images-to-dxf-files/handle-callback-errors-during-both-export-and-load-when-processing-a-dxf-with-a-background-image.cs",
+          "file": "handle-callback-errors-during-both-export-and-load-when-processing-a-dxf-with-a-background-image.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "background",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "dxf",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "images",
+            "standalone-example",
+            "to"
+          ],
+          "formats": [
+            "dxf"
+          ],
+          "search_phrases": [
+            "Handle Callback Errors During Both Export and Load When Processing A DXF with A Background Image in C#",
+            "Handle Callback Errors During Both Export and Load When Processing A DXF with A Background Image using Aspose.CAD for .NET",
+            "Handle Callback Errors During Both Export and Load When Processing A DXF with A Background Image Aspose.CAD .NET example",
+            "AI generated .net code to Handle Callback Errors During Both Export and Load When Processing A DXF with A Background Image",
+            "Aspose.CAD for .NET add-background-images-to-dxf-files example",
+            "Aspose.CAD DXF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Handle Callback Errors During Export of The DXF File That Contains The Background Image",
           "category": "add-background-images-to-dxf-files",
           "path": "add-background-images-to-dxf-files/handle-callback-errors-during-export-of-the-dxf-file-that-contains-the-background-image.cs",
@@ -5511,23 +5808,23 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 29
+          "count": 30
         },
         {
           "name": "System.IO",
-          "count": 29
+          "count": 30
         },
         {
           "name": "Aspose.CAD",
-          "count": 26
+          "count": 27
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 24
+          "count": 25
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 21
+          "count": 22
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
@@ -5570,7 +5867,7 @@
     },
     {
       "name": "add-margins-to-cad-drawings",
-      "file_count": 27,
+      "file_count": 28,
       "files": [
         "access-entities-inside-block-objects-adjust-their-positions-and-add-margins-to-the-overall-layout.cs",
         "access-external-file-references-in-a-dwg-drawing-and-include-them-when-setting-margins-for-export.cs",
@@ -5595,6 +5892,7 @@
         "programmatically-insert-a-dwg-drawing-into-another-cad-file-configure-margins-and-generate-a-combined-pdf.cs",
         "retrieve-external-file-references-adjust-their-paths-then-add-margins-and-export-the-updated-drawing-to-pdf.cs",
         "retrieve-layout-names-from-a-cad-document-before-applying-margins-to-select-the-appropriate-layout.cs",
+        "retrieve-layout-sizes-from-a-cad-document-to-calculate-appropriate-margin-values-for-each-layout.cs",
         "select-a-specific-layout-by-name-apply-unique-margins-and-export-the-result-to-pdf.cs",
         "use-cadrasterizationoptions-to-set-different-margin-values-for-top-bottom-left-and-right-edges.cs",
         "validate-that-margin-settings-do-not-exceed-layout-dimensions-to-prevent-clipping-during-pdf-export.cs",
@@ -6589,6 +6887,47 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Retrieve Layout Sizes from A CAD Document to Calculate Appropriate Margin Values for Each Layout",
+          "category": "add-margins-to-cad-drawings",
+          "path": "add-margins-to-cad-drawings/retrieve-layout-sizes-from-a-cad-document-to-calculate-appropriate-margin-values-for-each-layout.cs",
+          "file": "retrieve-layout-sizes-from-a-cad-document-to-calculate-appropriate-margin-values-for-each-layout.cs",
+          "api_area": "Cad",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "drawings",
+            "fileformats",
+            "margins",
+            "standalone-example",
+            "to"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Retrieve Layout Sizes from A CAD Document to Calculate Appropriate Margin Values for Each Layout in C#",
+            "Retrieve Layout Sizes from A CAD Document to Calculate Appropriate Margin Values for Each Layout using Aspose.CAD for .NET",
+            "Retrieve Layout Sizes from A CAD Document to Calculate Appropriate Margin Values for Each Layout Aspose.CAD .NET example",
+            "AI generated .net code to Retrieve Layout Sizes from A CAD Document to Calculate Appropriate Margin Values for Each Layout",
+            "Aspose.CAD for .NET add-margins-to-cad-drawings example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Select A Specific Layout By Name Apply Unique Margins and Export The Result to PDF",
           "category": "add-margins-to-cad-drawings",
           "path": "add-margins-to-cad-drawings/select-a-specific-layout-by-name-apply-unique-margins-and-export-the-result-to-pdf.cs",
@@ -6756,15 +7095,15 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 27
+          "count": 28
         },
         {
           "name": "System.IO",
-          "count": 27
+          "count": 28
         },
         {
           "name": "Aspose.CAD",
-          "count": 25
+          "count": 26
         },
         {
           "name": "Aspose.CAD.ImageOptions",
@@ -6772,15 +7111,15 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 10
+          "count": 11
         },
         {
           "name": "System.Collections.Generic",
-          "count": 5
+          "count": 6
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 4
+          "count": 5
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
@@ -6810,17 +7149,21 @@
     },
     {
       "name": "add-polylines",
-      "file_count": 26,
+      "file_count": 33,
       "files": [
         "add-cad2dpoint-objects-forming-a-closed-loop-to-evaluate-cadlwpolyline-ability-to-create-polygons.cs",
         "add-cad2dpoint-objects-sequentially-to-outline-the-shape-of-the-cadlwpolyline.cs",
+        "add-cad3dpoint-objects-sequentially-to-define-the-path-of-the-cadpolyline.cs",
         "add-each-cad2dpoint-to-the-cadlwpolyline-instance-to-form-the-shape.cs",
+        "add-each-cad3dpoint-to-the-cadpolyline-instance-using-its-point-collection.cs",
         "assign-a-distinct-color-to-the-polyline-to-differentiate-it-from-existing-entities.cs",
+        "build-a-2d-lightweight-polyline-by-adding-cad2dpoint-vertices-to-a-cadlwpolyline.cs",
         "configure-polyline-properties-such-as-layer-and-color-after-insertion-to-customize-appearance-in-the-cad-view.cs",
         "configure-the-polyline-layer-property-to-organize-entities-within-the-drawing-hierarchy.cs",
         "configure-the-polyline-layer-to-a-custom-name-for-better-organization-in-complex-drawings.cs",
         "create-a-3d-polyline-by-combining-cadpolyline-with-multiple-cad3dpoint-objects.cs",
         "create-cad2dpoint-objects-defining-the-vertices-of-the-2d-polyline.cs",
+        "create-multiple-cad3dpoint-objects-with-required-x-y-and-z-coordinates.cs",
         "export-the-drawing-to-verify-that-both-2d-and-3d-polylines-are-correctly-represented-in-the-final-file.cs",
         "export-the-modified-drawing-to-a-supported-cad-format-for-sharing-the-updated-polyline.cs",
         "export-the-updated-drawing-to-a-cad-format-that-supports-both-2d-and-3d-entities.cs",
@@ -6829,8 +7172,11 @@
         "insert-the-completed-cadpolyline-into-a-drawing-entity-collection-and-then-save-to-confirm-persistence.cs",
         "insert-the-polyline-into-the-entity-collection-of-the-chosen-layout-to-ensure-proper-placement.cs",
         "instantiate-a-cadlwpolyline-object-for-constructing-a-lightweight-2d-polyline.cs",
+        "instantiate-a-cadpolyline-object-and-prepare-it-for-adding-cad3dpoint-coordinates.cs",
         "instantiate-cadlwpolyline-add-cad2dpoint-objects-and-insert-into-drawing-to-create-a-2d-outline.cs",
+        "instantiate-cadpolyline-add-cad3dpoint-objects-and-insert-into-drawing-to-create-a-3d-wireframe.cs",
         "save-the-cad-file-after-polyline-insertion-to-preserve-the-new-geometry-for-future-editing.cs",
+        "save-the-drawing-after-adding-the-polyline-to-persist-changes-in-the-cad-file.cs",
         "save-the-drawing-after-configuring-polyline-properties-to-retain-visual-customizations-in-the-output-file.cs",
         "select-a-specific-layout-within-the-drawing-before-inserting-the-polyline-for-correct-view.cs",
         "select-the-appropriate-drawing-layout-before-adding-the-polyline-to-ensure-correct-coordinate-system-usage.cs",
@@ -6925,6 +7271,48 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Add Cad3dpoint Objects Sequentially to Define The Path of The Cadpolyline",
+          "category": "add-polylines",
+          "path": "add-polylines/add-cad3dpoint-objects-sequentially-to-define-the-path-of-the-cadpolyline.cs",
+          "file": "add-cad3dpoint-objects-sequentially-to-define-the-path-of-the-cadpolyline.cs",
+          "api_area": "Cad.CadObjects",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "polylines",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Add Cad3dpoint Objects Sequentially to Define The Path of The Cadpolyline in C#",
+            "Add Cad3dpoint Objects Sequentially to Define The Path of The Cadpolyline using Aspose.CAD for .NET",
+            "Add Cad3dpoint Objects Sequentially to Define The Path of The Cadpolyline Aspose.CAD .NET example",
+            "AI generated .net code to Add Cad3dpoint Objects Sequentially to Define The Path of The Cadpolyline",
+            "Aspose.CAD for .NET add-polylines example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "System",
+            "System.IO",
+            "System.Linq",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Add Each Cad2dpoint to The Cadlwpolyline Instance to Form The Shape",
           "category": "add-polylines",
           "path": "add-polylines/add-each-cad2dpoint-to-the-cadlwpolyline-instance-to-form-the-shape.cs",
@@ -6968,6 +7356,51 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Add Each Cad3dpoint to The Cadpolyline Instance using Its Point Collection",
+          "category": "add-polylines",
+          "path": "add-polylines/add-each-cad3dpoint-to-the-cadpolyline-instance-using-its-point-collection.cs",
+          "file": "add-each-cad3dpoint-to-the-cadpolyline-instance-using-its-point-collection.cs",
+          "api_area": "Cad",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "polylines",
+            "standalone-example",
+            "vertices"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Add Each Cad3dpoint to The Cadpolyline Instance using Its Point Collection in C#",
+            "Add Each Cad3dpoint to The Cadpolyline Instance using Its Point Collection using Aspose.CAD for .NET",
+            "Add Each Cad3dpoint to The Cadpolyline Instance using Its Point Collection Aspose.CAD .NET example",
+            "AI generated .net code to Add Each Cad3dpoint to The Cadpolyline Instance using Its Point Collection",
+            "Aspose.CAD for .NET add-polylines example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "System.Linq",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
+            "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Assign A Distinct Color to The Polyline to Differentiate It from Existing Entities",
           "category": "add-polylines",
           "path": "add-polylines/assign-a-distinct-color-to-the-polyline-to-differentiate-it-from-existing-entities.cs",
@@ -7000,6 +7433,50 @@
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadTables"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Build A 2d Lightweight Polyline By Adding Cad2dpoint Vertices to A Cadlwpolyline",
+          "category": "add-polylines",
+          "path": "add-polylines/build-a-2d-lightweight-polyline-by-adding-cad2dpoint-vertices-to-a-cadlwpolyline.cs",
+          "file": "build-a-2d-lightweight-polyline-by-adding-cad2dpoint-vertices-to-a-cadlwpolyline.cs",
+          "api_area": "Cad",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "polylines",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Build A 2d Lightweight Polyline By Adding Cad2dpoint Vertices to A Cadlwpolyline in C#",
+            "Build A 2d Lightweight Polyline By Adding Cad2dpoint Vertices to A Cadlwpolyline using Aspose.CAD for .NET",
+            "Build A 2d Lightweight Polyline By Adding Cad2dpoint Vertices to A Cadlwpolyline Aspose.CAD .NET example",
+            "AI generated .net code to Build A 2d Lightweight Polyline By Adding Cad2dpoint Vertices to A Cadlwpolyline",
+            "Aspose.CAD for .NET add-polylines example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.ImageOptions"
           ],
           "standalone": true,
           "validated": true,
@@ -7210,6 +7687,42 @@
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Create Multiple Cad3dpoint Objects with Required X Y and Z Coordinates",
+          "category": "add-polylines",
+          "path": "add-polylines/create-multiple-cad3dpoint-objects-with-required-x-y-and-z-coordinates.cs",
+          "file": "create-multiple-cad3dpoint-objects-with-required-x-y-and-z-coordinates.cs",
+          "api_area": "Cad.CadObjects",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "polylines",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Create Multiple Cad3dpoint Objects with Required X Y and Z Coordinates in C#",
+            "Create Multiple Cad3dpoint Objects with Required X Y and Z Coordinates using Aspose.CAD for .NET",
+            "Create Multiple Cad3dpoint Objects with Required X Y and Z Coordinates Aspose.CAD .NET example",
+            "AI generated .net code to Create Multiple Cad3dpoint Objects with Required X Y and Z Coordinates",
+            "Aspose.CAD for .NET add-polylines example"
+          ],
+          "namespaces": [
+            "Aspose.CAD",
+            "System",
+            "Aspose.CAD.FileFormats.Cad.CadObjects"
           ],
           "standalone": true,
           "validated": true,
@@ -7541,6 +8054,48 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Instantiate A Cadpolyline Object and Prepare It for Adding Cad3dpoint Coordinates",
+          "category": "add-polylines",
+          "path": "add-polylines/instantiate-a-cadpolyline-object-and-prepare-it-for-adding-cad3dpoint-coordinates.cs",
+          "file": "instantiate-a-cadpolyline-object-and-prepare-it-for-adding-cad3dpoint-coordinates.cs",
+          "api_area": "Cad.CadConsts",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "polylines",
+            "standalone-example",
+            "vertices"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Instantiate A Cadpolyline Object and Prepare It for Adding Cad3dpoint Coordinates in C#",
+            "Instantiate A Cadpolyline Object and Prepare It for Adding Cad3dpoint Coordinates using Aspose.CAD for .NET",
+            "Instantiate A Cadpolyline Object and Prepare It for Adding Cad3dpoint Coordinates Aspose.CAD .NET example",
+            "AI generated .net code to Instantiate A Cadpolyline Object and Prepare It for Adding Cad3dpoint Coordinates",
+            "Aspose.CAD for .NET add-polylines example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD",
+            "System",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Instantiate Cadlwpolyline Add Cad2dpoint Objects and Insert into Drawing to Create A 2d Outline",
           "category": "add-polylines",
           "path": "add-polylines/instantiate-cadlwpolyline-add-cad2dpoint-objects-and-insert-into-drawing-to-create-a-2d-outline.cs",
@@ -7574,6 +8129,47 @@
             "Aspose.CAD",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Instantiate Cadpolyline Add Cad3dpoint Objects and Insert into Drawing to Create A 3d Wireframe",
+          "category": "add-polylines",
+          "path": "add-polylines/instantiate-cadpolyline-add-cad3dpoint-objects-and-insert-into-drawing-to-create-a-3d-wireframe.cs",
+          "file": "instantiate-cadpolyline-add-cad3dpoint-objects-and-insert-into-drawing-to-create-a-3d-wireframe.cs",
+          "api_area": "Cad.CadObjects",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "polylines",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Instantiate Cadpolyline Add Cad3dpoint Objects and Insert into Drawing to Create A 3d Wireframe in C#",
+            "Instantiate Cadpolyline Add Cad3dpoint Objects and Insert into Drawing to Create A 3d Wireframe using Aspose.CAD for .NET",
+            "Instantiate Cadpolyline Add Cad3dpoint Objects and Insert into Drawing to Create A 3d Wireframe Aspose.CAD .NET example",
+            "AI generated .net code to Instantiate Cadpolyline Add Cad3dpoint Objects and Insert into Drawing to Create A 3d Wireframe",
+            "Aspose.CAD for .NET add-polylines example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
             "Aspose.CAD.ImageOptions"
           ],
           "standalone": true,
@@ -7617,6 +8213,47 @@
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Save The Drawing After Adding The Polyline to Persist Changes in The CAD File",
+          "category": "add-polylines",
+          "path": "add-polylines/save-the-drawing-after-adding-the-polyline-to-persist-changes-in-the-cad-file.cs",
+          "file": "save-the-drawing-after-adding-the-polyline-to-persist-changes-in-the-cad-file.cs",
+          "api_area": "Cad",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "polylines",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Save The Drawing After Adding The Polyline to Persist Changes in The CAD File in C#",
+            "Save The Drawing After Adding The Polyline to Persist Changes in The CAD File using Aspose.CAD for .NET",
+            "Save The Drawing After Adding The Polyline to Persist Changes in The CAD File Aspose.CAD .NET example",
+            "AI generated .net code to Save The Drawing After Adding The Polyline to Persist Changes in The CAD File",
+            "Aspose.CAD for .NET add-polylines example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.FileFormats.Cad.CadConsts"
           ],
           "standalone": true,
           "validated": true,
@@ -7920,47 +8557,51 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 26
-        },
-        {
-          "name": "System.IO",
-          "count": 26
+          "count": 33
         },
         {
           "name": "Aspose.CAD",
-          "count": 25
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 25
+          "count": 32
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 25
+          "count": 32
+        },
+        {
+          "name": "System.IO",
+          "count": 31
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad",
+          "count": 31
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 14
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 13
+          "count": 18
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-          "count": 11
+          "count": 17
         },
         {
-          "name": "System.Collections.Generic",
-          "count": 8
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 16
         },
         {
           "name": "System.Linq",
-          "count": 8
+          "count": 10
+        },
+        {
+          "name": "System.Collections.Generic",
+          "count": 10
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
           "count": 5
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
+          "count": 2
         },
         {
           "name": "System.Collections",
@@ -7973,12 +8614,13 @@
       ],
       "key_apis": [
         "Aspose.CAD",
-        "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
+        "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.ImageOptions",
-        "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
       ]
     },
     {
@@ -12708,7 +13350,7 @@
     },
     {
       "name": "change-emergency-fonts-and-style-fonts",
-      "file_count": 26,
+      "file_count": 27,
       "files": [
         "adjust-the-emergency-font-setting-to-improve-readability-of-annotations-when-exporting-to-high-resolution-images.cs",
         "apply-a-custom-emergency-font-to-hatch-patterns-by-assigning-the-defaultfont-field-before-rendering.cs",
@@ -12727,6 +13369,7 @@
         "iterate-through-text-style-objects-and-assign-a-new-emergency-font-via-the-defaultfont-field.cs",
         "load-a-cad-drawing-set-the-defaultfont-field-and-verify-text-entities-reflect-the-change.cs",
         "log-the-defaultfont-field-value-after-modification-to-confirm-the-emergency-font-update-succeeded.cs",
+        "modify-text-style-definitions-to-use-a-new-emergency-font-by-updating-the-defaultfont-field.cs",
         "replace-missing-fonts-in-a-cad-file-with-the-specified-emergency-font-using-the-defaultfont-field.cs",
         "retrieve-the-current-defaultfont-value-from-the-cad-document-programmatically-for-logging-purposes.cs",
         "set-a-fallback-emergency-font-using-the-defaultfont-field-to-handle-missing-glyphs-during-rendering.cs",
@@ -13444,6 +14087,45 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Modify Text Style Definitions to Use A New Emergency Font By Updating The Defaultfont Field",
+          "category": "change-emergency-fonts-and-style-fonts",
+          "path": "change-emergency-fonts-and-style-fonts/modify-text-style-definitions-to-use-a-new-emergency-font-by-updating-the-defaultfont-field.cs",
+          "file": "modify-text-style-definitions-to-use-a-new-emergency-font-by-updating-the-defaultfont-field.cs",
+          "api_area": "Cad",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "cad",
+            "change",
+            "csharp",
+            "dotnet8",
+            "emergency",
+            "fileformats",
+            "fonts",
+            "standalone-example",
+            "style"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Modify Text Style Definitions to Use A New Emergency Font By Updating The Defaultfont Field in C#",
+            "Modify Text Style Definitions to Use A New Emergency Font By Updating The Defaultfont Field using Aspose.CAD for .NET",
+            "Modify Text Style Definitions to Use A New Emergency Font By Updating The Defaultfont Field Aspose.CAD .NET example",
+            "AI generated .net code to Modify Text Style Definitions to Use A New Emergency Font By Updating The Defaultfont Field",
+            "Aspose.CAD for .NET change-emergency-fonts-and-style-fonts example"
+          ],
+          "namespaces": [
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "System",
+            "System.IO"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Replace Missing Fonts in A CAD File with The Specified Emergency Font using The Defaultfont Field",
           "category": "change-emergency-fonts-and-style-fonts",
           "path": "change-emergency-fonts-and-style-fonts/replace-missing-fonts-in-a-cad-file-with-the-specified-emergency-font-using-the-defaultfont-field.cs",
@@ -13822,19 +14504,19 @@
       "required_namespaces": [
         {
           "name": "Aspose.CAD",
-          "count": 26
+          "count": 27
         },
         {
           "name": "System",
-          "count": 26
+          "count": 27
         },
         {
           "name": "System.IO",
-          "count": 26
+          "count": 27
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 23
+          "count": 24
         },
         {
           "name": "Aspose.CAD.ImageOptions",
@@ -19507,8 +20189,9 @@
     },
     {
       "name": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images",
-      "file_count": 27,
+      "file_count": 28,
       "files": [
+        "apply-custom-background-color-and-draw-color-then-export-dwf-layers-individually-as-png-images.cs",
         "apply-scalemethod-shrinktofit-to-automatically-adjust-dimensions-when-converting-dwg-to-tiff.cs",
         "convert-a-dwg-file-to-pdf-while-preserving-default-model-layout-and-automatic-scaling.cs",
         "convert-a-dxf-file-to-png-by-loading-it-and-applying-default-cadrasterizationoptions.cs",
@@ -19538,6 +20221,63 @@
         "use-fontsubstitution-mapping-to-replace-unavailable-fonts-when-converting-dwg-to-jpeg-image.cs"
       ],
       "examples": [
+        {
+          "title": "Apply Custom Background Color and Draw Color Then Export DWF Layers Individually as PNG Images",
+          "category": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images",
+          "path": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/apply-custom-background-color-and-draw-color-then-export-dwf-layers-individually-as-png-images.cs",
+          "file": "apply-custom-background-color-and-draw-color-then-export-dwf-layers-individually-as-png-images.cs",
+          "api_area": "Cad",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "cad",
+            "convert",
+            "csharp",
+            "dotnet8",
+            "drawings",
+            "dwf",
+            "dwg",
+            "dxf",
+            "fileformats",
+            "imageoptions",
+            "images",
+            "objects",
+            "pdf",
+            "png",
+            "raster",
+            "standalone-example",
+            "to",
+            "whip"
+          ],
+          "formats": [
+            "dwf",
+            "png"
+          ],
+          "search_phrases": [
+            "Apply Custom Background Color and Draw Color Then Export DWF Layers Individually as PNG Images in C#",
+            "Apply Custom Background Color and Draw Color Then Export DWF Layers Individually as PNG Images using Aspose.CAD for .NET",
+            "Apply Custom Background Color and Draw Color Then Export DWF Layers Individually as PNG Images Aspose.CAD .NET example",
+            "AI generated .net code to Apply Custom Background Color and Draw Color Then Export DWF Layers Individually as PNG Images",
+            "Aspose.CAD for .NET convert-dwg-and-dxf-drawings-to-pdf-and-raster-images example",
+            "Aspose.CAD DWF C# example",
+            "Aspose.CAD PNG C# example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad",
+            "System",
+            "System.IO",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Dwf",
+            "Aspose.CAD.FileFormats.Dwf.Whip.Objects"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
         {
           "title": "Apply Scalemethod Shrinktofit to Automatically Adjust Dimensions When Converting DWG to TIFF",
           "category": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images",
@@ -20863,27 +21603,39 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 27
+          "count": 28
         },
         {
           "name": "System.IO",
-          "count": 27
+          "count": 28
         },
         {
           "name": "Aspose.CAD",
-          "count": 27
+          "count": 28
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 27
+          "count": 28
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 14
+          "count": 15
         },
         {
           "name": "System.Linq",
           "count": 2
+        },
+        {
+          "name": "System.Collections.Generic",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Dwf",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Dwf.Whip.Objects",
+          "count": 1
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
@@ -20894,37 +21646,46 @@
         "Aspose.CAD",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
+        "Aspose.CAD.FileFormats.Dwf",
+        "Aspose.CAD.FileFormats.Dwf.Whip.Objects",
         "Aspose.CAD.FileFormats.Cad.CadTables"
       ]
     },
     {
       "name": "create-hatched-rectangles-from-polylines",
-      "file_count": 26,
+      "file_count": 33,
       "files": [
         "add-multiple-cadlwpolyline-rectangles-to-the-drawing-and-fill-each-with-distinct-cadhatch-configurations.cs",
+        "add-the-cadhatch-entity-after-defining-all-cadlwpolyline-objects-to-ensure-proper-layering.cs",
         "add-the-configured-cadhatch-entity-to-the-drawing-entity-collection.cs",
         "adjust-the-hatch-angle-of-cadhatch-to-45-degrees-for-a-standard-diagonal-hatch.cs",
         "adjust-the-hatch-angle-property-of-cadhatch-to-30-degrees-for-slanted-shading.cs",
         "apply-a-cadhatch-with-a-custom-cadhatchpatterndata-to-a-complex-cadlwpolyline-shape.cs",
+        "assign-the-cadedgeboundarypath-to-the-cadhatch-after-hatch-creation-to-define-boundary-dynamically.cs",
         "change-the-hatch-color-of-cadhatch-to-blue-and-observe-visual-update.cs",
         "change-the-hatch-color-of-cadhatch-to-red-and-verify-visual-change-in-the-drawing.cs",
+        "configure-cadhatch-with-custom-angle-and-color-then-assign-cadedgeboundarypath-to-complete-definition.cs",
         "configure-the-hatch-angle-on-the-cadhatch-to-achieve-a-desired-diagonal-shading.cs",
         "create-a-cadhatch-entity-and-assign-the-cadedgeboundarypath-as-its-boundary.cs",
         "create-a-new-cadlwpolyline-rectangle-and-immediately-fill-it-using-a-cadhatch.cs",
         "define-a-cadhatchpatterndata-with-a-named-pattern-and-assign-it-before-saving-the-drawing.cs",
+        "define-the-hatch-pattern-using-cadhatchpatterndata-with-a-custom-pattern-name.cs",
         "export-the-drawing-after-applying-multiple-cadhatch-entities-to-verify-all-patterns-render-correctly.cs",
         "export-the-final-drawing-after-applying-hatch-to-ensure-patterns-are-retained-across-formats.cs",
         "export-the-final-drawing-to-verify-hatch-patterns-persist-across-formats.cs",
         "instantiate-a-cadlwpolyline-and-add-four-points-to-define-a-rectangle-shape.cs",
+        "iterate-through-all-cadlwpolyline-entities-in-a-loaded-drawing-and-apply-a-cadhatch-to-each.cs",
         "load-a-cad-drawing-iterate-entities-and-apply-a-cadhatch-to-each-cadlwpolyline-found.cs",
         "load-a-cad-drawing-locate-existing-cadlwpolyline-rectangles-and-replace-their-fill-with-a-new-cadhatch.cs",
         "load-a-cad-file-add-a-new-cadlwpolyline-rectangle-and-fill-it-using-cadhatch.cs",
         "load-an-existing-cad-file-and-access-its-entity-collection.cs",
+        "replace-an-existing-cadhatch-in-a-drawing-with-a-new-one-using-different-cadhatchpatterndata.cs",
         "save-the-drawing-containing-multiple-hatched-rectangles-to-verify-persistence-of-hatch-settings.cs",
         "save-the-modified-drawing-to-a-supported-cad-format-file.cs",
         "set-both-hatch-angle-and-color-simultaneously-on-cadhatch-to-achieve-patterned-shading.cs",
         "set-the-hatch-color-property-of-the-cadhatch-to-a-specific-rgb-value.cs",
         "set-the-hatch-pattern-of-cadhatch-using-cadhatchpatterndata-before-adding-it-to-the-drawing.cs",
+        "use-cadedgeboundarypath-to-connect-the-cadlwpolyline-edges-and-define-the-hatch-boundary.cs",
         "use-cadedgeboundarypath-to-create-multiple-hatch-boundaries-within-a-single-drawing-for-varied-regions.cs",
         "utilize-cadhatchpatterndata-to-define-a-custom-hatch-pattern-with-specific-line-spacing.cs"
       ],
@@ -20970,6 +21731,57 @@
             "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
             "Aspose.CAD.ImageOptions",
             "System.IO"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Add The Cadhatch Entity After Defining All Cadlwpolyline Objects to Ensure Proper Layering",
+          "category": "create-hatched-rectangles-from-polylines",
+          "path": "create-hatched-rectangles-from-polylines/add-the-cadhatch-entity-after-defining-all-cadlwpolyline-objects-to-ensure-proper-layering.cs",
+          "file": "add-the-cadhatch-entity-after-defining-all-cadlwpolyline-objects-to-ensure-proper-layering.cs",
+          "api_area": "Cad",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "create",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "from",
+            "hatch",
+            "hatched",
+            "imageoptions",
+            "polylines",
+            "primitives",
+            "rectangles",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Add The Cadhatch Entity After Defining All Cadlwpolyline Objects to Ensure Proper Layering in C#",
+            "Add The Cadhatch Entity After Defining All Cadlwpolyline Objects to Ensure Proper Layering using Aspose.CAD for .NET",
+            "Add The Cadhatch Entity After Defining All Cadlwpolyline Objects to Ensure Proper Layering Aspose.CAD .NET example",
+            "AI generated .net code to Add The Cadhatch Entity After Defining All Cadlwpolyline Objects to Ensure Proper Layering",
+            "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.ImageOptions"
           ],
           "standalone": true,
           "validated": true,
@@ -21169,6 +21981,56 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Assign The Cadedgeboundarypath to The Cadhatch After Hatch Creation to Define Boundary Dynamically",
+          "category": "create-hatched-rectangles-from-polylines",
+          "path": "create-hatched-rectangles-from-polylines/assign-the-cadedgeboundarypath-to-the-cadhatch-after-hatch-creation-to-define-boundary-dynamically.cs",
+          "file": "assign-the-cadedgeboundarypath-to-the-cadhatch-after-hatch-creation-to-define-boundary-dynamically.cs",
+          "api_area": "Cad.CadConsts",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "create",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "from",
+            "hatch",
+            "hatched",
+            "imageoptions",
+            "polylines",
+            "rectangles",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Assign The Cadedgeboundarypath to The Cadhatch After Hatch Creation to Define Boundary Dynamically in C#",
+            "Assign The Cadedgeboundarypath to The Cadhatch After Hatch Creation to Define Boundary Dynamically using Aspose.CAD for .NET",
+            "Assign The Cadedgeboundarypath to The Cadhatch After Hatch Creation to Define Boundary Dynamically Aspose.CAD .NET example",
+            "AI generated .net code to Assign The Cadedgeboundarypath to The Cadhatch After Hatch Creation to Define Boundary Dynamically",
+            "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Change The Hatch Color of Cadhatch to Blue and Observe Visual Update",
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/change-the-hatch-color-of-cadhatch-to-blue-and-observe-visual-update.cs",
@@ -21252,6 +22114,57 @@
             "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad.CadConsts"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Configure Cadhatch with Custom Angle and Color Then Assign Cadedgeboundarypath to Complete Definition",
+          "category": "create-hatched-rectangles-from-polylines",
+          "path": "create-hatched-rectangles-from-polylines/configure-cadhatch-with-custom-angle-and-color-then-assign-cadedgeboundarypath-to-complete-definition.cs",
+          "file": "configure-cadhatch-with-custom-angle-and-color-then-assign-cadedgeboundarypath-to-complete-definition.cs",
+          "api_area": "Cad",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "create",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "from",
+            "hatch",
+            "hatched",
+            "imageoptions",
+            "polylines",
+            "primitives",
+            "rectangles",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Configure Cadhatch with Custom Angle and Color Then Assign Cadedgeboundarypath to Complete Definition in C#",
+            "Configure Cadhatch with Custom Angle and Color Then Assign Cadedgeboundarypath to Complete Definition using Aspose.CAD for .NET",
+            "Configure Cadhatch with Custom Angle and Color Then Assign Cadedgeboundarypath to Complete Definition Aspose.CAD .NET example",
+            "AI generated .net code to Configure Cadhatch with Custom Angle and Color Then Assign Cadedgeboundarypath to Complete Definition",
+            "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "System.Linq",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.Primitives"
           ],
           "standalone": true,
           "validated": true,
@@ -21457,6 +22370,57 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Define The Hatch Pattern using Cadhatchpatterndata with A Custom Pattern Name",
+          "category": "create-hatched-rectangles-from-polylines",
+          "path": "create-hatched-rectangles-from-polylines/define-the-hatch-pattern-using-cadhatchpatterndata-with-a-custom-pattern-name.cs",
+          "file": "define-the-hatch-pattern-using-cadhatchpatterndata-with-a-custom-pattern-name.cs",
+          "api_area": "Cad",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "create",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "from",
+            "hatch",
+            "hatched",
+            "imageoptions",
+            "polylines",
+            "primitives",
+            "rectangles",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Define The Hatch Pattern using Cadhatchpatterndata with A Custom Pattern Name in C#",
+            "Define The Hatch Pattern using Cadhatchpatterndata with A Custom Pattern Name using Aspose.CAD for .NET",
+            "Define The Hatch Pattern using Cadhatchpatterndata with A Custom Pattern Name Aspose.CAD .NET example",
+            "AI generated .net code to Define The Hatch Pattern using Cadhatchpatterndata with A Custom Pattern Name",
+            "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad.CadConsts"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Export The Drawing After Applying Multiple Cadhatch Entities to Verify All Patterns Render Correctly",
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/export-the-drawing-after-applying-multiple-cadhatch-entities-to-verify-all-patterns-render-correctly.cs",
@@ -21649,6 +22613,57 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Iterate Through All Cadlwpolyline Entities in A Loaded Drawing and Apply A Cadhatch to Each",
+          "category": "create-hatched-rectangles-from-polylines",
+          "path": "create-hatched-rectangles-from-polylines/iterate-through-all-cadlwpolyline-entities-in-a-loaded-drawing-and-apply-a-cadhatch-to-each.cs",
+          "file": "iterate-through-all-cadlwpolyline-entities-in-a-loaded-drawing-and-apply-a-cadhatch-to-each.cs",
+          "api_area": "Cad",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "create",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "from",
+            "hatch",
+            "hatched",
+            "imageoptions",
+            "polylines",
+            "primitives",
+            "rectangles",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Iterate Through All Cadlwpolyline Entities in A Loaded Drawing and Apply A Cadhatch to Each in C#",
+            "Iterate Through All Cadlwpolyline Entities in A Loaded Drawing and Apply A Cadhatch to Each using Aspose.CAD for .NET",
+            "Iterate Through All Cadlwpolyline Entities in A Loaded Drawing and Apply A Cadhatch to Each Aspose.CAD .NET example",
+            "AI generated .net code to Iterate Through All Cadlwpolyline Entities in A Loaded Drawing and Apply A Cadhatch to Each",
+            "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "System.Linq",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.Primitives"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Load A CAD Drawing Iterate Entities and Apply A Cadhatch to Each Cadlwpolyline Found",
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/load-a-cad-drawing-iterate-entities-and-apply-a-cadhatch-to-each-cadlwpolyline-found.cs",
@@ -21826,6 +22841,57 @@
             "Aspose.CAD",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Replace An Existing Cadhatch in A Drawing with A New One using Different Cadhatchpatterndata",
+          "category": "create-hatched-rectangles-from-polylines",
+          "path": "create-hatched-rectangles-from-polylines/replace-an-existing-cadhatch-in-a-drawing-with-a-new-one-using-different-cadhatchpatterndata.cs",
+          "file": "replace-an-existing-cadhatch-in-a-drawing-with-a-new-one-using-different-cadhatchpatterndata.cs",
+          "api_area": "Cad.CadConsts",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "create",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "from",
+            "hatch",
+            "hatched",
+            "imageoptions",
+            "polylines",
+            "primitives",
+            "rectangles",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Replace An Existing Cadhatch in A Drawing with A New One using Different Cadhatchpatterndata in C#",
+            "Replace An Existing Cadhatch in A Drawing with A New One using Different Cadhatchpatterndata using Aspose.CAD for .NET",
+            "Replace An Existing Cadhatch in A Drawing with A New One using Different Cadhatchpatterndata Aspose.CAD .NET example",
+            "AI generated .net code to Replace An Existing Cadhatch in A Drawing with A New One using Different Cadhatchpatterndata",
+            "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.ImageOptions"
           ],
           "standalone": true,
           "validated": true,
@@ -22074,6 +23140,57 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Use Cadedgeboundarypath to Connect The Cadlwpolyline Edges and Define The Hatch Boundary",
+          "category": "create-hatched-rectangles-from-polylines",
+          "path": "create-hatched-rectangles-from-polylines/use-cadedgeboundarypath-to-connect-the-cadlwpolyline-edges-and-define-the-hatch-boundary.cs",
+          "file": "use-cadedgeboundarypath-to-connect-the-cadlwpolyline-edges-and-define-the-hatch-boundary.cs",
+          "api_area": "Cad.CadConsts",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "create",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "from",
+            "hatch",
+            "hatched",
+            "imageoptions",
+            "polylines",
+            "primitives",
+            "rectangles",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Use Cadedgeboundarypath to Connect The Cadlwpolyline Edges and Define The Hatch Boundary in C#",
+            "Use Cadedgeboundarypath to Connect The Cadlwpolyline Edges and Define The Hatch Boundary using Aspose.CAD for .NET",
+            "Use Cadedgeboundarypath to Connect The Cadlwpolyline Edges and Define The Hatch Boundary Aspose.CAD .NET example",
+            "AI generated .net code to Use Cadedgeboundarypath to Connect The Cadlwpolyline Edges and Define The Hatch Boundary",
+            "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Use Cadedgeboundarypath to Create Multiple Hatch Boundaries Within A Single Drawing for Varied Regions",
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/use-cadedgeboundarypath-to-create-multiple-hatch-boundaries-within-a-single-drawing-for-varied-regions.cs",
@@ -22174,54 +23291,54 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 26
+          "count": 33
         },
         {
           "name": "Aspose.CAD",
-          "count": 26
+          "count": 33
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 26
+          "count": 33
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 25
+          "count": 32
         },
         {
           "name": "System.IO",
-          "count": 25
+          "count": 32
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 23
+          "count": 30
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 19
+          "count": 26
         },
         {
           "name": "System.Linq",
-          "count": 18
+          "count": 22
         },
         {
           "name": "System.Collections.Generic",
-          "count": 13
+          "count": 20
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 20
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
           "count": 13
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-          "count": 7
+          "count": 11
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-          "count": 7
-        },
-        {
-          "name": "Aspose.CAD.Primitives",
           "count": 7
         },
         {
@@ -22240,14 +23357,14 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.Primitives",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-        "Aspose.CAD.Primitives"
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
       ]
     },
     {
       "name": "delete-entities-inside-a-rectangle",
-      "file_count": 29,
+      "file_count": 30,
       "files": [
         "access-block-object-entities-define-a-rectangle-and-delete-all-entities-that-intersect-the-rectangle.cs",
         "access-block-object-entities-locate-those-inside-a-defined-rectangle-and-delete-them-efficiently.cs",
@@ -22260,6 +23377,7 @@
         "create-a-hatch-filled-rectangle-polyline-and-use-it-to-identify-intersecting-entities.cs",
         "create-a-polyline-rectangle-apply-hatch-fill-and-delete-all-intersecting-entities.cs",
         "create-a-rectangle-as-a-polyline-fill-it-with-hatch-then-batch-remove-entities-inside-the-hatch.cs",
+        "create-a-rectangle-as-a-polyline-fill-with-hatch-and-remove-all-entities-that-lie-within-the-hatch.cs",
         "create-a-rectangle-defined-as-a-polyline-to-serve-as-the-deletion-region.cs",
         "delete-all-entities-that-fall-inside-that-layout-region-using-batch-removal.cs",
         "delete-qualifying-block-object-entities-in-bulk-after-rectangle-evaluation.cs",
@@ -22785,6 +23903,61 @@
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
+            "Aspose.CAD.FileFormats.Cad.CadConsts"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Create A Rectangle as A Polyline Fill with Hatch and Remove All Entities That Lie Within The Hatch",
+          "category": "delete-entities-inside-a-rectangle",
+          "path": "delete-entities-inside-a-rectangle/create-a-rectangle-as-a-polyline-fill-with-hatch-and-remove-all-entities-that-lie-within-the-hatch.cs",
+          "file": "create-a-rectangle-as-a-polyline-fill-with-hatch-and-remove-all-entities-that-lie-within-the-hatch.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "a",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "delete",
+            "dotnet8",
+            "entities",
+            "fileformats",
+            "hatch",
+            "imageoptions",
+            "inside",
+            "polylines",
+            "primitives",
+            "rectangle",
+            "standalone-example",
+            "vertices"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Create A Rectangle as A Polyline Fill with Hatch and Remove All Entities That Lie Within The Hatch in C#",
+            "Create A Rectangle as A Polyline Fill with Hatch and Remove All Entities That Lie Within The Hatch using Aspose.CAD for .NET",
+            "Create A Rectangle as A Polyline Fill with Hatch and Remove All Entities That Lie Within The Hatch Aspose.CAD .NET example",
+            "AI generated .net code to Create A Rectangle as A Polyline Fill with Hatch and Remove All Entities That Lie Within The Hatch",
+            "Aspose.CAD for .NET delete-entities-inside-a-rectangle example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "System.Linq",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives",
             "Aspose.CAD.FileFormats.Cad.CadConsts"
           ],
           "standalone": true,
@@ -23646,51 +24819,59 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 29
+          "count": 30
         },
         {
           "name": "System.IO",
-          "count": 29
+          "count": 30
         },
         {
           "name": "Aspose.CAD",
-          "count": 28
+          "count": 29
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 28
+          "count": 29
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 28
+          "count": 29
         },
         {
           "name": "System.Collections.Generic",
-          "count": 25
+          "count": 26
         },
         {
           "name": "System.Linq",
-          "count": 22
+          "count": 23
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-          "count": 17
+          "count": 18
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 16
+          "count": 17
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-          "count": 14
+          "count": 15
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 11
+          "count": 12
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
           "count": 8
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
         }
       ],
       "key_apis": [
@@ -23701,7 +24882,9 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.Primitives"
       ]
     },
     {
@@ -27742,13 +28925,14 @@
     },
     {
       "name": "export-cad-files",
-      "file_count": 28,
+      "file_count": 35,
       "files": [
         "access-block-object-entities-change-their-line-weight-and-export-the-updated-drawing.cs",
         "access-entities-inside-block-objects-change-their-layer-and-export-the-modified-drawing.cs",
         "access-entities-inside-block-objects-modify-their-text-content-and-export-the-result.cs",
         "adjust-hatch-origin-after-block-insertion-to-maintain-consistent-hatch-direction-across-drawing.cs",
         "adjust-hatch-origin-point-after-inserting-an-external-drawing-to-align-hatch-patterns.cs",
+        "configure-dxfoption-to-enable-binary-output-and-preserve-all-source-entities-during-export.cs",
         "configure-dxfoption-to-enable-normal-ascii-output-and-include-only-line-entities.cs",
         "export-cad-drawing-to-dxf-using-dxfoption-and-log-any-callback-warnings-for-audit.cs",
         "export-cad-drawing-to-dxf-while-preserving-block-hierarchy-for-later-editing.cs",
@@ -27758,6 +28942,7 @@
         "export-only-line-entities-from-a-cad-file-to-create-a-lightweight-dxf.cs",
         "export-only-text-entities-from-a-cad-file-to-generate-a-dxf-containing-annotations.cs",
         "export-the-loaded-drawing-to-dxf-using-dxfoption-with-binary-encoding.cs",
+        "export-the-loaded-drawing-to-dxf-using-dxfoption-with-normal-ascii-encoding.cs",
         "generate-a-3d-file-as-part-of-the-export-workflow-to-provide-a-volumetric-preview.cs",
         "generate-a-3d-file-during-export-and-embed-it-as-an-auxiliary-object-in-the-dxf.cs",
         "handle-export-errors-using-callbacks-to-log-detailed-error-information.cs",
@@ -27766,9 +28951,14 @@
         "insert-an-external-dxf-drawing-into-a-target-dxf-and-update-block-references-accordingly.cs",
         "insert-external-dwg-drawing-then-modify-its-block-entities-to-change-text-content-before-export.cs",
         "insert-external-dxf-drawing-then-modify-its-block-entities-to-change-layer-assignments-before-export.cs",
+        "load-a-cad-drawing-and-set-dxfoption-for-binary-dxf-output-before-saving.cs",
+        "load-a-cad-drawing-and-set-dxfoption-for-normal-ascii-dxf-output-before-saving.cs",
         "move-a-drawing-within-a-dxf-to-add-a-title-block-at-the-top-of-the-layout.cs",
         "move-a-drawing-within-dxf-to-align-title-block-with-predefined-grid-before-finalizing-export.cs",
         "preserve-exact-source-entities-during-dxf-export-to-maintain-drawing-fidelity.cs",
+        "save-dxf-file-with-binary-encoding-and-verify-reduced-file-size-compared-to-ascii-version.cs",
+        "save-dxf-file-with-binary-option-and-confirm-that-all-block-definitions-are-correctly-written.cs",
+        "save-dxf-file-with-normal-ascii-encoding-and-ensure-text-strings-remain-human-readable.cs",
         "save-dxf-file-with-normal-option-and-verify-that-line-colors-match-the-original-cad-drawing.cs",
         "work-with-fonts-during-dxf-export-to-replace-missing-glyphs-with-default-substitutes.cs",
         "work-with-layout-settings-to-set-paper-size-and-orientation-before-exporting.cs"
@@ -27975,6 +29165,46 @@
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Configure Dxfoption to Enable Binary Output and Preserve All Source Entities During Export",
+          "category": "export-cad-files",
+          "path": "export-cad-files/configure-dxfoption-to-enable-binary-output-and-preserve-all-source-entities-during-export.cs",
+          "file": "configure-dxfoption-to-enable-binary-output-and-preserve-all-source-entities-during-export.cs",
+          "api_area": "Cad.CadConsts",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "csharp",
+            "dotnet8",
+            "export",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Configure Dxfoption to Enable Binary Output and Preserve All Source Entities During Export in C#",
+            "Configure Dxfoption to Enable Binary Output and Preserve All Source Entities During Export using Aspose.CAD for .NET",
+            "Configure Dxfoption to Enable Binary Output and Preserve All Source Entities During Export Aspose.CAD .NET example",
+            "AI generated .net code to Configure Dxfoption to Enable Binary Output and Preserve All Source Entities During Export",
+            "Aspose.CAD for .NET export-cad-files example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad"
           ],
           "standalone": true,
           "validated": true,
@@ -28364,6 +29594,50 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Export The Loaded Drawing to DXF using Dxfoption with Normal Ascii Encoding",
+          "category": "export-cad-files",
+          "path": "export-cad-files/export-the-loaded-drawing-to-dxf-using-dxfoption-with-normal-ascii-encoding.cs",
+          "file": "export-the-loaded-drawing-to-dxf-using-dxfoption-with-normal-ascii-encoding.cs",
+          "api_area": "Cad.CadConsts",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "csharp",
+            "dotnet8",
+            "dxf",
+            "export",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "standalone-example"
+          ],
+          "formats": [
+            "dxf"
+          ],
+          "search_phrases": [
+            "Export The Loaded Drawing to DXF using Dxfoption with Normal Ascii Encoding in C#",
+            "Export The Loaded Drawing to DXF using Dxfoption with Normal Ascii Encoding using Aspose.CAD for .NET",
+            "Export The Loaded Drawing to DXF using Dxfoption with Normal Ascii Encoding Aspose.CAD .NET example",
+            "AI generated .net code to Export The Loaded Drawing to DXF using Dxfoption with Normal Ascii Encoding",
+            "Aspose.CAD for .NET export-cad-files example",
+            "Aspose.CAD DXF C# example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Generate A 3d File as Part of The Export Workflow to Provide A Volumetric Preview",
           "category": "export-cad-files",
           "path": "export-cad-files/generate-a-3d-file-as-part-of-the-export-workflow-to-provide-a-volumetric-preview.cs",
@@ -28706,6 +29980,94 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Load A CAD Drawing and Set Dxfoption for Binary DXF Output Before Saving",
+          "category": "export-cad-files",
+          "path": "export-cad-files/load-a-cad-drawing-and-set-dxfoption-for-binary-dxf-output-before-saving.cs",
+          "file": "load-a-cad-drawing-and-set-dxfoption-for-binary-dxf-output-before-saving.cs",
+          "api_area": "Cad.CadConsts",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "csharp",
+            "dotnet8",
+            "dxf",
+            "export",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "standalone-example"
+          ],
+          "formats": [
+            "dxf"
+          ],
+          "search_phrases": [
+            "Load A CAD Drawing and Set Dxfoption for Binary DXF Output Before Saving in C#",
+            "Load A CAD Drawing and Set Dxfoption for Binary DXF Output Before Saving using Aspose.CAD for .NET",
+            "Load A CAD Drawing and Set Dxfoption for Binary DXF Output Before Saving Aspose.CAD .NET example",
+            "AI generated .net code to Load A CAD Drawing and Set Dxfoption for Binary DXF Output Before Saving",
+            "Aspose.CAD for .NET export-cad-files example",
+            "Aspose.CAD DXF C# example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Load A CAD Drawing and Set Dxfoption for Normal Ascii DXF Output Before Saving",
+          "category": "export-cad-files",
+          "path": "export-cad-files/load-a-cad-drawing-and-set-dxfoption-for-normal-ascii-dxf-output-before-saving.cs",
+          "file": "load-a-cad-drawing-and-set-dxfoption-for-normal-ascii-dxf-output-before-saving.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "csharp",
+            "dotnet8",
+            "dxf",
+            "export",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "standalone-example"
+          ],
+          "formats": [
+            "dxf"
+          ],
+          "search_phrases": [
+            "Load A CAD Drawing and Set Dxfoption for Normal Ascii DXF Output Before Saving in C#",
+            "Load A CAD Drawing and Set Dxfoption for Normal Ascii DXF Output Before Saving using Aspose.CAD for .NET",
+            "Load A CAD Drawing and Set Dxfoption for Normal Ascii DXF Output Before Saving Aspose.CAD .NET example",
+            "AI generated .net code to Load A CAD Drawing and Set Dxfoption for Normal Ascii DXF Output Before Saving",
+            "Aspose.CAD for .NET export-cad-files example",
+            "Aspose.CAD DXF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadConsts"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Move A Drawing Within A DXF to Add A Title Block At The Top of The Layout",
           "category": "export-cad-files",
           "path": "export-cad-files/move-a-drawing-within-a-dxf-to-add-a-title-block-at-the-top-of-the-layout.cs",
@@ -28828,6 +30190,140 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Save DXF File with Binary Encoding and Verify Reduced File Size Compared to Ascii Version",
+          "category": "export-cad-files",
+          "path": "export-cad-files/save-dxf-file-with-binary-encoding-and-verify-reduced-file-size-compared-to-ascii-version.cs",
+          "file": "save-dxf-file-with-binary-encoding-and-verify-reduced-file-size-compared-to-ascii-version.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "csharp",
+            "dotnet8",
+            "dxf",
+            "export",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "standalone-example"
+          ],
+          "formats": [
+            "dxf"
+          ],
+          "search_phrases": [
+            "Save DXF File with Binary Encoding and Verify Reduced File Size Compared to Ascii Version in C#",
+            "Save DXF File with Binary Encoding and Verify Reduced File Size Compared to Ascii Version using Aspose.CAD for .NET",
+            "Save DXF File with Binary Encoding and Verify Reduced File Size Compared to Ascii Version Aspose.CAD .NET example",
+            "AI generated .net code to Save DXF File with Binary Encoding and Verify Reduced File Size Compared to Ascii Version",
+            "Aspose.CAD for .NET export-cad-files example",
+            "Aspose.CAD DXF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadConsts"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Save DXF File with Binary Option and Confirm That All Block Definitions Are Correctly Written",
+          "category": "export-cad-files",
+          "path": "export-cad-files/save-dxf-file-with-binary-option-and-confirm-that-all-block-definitions-are-correctly-written.cs",
+          "file": "save-dxf-file-with-binary-option-and-confirm-that-all-block-definitions-are-correctly-written.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "dxf",
+            "export",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "standalone-example"
+          ],
+          "formats": [
+            "dxf"
+          ],
+          "search_phrases": [
+            "Save DXF File with Binary Option and Confirm That All Block Definitions Are Correctly Written in C#",
+            "Save DXF File with Binary Option and Confirm That All Block Definitions Are Correctly Written using Aspose.CAD for .NET",
+            "Save DXF File with Binary Option and Confirm That All Block Definitions Are Correctly Written Aspose.CAD .NET example",
+            "AI generated .net code to Save DXF File with Binary Option and Confirm That All Block Definitions Are Correctly Written",
+            "Aspose.CAD for .NET export-cad-files example",
+            "Aspose.CAD DXF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Save DXF File with Normal Ascii Encoding and Ensure Text Strings Remain Human Readable",
+          "category": "export-cad-files",
+          "path": "export-cad-files/save-dxf-file-with-normal-ascii-encoding-and-ensure-text-strings-remain-human-readable.cs",
+          "file": "save-dxf-file-with-normal-ascii-encoding-and-ensure-text-strings-remain-human-readable.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "csharp",
+            "dotnet8",
+            "dxf",
+            "export",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "standalone-example"
+          ],
+          "formats": [
+            "dxf"
+          ],
+          "search_phrases": [
+            "Save DXF File with Normal Ascii Encoding and Ensure Text Strings Remain Human Readable in C#",
+            "Save DXF File with Normal Ascii Encoding and Ensure Text Strings Remain Human Readable using Aspose.CAD for .NET",
+            "Save DXF File with Normal Ascii Encoding and Ensure Text Strings Remain Human Readable Aspose.CAD .NET example",
+            "AI generated .net code to Save DXF File with Normal Ascii Encoding and Ensure Text Strings Remain Human Readable",
+            "Aspose.CAD for .NET export-cad-files example",
+            "Aspose.CAD DXF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadConsts"
           ],
           "standalone": true,
           "validated": true,
@@ -28961,35 +30457,35 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 28
+          "count": 35
         },
         {
           "name": "System.IO",
-          "count": 28
+          "count": 35
         },
         {
           "name": "Aspose.CAD",
-          "count": 28
+          "count": 35
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 27
+          "count": 34
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 21
+          "count": 28
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 15
+          "count": 16
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 11
         },
         {
           "name": "System.Linq",
           "count": 9
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 4
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
@@ -30231,7 +31727,7 @@
     },
     {
       "name": "export-full-layout-content",
-      "file_count": 39,
+      "file_count": 40,
       "files": [
         "access-references-to-external-files-linked-in-the-drawing-to-ensure-dependencies-are-resolved.cs",
         "adjust-quality-settings-for-text-hatches-and-arcs-within-rasterizationoptions.cs",
@@ -30257,6 +31753,7 @@
         "load-a-cad-drawing-using-the-drawing-api-before-any-export-operations.cs",
         "modify-hatch-origin-points-after-insertion-to-align-hatch-patterns-with-surrounding-geometry.cs",
         "modify-hatch-origin-points-after-insertion-to-ensure-hatch-alignment-with-existing-geometry.cs",
+        "modify-hatch-origins-after-insertion-to-match-the-coordinate-system-of-the-target-layout.cs",
         "move-inserted-drawing-elements-to-adjust-title-placement-for-proper-visual-hierarchy.cs",
         "move-inserted-elements-after-insertion-to-adjust-title-placement-and-improve-layout-readability.cs",
         "obtain-the-list-of-layers-with-getlayers-to-analyze-layer-visibility.cs",
@@ -31285,6 +32782,52 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Modify Hatch Origins After Insertion to Match The Coordinate System of The Target Layout",
+          "category": "export-full-layout-content",
+          "path": "export-full-layout-content/modify-hatch-origins-after-insertion-to-match-the-coordinate-system-of-the-target-layout.cs",
+          "file": "modify-hatch-origins-after-insertion-to-match-the-coordinate-system-of-the-target-layout.cs",
+          "api_area": "Cad",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "content",
+            "csharp",
+            "dotnet8",
+            "export",
+            "fileformats",
+            "full",
+            "hatch",
+            "imageoptions",
+            "layout",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Modify Hatch Origins After Insertion to Match The Coordinate System of The Target Layout in C#",
+            "Modify Hatch Origins After Insertion to Match The Coordinate System of The Target Layout using Aspose.CAD for .NET",
+            "Modify Hatch Origins After Insertion to Match The Coordinate System of The Target Layout Aspose.CAD .NET example",
+            "AI generated .net code to Modify Hatch Origins After Insertion to Match The Coordinate System of The Target Layout",
+            "Aspose.CAD for .NET export-full-layout-content example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad.CadConsts"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Move Inserted Drawing Elements to Adjust Title Placement for Proper Visual Hierarchy",
           "category": "export-full-layout-content",
           "path": "export-full-layout-content/move-inserted-drawing-elements-to-adjust-title-placement-for-proper-visual-hierarchy.cs",
@@ -31912,27 +33455,27 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 39
+          "count": 40
         },
         {
           "name": "Aspose.CAD",
-          "count": 39
+          "count": 40
         },
         {
           "name": "System.IO",
-          "count": 39
+          "count": 40
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 37
+          "count": 38
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 26
+          "count": 27
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 10
+          "count": 11
         },
         {
           "name": "System.Linq",
@@ -31944,15 +33487,15 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
           "count": 2
         },
         {
           "name": "System.Collections.Generic",
           "count": 2
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 1
         },
         {
           "name": "System.Reflection",
@@ -43303,7 +44846,7 @@
           "category": "get-external-file-references",
           "path": "get-external-file-references/skip-entities-where-xref-pathname-or-underlaypath-fields-are-empty-or-null.cs",
           "file": "skip-entities-where-xref-pathname-or-underlaypath-fields-are-empty-or-null.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
@@ -43329,10 +44872,9 @@
             "System",
             "System.IO",
             "System.Linq",
-            "System.Reflection",
             "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad"
           ],
           "standalone": true,
           "validated": true,
@@ -43486,11 +45028,11 @@
           "count": 4
         },
         {
-          "name": "System.Reflection",
-          "count": 2
+          "name": "System.Runtime.InteropServices",
+          "count": 1
         },
         {
-          "name": "System.Runtime.InteropServices",
+          "name": "System.Reflection",
           "count": 1
         },
         {
@@ -44984,8 +46526,10 @@
     },
     {
       "name": "optimize-hatch-origin-for-better-performance",
-      "file_count": 27,
+      "file_count": 29,
       "files": [
+        "assign-the-x-coordinate-of-the-new-point2d-to-cadhatchpatterndata-linebasepoint-x.cs",
+        "assign-the-y-coordinate-of-the-new-point2d-to-cadhatchpatterndata-linebasepoint-y.cs",
         "automate-the-process-to-adjust-hatch-origins-for-all-drawings-in-a-specified-directory.cs",
         "benchmark-rendering-performance-across-multiple-drawings-after-applying-hatch-origin-optimization-consistently.cs",
         "calculate-the-distance-between-the-current-hatch-origin-and-its-boundary-using-geometric-methods.cs",
@@ -45015,6 +46559,96 @@
         "validate-that-the-linebasepoint-x-and-linebasepoint-y-values-reflect-the-new-origin-coordinates-accurately.cs"
       ],
       "examples": [
+        {
+          "title": "Assign The X Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint X",
+          "category": "optimize-hatch-origin-for-better-performance",
+          "path": "optimize-hatch-origin-for-better-performance/assign-the-x-coordinate-of-the-new-point2d-to-cadhatchpatterndata-linebasepoint-x.cs",
+          "file": "assign-the-x-coordinate-of-the-new-point2d-to-cadhatchpatterndata-linebasepoint-x.cs",
+          "api_area": "Cad.CadObjects.Hatch",
+          "tags": [
+            "aspose-cad",
+            "better",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "for",
+            "hatch",
+            "optimize",
+            "origin",
+            "performance",
+            "primitives",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Assign The X Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint X in C#",
+            "Assign The X Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint X using Aspose.CAD for .NET",
+            "Assign The X Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint X Aspose.CAD .NET example",
+            "AI generated .net code to Assign The X Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint X",
+            "Aspose.CAD for .NET optimize-hatch-origin-for-better-performance example"
+          ],
+          "namespaces": [
+            "Aspose.CAD",
+            "System",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Assign The Y Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint Y",
+          "category": "optimize-hatch-origin-for-better-performance",
+          "path": "optimize-hatch-origin-for-better-performance/assign-the-y-coordinate-of-the-new-point2d-to-cadhatchpatterndata-linebasepoint-y.cs",
+          "file": "assign-the-y-coordinate-of-the-new-point2d-to-cadhatchpatterndata-linebasepoint-y.cs",
+          "api_area": "Cad.CadObjects",
+          "tags": [
+            "aspose-cad",
+            "better",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "for",
+            "hatch",
+            "imageoptions",
+            "optimize",
+            "origin",
+            "performance",
+            "primitives",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Assign The Y Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint Y in C#",
+            "Assign The Y Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint Y using Aspose.CAD for .NET",
+            "Assign The Y Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint Y Aspose.CAD .NET example",
+            "AI generated .net code to Assign The Y Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint Y",
+            "Aspose.CAD for .NET optimize-hatch-origin-for-better-performance example"
+          ],
+          "namespaces": [
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "System",
+            "System.IO",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
         {
           "title": "Automate The Process to Adjust Hatch Origins for All Drawings in A Specified Directory",
           "category": "optimize-hatch-origin-for-better-performance",
@@ -46233,44 +47867,44 @@
       ],
       "required_namespaces": [
         {
+          "name": "Aspose.CAD",
+          "count": 29
+        },
+        {
           "name": "System",
-          "count": 27
+          "count": 29
         },
         {
           "name": "System.IO",
-          "count": 27
-        },
-        {
-          "name": "Aspose.CAD",
-          "count": 27
+          "count": 28
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 25
+          "count": 26
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 23
+          "count": 24
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 16
+          "count": 17
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 11
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
           "count": 9
         },
         {
           "name": "System.Collections.Generic",
-          "count": 8
+          "count": 9
         },
         {
           "name": "System.Linq",
           "count": 8
-        },
-        {
-          "name": "Aspose.CAD.Primitives",
-          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
@@ -48755,6 +50389,7 @@
           ],
           "namespaces": [
             "System",
+            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
             "Aspose.CAD",
@@ -48963,7 +50598,7 @@
         },
         {
           "name": "System.Collections.Generic",
-          "count": 9
+          "count": 10
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
@@ -52178,7 +53813,7 @@
     },
     {
       "name": "work-with-3d-cad-files",
-      "file_count": 31,
+      "file_count": 32,
       "files": [
         "add-cadrasterizationoptions-with-default-settings-to-conversion-options-then-load-cad-file-and-export-to-obj.cs",
         "add-the-configured-cadrasterizationoptions-to-the-conversion-options-collection-before-loading-the-cad-file.cs",
@@ -52199,6 +53834,7 @@
         "export-multiple-cad-files-to-obj-using-the-same-cadrasterizationoptions-but-varying-observerpoint-coordinates-for-eac.cs",
         "export-the-cad-model-to-obj-twice-first-with-default-observerpoint-then-with-modified-coordinates-and-compare.cs",
         "export-the-loaded-cad-model-to-obj-format-ensuring-an-accompanying-mtl-material-file-is-generated.cs",
+        "for-each-observerpoint-assign-it-to-a-new-cadrasterizationoptions-and-add-to-separate-conversion-options-for-batch-ex.cs",
         "instantiate-an-observerpoint-with-desired-x-y-z-coordinates-for-the-3d-scene.cs",
         "load-the-source-cad-file-using-default-settings-while-conversion-options-include-the-cadrasterizationoptions.cs",
         "open-the-exported-obj-and-mtl-files-in-a-standard-3d-viewer-to-confirm-correct-rendering.cs",
@@ -52998,6 +54634,47 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "for Each Observerpoint Assign It to A New Cadrasterizationoptions and Add to Separate Conversion Options for Batch Ex",
+          "category": "work-with-3d-cad-files",
+          "path": "work-with-3d-cad-files/for-each-observerpoint-assign-it-to-a-new-cadrasterizationoptions-and-add-to-separate-conversion-options-for-batch-ex.cs",
+          "file": "for-each-observerpoint-assign-it-to-a-new-cadrasterizationoptions-and-add-to-separate-conversion-options-for-batch-ex.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "3d",
+            "aspose-cad",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "for Each Observerpoint Assign It to A New Cadrasterizationoptions and Add to Separate Conversion Options for Batch Ex in C#",
+            "for Each Observerpoint Assign It to A New Cadrasterizationoptions and Add to Separate Conversion Options for Batch Ex using Aspose.CAD for .NET",
+            "for Each Observerpoint Assign It to A New Cadrasterizationoptions and Add to Separate Conversion Options for Batch Ex Aspose.CAD .NET example",
+            "AI generated .net code to for Each Observerpoint Assign It to A New Cadrasterizationoptions and Add to Separate Conversion Options for Batch Ex",
+            "Aspose.CAD for .NET work-with-3d-cad-files example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Instantiate An Observerpoint with Desired X Y Z Coordinates for The 3d Scene",
           "category": "work-with-3d-cad-files",
           "path": "work-with-3d-cad-files/instantiate-an-observerpoint-with-desired-x-y-z-coordinates-for-the-3d-scene.cs",
@@ -53496,19 +55173,19 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 31
+          "count": 32
         },
         {
           "name": "System.IO",
-          "count": 31
+          "count": 32
         },
         {
           "name": "Aspose.CAD",
-          "count": 29
+          "count": 30
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 25
+          "count": 26
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
@@ -53516,11 +55193,11 @@
         },
         {
           "name": "Aspose.CAD.FileFormats",
-          "count": 7
+          "count": 8
         },
         {
           "name": "System.Collections.Generic",
-          "count": 3
+          "count": 4
         },
         {
           "name": "System.Linq",
@@ -53540,7 +55217,7 @@
     },
     {
       "name": "work-with-cad-and-bim-drawing-formats",
-      "file_count": 535,
+      "file_count": 544,
       "files": [
         "access-dgn-data-embedded-within-a-dwg-file-and-extract-it-to-a-separate-dgn-file.cs",
         "access-dgn-data-inside-a-dwg-file-and-modify-its-metadata-before-re-exporting.cs",
@@ -53563,6 +55240,7 @@
         "adjust-cad-properties-of-an-fbx-drawing-to-set-custom-units-before-exporting-to-pdf-format.cs",
         "adjust-cad-properties-of-an-fbx-drawing-to-set-custom-viewport-dimensions-before-exporting-to-pdf.cs",
         "adjust-cad-properties-of-an-fbx-drawing-to-set-default-line-weight-before-pdf-conversion.cs",
+        "adjust-cad-properties-of-an-fbx-drawing-to-set-default-view-orientation-before-exporting-to-pdf.cs",
         "adjust-cad-properties-of-an-ifc-drawing-to-set-background-color-before-exporting-to-png.cs",
         "adjust-cad-properties-of-an-ifc-drawing-to-set-background-transparency-before-exporting-to-png.cs",
         "adjust-cad-properties-of-an-ifc-drawing-to-set-custom-grid-spacing-before-png-export.cs",
@@ -53652,6 +55330,7 @@
         "convert-plt-files-to-pdf-by-loading-them-and-applying-cadrasterizationoption-with-pdfoptions.cs",
         "create-a-c-utility-that-loads-obj-files-applies-blind-watermarks-and-saves-pdfs-with-error-callbacks.cs",
         "create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-bmp-and-verifies-image-dimensions.cs",
+        "create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-jpeg-and-records-file-size.cs",
         "create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-pdf-and-logs-the-result.cs",
         "create-a-script-that-loads-a-dwfx-file-and-exports-it-to-pdf-without-additional-options.cs",
         "create-a-single-pdf-containing-multiple-dwg-layout-sizes-each-on-separate-pages.cs",
@@ -53776,6 +55455,8 @@
         "export-the-loaded-stl-drawing-to-png-using-configured-cadrasterizationoption-and-pngoptions.cs",
         "extract-layer-information-from-a-dwf-drawing-and-count-the-total-number-of-layers.cs",
         "extract-layer-information-from-a-dwf-drawing-and-list-each-layer-name.cs",
+        "extract-layer-information-from-a-dwf-drawing-and-log-each-layer-name-for-analysis.cs",
+        "extract-layer-information-from-a-dwf-drawing-to-obtain-detailed-structure.cs",
         "extract-ole-objects-embedded-in-a-dwg-drawing-and-list-their-types.cs",
         "find-all-hyperlinks-in-a-dwg-drawing-and-export-them-to-a-csv-file.cs",
         "handle-both-load-and-export-callbacks-simultaneously-for-a-collada-drawing-conversion-to-pdf.cs",
@@ -53885,6 +55566,7 @@
         "load-an-ifc-drawing-adjust-its-cad-properties-for-scaling-and-export-to-png-with-callbacks.cs",
         "load-an-ifc-drawing-apply-a-blind-watermark-adjust-cad-properties-and-export-to-png.cs",
         "load-an-ifc-drawing-apply-a-blind-watermark-and-export-to-png-while-logging-any-export-failures.cs",
+        "load-an-ifc-drawing-file-adjust-cad-properties-and-export-the-result-to-png-format.cs",
         "load-an-ifc-drawing-file-using-the-image-class-and-directly-save-it-as-png.cs",
         "load-an-ifc-drawing-handle-load-errors-via-callbacks-and-export-to-png-without-watermark.cs",
         "load-an-ifc-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-png.cs",
@@ -53919,6 +55601,7 @@
         "optimize-memory-usage-when-loading-large-svg-files-in-net.cs",
         "optimize-performance-of-exporting-stp-files-to-pdf-in-net.cs",
         "optimize-performance-of-exporting-svg-files-to-pdf-in-net.cs",
+        "outline-the-workflow-for-extracting-layer-information-from-a-dwf-drawing-for-further-use.cs",
         "outline-the-workflow-for-handling-export-errors-using-a-callback-during-dwf-conversion.cs",
         "outline-the-workflow-for-loading-a-dwf-drawing-and-converting-it-to-bmp-format.cs",
         "outline-the-workflow-for-loading-a-dwf-drawing-and-converting-it-to-jpeg-format.cs",
@@ -53928,6 +55611,7 @@
         "perform-batch-conversion-of-multiple-stl-files-to-png-using-a-loop-over-the-file-collection.cs",
         "perform-conversion-of-a-cad-drawing-to-jpeg-with-default-quality-settings.cs",
         "perform-conversion-of-a-cad-drawing-to-png-with-default-compression-level.cs",
+        "process-an-obj-file-and-extract-its-vertex-and-face-data-using-the-library.cs",
         "process-autocad-files-to-jpeg-in-c-by-loading-and-exporting-each-drawing.cs",
         "process-autocad-files-to-jpeg-while-handling-potential-export-errors-using-a-callback.cs",
         "process-autocad-files-to-pdf-in-c-by-loading-and-exporting-each-drawing.cs",
@@ -53941,6 +55625,7 @@
         "provide-an-example-of-batch-converting-dwf-files-to-jpeg-using-default-settings.cs",
         "provide-an-example-of-batch-converting-dwf-files-to-pdf-using-default-settings.cs",
         "provide-an-example-of-batch-converting-dwfx-files-to-pdf-using-default-settings.cs",
+        "provide-an-example-of-extracting-layer-information-from-a-dwf-drawing-and-displaying-it.cs",
         "provide-an-example-of-loading-a-dwf-drawing-using-the-image-class-and-saving-as-bmp.cs",
         "provide-an-example-of-loading-a-dwf-drawing-using-the-image-class-and-saving-as-jpeg.cs",
         "provide-an-example-of-loading-a-dwfx-file-and-exporting-it-to-pdf-with-a-callback.cs",
@@ -53985,6 +55670,7 @@
         "render-plt-files-to-jpeg-with-low-resolution-set-in-cadrasterizationoption-for-faster-processing.cs",
         "render-plt-files-to-pdf-using-cadrasterizationoption-and-pdfoptions-with-default-settings.cs",
         "render-plt-files-to-pdf-while-adjusting-cad-properties-and-background-color-using-cadrasterizationoption.cs",
+        "render-plt-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs",
         "render-plt-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs",
         "render-plt-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs",
         "render-plt-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs",
@@ -55067,6 +56753,50 @@
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Adjust CAD Properties of An Fbx Drawing to Set Default View Orientation Before Exporting to PDF",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/adjust-cad-properties-of-an-fbx-drawing-to-set-default-view-orientation-before-exporting-to-pdf.cs",
+          "file": "adjust-cad-properties-of-an-fbx-drawing-to-set-default-view-orientation-before-exporting-to-pdf.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "formats",
+            "imageoptions",
+            "pdf",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "pdf"
+          ],
+          "search_phrases": [
+            "Adjust CAD Properties of An Fbx Drawing to Set Default View Orientation Before Exporting to PDF in C#",
+            "Adjust CAD Properties of An Fbx Drawing to Set Default View Orientation Before Exporting to PDF using Aspose.CAD for .NET",
+            "Adjust CAD Properties of An Fbx Drawing to Set Default View Orientation Before Exporting to PDF Aspose.CAD .NET example",
+            "AI generated .net code to Adjust CAD Properties of An Fbx Drawing to Set Default View Orientation Before Exporting to PDF",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD PDF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions"
           ],
           "standalone": true,
           "validated": true,
@@ -59255,14 +60985,13 @@
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-bmp-and-verifies-image-dimensions.cs",
           "file": "create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-bmp-and-verifies-image-dimensions.cs",
-          "api_area": "Cad",
+          "api_area": "Dwf",
           "tags": [
             "and",
             "aspose-cad",
             "bim",
             "bmp",
             "cad",
-            "cadobjects",
             "csharp",
             "dotnet8",
             "drawing",
@@ -59288,13 +61017,62 @@
             "Aspose.CAD DWF C# example"
           ],
           "namespaces": [
+            "System.Linq",
             "System",
+            "System.IO",
             "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Dwf",
+            "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Create A Script That Loads A DWF Drawing Extracts Layers Exports to JPEG and Records File Size",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-jpeg-and-records-file-size.cs",
+          "file": "create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-jpeg-and-records-file-size.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "dwf",
+            "fileformats",
+            "formats",
+            "imageoptions",
+            "jpeg",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "dwf",
+            "jpeg"
+          ],
+          "search_phrases": [
+            "Create A Script That Loads A DWF Drawing Extracts Layers Exports to JPEG and Records File Size in C#",
+            "Create A Script That Loads A DWF Drawing Extracts Layers Exports to JPEG and Records File Size using Aspose.CAD for .NET",
+            "Create A Script That Loads A DWF Drawing Extracts Layers Exports to JPEG and Records File Size Aspose.CAD .NET example",
+            "AI generated .net code to Create A Script That Loads A DWF Drawing Extracts Layers Exports to JPEG and Records File Size",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD DWF C# example",
+            "Aspose.CAD JPEG C# example"
+          ],
+          "namespaces": [
+            "System",
             "System.IO",
             "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -59313,7 +61091,6 @@
             "aspose-cad",
             "bim",
             "cad",
-            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
@@ -59340,12 +61117,12 @@
             "Aspose.CAD PDF C# example"
           ],
           "namespaces": [
+            "System.Linq",
             "System",
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadTables"
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -60191,13 +61968,12 @@
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/demonstrate-extracting-layers-from-a-dwf-drawing-and-saving-the-list-to-a-text-file.cs",
           "file": "demonstrate-extracting-layers-from-a-dwf-drawing-and-saving-the-list-to-a-text-file.cs",
-          "api_area": "Cad",
+          "api_area": "Dwf",
           "tags": [
             "and",
             "aspose-cad",
             "bim",
             "cad",
-            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
@@ -60224,8 +62000,7 @@
             "System.Collections.Generic",
             "System.IO",
             "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadTables"
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -61082,13 +62857,12 @@
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/document-the-method-for-extracting-layer-information-from-a-dwf-drawing-for-analysis.cs",
           "file": "document-the-method-for-extracting-layer-information-from-a-dwf-drawing-for-analysis.cs",
-          "api_area": "Cad",
+          "api_area": "Dwf",
           "tags": [
             "and",
             "aspose-cad",
             "bim",
             "cad",
-            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
@@ -61114,8 +62888,7 @@
             "System",
             "System.IO",
             "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadTables"
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -61543,13 +63316,12 @@
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/ensure-that-extracting-layers-does-not-modify-the-original-dwf-file-during-processing.cs",
           "file": "ensure-that-extracting-layers-does-not-modify-the-original-dwf-file-during-processing.cs",
-          "api_area": "Cad",
+          "api_area": "Dwf",
           "tags": [
             "and",
             "aspose-cad",
             "bim",
             "cad",
-            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
@@ -61575,8 +63347,7 @@
             "System",
             "System.IO",
             "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadTables"
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -64992,13 +66763,12 @@
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/extract-layer-information-from-a-dwf-drawing-and-count-the-total-number-of-layers.cs",
           "file": "extract-layer-information-from-a-dwf-drawing-and-count-the-total-number-of-layers.cs",
-          "api_area": "Cad",
+          "api_area": "Dwf",
           "tags": [
             "and",
             "aspose-cad",
             "bim",
             "cad",
-            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
@@ -65024,8 +66794,7 @@
             "System",
             "System.IO",
             "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadTables"
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -65038,7 +66807,7 @@
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/extract-layer-information-from-a-dwf-drawing-and-list-each-layer-name.cs",
           "file": "extract-layer-information-from-a-dwf-drawing-and-list-each-layer-name.cs",
-          "api_area": "Cad",
+          "api_area": "Dwf",
           "tags": [
             "and",
             "aspose-cad",
@@ -65067,10 +66836,103 @@
           ],
           "namespaces": [
             "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Dwf"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Extract Layer Information from A DWF Drawing and Log Each Layer Name for Analysis",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/extract-layer-information-from-a-dwf-drawing-and-log-each-layer-name-for-analysis.cs",
+          "file": "extract-layer-information-from-a-dwf-drawing-and-log-each-layer-name-for-analysis.cs",
+          "api_area": "Dwf",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "dwf",
+            "fileformats",
+            "formats",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "dwf"
+          ],
+          "search_phrases": [
+            "Extract Layer Information from A DWF Drawing and Log Each Layer Name for Analysis in C#",
+            "Extract Layer Information from A DWF Drawing and Log Each Layer Name for Analysis using Aspose.CAD for .NET",
+            "Extract Layer Information from A DWF Drawing and Log Each Layer Name for Analysis Aspose.CAD .NET example",
+            "AI generated .net code to Extract Layer Information from A DWF Drawing and Log Each Layer Name for Analysis",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD DWF C# example"
+          ],
+          "namespaces": [
+            "System",
             "System.Collections.Generic",
             "System.IO",
             "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad"
+            "Aspose.CAD.FileFormats.Dwf"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Extract Layer Information from A DWF Drawing to Obtain Detailed Structure",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/extract-layer-information-from-a-dwf-drawing-to-obtain-detailed-structure.cs",
+          "file": "extract-layer-information-from-a-dwf-drawing-to-obtain-detailed-structure.cs",
+          "api_area": "Dwf",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "drawable",
+            "drawing",
+            "dwf",
+            "fileformats",
+            "formats",
+            "objects",
+            "standalone-example",
+            "whip",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "dwf"
+          ],
+          "search_phrases": [
+            "Extract Layer Information from A DWF Drawing to Obtain Detailed Structure in C#",
+            "Extract Layer Information from A DWF Drawing to Obtain Detailed Structure using Aspose.CAD for .NET",
+            "Extract Layer Information from A DWF Drawing to Obtain Detailed Structure Aspose.CAD .NET example",
+            "AI generated .net code to Extract Layer Information from A DWF Drawing to Obtain Detailed Structure",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD DWF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Dwf",
+            "Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable"
           ],
           "standalone": true,
           "validated": true,
@@ -68410,7 +70272,6 @@
             "bim",
             "bmp",
             "cad",
-            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
@@ -68438,10 +70299,10 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadTables"
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -68460,7 +70321,6 @@
             "aspose-cad",
             "bim",
             "cad",
-            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
@@ -68489,10 +70349,10 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadTables"
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -68511,7 +70371,6 @@
             "aspose-cad",
             "bim",
             "cad",
-            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
@@ -68519,8 +70378,10 @@
             "fileformats",
             "formats",
             "imageoptions",
+            "objects",
             "pdf",
             "standalone-example",
+            "whip",
             "with",
             "work"
           ],
@@ -68538,12 +70399,14 @@
             "Aspose.CAD PDF C# example"
           ],
           "namespaces": [
+            "System.Linq",
             "System",
             "System.IO",
+            "System.Collections.Generic",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadTables"
+            "Aspose.CAD.FileFormats.Dwf",
+            "Aspose.CAD.FileFormats.Dwf.Whip.Objects"
           ],
           "standalone": true,
           "validated": true,
@@ -70083,6 +71946,57 @@
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.WatermarkGuard"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Load An IFC Drawing File Adjust CAD Properties and Export The Result to PNG Format",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/load-an-ifc-drawing-file-adjust-cad-properties-and-export-the-result-to-png-format.cs",
+          "file": "load-an-ifc-drawing-file-adjust-cad-properties-and-export-the-result-to-png-format.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "cadtables",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "fileformats",
+            "formats",
+            "ifc",
+            "imageoptions",
+            "png",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "ifc",
+            "png"
+          ],
+          "search_phrases": [
+            "Load An IFC Drawing File Adjust CAD Properties and Export The Result to PNG Format in C#",
+            "Load An IFC Drawing File Adjust CAD Properties and Export The Result to PNG Format using Aspose.CAD for .NET",
+            "Load An IFC Drawing File Adjust CAD Properties and Export The Result to PNG Format Aspose.CAD .NET example",
+            "AI generated .net code to Load An IFC Drawing File Adjust CAD Properties and Export The Result to PNG Format",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD IFC C# example",
+            "Aspose.CAD PNG C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadTables"
           ],
           "standalone": true,
           "validated": true,
@@ -71641,6 +73555,50 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Outline The Workflow for Extracting Layer Information from A DWF Drawing for Further Use",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/outline-the-workflow-for-extracting-layer-information-from-a-dwf-drawing-for-further-use.cs",
+          "file": "outline-the-workflow-for-extracting-layer-information-from-a-dwf-drawing-for-further-use.cs",
+          "api_area": "Dwf",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "dwf",
+            "fileformats",
+            "formats",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "dwf"
+          ],
+          "search_phrases": [
+            "Outline The Workflow for Extracting Layer Information from A DWF Drawing for Further Use in C#",
+            "Outline The Workflow for Extracting Layer Information from A DWF Drawing for Further Use using Aspose.CAD for .NET",
+            "Outline The Workflow for Extracting Layer Information from A DWF Drawing for Further Use Aspose.CAD .NET example",
+            "AI generated .net code to Outline The Workflow for Extracting Layer Information from A DWF Drawing for Further Use",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD DWF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Dwf"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Outline The Workflow for Handling Export Errors using A Callback During DWF Conversion",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/outline-the-workflow-for-handling-export-errors-using-a-callback-during-dwf-conversion.cs",
@@ -72051,6 +74009,57 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Process An OBJ File and Extract Its Vertex and Face Data using The Library",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/process-an-obj-file-and-extract-its-vertex-and-face-data-using-the-library.cs",
+          "file": "process-an-obj-file-and-extract-its-vertex-and-face-data-using-the-library.cs",
+          "api_area": "Obj",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "elements",
+            "fileformats",
+            "formats",
+            "index",
+            "obj",
+            "standalone-example",
+            "vertexdata",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "obj"
+          ],
+          "search_phrases": [
+            "Process An OBJ File and Extract Its Vertex and Face Data using The Library in C#",
+            "Process An OBJ File and Extract Its Vertex and Face Data using The Library using Aspose.CAD for .NET",
+            "Process An OBJ File and Extract Its Vertex and Face Data using The Library Aspose.CAD .NET example",
+            "AI generated .net code to Process An OBJ File and Extract Its Vertex and Face Data using The Library",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD OBJ C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Obj",
+            "Aspose.CAD.FileFormats.Obj.Elements",
+            "Aspose.CAD.FileFormats.Obj.VertexData",
+            "Aspose.CAD.FileFormats.Obj.VertexData.Index"
           ],
           "standalone": true,
           "validated": true,
@@ -72641,6 +74650,51 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Provide An Example of Extracting Layer Information from A DWF Drawing and Displaying It",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/provide-an-example-of-extracting-layer-information-from-a-dwf-drawing-and-displaying-it.cs",
+          "file": "provide-an-example-of-extracting-layer-information-from-a-dwf-drawing-and-displaying-it.cs",
+          "api_area": "Dwf",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "dwf",
+            "fileformats",
+            "formats",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "dwf"
+          ],
+          "search_phrases": [
+            "Provide An Example of Extracting Layer Information from A DWF Drawing and Displaying It in C#",
+            "Provide An Example of Extracting Layer Information from A DWF Drawing and Displaying It using Aspose.CAD for .NET",
+            "Provide An Example of Extracting Layer Information from A DWF Drawing and Displaying It Aspose.CAD .NET example",
+            "AI generated .net code to Provide An Example of Extracting Layer Information from A DWF Drawing and Displaying It",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD DWF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.Collections.Generic",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -74694,6 +76748,55 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Render PLT Files to PDF While Adjusting CAD Properties and Setting Background Color to White",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/render-plt-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs",
+          "file": "render-plt-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "fileformats",
+            "formats",
+            "imageoptions",
+            "pdf",
+            "plt",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "pdf",
+            "plt"
+          ],
+          "search_phrases": [
+            "Render PLT Files to PDF While Adjusting CAD Properties and Setting Background Color to White in C#",
+            "Render PLT Files to PDF While Adjusting CAD Properties and Setting Background Color to White using Aspose.CAD for .NET",
+            "Render PLT Files to PDF While Adjusting CAD Properties and Setting Background Color to White Aspose.CAD .NET example",
+            "AI generated .net code to Render PLT Files to PDF While Adjusting CAD Properties and Setting Background Color to White",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD PDF C# example",
+            "Aspose.CAD PLT C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Render PLT Files to PDF While Applying Blind Watermark and Adjusting CAD Properties using Pdfoptions",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/render-plt-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs",
@@ -75919,7 +78022,7 @@
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/show-how-to-extract-layers-from-a-dwf-drawing-and-store-them-in-a-collection.cs",
           "file": "show-how-to-extract-layers-from-a-dwf-drawing-and-store-them-in-a-collection.cs",
-          "api_area": "Cad",
+          "api_area": "Dwf",
           "tags": [
             "and",
             "aspose-cad",
@@ -75951,7 +78054,7 @@
             "System.Collections.Generic",
             "System.IO",
             "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad"
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -78962,47 +81065,51 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 535
+          "count": 544
         },
         {
           "name": "System.IO",
-          "count": 534
+          "count": 543
         },
         {
           "name": "Aspose.CAD",
-          "count": 534
+          "count": 543
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 501
+          "count": 505
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 263
+          "count": 254
         },
         {
           "name": "Aspose.CAD.WatermarkGuard",
           "count": 43
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 36
+          "name": "System.Collections.Generic",
+          "count": 39
         },
         {
-          "name": "System.Collections.Generic",
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
           "count": 35
         },
         {
           "name": "System.Linq",
-          "count": 24
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 21
+          "count": 29
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
           "count": 18
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Dwf",
+          "count": 16
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 14
         },
         {
           "name": "System.Diagnostics",
@@ -79033,6 +81140,30 @@
           "count": 1
         },
         {
+          "name": "Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Dwf.Whip.Objects",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Obj",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Obj.Elements",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Obj.VertexData",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Obj.VertexData.Index",
+          "count": 1
+        },
+        {
           "name": "Aspose.CAD.Primitives",
           "count": 1
         },
@@ -79055,11 +81186,11 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.WatermarkGuard",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
-        "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.FileFormats.Dwf",
+        "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats.Ifc",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition"
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch"
       ]
     },
     {
@@ -84749,13 +86880,14 @@
     },
     {
       "name": "work-with-cad-text",
-      "file_count": 33,
+      "file_count": 35,
       "files": [
         "access-external-file-references-and-update-their-paths-after-moving-related-resources-to-a-new-directory.cs",
         "access-external-file-references-to-verify-linked-resources-are-available-and-correctly-resolved.cs",
         "adjust-arc-quality-options-to-medium-level-to-balance-performance-and-visual-fidelity-in-svg-output.cs",
         "adjust-quality-options-for-arcs-to-maintain-smooth-curvature-in-rasterized-output.cs",
         "adjust-textheight-for-a-group-of-text-entities-to-achieve-uniform-scaling-across-the-drawing.cs",
+        "adjust-the-position-of-an-existing-dwfwhiptext-element-by-modifying-its-coordinates.cs",
         "change-the-textheight-property-of-a-text-entity-to-increase-its-displayed-size.cs",
         "check-each-layer-for-existing-text-elements-before-adding-new-annotations-to-avoid-duplication.cs",
         "combine-adding-and-removing-text-elements-in-a-single-workflow-to-replace-outdated-annotations.cs",
@@ -84775,6 +86907,7 @@
         "list-layers-identify-those-containing-text-and-increase-textheight-for-those-specific-layers.cs",
         "load-a-cad-drawing-while-providing-callbacks-to-handle-import-errors-gracefully.cs",
         "remove-all-dwfwhiptext-elements-from-a-drawing-to-prepare-a-clean-version-for-review.cs",
+        "remove-an-unwanted-dwfwhiptext-object-from-the-drawing-using-the-removeelement-method.cs",
         "retrieve-layout-names-from-the-drawing-to-identify-available-sections-for-processing.cs",
         "retrieve-the-current-textheight-parameter-from-a-text-entity-to-assess-its-scaling.cs",
         "set-high-quality-options-for-text-hatches-and-arcs-simultaneously-to-produce-premium-rendering-output.cs",
@@ -84990,6 +87123,52 @@
             "Aspose.CAD",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Adjust The Position of An Existing Dwfwhiptext Element By Modifying Its Coordinates",
+          "category": "work-with-cad-text",
+          "path": "work-with-cad-text/adjust-the-position-of-an-existing-dwfwhiptext-element-by-modifying-its-coordinates.cs",
+          "file": "adjust-the-position-of-an-existing-dwfwhiptext-element-by-modifying-its-coordinates.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "drawable",
+            "dwf",
+            "fileformats",
+            "imageoptions",
+            "objects",
+            "standalone-example",
+            "text",
+            "whip",
+            "with",
+            "work"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Adjust The Position of An Existing Dwfwhiptext Element By Modifying Its Coordinates in C#",
+            "Adjust The Position of An Existing Dwfwhiptext Element By Modifying Its Coordinates using Aspose.CAD for .NET",
+            "Adjust The Position of An Existing Dwfwhiptext Element By Modifying Its Coordinates Aspose.CAD .NET example",
+            "AI generated .net code to Adjust The Position of An Existing Dwfwhiptext Element By Modifying Its Coordinates",
+            "Aspose.CAD for .NET work-with-cad-text example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Dwf",
+            "Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.Text",
+            "Aspose.CAD.FileFormats.Dwf.Whip.Objects"
           ],
           "standalone": true,
           "validated": true,
@@ -85766,6 +87945,50 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Remove An Unwanted Dwfwhiptext Object from The Drawing using The Removeelement Method",
+          "category": "work-with-cad-text",
+          "path": "work-with-cad-text/remove-an-unwanted-dwfwhiptext-object-from-the-drawing-using-the-removeelement-method.cs",
+          "file": "remove-an-unwanted-dwfwhiptext-object-from-the-drawing-using-the-removeelement-method.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "drawable",
+            "dwf",
+            "fileformats",
+            "imageoptions",
+            "objects",
+            "standalone-example",
+            "text",
+            "whip",
+            "with",
+            "work"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Remove An Unwanted Dwfwhiptext Object from The Drawing using The Removeelement Method in C#",
+            "Remove An Unwanted Dwfwhiptext Object from The Drawing using The Removeelement Method using Aspose.CAD for .NET",
+            "Remove An Unwanted Dwfwhiptext Object from The Drawing using The Removeelement Method Aspose.CAD .NET example",
+            "AI generated .net code to Remove An Unwanted Dwfwhiptext Object from The Drawing using The Removeelement Method",
+            "Aspose.CAD for .NET work-with-cad-text example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Dwf",
+            "Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.Text"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Retrieve Layout Names from The Drawing to Identify Available Sections for Processing",
           "category": "work-with-cad-text",
           "path": "work-with-cad-text/retrieve-layout-names-from-the-drawing-to-identify-available-sections-for-processing.cs",
@@ -86122,15 +88345,15 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 33
+          "count": 35
         },
         {
           "name": "System.IO",
-          "count": 33
+          "count": 35
         },
         {
           "name": "Aspose.CAD",
-          "count": 33
+          "count": 35
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
@@ -86138,11 +88361,15 @@
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 22
+          "count": 24
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
           "count": 15
+        },
+        {
+          "name": "System.Linq",
+          "count": 7
         },
         {
           "name": "System.Collections.Generic",
@@ -86153,16 +88380,24 @@
           "count": 6
         },
         {
-          "name": "System.Linq",
-          "count": 6
-        },
-        {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
           "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
           "count": 3
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Dwf",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.Text",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Dwf.Whip.Objects",
+          "count": 1
         },
         {
           "name": "Aspose.CAD.Primitives",
@@ -86177,7 +88412,9 @@
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
         "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.Primitives"
+        "Aspose.CAD.FileFormats.Dwf",
+        "Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.Text",
+        "Aspose.CAD.FileFormats.Dwf.Whip.Objects"
       ]
     }
   ]

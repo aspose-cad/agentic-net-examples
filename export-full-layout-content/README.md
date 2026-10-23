@@ -6,17 +6,17 @@ Build-validated Aspose.CAD for .NET examples for `export-full-layout-content`.
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 39
+- Examples: 40
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (39 example(s))
-- `Aspose.CAD` (39 example(s))
-- `System.IO` (39 example(s))
-- `Aspose.CAD.ImageOptions` (37 example(s))
-- `Aspose.CAD.FileFormats.Cad` (26 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (10 example(s))
+- `System` (40 example(s))
+- `Aspose.CAD` (40 example(s))
+- `System.IO` (40 example(s))
+- `Aspose.CAD.ImageOptions` (38 example(s))
+- `Aspose.CAD.FileFormats.Cad` (27 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (11 example(s))
 - `System.Linq` (6 example(s))
 - `Aspose.CAD.WatermarkGuard` (3 example(s))
 

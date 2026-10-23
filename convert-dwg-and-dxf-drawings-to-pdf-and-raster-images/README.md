@@ -6,22 +6,24 @@ Build-validated Aspose.CAD for .NET examples for `convert-dwg-and-dxf-drawings-t
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 27
+- Examples: 28
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (27 example(s))
-- `System.IO` (27 example(s))
-- `Aspose.CAD` (27 example(s))
-- `Aspose.CAD.ImageOptions` (27 example(s))
-- `Aspose.CAD.FileFormats.Cad` (14 example(s))
+- `System` (28 example(s))
+- `System.IO` (28 example(s))
+- `Aspose.CAD` (28 example(s))
+- `Aspose.CAD.ImageOptions` (28 example(s))
+- `Aspose.CAD.FileFormats.Cad` (15 example(s))
 - `System.Linq` (2 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (1 example(s))
+- `System.Collections.Generic` (1 example(s))
+- `Aspose.CAD.FileFormats.Dwf` (1 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
 |---------|----------|------|
+| [Apply Custom Background Color and Draw Color Then Export DWF Layers Individually as PNG Images](./apply-custom-background-color-and-draw-color-then-export-dwf-layers-individually-as-png-images.cs) | Cad | and, aspose-cad, cad, convert, csharp, dotnet8, drawings, dwf |
 | [Apply Scalemethod Shrinktofit to Automatically Adjust Dimensions When Converting DWG to TIFF](./apply-scalemethod-shrinktofit-to-automatically-adjust-dimensions-when-converting-dwg-to-tiff.cs) | ImageOptions | and, aspose-cad, cad, convert, csharp, dotnet8, drawings, dwg |
 | [Convert A DWG File to PDF While Preserving Default Model Layout and Automatic Scaling](./convert-a-dwg-file-to-pdf-while-preserving-default-model-layout-and-automatic-scaling.cs) | ImageOptions | and, aspose-cad, convert, csharp, dotnet8, drawings, dwg, dxf |
 | [Convert A DXF File to PNG By Loading It and Applying Default Cadrasterizationoptions](./convert-a-dxf-file-to-png-by-loading-it-and-applying-default-cadrasterizationoptions.cs) | ImageOptions | and, aspose-cad, convert, csharp, dotnet8, drawings, dwg, dxf |
@@ -36,7 +38,6 @@ Build-validated Aspose.CAD for .NET examples for `convert-dwg-and-dxf-drawings-t
 | [Load A CAD Drawing Omit Canvas Size and Catch Imagesaveexception to Handle The Error](./load-a-cad-drawing-omit-canvas-size-and-catch-imagesaveexception-to-handle-the-error.cs) | ImageOptions | and, aspose-cad, convert, csharp, dotnet8, drawings, dwg, dxf |
 | [Load A DWF File with Cadimage Load and Export It to PDF using Default Rasterization Settings](./load-a-dwf-file-with-cadimage-load-and-export-it-to-pdf-using-default-rasterization-settings.cs) | ImageOptions | and, aspose-cad, cad, convert, csharp, dotnet8, drawings, dwf |
 | [Load A DWG Drawing with Cadimage Load and Save It as A PDF using Image Save](./load-a-dwg-drawing-with-cadimage-load-and-save-it-as-a-pdf-using-image-save.cs) | Cad | and, aspose-cad, cad, convert, csharp, dotnet8, drawings, dwg |
-| [Load A DXF Drawing Define Explicit Canvas Dimensions and Save It as PDF with Default Scaling](./load-a-dxf-drawing-define-explicit-canvas-dimensions-and-save-it-as-pdf-with-default-scaling.cs) | ImageOptions | and, aspose-cad, convert, csharp, dotnet8, drawings, dwg, dxf |
 
 ## Agent Guidance
 - Prefer the local `AGENTS.md` instructions for category-specific rules.

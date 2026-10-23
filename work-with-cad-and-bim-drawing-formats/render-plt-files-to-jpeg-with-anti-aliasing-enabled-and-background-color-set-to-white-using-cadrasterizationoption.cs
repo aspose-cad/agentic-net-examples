@@ -25,7 +25,7 @@ class RenderPltToJpeg
                 Directory.CreateDirectory(outputDir);
             }
 
-            var cadImage = Image.Load(sourcePath) as CadImage;
+            var cadImage = Image.Load(sourcePath) ;
             if (cadImage == null)
             {
                 Console.Error.WriteLine("Failed to load the PLT file as a CAD image.");
