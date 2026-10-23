@@ -1,9 +1,9 @@
+using System.Linq;
 using System;
-using System.Collections.Generic;
 using System.IO;
+using System.Collections.Generic;
 using Aspose.CAD;
-using Aspose.CAD.FileFormats.Cad;
-using Aspose.CAD.FileFormats.Cad.CadObjects;
+using Aspose.CAD.FileFormats.Dwf;
 using Aspose.CAD.ImageOptions;
 
 class Program
@@ -22,19 +22,14 @@ class Program
             }
 
             // Load the DWF drawing
-            using (Image cadImage = Image.Load(sourcePath))
+            using (Image image = Image.Load(sourcePath))
             {
-                CadImage cad = (CadImage)cadImage;
+                DwfImage dwf = (DwfImage)image;
 
-                // Extract distinct layer names from the drawing
-                HashSet<string> layerNames = new HashSet<string>();
-                foreach (CadEntityBase entity in cad.Entities)
-                {
-                    if (!string.IsNullOrEmpty(entity.LayerName))
-                    {
-                        layerNames.Add(entity.LayerName);
-                    }
-                }
+                // Extract layer names from the drawing
+                // GetLayersNames may return List<string>; convert to array for rasterization options
+                List<string> layerNamesList = dwf.Layers.GetLayersNames();
+                string[] layerNames = layerNamesList?.ToArray() ?? Array.Empty<string>();
 
                 Console.WriteLine("Layers found in the drawing:");
                 foreach (string name in layerNames)
@@ -55,7 +50,8 @@ class Program
                         Right = 10,
                         Top = 10,
                         Bottom = 10
-                    }
+                    },
+                    Layers = layerNames // Export only the extracted layers
                 };
 
                 // Set up BMP export options
@@ -70,17 +66,18 @@ class Program
                 string bmpPath = Path.Combine(outputDir, "output.bmp");
 
                 // Save the drawing as BMP
-                cad.Save(bmpPath, bmpOptions);
+                dwf.Save(bmpPath, bmpOptions);
             }
 
             // Verify the dimensions of the exported BMP image
-            if (!File.Exists("output/output.bmp"))
+            string exportedBmpPath = Path.Combine("output", "output.bmp");
+            if (!File.Exists(exportedBmpPath))
             {
                 Console.Error.WriteLine("Exported BMP file not found.");
                 return;
             }
 
-            using (Image bmpImage = Image.Load("output/output.bmp"))
+            using (Image bmpImage = Image.Load(exportedBmpPath))
             {
                 Console.WriteLine($"Exported BMP dimensions: {bmpImage.Width} x {bmpImage.Height}");
             }

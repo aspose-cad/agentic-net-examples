@@ -18,17 +18,18 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - Files are standalone `.cs` examples stored directly in this folder.
 
 ## Required Namespaces
-- `using System;` (535 file(s))
-- `using System.IO;` (534 file(s))
-- `using Aspose.CAD;` (534 file(s))
-- `using Aspose.CAD.ImageOptions;` (501 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (263 file(s))
+- `using System;` (544 file(s))
+- `using System.IO;` (543 file(s))
+- `using Aspose.CAD;` (543 file(s))
+- `using Aspose.CAD.ImageOptions;` (505 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (254 file(s))
 - `using Aspose.CAD.WatermarkGuard;` (43 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (36 file(s))
-- `using System.Collections.Generic;` (35 file(s))
-- `using System.Linq;` (24 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadTables;` (21 file(s))
+- `using System.Collections.Generic;` (39 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (35 file(s))
+- `using System.Linq;` (29 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadConsts;` (18 file(s))
+- `using Aspose.CAD.FileFormats.Dwf;` (16 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadTables;` (14 file(s))
 - `using System.Diagnostics;` (11 file(s))
 - `using System.Threading.Tasks;` (8 file(s))
 - `using System.Threading;` (2 file(s))
@@ -36,6 +37,12 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (1 file(s))
 - `using System.Security.Cryptography;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Dwf.Whip.Objects;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Obj;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Obj.Elements;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Obj.VertexData;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Obj.VertexData.Index;` (1 file(s))
 - `using Aspose.CAD.Primitives;` (1 file(s))
 - `using Aspose.CAD.FileFormats;` (1 file(s))
 - `using System.Net.Http;` (1 file(s))
@@ -65,6 +72,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [adjust-cad-properties-of-an-fbx-drawing-to-set-custom-units-before-exporting-to-pdf-format.cs](./adjust-cad-properties-of-an-fbx-drawing-to-set-custom-units-before-exporting-to-pdf-format.cs) | adjust cad properties of an fbx drawing to set custom units before exporting to pdf format |
 | [adjust-cad-properties-of-an-fbx-drawing-to-set-custom-viewport-dimensions-before-exporting-to-pdf.cs](./adjust-cad-properties-of-an-fbx-drawing-to-set-custom-viewport-dimensions-before-exporting-to-pdf.cs) | adjust cad properties of an fbx drawing to set custom viewport dimensions before exporting to pdf |
 | [adjust-cad-properties-of-an-fbx-drawing-to-set-default-line-weight-before-pdf-conversion.cs](./adjust-cad-properties-of-an-fbx-drawing-to-set-default-line-weight-before-pdf-conversion.cs) | adjust cad properties of an fbx drawing to set default line weight before pdf conversion |
+| [adjust-cad-properties-of-an-fbx-drawing-to-set-default-view-orientation-before-exporting-to-pdf.cs](./adjust-cad-properties-of-an-fbx-drawing-to-set-default-view-orientation-before-exporting-to-pdf.cs) | adjust cad properties of an fbx drawing to set default view orientation before exporting to pdf |
 | [adjust-cad-properties-of-an-ifc-drawing-to-set-background-color-before-exporting-to-png.cs](./adjust-cad-properties-of-an-ifc-drawing-to-set-background-color-before-exporting-to-png.cs) | adjust cad properties of an ifc drawing to set background color before exporting to png |
 | [adjust-cad-properties-of-an-ifc-drawing-to-set-background-transparency-before-exporting-to-png.cs](./adjust-cad-properties-of-an-ifc-drawing-to-set-background-transparency-before-exporting-to-png.cs) | adjust cad properties of an ifc drawing to set background transparency before exporting to png |
 | [adjust-cad-properties-of-an-ifc-drawing-to-set-custom-grid-spacing-before-png-export.cs](./adjust-cad-properties-of-an-ifc-drawing-to-set-custom-grid-spacing-before-png-export.cs) | adjust cad properties of an ifc drawing to set custom grid spacing before png export |
@@ -154,6 +162,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [convert-plt-files-to-pdf-by-loading-them-and-applying-cadrasterizationoption-with-pdfoptions.cs](./convert-plt-files-to-pdf-by-loading-them-and-applying-cadrasterizationoption-with-pdfoptions.cs) | convert plt files to pdf by loading them and applying cadrasterizationoption with pdfoptions |
 | [create-a-c-utility-that-loads-obj-files-applies-blind-watermarks-and-saves-pdfs-with-error-callbacks.cs](./create-a-c-utility-that-loads-obj-files-applies-blind-watermarks-and-saves-pdfs-with-error-callbacks.cs) | create a c utility that loads obj files applies blind watermarks and saves pdfs with error callbacks |
 | [create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-bmp-and-verifies-image-dimensions.cs](./create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-bmp-and-verifies-image-dimensions.cs) | create a script that loads a dwf drawing extracts layers exports to bmp and verifies image dimensions |
+| [create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-jpeg-and-records-file-size.cs](./create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-jpeg-and-records-file-size.cs) | create a script that loads a dwf drawing extracts layers exports to jpeg and records file size |
 | [create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-pdf-and-logs-the-result.cs](./create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-pdf-and-logs-the-result.cs) | create a script that loads a dwf drawing extracts layers exports to pdf and logs the result |
 | [create-a-script-that-loads-a-dwfx-file-and-exports-it-to-pdf-without-additional-options.cs](./create-a-script-that-loads-a-dwfx-file-and-exports-it-to-pdf-without-additional-options.cs) | create a script that loads a dwfx file and exports it to pdf without additional options |
 | [create-a-single-pdf-containing-multiple-dwg-layout-sizes-each-on-separate-pages.cs](./create-a-single-pdf-containing-multiple-dwg-layout-sizes-each-on-separate-pages.cs) | create a single pdf containing multiple dwg layout sizes each on separate pages |
@@ -278,6 +287,8 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [export-the-loaded-stl-drawing-to-png-using-configured-cadrasterizationoption-and-pngoptions.cs](./export-the-loaded-stl-drawing-to-png-using-configured-cadrasterizationoption-and-pngoptions.cs) | export the loaded stl drawing to png using configured cadrasterizationoption and pngoptions |
 | [extract-layer-information-from-a-dwf-drawing-and-count-the-total-number-of-layers.cs](./extract-layer-information-from-a-dwf-drawing-and-count-the-total-number-of-layers.cs) | extract layer information from a dwf drawing and count the total number of layers |
 | [extract-layer-information-from-a-dwf-drawing-and-list-each-layer-name.cs](./extract-layer-information-from-a-dwf-drawing-and-list-each-layer-name.cs) | extract layer information from a dwf drawing and list each layer name |
+| [extract-layer-information-from-a-dwf-drawing-and-log-each-layer-name-for-analysis.cs](./extract-layer-information-from-a-dwf-drawing-and-log-each-layer-name-for-analysis.cs) | extract layer information from a dwf drawing and log each layer name for analysis |
+| [extract-layer-information-from-a-dwf-drawing-to-obtain-detailed-structure.cs](./extract-layer-information-from-a-dwf-drawing-to-obtain-detailed-structure.cs) | extract layer information from a dwf drawing to obtain detailed structure |
 | [extract-ole-objects-embedded-in-a-dwg-drawing-and-list-their-types.cs](./extract-ole-objects-embedded-in-a-dwg-drawing-and-list-their-types.cs) | extract ole objects embedded in a dwg drawing and list their types |
 | [find-all-hyperlinks-in-a-dwg-drawing-and-export-them-to-a-csv-file.cs](./find-all-hyperlinks-in-a-dwg-drawing-and-export-them-to-a-csv-file.cs) | find all hyperlinks in a dwg drawing and export them to a csv file |
 | [handle-both-load-and-export-callbacks-simultaneously-for-a-collada-drawing-conversion-to-pdf.cs](./handle-both-load-and-export-callbacks-simultaneously-for-a-collada-drawing-conversion-to-pdf.cs) | handle both load and export callbacks simultaneously for a collada drawing conversion to pdf |
@@ -387,6 +398,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [load-an-ifc-drawing-adjust-its-cad-properties-for-scaling-and-export-to-png-with-callbacks.cs](./load-an-ifc-drawing-adjust-its-cad-properties-for-scaling-and-export-to-png-with-callbacks.cs) | load an ifc drawing adjust its cad properties for scaling and export to png with callbacks |
 | [load-an-ifc-drawing-apply-a-blind-watermark-adjust-cad-properties-and-export-to-png.cs](./load-an-ifc-drawing-apply-a-blind-watermark-adjust-cad-properties-and-export-to-png.cs) | load an ifc drawing apply a blind watermark adjust cad properties and export to png |
 | [load-an-ifc-drawing-apply-a-blind-watermark-and-export-to-png-while-logging-any-export-failures.cs](./load-an-ifc-drawing-apply-a-blind-watermark-and-export-to-png-while-logging-any-export-failures.cs) | load an ifc drawing apply a blind watermark and export to png while logging any export failures |
+| [load-an-ifc-drawing-file-adjust-cad-properties-and-export-the-result-to-png-format.cs](./load-an-ifc-drawing-file-adjust-cad-properties-and-export-the-result-to-png-format.cs) | load an ifc drawing file adjust cad properties and export the result to png format |
 | [load-an-ifc-drawing-file-using-the-image-class-and-directly-save-it-as-png.cs](./load-an-ifc-drawing-file-using-the-image-class-and-directly-save-it-as-png.cs) | load an ifc drawing file using the image class and directly save it as png |
 | [load-an-ifc-drawing-handle-load-errors-via-callbacks-and-export-to-png-without-watermark.cs](./load-an-ifc-drawing-handle-load-errors-via-callbacks-and-export-to-png-without-watermark.cs) | load an ifc drawing handle load errors via callbacks and export to png without watermark |
 | [load-an-ifc-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-png.cs](./load-an-ifc-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-png.cs) | load an ifc drawing using the image class apply a blind watermark then export to png |
@@ -421,6 +433,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [optimize-memory-usage-when-loading-large-svg-files-in-net.cs](./optimize-memory-usage-when-loading-large-svg-files-in-net.cs) | optimize memory usage when loading large svg files in net |
 | [optimize-performance-of-exporting-stp-files-to-pdf-in-net.cs](./optimize-performance-of-exporting-stp-files-to-pdf-in-net.cs) | optimize performance of exporting stp files to pdf in net |
 | [optimize-performance-of-exporting-svg-files-to-pdf-in-net.cs](./optimize-performance-of-exporting-svg-files-to-pdf-in-net.cs) | optimize performance of exporting svg files to pdf in net |
+| [outline-the-workflow-for-extracting-layer-information-from-a-dwf-drawing-for-further-use.cs](./outline-the-workflow-for-extracting-layer-information-from-a-dwf-drawing-for-further-use.cs) | outline the workflow for extracting layer information from a dwf drawing for further use |
 | [outline-the-workflow-for-handling-export-errors-using-a-callback-during-dwf-conversion.cs](./outline-the-workflow-for-handling-export-errors-using-a-callback-during-dwf-conversion.cs) | outline the workflow for handling export errors using a callback during dwf conversion |
 | [outline-the-workflow-for-loading-a-dwf-drawing-and-converting-it-to-bmp-format.cs](./outline-the-workflow-for-loading-a-dwf-drawing-and-converting-it-to-bmp-format.cs) | outline the workflow for loading a dwf drawing and converting it to bmp format |
 | [outline-the-workflow-for-loading-a-dwf-drawing-and-converting-it-to-jpeg-format.cs](./outline-the-workflow-for-loading-a-dwf-drawing-and-converting-it-to-jpeg-format.cs) | outline the workflow for loading a dwf drawing and converting it to jpeg format |
@@ -430,6 +443,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [perform-batch-conversion-of-multiple-stl-files-to-png-using-a-loop-over-the-file-collection.cs](./perform-batch-conversion-of-multiple-stl-files-to-png-using-a-loop-over-the-file-collection.cs) | perform batch conversion of multiple stl files to png using a loop over the file collection |
 | [perform-conversion-of-a-cad-drawing-to-jpeg-with-default-quality-settings.cs](./perform-conversion-of-a-cad-drawing-to-jpeg-with-default-quality-settings.cs) | perform conversion of a cad drawing to jpeg with default quality settings |
 | [perform-conversion-of-a-cad-drawing-to-png-with-default-compression-level.cs](./perform-conversion-of-a-cad-drawing-to-png-with-default-compression-level.cs) | perform conversion of a cad drawing to png with default compression level |
+| [process-an-obj-file-and-extract-its-vertex-and-face-data-using-the-library.cs](./process-an-obj-file-and-extract-its-vertex-and-face-data-using-the-library.cs) | process an obj file and extract its vertex and face data using the library |
 | [process-autocad-files-to-jpeg-in-c-by-loading-and-exporting-each-drawing.cs](./process-autocad-files-to-jpeg-in-c-by-loading-and-exporting-each-drawing.cs) | process autocad files to jpeg in c by loading and exporting each drawing |
 | [process-autocad-files-to-jpeg-while-handling-potential-export-errors-using-a-callback.cs](./process-autocad-files-to-jpeg-while-handling-potential-export-errors-using-a-callback.cs) | process autocad files to jpeg while handling potential export errors using a callback |
 | [process-autocad-files-to-pdf-in-c-by-loading-and-exporting-each-drawing.cs](./process-autocad-files-to-pdf-in-c-by-loading-and-exporting-each-drawing.cs) | process autocad files to pdf in c by loading and exporting each drawing |
@@ -443,6 +457,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [provide-an-example-of-batch-converting-dwf-files-to-jpeg-using-default-settings.cs](./provide-an-example-of-batch-converting-dwf-files-to-jpeg-using-default-settings.cs) | provide an example of batch converting dwf files to jpeg using default settings |
 | [provide-an-example-of-batch-converting-dwf-files-to-pdf-using-default-settings.cs](./provide-an-example-of-batch-converting-dwf-files-to-pdf-using-default-settings.cs) | provide an example of batch converting dwf files to pdf using default settings |
 | [provide-an-example-of-batch-converting-dwfx-files-to-pdf-using-default-settings.cs](./provide-an-example-of-batch-converting-dwfx-files-to-pdf-using-default-settings.cs) | provide an example of batch converting dwfx files to pdf using default settings |
+| [provide-an-example-of-extracting-layer-information-from-a-dwf-drawing-and-displaying-it.cs](./provide-an-example-of-extracting-layer-information-from-a-dwf-drawing-and-displaying-it.cs) | provide an example of extracting layer information from a dwf drawing and displaying it |
 | [provide-an-example-of-loading-a-dwf-drawing-using-the-image-class-and-saving-as-bmp.cs](./provide-an-example-of-loading-a-dwf-drawing-using-the-image-class-and-saving-as-bmp.cs) | provide an example of loading a dwf drawing using the image class and saving as bmp |
 | [provide-an-example-of-loading-a-dwf-drawing-using-the-image-class-and-saving-as-jpeg.cs](./provide-an-example-of-loading-a-dwf-drawing-using-the-image-class-and-saving-as-jpeg.cs) | provide an example of loading a dwf drawing using the image class and saving as jpeg |
 | [provide-an-example-of-loading-a-dwfx-file-and-exporting-it-to-pdf-with-a-callback.cs](./provide-an-example-of-loading-a-dwfx-file-and-exporting-it-to-pdf-with-a-callback.cs) | provide an example of loading a dwfx file and exporting it to pdf with a callback |
@@ -487,6 +502,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [render-plt-files-to-jpeg-with-low-resolution-set-in-cadrasterizationoption-for-faster-processing.cs](./render-plt-files-to-jpeg-with-low-resolution-set-in-cadrasterizationoption-for-faster-processing.cs) | render plt files to jpeg with low resolution set in cadrasterizationoption for faster processing |
 | [render-plt-files-to-pdf-using-cadrasterizationoption-and-pdfoptions-with-default-settings.cs](./render-plt-files-to-pdf-using-cadrasterizationoption-and-pdfoptions-with-default-settings.cs) | render plt files to pdf using cadrasterizationoption and pdfoptions with default settings |
 | [render-plt-files-to-pdf-while-adjusting-cad-properties-and-background-color-using-cadrasterizationoption.cs](./render-plt-files-to-pdf-while-adjusting-cad-properties-and-background-color-using-cadrasterizationoption.cs) | render plt files to pdf while adjusting cad properties and background color using cadrasterizationoption |
+| [render-plt-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs](./render-plt-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs) | render plt files to pdf while adjusting cad properties and setting background color to white |
 | [render-plt-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs](./render-plt-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs) | render plt files to pdf while applying blind watermark and adjusting cad properties using pdfoptions |
 | [render-plt-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs](./render-plt-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs) | render plt files to pdf while applying blind watermark and setting background color to black |
 | [render-plt-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs](./render-plt-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs) | render plt files to pdf while applying blind watermark using pdfoptions and cadrasterizationoption |
@@ -581,7 +597,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [write-code-that-loads-a-dxb-drawing-modifies-its-cad-properties-and-confirms-successful-export-via-callback.cs](./write-code-that-loads-a-dxb-drawing-modifies-its-cad-properties-and-confirms-successful-export-via-callback.cs) | write code that loads a dxb drawing modifies its cad properties and confirms successful export via callback |
 
 ## Category Statistics
-- Total examples: 535
+- Total examples: 544
 
 ## General Tips
 - Follow root boundaries and testing guide.
@@ -590,5 +606,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-22 | `cad-catalog-2026-10-22` | [examples/batch-cad-catalog-2026-10-22](https://github.com/aspose-cad/agentic-net-examples/tree/examples/batch-cad-catalog-2026-10-22) |
+| 2026-10-23 | `cad-withheld-repairs-2026-10-23` | examples/repair-withheld-cad-2026-10-23 |
 <!-- AUTOGENERATED:END -->

@@ -6,18 +6,18 @@ Build-validated Aspose.CAD for .NET examples for `add-margins-to-cad-drawings`.
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 27
+- Examples: 28
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (27 example(s))
-- `System.IO` (27 example(s))
-- `Aspose.CAD` (25 example(s))
+- `System` (28 example(s))
+- `System.IO` (28 example(s))
+- `Aspose.CAD` (26 example(s))
 - `Aspose.CAD.ImageOptions` (23 example(s))
-- `Aspose.CAD.FileFormats.Cad` (10 example(s))
-- `System.Collections.Generic` (5 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (4 example(s))
+- `Aspose.CAD.FileFormats.Cad` (11 example(s))
+- `System.Collections.Generic` (6 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (5 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadTables` (3 example(s))
 
 ## Representative Examples

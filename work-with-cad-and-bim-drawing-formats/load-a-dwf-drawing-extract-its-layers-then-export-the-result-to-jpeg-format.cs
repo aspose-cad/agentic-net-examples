@@ -1,9 +1,9 @@
 using System;
 using System.IO;
+using System.Linq;
 using Aspose.CAD;
 using Aspose.CAD.ImageOptions;
-using Aspose.CAD.FileFormats.Cad;
-using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Dwf;
 
 class Program
 {
@@ -28,24 +28,20 @@ class Program
 
             using (Image image = Image.Load(inputPath))
             {
-                CadImage cadImage = (CadImage)image;
+                DwfImage dwf = (DwfImage)image;
 
-                // Extract and display layer information
-                foreach (CadLayerTable layer in cadImage.Layers)
+                // Extract and display layer names
+                string[] layerNames = dwf.Layers.GetLayersNames().ToArray();
+                Console.WriteLine("Layers in DWF:");
+                foreach (string name in layerNames)
                 {
-                    bool isOff = layer.ColorId < 0;
-                    bool isFrozen = (layer.Flags & 1) != 0;
-                    bool isLocked = ((layer.Flags >> 4) & 1) != 0;
-
-                    Console.WriteLine($"Layer: {layer.Name}, ColorId: {layer.ColorId}, Off: {isOff}, Frozen: {isFrozen}, Locked: {isLocked}");
+                    Console.WriteLine($"- {name}");
                 }
 
-                // Set rasterization options for JPEG export
+                // Set rasterization options for JPEG export, including all layers
                 CadRasterizationOptions rasterOptions = new CadRasterizationOptions
                 {
-                    // Use default page size and layout; adjust if needed
-                    // Layouts = null,
-                    // Layers = null
+                    Layers = layerNames
                 };
 
                 JpegOptions jpegOptions = new JpegOptions
@@ -54,7 +50,7 @@ class Program
                 };
 
                 // Save the drawing as JPEG
-                image.Save(outputPath, jpegOptions);
+                dwf.Save(outputPath, jpegOptions);
                 Console.WriteLine($"Exported JPEG saved to: {outputPath}");
             }
         }

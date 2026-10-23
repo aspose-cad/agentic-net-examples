@@ -6,19 +6,19 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-and-bim-drawing-
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 535
+- Examples: 544
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (535 example(s))
-- `System.IO` (534 example(s))
-- `Aspose.CAD` (534 example(s))
-- `Aspose.CAD.ImageOptions` (501 example(s))
-- `Aspose.CAD.FileFormats.Cad` (263 example(s))
+- `System` (544 example(s))
+- `System.IO` (543 example(s))
+- `Aspose.CAD` (543 example(s))
+- `Aspose.CAD.ImageOptions` (505 example(s))
+- `Aspose.CAD.FileFormats.Cad` (254 example(s))
 - `Aspose.CAD.WatermarkGuard` (43 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (36 example(s))
-- `System.Collections.Generic` (35 example(s))
+- `System.Collections.Generic` (39 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (35 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |

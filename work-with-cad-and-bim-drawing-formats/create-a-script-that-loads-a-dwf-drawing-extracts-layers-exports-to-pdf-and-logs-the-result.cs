@@ -1,9 +1,9 @@
+using System.Linq;
 using System;
 using System.IO;
 using Aspose.CAD;
 using Aspose.CAD.ImageOptions;
-using Aspose.CAD.FileFormats.Cad;
-using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Dwf;
 
 class Program
 {
@@ -30,26 +30,38 @@ class Program
         try
         {
             // Load the DWF drawing
-            using (Image image = Image.Load(sourcePath))
+            Image image = Image.Load(sourcePath);
+            DwfImage dwf = image as DwfImage;
+            if (dwf == null)
             {
-                // Cast to CadImage to access CAD-specific members
-                CadImage cadImage = (CadImage)image;
-
-                // Extract and log layer names
-                Console.WriteLine("Layers in the drawing:");
-                foreach (CadLayerTable layerObj in cadImage.Layers)
-                {
-                    if (layerObj is CadLayerTable layer)
-                    {
-                        Console.WriteLine("- " + layer.Name);
-                    }
-                }
-
-                // Export the drawing to PDF
-                PdfOptions pdfOptions = new PdfOptions();
-                cadImage.Save(outputPath, pdfOptions);
-                Console.WriteLine($"Drawing exported to PDF successfully: {outputPath}");
+                Console.Error.WriteLine("Failed to load DWF image.");
+                return;
             }
+
+            // Extract and log layer names
+            var layerNames = dwf.Layers.GetLayersNames();
+            Console.WriteLine("Layers in the drawing:");
+            foreach (var name in layerNames)
+            {
+                Console.WriteLine("- " + name);
+            }
+
+            // Prepare PDF export options
+            var rasterOptions = new CadRasterizationOptions
+            {
+                PageWidth = dwf.Width,
+                PageHeight = dwf.Height,
+                Layers = layerNames.ToArray()
+            };
+
+            var pdfOptions = new PdfOptions
+            {
+                VectorRasterizationOptions = rasterOptions
+            };
+
+            // Export the drawing to PDF
+            dwf.Save(outputPath, pdfOptions);
+            Console.WriteLine($"Drawing exported to PDF successfully: {outputPath}");
         }
         catch (Exception ex)
         {

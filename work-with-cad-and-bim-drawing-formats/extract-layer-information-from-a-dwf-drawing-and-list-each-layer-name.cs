@@ -1,8 +1,7 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using Aspose.CAD;
-using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Dwf;
 
 class Program
 {
@@ -20,21 +19,14 @@ class Program
 
             using (Image image = Image.Load(inputPath))
             {
-                if (image is not CadImage cadImage)
+                if (image is not DwfImage dwfImage)
                 {
-                    Console.Error.WriteLine("The loaded file is not a CAD image.");
+                    Console.Error.WriteLine("The loaded file is not a DWF image.");
                     return;
                 }
 
-                var layerNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-
-                foreach (var entity in cadImage.Entities)
-                {
-                    if (entity?.LayerName != null)
-                    {
-                        layerNames.Add(entity.LayerName);
-                    }
-                }
+                // Retrieve layer names using the DWF model
+                var layerNames = dwfImage.Layers.GetLayersNames();
 
                 foreach (var name in layerNames)
                 {

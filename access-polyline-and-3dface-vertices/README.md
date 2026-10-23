@@ -6,19 +6,19 @@ Build-validated Aspose.CAD for .NET examples for `access-polyline-and-3dface-ver
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 26
+- Examples: 29
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (26 example(s))
-- `System.IO` (26 example(s))
-- `Aspose.CAD` (23 example(s))
-- `Aspose.CAD.FileFormats.Cad` (22 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (20 example(s))
-- `System.Collections.Generic` (11 example(s))
-- `Aspose.CAD.ImageOptions` (6 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (6 example(s))
+- `System` (29 example(s))
+- `System.IO` (29 example(s))
+- `Aspose.CAD` (26 example(s))
+- `Aspose.CAD.FileFormats.Cad` (25 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (23 example(s))
+- `System.Collections.Generic` (13 example(s))
+- `Aspose.CAD.ImageOptions` (7 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects.Polylines` (6 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |

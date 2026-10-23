@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Aspose.CAD;
-using Aspose.CAD.FileFormats.Cad;
-using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Dwf;
 
 class Program
 {
@@ -28,19 +27,18 @@ class Program
         {
             using (Image image = Image.Load(inputPath))
             {
-                CadImage cadImage = (CadImage)image;
-
-                var layerNames = new List<string>();
-
-                foreach (CadLayerTable layerObj in cadImage.Layers)
+                DwfImage dwfImage = image as DwfImage;
+                if (dwfImage == null)
                 {
-                    if (layerObj is CadLayerTable layer)
-                    {
-                        layerNames.Add(layer.Name);
-                    }
+                    Console.Error.WriteLine("The provided file is not a DWF drawing.");
+                    return;
                 }
 
+                // Extract layer names using the DWF model
+                List<string> layerNames = dwfImage.Layers.GetLayersNames();
+
                 File.WriteAllLines(outputPath, layerNames);
+                Console.WriteLine($"Extracted {layerNames.Count} layer(s) to '{outputPath}'.");
             }
         }
         catch (Exception ex)

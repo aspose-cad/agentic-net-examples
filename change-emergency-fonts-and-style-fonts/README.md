@@ -6,15 +6,15 @@ Build-validated Aspose.CAD for .NET examples for `change-emergency-fonts-and-sty
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 26
+- Examples: 27
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `Aspose.CAD` (26 example(s))
-- `System` (26 example(s))
-- `System.IO` (26 example(s))
-- `Aspose.CAD.FileFormats.Cad` (23 example(s))
+- `Aspose.CAD` (27 example(s))
+- `System` (27 example(s))
+- `System.IO` (27 example(s))
+- `Aspose.CAD.FileFormats.Cad` (24 example(s))
 - `Aspose.CAD.ImageOptions` (21 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (8 example(s))
 - `System.Linq` (3 example(s))

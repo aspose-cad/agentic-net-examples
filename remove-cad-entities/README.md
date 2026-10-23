@@ -18,7 +18,7 @@ Build-validated Aspose.CAD for .NET examples for `remove-cad-entities`.
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (28 example(s))
 - `System.Linq` (25 example(s))
 - `Aspose.CAD.ImageOptions` (16 example(s))
-- `System.Collections.Generic` (9 example(s))
+- `System.Collections.Generic` (10 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
