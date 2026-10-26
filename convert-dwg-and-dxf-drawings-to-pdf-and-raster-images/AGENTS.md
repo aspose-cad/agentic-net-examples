@@ -18,16 +18,21 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - Files are standalone `.cs` examples stored directly in this folder.
 
 ## Required Namespaces
-- `using System;` (28 file(s))
-- `using System.IO;` (28 file(s))
-- `using Aspose.CAD;` (28 file(s))
-- `using Aspose.CAD.ImageOptions;` (28 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (15 file(s))
-- `using System.Linq;` (2 file(s))
-- `using System.Collections.Generic;` (1 file(s))
-- `using Aspose.CAD.FileFormats.Dwf;` (1 file(s))
-- `using Aspose.CAD.FileFormats.Dwf.Whip.Objects;` (1 file(s))
+- `using System;` (30 file(s))
+- `using System.IO;` (30 file(s))
+- `using Aspose.CAD;` (30 file(s))
+- `using Aspose.CAD.ImageOptions;` (30 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (17 file(s))
+- `using System.Linq;` (4 file(s))
+- `using System.Collections.Generic;` (3 file(s))
+- `using Aspose.CAD.FileFormats.Dwf;` (3 file(s))
+- `using Aspose.CAD.FileFormats.Dwf.Whip.Objects;` (2 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (2 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (2 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (2 file(s))
+- `using Aspose.CAD.Primitives;` (2 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadTables;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.Text;` (1 file(s))
 
 ## Files in this folder
 | File | Description |
@@ -36,6 +41,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [apply-scalemethod-shrinktofit-to-automatically-adjust-dimensions-when-converting-dwg-to-tiff.cs](./apply-scalemethod-shrinktofit-to-automatically-adjust-dimensions-when-converting-dwg-to-tiff.cs) | apply scalemethod shrinktofit to automatically adjust dimensions when converting dwg to tiff |
 | [convert-a-dwg-file-to-pdf-while-preserving-default-model-layout-and-automatic-scaling.cs](./convert-a-dwg-file-to-pdf-while-preserving-default-model-layout-and-automatic-scaling.cs) | convert a dwg file to pdf while preserving default model layout and automatic scaling |
 | [convert-a-dxf-file-to-png-by-loading-it-and-applying-default-cadrasterizationoptions.cs](./convert-a-dxf-file-to-png-by-loading-it-and-applying-default-cadrasterizationoptions.cs) | convert a dxf file to png by loading it and applying default cadrasterizationoptions |
+| [convert-dwf-layers-to-raster-images-by-applying-identical-cadrasterizationoptions-used-for-dwg-conversion.cs](./convert-dwf-layers-to-raster-images-by-applying-identical-cadrasterizationoptions-used-for-dwg-conversion.cs) | convert dwf layers to raster images by applying identical cadrasterizationoptions used for dwg conversion |
 | [define-drawcolor-as-black-in-cadrasterizationoptions-to-change-drawing-color-for-pdf-output.cs](./define-drawcolor-as-black-in-cadrasterizationoptions-to-change-drawing-color-for-pdf-output.cs) | define drawcolor as black in cadrasterizationoptions to change drawing color for pdf output |
 | [enable-tracking-and-capture-rendering-details-while-converting-a-cad-drawing-to-pdf-for-debugging.cs](./enable-tracking-and-capture-rendering-details-while-converting-a-cad-drawing-to-pdf-for-debugging.cs) | enable tracking and capture rendering details while converting a cad drawing to pdf for debugging |
 | [enable-tracking-by-setting-enabletracking-true-and-observe-rendering-progress-while-saving-as-png.cs](./enable-tracking-by-setting-enabletracking-true-and-observe-rendering-progress-while-saving-as-png.cs) | enable tracking by setting enabletracking true and observe rendering progress while saving as png |
@@ -50,6 +56,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [load-a-dxf-drawing-define-explicit-canvas-dimensions-and-save-it-as-pdf-with-default-scaling.cs](./load-a-dxf-drawing-define-explicit-canvas-dimensions-and-save-it-as-pdf-with-default-scaling.cs) | load a dxf drawing define explicit canvas dimensions and save it as pdf with default scaling |
 | [observe-default-scalemethod-shrinktofit-effect-when-converting-dxf-to-png-without-explicit-scaling.cs](./observe-default-scalemethod-shrinktofit-effect-when-converting-dxf-to-png-without-explicit-scaling.cs) | observe default scalemethod shrinktofit effect when converting dxf to png without explicit scaling |
 | [provide-a-custom-fonts-folder-via-fontsfolder-to-substitute-missing-fonts-during-dxf-to-pdf-conversion.cs](./provide-a-custom-fonts-folder-via-fontsfolder-to-substitute-missing-fonts-during-dxf-to-pdf-conversion.cs) | provide a custom fonts folder via fontsfolder to substitute missing fonts during dxf to pdf conversion |
+| [provide-fontsubstitution-mapping-for-missing-fonts-and-convert-dwf-to-tiff-ensuring-correct-text-appearance.cs](./provide-fontsubstitution-mapping-for-missing-fonts-and-convert-dwf-to-tiff-ensuring-correct-text-appearance.cs) | provide fontsubstitution mapping for missing fonts and convert dwf to tiff ensuring correct text appearance |
 | [rely-on-default-model-layout-when-no-specific-layout-is-chosen-during-dxf-to-bmp-conversion.cs](./rely-on-default-model-layout-when-no-specific-layout-is-chosen-during-dxf-to-bmp-conversion.cs) | rely on default model layout when no specific layout is chosen during dxf to bmp conversion |
 | [select-a-non-default-layout-name-for-rendering-and-export-the-result-as-pdf-with-custom-canvas-size.cs](./select-a-non-default-layout-name-for-rendering-and-export-the-result-as-pdf-with-custom-canvas-size.cs) | select a non default layout name for rendering and export the result as pdf with custom canvas size |
 | [select-a-specific-layout-name-in-cadrasterizationoptions-to-render-only-that-layout-as-bmp.cs](./select-a-specific-layout-name-in-cadrasterizationoptions-to-render-only-that-layout-as-bmp.cs) | select a specific layout name in cadrasterizationoptions to render only that layout as bmp |
@@ -62,7 +69,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [use-fontsubstitution-mapping-to-replace-unavailable-fonts-when-converting-dwg-to-jpeg-image.cs](./use-fontsubstitution-mapping-to-replace-unavailable-fonts-when-converting-dwg-to-jpeg-image.cs) | use fontsubstitution mapping to replace unavailable fonts when converting dwg to jpeg image |
 
 ## Category Statistics
-- Total examples: 28
+- Total examples: 30
 
 ## General Tips
 - Follow root boundaries and testing guide.
@@ -71,5 +78,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-23 | `cad-withheld-repairs-2026-10-23` | examples/repair-withheld-cad-2026-10-23 |
+| 2026-10-26 | `cad-remaining-repairs-2026-10-26` | examples/repair-withheld-cad-2026-10-23 |
 <!-- AUTOGENERATED:END -->

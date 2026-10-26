@@ -18,32 +18,35 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - Files are standalone `.cs` examples stored directly in this folder.
 
 ## Required Namespaces
-- `using System;` (544 file(s))
-- `using System.IO;` (543 file(s))
-- `using Aspose.CAD;` (543 file(s))
-- `using Aspose.CAD.ImageOptions;` (505 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (254 file(s))
-- `using Aspose.CAD.WatermarkGuard;` (43 file(s))
-- `using System.Collections.Generic;` (39 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (35 file(s))
-- `using System.Linq;` (29 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (18 file(s))
+- `using System;` (527 file(s))
+- `using System.IO;` (526 file(s))
+- `using Aspose.CAD;` (526 file(s))
+- `using Aspose.CAD.ImageOptions;` (488 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (243 file(s))
+- `using System.Collections.Generic;` (44 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (40 file(s))
+- `using System.Linq;` (32 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (22 file(s))
+- `using Aspose.CAD.WatermarkGuard;` (21 file(s))
 - `using Aspose.CAD.FileFormats.Dwf;` (16 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadTables;` (14 file(s))
 - `using System.Diagnostics;` (11 file(s))
 - `using System.Threading.Tasks;` (8 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (6 file(s))
+- `using Aspose.CAD.Primitives;` (6 file(s))
 - `using System.Threading;` (2 file(s))
 - `using Aspose.CAD.FileFormats.Ifc;` (1 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (1 file(s))
+- `using Aspose.CAD.FileFormats.CF2;` (1 file(s))
 - `using System.Security.Cryptography;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Iges;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Stl;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Dwf.Whip.Objects;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Obj;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Obj.Elements;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Obj.VertexData;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Obj.VertexData.Index;` (1 file(s))
-- `using Aspose.CAD.Primitives;` (1 file(s))
 - `using Aspose.CAD.FileFormats;` (1 file(s))
 - `using System.Net.Http;` (1 file(s))
 - `using System.Reflection;` (1 file(s))
@@ -54,6 +57,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [access-dgn-data-embedded-within-a-dwg-file-and-extract-it-to-a-separate-dgn-file.cs](./access-dgn-data-embedded-within-a-dwg-file-and-extract-it-to-a-separate-dgn-file.cs) | access dgn data embedded within a dwg file and extract it to a separate dgn file |
 | [access-dgn-data-inside-a-dwg-file-and-modify-its-metadata-before-re-exporting.cs](./access-dgn-data-inside-a-dwg-file-and-modify-its-metadata-before-re-exporting.cs) | access dgn data inside a dwg file and modify its metadata before re exporting |
 | [access-dgn-data-inside-a-dwg-file-and-write-it-to-a-memory-stream-for-further-processing.cs](./access-dgn-data-inside-a-dwg-file-and-write-it-to-a-memory-stream-for-further-processing.cs) | access dgn data inside a dwg file and write it to a memory stream for further processing |
+| [adjust-cad-properties-before-exporting-cf2-file-to-pdf-in-net.cs](./adjust-cad-properties-before-exporting-cf2-file-to-pdf-in-net.cs) | adjust cad properties before exporting cf2 file to pdf in net |
 | [adjust-cad-properties-before-exporting-iges-file-to-pdf-in-net.cs](./adjust-cad-properties-before-exporting-iges-file-to-pdf-in-net.cs) | adjust cad properties before exporting iges file to pdf in net |
 | [adjust-cad-properties-before-exporting-obj-file-to-pdf-in-net.cs](./adjust-cad-properties-before-exporting-obj-file-to-pdf-in-net.cs) | adjust cad properties before exporting obj file to pdf in net |
 | [adjust-cad-properties-before-exporting-plt-file-to-pdf-in-net.cs](./adjust-cad-properties-before-exporting-plt-file-to-pdf-in-net.cs) | adjust cad properties before exporting plt file to pdf in net |
@@ -81,21 +85,12 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [adjust-cad-properties-of-an-ifc-drawing-to-set-default-view-orientation-before-png-export.cs](./adjust-cad-properties-of-an-ifc-drawing-to-set-default-view-orientation-before-png-export.cs) | adjust cad properties of an ifc drawing to set default view orientation before png export |
 | [adjust-cad-properties-of-an-obj-file-to-customize-appearance-prior-to-pdf-conversion.cs](./adjust-cad-properties-of-an-obj-file-to-customize-appearance-prior-to-pdf-conversion.cs) | adjust cad properties of an obj file to customize appearance prior to pdf conversion |
 | [adjust-cad-properties-of-multiple-obj-files-in-a-loop-before-converting-each-to-pdf.cs](./adjust-cad-properties-of-multiple-obj-files-in-a-loop-before-converting-each-to-pdf.cs) | adjust cad properties of multiple obj files in a loop before converting each to pdf |
-| [apply-a-blind-watermark-during-pdf-generation-to-protect-intellectual-property-of-cad-drawings.cs](./apply-a-blind-watermark-during-pdf-generation-to-protect-intellectual-property-of-cad-drawings.cs) | apply a blind watermark during pdf generation to protect intellectual property of cad drawings |
-| [apply-a-blind-watermark-to-a-dwg-drawing-before-converting-it-to-pdf.cs](./apply-a-blind-watermark-to-a-dwg-drawing-before-converting-it-to-pdf.cs) | apply a blind watermark to a dwg drawing before converting it to pdf |
-| [apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-jpeg.cs](./apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-jpeg.cs) | apply a blind watermark to a dwg drawing before exporting it to jpeg |
 | [apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-png.cs](./apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-png.cs) | apply a blind watermark to a dwg drawing before exporting it to png |
-| [apply-a-blind-watermark-to-an-fbx-drawing-before-exporting-the-image-to-pdf.cs](./apply-a-blind-watermark-to-an-fbx-drawing-before-exporting-the-image-to-pdf.cs) | apply a blind watermark to an fbx drawing before exporting the image to pdf |
 | [apply-a-blind-watermark-to-an-ifc-drawing-adjust-cad-properties-and-export-to-png-while-handling-errors.cs](./apply-a-blind-watermark-to-an-ifc-drawing-adjust-cad-properties-and-export-to-png-while-handling-errors.cs) | apply a blind watermark to an ifc drawing adjust cad properties and export to png while handling errors |
-| [apply-a-blind-watermark-to-an-ifc-drawing-after-loading-it-then-export-the-result-to-png.cs](./apply-a-blind-watermark-to-an-ifc-drawing-after-loading-it-then-export-the-result-to-png.cs) | apply a blind watermark to an ifc drawing after loading it then export the result to png |
 | [apply-a-blind-watermark-to-an-ifc-drawing-then-export-to-png-while-handling-export-errors-via-callbacks.cs](./apply-a-blind-watermark-to-an-ifc-drawing-then-export-to-png-while-handling-export-errors-via-callbacks.cs) | apply a blind watermark to an ifc drawing then export to png while handling export errors via callbacks |
-| [apply-a-blind-watermark-to-an-obj-drawing-before-exporting-the-result-as-a-pdf-document.cs](./apply-a-blind-watermark-to-an-obj-drawing-before-exporting-the-result-as-a-pdf-document.cs) | apply a blind watermark to an obj drawing before exporting the result as a pdf document |
-| [apply-a-blind-watermark-to-multiple-fbx-drawings-and-export-each-to-pdf-in-a-single-operation.cs](./apply-a-blind-watermark-to-multiple-fbx-drawings-and-export-each-to-pdf-in-a-single-operation.cs) | apply a blind watermark to multiple fbx drawings and export each to pdf in a single operation |
-| [apply-a-blind-watermark-to-multiple-ifc-drawings-in-a-loop-and-export-each-to-png.cs](./apply-a-blind-watermark-to-multiple-ifc-drawings-in-a-loop-and-export-each-to-png.cs) | apply a blind watermark to multiple ifc drawings in a loop and export each to png |
 | [apply-blind-watermark-after-adjusting-cad-properties-of-dxf-files-before-exporting-them-as-pdf.cs](./apply-blind-watermark-after-adjusting-cad-properties-of-dxf-files-before-exporting-them-as-pdf.cs) | apply blind watermark after adjusting cad properties of dxf files before exporting them as pdf |
 | [apply-blind-watermark-during-export-of-iges-files-to-pdf-using-pdfoptions.cs](./apply-blind-watermark-during-export-of-iges-files-to-pdf-using-pdfoptions.cs) | apply blind watermark during export of iges files to pdf using pdfoptions |
 | [apply-blind-watermark-during-export-of-plt-files-to-pdf-using-pdfoptions.cs](./apply-blind-watermark-during-export-of-plt-files-to-pdf-using-pdfoptions.cs) | apply blind watermark during export of plt files to pdf using pdfoptions |
-| [apply-blind-watermark-during-export-of-plt-files-to-pdf-while-adjusting-cad-properties-for-visual-consistency.cs](./apply-blind-watermark-during-export-of-plt-files-to-pdf-while-adjusting-cad-properties-for-visual-consistency.cs) | apply blind watermark during export of plt files to pdf while adjusting cad properties for visual consistency |
 | [apply-cad-property-adjustments-to-improve-rendering-of-complex-cf2-models-in-net.cs](./apply-cad-property-adjustments-to-improve-rendering-of-complex-cf2-models-in-net.cs) | apply cad property adjustments to improve rendering of complex cf2 models in net |
 | [apply-cad-property-adjustments-to-improve-rendering-of-complex-iges-models-in-net.cs](./apply-cad-property-adjustments-to-improve-rendering-of-complex-iges-models-in-net.cs) | apply cad property adjustments to improve rendering of complex iges models in net |
 | [apply-cad-property-adjustments-to-improve-rendering-of-complex-obj-models-in-net.cs](./apply-cad-property-adjustments-to-improve-rendering-of-complex-obj-models-in-net.cs) | apply cad property adjustments to improve rendering of complex obj models in net |
@@ -105,15 +100,12 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [apply-the-sample-code-to-convert-a-drawing-to-png-while-preserving-background-color.cs](./apply-the-sample-code-to-convert-a-drawing-to-png-while-preserving-background-color.cs) | apply the sample code to convert a drawing to png while preserving background color |
 | [assess-impact-of-cad-property-adjustments-on-pdf-file-size-for-stp-exports-in-net.cs](./assess-impact-of-cad-property-adjustments-on-pdf-file-size-for-stp-exports-in-net.cs) | assess impact of cad property adjustments on pdf file size for stp exports in net |
 | [assess-impact-of-cad-property-adjustments-on-pdf-file-size-for-svg-exports-in-net.cs](./assess-impact-of-cad-property-adjustments-on-pdf-file-size-for-svg-exports-in-net.cs) | assess impact of cad property adjustments on pdf file size for svg exports in net |
-| [batch-convert-iges-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs](./batch-convert-iges-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs) | batch convert iges files to pdf with blind watermark and high resolution using pdfoptions and cadrasterizationoption |
 | [batch-convert-iges-files-to-pdf-with-blind-watermark-applied-using-pdfoptions.cs](./batch-convert-iges-files-to-pdf-with-blind-watermark-applied-using-pdfoptions.cs) | batch convert iges files to pdf with blind watermark applied using pdfoptions |
-| [batch-convert-iges-files-to-pdf-with-custom-page-size-and-blind-watermark-using-pdfoptions.cs](./batch-convert-iges-files-to-pdf-with-custom-page-size-and-blind-watermark-using-pdfoptions.cs) | batch convert iges files to pdf with custom page size and blind watermark using pdfoptions |
 | [batch-convert-multiple-dwf-files-to-bmp-using-default-settings-for-raster-image-output.cs](./batch-convert-multiple-dwf-files-to-bmp-using-default-settings-for-raster-image-output.cs) | batch convert multiple dwf files to bmp using default settings for raster image output |
 | [batch-convert-multiple-dwf-files-to-jpeg-using-default-settings-to-produce-image-previews.cs](./batch-convert-multiple-dwf-files-to-jpeg-using-default-settings-to-produce-image-previews.cs) | batch convert multiple dwf files to jpeg using default settings to produce image previews |
 | [batch-convert-multiple-dwf-files-to-pdf-using-default-settings-to-streamline-document-generation.cs](./batch-convert-multiple-dwf-files-to-pdf-using-default-settings-to-streamline-document-generation.cs) | batch convert multiple dwf files to pdf using default settings to streamline document generation |
 | [batch-convert-multiple-dwfx-files-to-pdf-using-default-settings-to-create-portable-documents.cs](./batch-convert-multiple-dwfx-files-to-pdf-using-default-settings-to-create-portable-documents.cs) | batch convert multiple dwfx files to pdf using default settings to create portable documents |
 | [batch-convert-plt-files-to-jpeg-with-high-resolution-using-jpegoptions-and-cadrasterizationoption.cs](./batch-convert-plt-files-to-jpeg-with-high-resolution-using-jpegoptions-and-cadrasterizationoption.cs) | batch convert plt files to jpeg with high resolution using jpegoptions and cadrasterizationoption |
-| [batch-convert-plt-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs](./batch-convert-plt-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs) | batch convert plt files to pdf with blind watermark and high resolution using pdfoptions and cadrasterizationoption |
 | [batch-convert-plt-files-to-pdf-with-blind-watermark-applied-using-pdfoptions.cs](./batch-convert-plt-files-to-pdf-with-blind-watermark-applied-using-pdfoptions.cs) | batch convert plt files to pdf with blind watermark applied using pdfoptions |
 | [batch-convert-plt-files-to-pdf-with-custom-page-size-and-blind-watermark-using-pdfoptions.cs](./batch-convert-plt-files-to-pdf-with-custom-page-size-and-blind-watermark-using-pdfoptions.cs) | batch convert plt files to pdf with custom page size and blind watermark using pdfoptions |
 | [capture-both-load-and-export-errors-for-fbx-drawings-to-generate-a-detailed-processing-report.cs](./capture-both-load-and-export-errors-for-fbx-drawings-to-generate-a-detailed-processing-report.cs) | capture both load and export errors for fbx drawings to generate a detailed processing report |
@@ -152,7 +144,6 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [convert-autocad-file-to-jpeg-format-in-net.cs](./convert-autocad-file-to-jpeg-format-in-net.cs) | convert autocad file to jpeg format in net |
 | [convert-autocad-file-to-pdf-format-in-net.cs](./convert-autocad-file-to-pdf-format-in-net.cs) | convert autocad file to pdf format in net |
 | [convert-autocad-file-to-png-format-in-net.cs](./convert-autocad-file-to-png-format-in-net.cs) | convert autocad file to png format in net |
-| [convert-dwg-drawings-to-pdf-and-apply-a-blind-watermark-to-secure-the-output.cs](./convert-dwg-drawings-to-pdf-and-apply-a-blind-watermark-to-secure-the-output.cs) | convert dwg drawings to pdf and apply a blind watermark to secure the output |
 | [convert-dwg-files-to-pdf-in-c-by-leveraging-aspose-cad-multi-format-support.cs](./convert-dwg-files-to-pdf-in-c-by-leveraging-aspose-cad-multi-format-support.cs) | convert dwg files to pdf in c by leveraging aspose cad multi format support |
 | [convert-dxf-drawings-to-pdf-using-programmatic-conversion-capabilities-of-aspose-cad-for-net.cs](./convert-dxf-drawings-to-pdf-using-programmatic-conversion-capabilities-of-aspose-cad-for-net.cs) | convert dxf drawings to pdf using programmatic conversion capabilities of aspose cad for net |
 | [convert-iges-files-to-pdf-by-loading-them-and-applying-cadrasterizationoption-with-pdfoptions.cs](./convert-iges-files-to-pdf-by-loading-them-and-applying-cadrasterizationoption-with-pdfoptions.cs) | convert iges files to pdf by loading them and applying cadrasterizationoption with pdfoptions |
@@ -227,6 +218,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [explain-the-default-conversion-process-of-a-dwf-drawing-to-pdf-format.cs](./explain-the-default-conversion-process-of-a-dwf-drawing-to-pdf-format.cs) | explain the default conversion process of a dwf drawing to pdf format |
 | [explain-the-default-conversion-process-of-a-dwfx-drawing-to-pdf-format.cs](./explain-the-default-conversion-process-of-a-dwfx-drawing-to-pdf-format.cs) | explain the default conversion process of a dwfx drawing to pdf format |
 | [explain-the-limitation-that-dwfx-export-is-documented-only-for-pdf-format.cs](./explain-the-limitation-that-dwfx-export-is-documented-only-for-pdf-format.cs) | explain the limitation that dwfx export is documented only for pdf format |
+| [explain-validation-techniques-for-ensuring-exported-pdf-files-contain-all-original-cf2-drawing-elements.cs](./explain-validation-techniques-for-ensuring-exported-pdf-files-contain-all-original-cf2-drawing-elements.cs) | explain validation techniques for ensuring exported pdf files contain all original cf2 drawing elements |
 | [explain-validation-techniques-for-ensuring-exported-png-files-match-expected-rasterization-quality.cs](./explain-validation-techniques-for-ensuring-exported-png-files-match-expected-rasterization-quality.cs) | explain validation techniques for ensuring exported png files match expected rasterization quality |
 | [explain-why-adhering-to-format-constraints-prevents-unsupported-export-attempts-for-stl-and-cf2-files.cs](./explain-why-adhering-to-format-constraints-prevents-unsupported-export-attempts-for-stl-and-cf2-files.cs) | explain why adhering to format constraints prevents unsupported export attempts for stl and cf2 files |
 | [explain-why-export-operations-use-default-settings-unless-customized-directly-in-code.cs](./explain-why-export-operations-use-default-settings-unless-customized-directly-in-code.cs) | explain why export operations use default settings unless customized directly in code |
@@ -265,7 +257,6 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [export-an-opened-dwfx-file-to-pdf-format-following-the-documented-workflow.cs](./export-an-opened-dwfx-file-to-pdf-format-following-the-documented-workflow.cs) | export an opened dwfx file to pdf format following the documented workflow |
 | [export-fbx-drawings-to-pdf-and-ensure-that-any-export-errors-trigger-the-registered-callback.cs](./export-fbx-drawings-to-pdf-and-ensure-that-any-export-errors-trigger-the-registered-callback.cs) | export fbx drawings to pdf and ensure that any export errors trigger the registered callback |
 | [export-fbx-drawings-to-pdf-and-use-a-callback-to-capture-any-rendering-exceptions.cs](./export-fbx-drawings-to-pdf-and-use-a-callback-to-capture-any-rendering-exceptions.cs) | export fbx drawings to pdf and use a callback to capture any rendering exceptions |
-| [export-fbx-drawings-to-pdf-while-applying-blind-watermarks-to-each-file.cs](./export-fbx-drawings-to-pdf-while-applying-blind-watermarks-to-each-file.cs) | export fbx drawings to pdf while applying blind watermarks to each file |
 | [export-fbx-drawings-to-pdf-while-preserving-original-cad-properties-and-logging-any-errors.cs](./export-fbx-drawings-to-pdf-while-preserving-original-cad-properties-and-logging-any-errors.cs) | export fbx drawings to pdf while preserving original cad properties and logging any errors |
 | [export-fbx-drawings-to-pdf-while-simultaneously-logging-any-load-errors-via-callbacks.cs](./export-fbx-drawings-to-pdf-while-simultaneously-logging-any-load-errors-via-callbacks.cs) | export fbx drawings to pdf while simultaneously logging any load errors via callbacks |
 | [export-fbx-drawings-to-pdf-while-using-callbacks-to-capture-any-conversion-warnings-as-errors.cs](./export-fbx-drawings-to-pdf-while-using-callbacks-to-capture-any-conversion-warnings-as-errors.cs) | export fbx drawings to pdf while using callbacks to capture any conversion warnings as errors |
@@ -337,7 +328,10 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [implement-export-callbacks-to-receive-notifications-after-successful-stl-to-png-conversion.cs](./implement-export-callbacks-to-receive-notifications-after-successful-stl-to-png-conversion.cs) | implement export callbacks to receive notifications after successful stl to png conversion |
 | [implement-logging-of-autocad-conversion-operations-in-net.cs](./implement-logging-of-autocad-conversion-operations-in-net.cs) | implement logging of autocad conversion operations in net |
 | [implement-logging-of-cf2-load-operations-in-net.cs](./implement-logging-of-cf2-load-operations-in-net.cs) | implement logging of cf2 load operations in net |
+| [implement-logging-of-iges-load-operations-in-net.cs](./implement-logging-of-iges-load-operations-in-net.cs) | implement logging of iges load operations in net |
 | [implement-logging-of-obj-load-operations-in-net.cs](./implement-logging-of-obj-load-operations-in-net.cs) | implement logging of obj load operations in net |
+| [implement-logging-of-plt-load-operations-in-net.cs](./implement-logging-of-plt-load-operations-in-net.cs) | implement logging of plt load operations in net |
+| [implement-logging-of-stl-load-operations-in-net.cs](./implement-logging-of-stl-load-operations-in-net.cs) | implement logging of stl load operations in net |
 | [implement-logging-of-stp-export-operations-in-net.cs](./implement-logging-of-stp-export-operations-in-net.cs) | implement logging of stp export operations in net |
 | [implement-logging-of-svg-export-operations-in-net.cs](./implement-logging-of-svg-export-operations-in-net.cs) | implement logging of svg export operations in net |
 | [implement-retry-logic-for-export-callbacks-that-fail-during-cf2-to-pdf-conversion-attempts.cs](./implement-retry-logic-for-export-callbacks-that-fail-during-cf2-to-pdf-conversion-attempts.cs) | implement retry logic for export callbacks that fail during cf2 to pdf conversion attempts |
@@ -387,13 +381,11 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [load-a-large-dwg-file-using-recommended-handling-and-export-a-specified-region-to-jpeg.cs](./load-a-large-dwg-file-using-recommended-handling-and-export-a-specified-region-to-jpeg.cs) | load a large dwg file using recommended handling and export a specified region to jpeg |
 | [load-a-large-dwg-file-using-recommended-handling-and-export-a-specified-region-to-png.cs](./load-a-large-dwg-file-using-recommended-handling-and-export-a-specified-region-to-png.cs) | load a large dwg file using recommended handling and export a specified region to png |
 | [load-an-fbx-drawing-apply-a-blind-watermark-adjust-cad-properties-then-export-to-pdf.cs](./load-an-fbx-drawing-apply-a-blind-watermark-adjust-cad-properties-then-export-to-pdf.cs) | load an fbx drawing apply a blind watermark adjust cad properties then export to pdf |
-| [load-an-fbx-drawing-apply-a-blind-watermark-and-export-to-pdf-while-capturing-export-errors.cs](./load-an-fbx-drawing-apply-a-blind-watermark-and-export-to-pdf-while-capturing-export-errors.cs) | load an fbx drawing apply a blind watermark and export to pdf while capturing export errors |
 | [load-an-fbx-drawing-file-and-export-it-to-pdf-while-handling-errors-via-callbacks.cs](./load-an-fbx-drawing-file-and-export-it-to-pdf-while-handling-errors-via-callbacks.cs) | load an fbx drawing file and export it to pdf while handling errors via callbacks |
 | [load-an-fbx-drawing-handle-any-load-errors-via-callbacks-and-export-to-pdf.cs](./load-an-fbx-drawing-handle-any-load-errors-via-callbacks-and-export-to-pdf.cs) | load an fbx drawing handle any load errors via callbacks and export to pdf |
 | [load-an-fbx-drawing-modify-its-cad-properties-and-export-the-result-to-pdf-with-callbacks.cs](./load-an-fbx-drawing-modify-its-cad-properties-and-export-the-result-to-pdf-with-callbacks.cs) | load an fbx drawing modify its cad properties and export the result to pdf with callbacks |
 | [load-an-fbx-drawing-using-the-image-class-adjust-cad-properties-and-export-to-pdf-with-callbacks.cs](./load-an-fbx-drawing-using-the-image-class-adjust-cad-properties-and-export-to-pdf-with-callbacks.cs) | load an fbx drawing using the image class adjust cad properties and export to pdf with callbacks |
 | [load-an-fbx-drawing-using-the-image-class-adjust-its-cad-properties-then-export-to-pdf.cs](./load-an-fbx-drawing-using-the-image-class-adjust-its-cad-properties-then-export-to-pdf.cs) | load an fbx drawing using the image class adjust its cad properties then export to pdf |
-| [load-an-fbx-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-pdf.cs](./load-an-fbx-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-pdf.cs) | load an fbx drawing using the image class apply a blind watermark then export to pdf |
 | [load-an-fbx-drawing-using-the-image-class-then-export-it-to-pdf-without-applying-a-watermark.cs](./load-an-fbx-drawing-using-the-image-class-then-export-it-to-pdf-without-applying-a-watermark.cs) | load an fbx drawing using the image class then export it to pdf without applying a watermark |
 | [load-an-ifc-drawing-adjust-its-cad-properties-for-scaling-and-export-to-png-with-callbacks.cs](./load-an-ifc-drawing-adjust-its-cad-properties-for-scaling-and-export-to-png-with-callbacks.cs) | load an ifc drawing adjust its cad properties for scaling and export to png with callbacks |
 | [load-an-ifc-drawing-apply-a-blind-watermark-adjust-cad-properties-and-export-to-png.cs](./load-an-ifc-drawing-apply-a-blind-watermark-adjust-cad-properties-and-export-to-png.cs) | load an ifc drawing apply a blind watermark adjust cad properties and export to png |
@@ -401,7 +393,6 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [load-an-ifc-drawing-file-adjust-cad-properties-and-export-the-result-to-png-format.cs](./load-an-ifc-drawing-file-adjust-cad-properties-and-export-the-result-to-png-format.cs) | load an ifc drawing file adjust cad properties and export the result to png format |
 | [load-an-ifc-drawing-file-using-the-image-class-and-directly-save-it-as-png.cs](./load-an-ifc-drawing-file-using-the-image-class-and-directly-save-it-as-png.cs) | load an ifc drawing file using the image class and directly save it as png |
 | [load-an-ifc-drawing-handle-load-errors-via-callbacks-and-export-to-png-without-watermark.cs](./load-an-ifc-drawing-handle-load-errors-via-callbacks-and-export-to-png-without-watermark.cs) | load an ifc drawing handle load errors via callbacks and export to png without watermark |
-| [load-an-ifc-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-png.cs](./load-an-ifc-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-png.cs) | load an ifc drawing using the image class apply a blind watermark then export to png |
 | [load-an-obj-drawing-file-and-convert-it-to-pdf-programmatically-using-aspose-cad-for-net.cs](./load-an-obj-drawing-file-and-convert-it-to-pdf-programmatically-using-aspose-cad-for-net.cs) | load an obj drawing file and convert it to pdf programmatically using aspose cad for net |
 | [load-an-obj-file-adjust-its-cad-properties-and-then-apply-a-blind-watermark-before-pdf-export.cs](./load-an-obj-file-adjust-its-cad-properties-and-then-apply-a-blind-watermark-before-pdf-export.cs) | load an obj file adjust its cad properties and then apply a blind watermark before pdf export |
 | [load-an-obj-file-and-convert-it-directly-to-jpeg-image-format.cs](./load-an-obj-file-and-convert-it-directly-to-jpeg-image-format.cs) | load an obj file and convert it directly to jpeg image format |
@@ -452,7 +443,6 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [process-sab-structured-drawings-and-generate-pdf-output-while-preserving-original-geometry.cs](./process-sab-structured-drawings-and-generate-pdf-output-while-preserving-original-geometry.cs) | process sab structured drawings and generate pdf output while preserving original geometry |
 | [process-sat-and-sab-structured-drawings-sequentially-exporting-each-as-a-separate-pdf-file.cs](./process-sat-and-sab-structured-drawings-sequentially-exporting-each-as-a-separate-pdf-file.cs) | process sat and sab structured drawings sequentially exporting each as a separate pdf file |
 | [process-sat-structured-drawings-and-export-them-directly-to-pdf-using-the-provided-workflow.cs](./process-sat-structured-drawings-and-export-them-directly-to-pdf-using-the-provided-workflow.cs) | process sat structured drawings and export them directly to pdf using the provided workflow |
-| [programmatically-load-stl-models-apply-a-blind-watermark-and-save-the-result-as-pdf.cs](./programmatically-load-stl-models-apply-a-blind-watermark-and-save-the-result-as-pdf.cs) | programmatically load stl models apply a blind watermark and save the result as pdf |
 | [provide-an-example-of-batch-converting-dwf-files-to-bmp-using-default-settings.cs](./provide-an-example-of-batch-converting-dwf-files-to-bmp-using-default-settings.cs) | provide an example of batch converting dwf files to bmp using default settings |
 | [provide-an-example-of-batch-converting-dwf-files-to-jpeg-using-default-settings.cs](./provide-an-example-of-batch-converting-dwf-files-to-jpeg-using-default-settings.cs) | provide an example of batch converting dwf files to jpeg using default settings |
 | [provide-an-example-of-batch-converting-dwf-files-to-pdf-using-default-settings.cs](./provide-an-example-of-batch-converting-dwf-files-to-pdf-using-default-settings.cs) | provide an example of batch converting dwf files to pdf using default settings |
@@ -477,8 +467,6 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [render-iges-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-black-using-cadrasterizationo.cs](./render-iges-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-black-using-cadrasterizationo.cs) | render iges files to pdf while adjusting cad properties and setting background color to black using cadrasterizationo |
 | [render-iges-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs](./render-iges-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs) | render iges files to pdf while adjusting cad properties and setting background color to white |
 | [render-iges-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs](./render-iges-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs) | render iges files to pdf while applying blind watermark and adjusting cad properties using pdfoptions |
-| [render-iges-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs](./render-iges-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs) | render iges files to pdf while applying blind watermark and setting background color to black |
-| [render-iges-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs](./render-iges-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs) | render iges files to pdf while applying blind watermark using pdfoptions and cadrasterizationoption |
 | [render-iges-files-to-pdf-while-handling-export-errors-using-callbacks-during-conversion.cs](./render-iges-files-to-pdf-while-handling-export-errors-using-callbacks-during-conversion.cs) | render iges files to pdf while handling export errors using callbacks during conversion |
 | [render-iges-files-to-pdf-while-preserving-original-line-colors-by-adjusting-cad-properties.cs](./render-iges-files-to-pdf-while-preserving-original-line-colors-by-adjusting-cad-properties.cs) | render iges files to pdf while preserving original line colors by adjusting cad properties |
 | [render-iges-files-to-pdf-while-setting-background-color-to-gray-and-enabling-anti-aliasing.cs](./render-iges-files-to-pdf-while-setting-background-color-to-gray-and-enabling-anti-aliasing.cs) | render iges files to pdf while setting background color to gray and enabling anti aliasing |
@@ -504,12 +492,10 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [render-plt-files-to-pdf-while-adjusting-cad-properties-and-background-color-using-cadrasterizationoption.cs](./render-plt-files-to-pdf-while-adjusting-cad-properties-and-background-color-using-cadrasterizationoption.cs) | render plt files to pdf while adjusting cad properties and background color using cadrasterizationoption |
 | [render-plt-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs](./render-plt-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs) | render plt files to pdf while adjusting cad properties and setting background color to white |
 | [render-plt-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs](./render-plt-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs) | render plt files to pdf while applying blind watermark and adjusting cad properties using pdfoptions |
-| [render-plt-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs](./render-plt-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs) | render plt files to pdf while applying blind watermark and setting background color to black |
 | [render-plt-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs](./render-plt-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs) | render plt files to pdf while applying blind watermark using pdfoptions and cadrasterizationoption |
 | [render-plt-files-to-pdf-while-preserving-original-line-colors-by-adjusting-cad-properties.cs](./render-plt-files-to-pdf-while-preserving-original-line-colors-by-adjusting-cad-properties.cs) | render plt files to pdf while preserving original line colors by adjusting cad properties |
 | [render-plt-files-to-pdf-while-setting-background-color-to-gray-and-enabling-anti-aliasing.cs](./render-plt-files-to-pdf-while-setting-background-color-to-gray-and-enabling-anti-aliasing.cs) | render plt files to pdf while setting background color to gray and enabling anti aliasing |
 | [render-plt-files-to-pdf-while-setting-background-color-to-light-gray-using-cadrasterizationoption.cs](./render-plt-files-to-pdf-while-setting-background-color-to-light-gray-using-cadrasterizationoption.cs) | render plt files to pdf while setting background color to light gray using cadrasterizationoption |
-| [render-plt-files-to-pdf-while-setting-custom-page-size-and-applying-blind-watermark-using-cadrasterizationoption-and.cs](./render-plt-files-to-pdf-while-setting-custom-page-size-and-applying-blind-watermark-using-cadrasterizationoption-and.cs) | render plt files to pdf while setting custom page size and applying blind watermark using cadrasterizationoption and |
 | [render-plt-files-to-pdf-with-anti-aliasing-enabled-and-background-color-set-to-white-using-cadrasterizationoption.cs](./render-plt-files-to-pdf-with-anti-aliasing-enabled-and-background-color-set-to-white-using-cadrasterizationoption.cs) | render plt files to pdf with anti aliasing enabled and background color set to white using cadrasterizationoption |
 | [render-plt-files-to-pdf-with-anti-aliasing-enabled-for-smoother-visual-output.cs](./render-plt-files-to-pdf-with-anti-aliasing-enabled-for-smoother-visual-output.cs) | render plt files to pdf with anti aliasing enabled for smoother visual output |
 | [render-plt-files-to-pdf-with-custom-page-size-configured-in-cadrasterizationoption.cs](./render-plt-files-to-pdf-with-custom-page-size-configured-in-cadrasterizationoption.cs) | render plt files to pdf with custom page size configured in cadrasterizationoption |
@@ -597,7 +583,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [write-code-that-loads-a-dxb-drawing-modifies-its-cad-properties-and-confirms-successful-export-via-callback.cs](./write-code-that-loads-a-dxb-drawing-modifies-its-cad-properties-and-confirms-successful-export-via-callback.cs) | write code that loads a dxb drawing modifies its cad properties and confirms successful export via callback |
 
 ## Category Statistics
-- Total examples: 544
+- Total examples: 527
 
 ## General Tips
 - Follow root boundaries and testing guide.
@@ -606,5 +592,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-23 | `cad-withheld-repairs-2026-10-23` | examples/repair-withheld-cad-2026-10-23 |
+| 2026-10-26 | `cad-remaining-repairs-2026-10-26` | examples/repair-withheld-cad-2026-10-23 |
 <!-- AUTOGENERATED:END -->

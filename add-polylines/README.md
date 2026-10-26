@@ -6,19 +6,19 @@ Build-validated Aspose.CAD for .NET examples for `add-polylines`.
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 33
+- Examples: 34
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (33 example(s))
-- `Aspose.CAD` (32 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (32 example(s))
-- `System.IO` (31 example(s))
-- `Aspose.CAD.FileFormats.Cad` (31 example(s))
-- `Aspose.CAD.ImageOptions` (18 example(s))
+- `System` (34 example(s))
+- `Aspose.CAD` (33 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (33 example(s))
+- `System.IO` (32 example(s))
+- `Aspose.CAD.FileFormats.Cad` (32 example(s))
+- `Aspose.CAD.ImageOptions` (19 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadConsts` (17 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects.Polylines` (17 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadConsts` (16 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |

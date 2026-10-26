@@ -4,9 +4,9 @@
   "framework": "net8.0",
   "package": "Aspose.CAD",
   "package_version": "26.9.0",
-  "total_examples": 1910,
+  "total_examples": 1895,
   "total_categories": 45,
-  "last_updated": "2026-10-23",
+  "last_updated": "2026-10-26",
   "categories": [
     {
       "name": "access-entities-inside-block-objects",
@@ -2918,7 +2918,7 @@
     },
     {
       "name": "add-background-images-to-dwg-files",
-      "file_count": 32,
+      "file_count": 33,
       "files": [
         "add-a-cadbaseobject-first-then-attach-a-cadrasterimage-to-the-same-drawing-objects-collection.cs",
         "add-a-cadbaseobject-that-references-the-cadrasterimage-to-establish-a-relationship-between-them.cs",
@@ -2939,6 +2939,7 @@
         "insert-multiple-cadrasterimage-objects-as-layered-backgrounds-by-adding-each-to-cadimage-objects.cs",
         "instantiate-a-cadrasterimage-object-and-link-it-to-the-previously-created-cadrasterimagedef.cs",
         "load-a-dwg-file-into-a-cadimage-instance-before-adding-a-background-image.cs",
+        "optimize-the-workflow-by-reusing-an-existing-cadrasterimagedef-for-multiple-cadrasterimage-instances.cs",
         "perform-a-full-load-modify-save-cycle-on-a-dwg-file-to-embed-a-background-image.cs",
         "remove-a-previously-added-cadrasterimage-from-cadimage-objects-before-inserting-a-new-background.cs",
         "reorder-cadimage-objects-to-place-cadbaseobject-before-cadrasterimage-for-different-layering-effect.cs",
@@ -3787,6 +3788,58 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Optimize The Workflow By Reusing An Existing Cadrasterimagedef for Multiple Cadrasterimage Instances",
+          "category": "add-background-images-to-dwg-files",
+          "path": "add-background-images-to-dwg-files/optimize-the-workflow-by-reusing-an-existing-cadrasterimagedef-for-multiple-cadrasterimage-instances.cs",
+          "file": "optimize-the-workflow-by-reusing-an-existing-cadrasterimagedef-for-multiple-cadrasterimage-instances.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "background",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "dwg",
+            "fileformats",
+            "files",
+            "hatch",
+            "imageoptions",
+            "images",
+            "primitives",
+            "standalone-example",
+            "to"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Optimize The Workflow By Reusing An Existing Cadrasterimagedef for Multiple Cadrasterimage Instances in C#",
+            "Optimize The Workflow By Reusing An Existing Cadrasterimagedef for Multiple Cadrasterimage Instances using Aspose.CAD for .NET",
+            "Optimize The Workflow By Reusing An Existing Cadrasterimagedef for Multiple Cadrasterimage Instances Aspose.CAD .NET example",
+            "AI generated .net code to Optimize The Workflow By Reusing An Existing Cadrasterimagedef for Multiple Cadrasterimage Instances",
+            "Aspose.CAD for .NET add-background-images-to-dwg-files example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Perform A Full Load Modify Save Cycle On A DWG File to Embed A Background Image",
           "category": "add-background-images-to-dwg-files",
           "path": "add-background-images-to-dwg-files/perform-a-full-load-modify-save-cycle-on-a-dwg-file-to-embed-a-background-image.cs",
@@ -4369,39 +4422,51 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 32
+          "count": 33
         },
         {
           "name": "System.IO",
-          "count": 32
+          "count": 33
         },
         {
           "name": "Aspose.CAD",
-          "count": 29
+          "count": 30
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 28
+          "count": 29
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 25
+          "count": 26
         },
         {
           "name": "System.Linq",
-          "count": 21
+          "count": 22
         },
         {
           "name": "System.Collections.Generic",
-          "count": 17
+          "count": 18
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 16
+          "count": 17
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
           "count": 3
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
         }
       ],
       "key_apis": [
@@ -4409,7 +4474,10 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.ImageOptions",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.Primitives"
       ]
     },
     {
@@ -5867,7 +5935,7 @@
     },
     {
       "name": "add-margins-to-cad-drawings",
-      "file_count": 28,
+      "file_count": 27,
       "files": [
         "access-entities-inside-block-objects-adjust-their-positions-and-add-margins-to-the-overall-layout.cs",
         "access-external-file-references-in-a-dwg-drawing-and-include-them-when-setting-margins-for-export.cs",
@@ -5875,7 +5943,6 @@
         "add-margins-to-a-cad-drawing-then-extract-the-resulting-pdf-to-verify-border-dimensions.cs",
         "adjust-cad-properties-such-as-line-weight-before-applying-margins-to-ensure-visual-consistency-in-the-pdf.cs",
         "adjust-margin-values-for-each-layout-individually-using-cadrasterizationoptions-to-match-varying-drawing-sizes.cs",
-        "apply-a-blind-watermark-to-a-cad-drawing-after-adding-margins-and-before-converting-to-pdf.cs",
         "combine-multiple-dxf-drawings-set-unified-margins-and-export-the-assembled-composition-as-a-single-pdf-file.cs",
         "ensure-successful-pdf-export-after-adding-margins-by-validating-rasterization-options-and-file-paths.cs",
         "export-a-3d-cad-file-with-added-margins-to-pdf-while-preserving-three-dimensional-geometry.cs",
@@ -6144,50 +6211,6 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply A Blind Watermark to A CAD Drawing After Adding Margins and Before Converting to PDF",
-          "category": "add-margins-to-cad-drawings",
-          "path": "add-margins-to-cad-drawings/apply-a-blind-watermark-to-a-cad-drawing-after-adding-margins-and-before-converting-to-pdf.cs",
-          "file": "apply-a-blind-watermark-to-a-cad-drawing-after-adding-margins-and-before-converting-to-pdf.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "add",
-            "aspose-cad",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawings",
-            "imageoptions",
-            "margins",
-            "pdf",
-            "standalone-example",
-            "to",
-            "watermarkguard"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark to A CAD Drawing After Adding Margins and Before Converting to PDF in C#",
-            "Apply A Blind Watermark to A CAD Drawing After Adding Margins and Before Converting to PDF using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to A CAD Drawing After Adding Margins and Before Converting to PDF Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to A CAD Drawing After Adding Margins and Before Converting to PDF",
-            "Aspose.CAD for .NET add-margins-to-cad-drawings example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -7095,19 +7118,19 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 28
+          "count": 27
         },
         {
           "name": "System.IO",
-          "count": 28
+          "count": 27
         },
         {
           "name": "Aspose.CAD",
-          "count": 26
+          "count": 25
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 23
+          "count": 22
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
@@ -7130,10 +7153,6 @@
           "count": 1
         },
         {
-          "name": "Aspose.CAD.WatermarkGuard",
-          "count": 1
-        },
-        {
           "name": "System.Text",
           "count": 1
         }
@@ -7143,13 +7162,12 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
-        "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.WatermarkGuard"
+        "Aspose.CAD.FileFormats.Cad.CadTables"
       ]
     },
     {
       "name": "add-polylines",
-      "file_count": 33,
+      "file_count": 34,
       "files": [
         "add-cad2dpoint-objects-forming-a-closed-loop-to-evaluate-cadlwpolyline-ability-to-create-polygons.cs",
         "add-cad2dpoint-objects-sequentially-to-outline-the-shape-of-the-cadlwpolyline.cs",
@@ -7181,6 +7199,7 @@
         "select-a-specific-layout-within-the-drawing-before-inserting-the-polyline-for-correct-view.cs",
         "select-the-appropriate-drawing-layout-before-adding-the-polyline-to-ensure-correct-coordinate-system-usage.cs",
         "select-the-target-drawing-or-layout-where-the-new-polyline-will-be-placed.cs",
+        "set-the-polyline-color-property-to-enhance-visual-distinction-of-the-added-geometry.cs",
         "verify-polyline-integrity-by-opening-the-saved-cad-file-and-inspecting-the-geometry-visually.cs",
         "verify-that-the-inserted-cadlwpolyline-appears-on-the-correct-layer-and-with-the-assigned-color.cs",
         "verify-that-the-polyline-appears-correctly-in-the-resulting-cad-file-using-a-viewer.cs"
@@ -8429,6 +8448,54 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Set The Polyline Color Property to Enhance Visual Distinction of The Added Geometry",
+          "category": "add-polylines",
+          "path": "add-polylines/set-the-polyline-color-property-to-enhance-visual-distinction-of-the-added-geometry.cs",
+          "file": "set-the-polyline-color-property-to-enhance-visual-distinction-of-the-added-geometry.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "hatch",
+            "imageoptions",
+            "polylines",
+            "primitives",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Set The Polyline Color Property to Enhance Visual Distinction of The Added Geometry in C#",
+            "Set The Polyline Color Property to Enhance Visual Distinction of The Added Geometry using Aspose.CAD for .NET",
+            "Set The Polyline Color Property to Enhance Visual Distinction of The Added Geometry Aspose.CAD .NET example",
+            "AI generated .net code to Set The Polyline Color Property to Enhance Visual Distinction of The Added Geometry",
+            "Aspose.CAD for .NET add-polylines example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Verify Polyline Integrity By Opening The Saved CAD File and Inspecting The Geometry Visually",
           "category": "add-polylines",
           "path": "add-polylines/verify-polyline-integrity-by-opening-the-saved-cad-file-and-inspecting-the-geometry-visually.cs",
@@ -8557,43 +8624,43 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 33
+          "count": 34
         },
         {
           "name": "Aspose.CAD",
-          "count": 32
+          "count": 33
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 32
+          "count": 33
         },
         {
           "name": "System.IO",
-          "count": 31
+          "count": 32
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 31
+          "count": 32
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 18
+          "count": 19
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 17
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
           "count": 17
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 16
-        },
-        {
           "name": "System.Linq",
-          "count": 10
+          "count": 11
         },
         {
           "name": "System.Collections.Generic",
-          "count": 10
+          "count": 11
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
@@ -8610,6 +8677,14 @@
         {
           "name": "System.Reflection",
           "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
         }
       ],
       "key_apis": [
@@ -8617,10 +8692,12 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.ImageOptions",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
         "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.Primitives"
       ]
     },
     {
@@ -10268,7 +10345,7 @@
     },
     {
       "name": "adjust-cad-drawing-properties",
-      "file_count": 33,
+      "file_count": 34,
       "files": [
         "assess-performance-impact-of-automatic-sizing-compared-to-manual-width-and-height-specifications.cs",
         "assess-whether-automatic-sizing-respects-the-original-drawing-aspect-ratio.cs",
@@ -10302,6 +10379,7 @@
         "validate-that-the-cad-conversion-method-respects-cadrasterizationoptions-settings-without-additional-code-changes.cs",
         "validate-the-generated-svg-to-ensure-linescale-adjustments-affect-line-thickness.cs",
         "verify-that-automatic-sizing-works-only-when-width-and-height-are-omitted.cs",
+        "verify-that-setting-linescale-after-other-svg-options-does-not-reset-previously-configured-settings.cs",
         "verify-that-the-linescale-parameter-is-serialized-correctly-in-the-svg-markup-as-a-style-attribute.cs"
       ],
       "examples": [
@@ -11582,6 +11660,59 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Verify That Setting Linescale After Other SVG Options Does Not Reset Previously Configured Settings",
+          "category": "adjust-cad-drawing-properties",
+          "path": "adjust-cad-drawing-properties/verify-that-setting-linescale-after-other-svg-options-does-not-reset-previously-configured-settings.cs",
+          "file": "verify-that-setting-linescale-after-other-svg-options-does-not-reset-previously-configured-settings.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "adjust",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "fileformats",
+            "hatch",
+            "imageoptions",
+            "primitives",
+            "properties",
+            "standalone-example",
+            "svg"
+          ],
+          "formats": [
+            "svg"
+          ],
+          "search_phrases": [
+            "Verify That Setting Linescale After Other SVG Options Does Not Reset Previously Configured Settings in C#",
+            "Verify That Setting Linescale After Other SVG Options Does Not Reset Previously Configured Settings using Aspose.CAD for .NET",
+            "Verify That Setting Linescale After Other SVG Options Does Not Reset Previously Configured Settings Aspose.CAD .NET example",
+            "AI generated .net code to Verify That Setting Linescale After Other SVG Options Does Not Reset Previously Configured Settings",
+            "Aspose.CAD for .NET adjust-cad-drawing-properties example",
+            "Aspose.CAD SVG C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Verify That The Linescale Parameter Is Serialized Correctly in The SVG Markup as A Style Attribute",
           "category": "adjust-cad-drawing-properties",
           "path": "adjust-cad-drawing-properties/verify-that-the-linescale-parameter-is-serialized-correctly-in-the-svg-markup-as-a-style-attribute.cs",
@@ -11623,27 +11754,27 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 33
+          "count": 34
         },
         {
           "name": "System.IO",
-          "count": 32
+          "count": 33
         },
         {
           "name": "Aspose.CAD",
-          "count": 32
+          "count": 33
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 31
+          "count": 32
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 22
+          "count": 23
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 3
+          "count": 4
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
@@ -11652,6 +11783,26 @@
         {
           "name": "System.Collections",
           "count": 1
+        },
+        {
+          "name": "System.Linq",
+          "count": 1
+        },
+        {
+          "name": "System.Collections.Generic",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
         }
       ],
       "key_apis": [
@@ -11659,7 +11810,10 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.Primitives"
       ]
     },
     {
@@ -13350,13 +13504,14 @@
     },
     {
       "name": "change-emergency-fonts-and-style-fonts",
-      "file_count": 27,
+      "file_count": 28,
       "files": [
         "adjust-the-emergency-font-setting-to-improve-readability-of-annotations-when-exporting-to-high-resolution-images.cs",
         "apply-a-custom-emergency-font-to-hatch-patterns-by-assigning-the-defaultfont-field-before-rendering.cs",
         "apply-a-new-defaultfont-to-all-text-styles-and-confirm-that-block-references-inherit-the-updated-font.cs",
         "apply-the-defaultfont-change-to-text-entities-within-nested-blocks-to-ensure-uniform-font-usage.cs",
         "assess-performance-impact-when-applying-the-defaultfont-change-to-large-drawings-with-many-text-entities.cs",
+        "change-fonts-used-in-dimension-annotations-by-setting-the-defaultfont-field-on-the-drawing-style-collection.cs",
         "compare-default-font-behavior-across-different-cad-versions-to-identify-compatibility-issues-with-emergency-fonts.cs",
         "compare-text-appearance-before-and-after-changing-the-emergency-font-to-assess-visual-impact.cs",
         "control-font-rendering-during-export-by-configuring-the-defaultfont-field-to-match-the-target-device.cs",
@@ -13588,6 +13743,59 @@
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Change Fonts Used in Dimension Annotations By Setting The Defaultfont Field On The Drawing Style Collection",
+          "category": "change-emergency-fonts-and-style-fonts",
+          "path": "change-emergency-fonts-and-style-fonts/change-fonts-used-in-dimension-annotations-by-setting-the-defaultfont-field-on-the-drawing-style-collection.cs",
+          "file": "change-fonts-used-in-dimension-annotations-by-setting-the-defaultfont-field-on-the-drawing-style-collection.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
+            "change",
+            "csharp",
+            "dotnet8",
+            "emergency",
+            "fileformats",
+            "fonts",
+            "hatch",
+            "imageoptions",
+            "primitives",
+            "standalone-example",
+            "style"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Change Fonts Used in Dimension Annotations By Setting The Defaultfont Field On The Drawing Style Collection in C#",
+            "Change Fonts Used in Dimension Annotations By Setting The Defaultfont Field On The Drawing Style Collection using Aspose.CAD for .NET",
+            "Change Fonts Used in Dimension Annotations By Setting The Defaultfont Field On The Drawing Style Collection Aspose.CAD .NET example",
+            "AI generated .net code to Change Fonts Used in Dimension Annotations By Setting The Defaultfont Field On The Drawing Style Collection",
+            "Aspose.CAD for .NET change-emergency-fonts-and-style-fonts example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Cad.CadTables"
           ],
           "standalone": true,
           "validated": true,
@@ -14504,34 +14712,42 @@
       "required_namespaces": [
         {
           "name": "Aspose.CAD",
-          "count": 27
+          "count": 28
         },
         {
           "name": "System",
-          "count": 27
+          "count": 28
         },
         {
           "name": "System.IO",
-          "count": 27
+          "count": 28
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 24
+          "count": 25
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 21
+          "count": 22
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 8
+          "count": 9
         },
         {
           "name": "System.Linq",
-          "count": 3
+          "count": 4
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 3
+        },
+        {
+          "name": "System.Collections.Generic",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
           "count": 2
         },
         {
@@ -14539,11 +14755,11 @@
           "count": 1
         },
         {
-          "name": "System.Collections.Generic",
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
           "count": 1
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "name": "Aspose.CAD.Primitives",
           "count": 1
         }
       ],
@@ -14553,7 +14769,9 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.FileFormats.Cad.CadConsts"
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.Primitives"
       ]
     },
     {
@@ -15960,7 +16178,7 @@
     },
     {
       "name": "change-the-observer-point",
-      "file_count": 33,
+      "file_count": 31,
       "files": [
         "access-external-file-references-and-replace-them-with-updated-files-before-exporting-to-pdf.cs",
         "access-external-file-references-in-a-cad-drawing-to-ensure-all-linked-resources-are-available.cs",
@@ -15968,7 +16186,6 @@
         "access-external-file-references-update-their-paths-and-export-the-drawing-to-pdf-to-verify-links.cs",
         "apply-a-blind-watermark-to-a-cad-drawing-before-exporting-to-pdf-for-document-security.cs",
         "apply-blind-watermark-after-configuring-text-quality-options-to-embed-security-without-degrading-text-clarity.cs",
-        "apply-blind-watermark-and-configure-text-quality-options-to-maintain-readability-in-the-protected-pdf.cs",
         "change-observer-point-using-rasterizationoptions-observerpoint-and-then-export-to-pdf-to-compare-visual-results.cs",
         "change-observer-point-using-rasterizationoptions-observerpoint-then-move-drawing-down-to-add-a-title-before-exporting.cs",
         "change-the-observer-point-using-rasterizationoptions-observerpoint-to-simulate-different-camera-angles-during-renderi.cs",
@@ -15985,7 +16202,6 @@
         "list-all-layers-and-apply-blind-watermark-to-each-layer-to-ensure-comprehensive-protection.cs",
         "list-all-layers-before-applying-a-blind-watermark-to-ensure-watermark-covers-required-elements.cs",
         "list-all-layers-in-a-loaded-dwg-drawing-to-analyze-layer-organization-before-modification.cs",
-        "list-all-layers-then-apply-blind-watermark-to-ensure-each-layer-contains-the-security-mark.cs",
         "load-a-cad-drawing-with-sat-structure-retrieve-layout-names-and-list-all-layers-for-documentation.cs",
         "retrieve-layout-names-after-loading-a-cad-file-to-identify-available-drawing-sections.cs",
         "retrieve-layout-names-and-then-set-observer-point-to-focus-on-a-specific-layout-before-rasterization.cs",
@@ -16254,49 +16470,6 @@
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply Blind Watermark and Configure Text Quality Options to Maintain Readability in The Protected PDF",
-          "category": "change-the-observer-point",
-          "path": "change-the-observer-point/apply-blind-watermark-and-configure-text-quality-options-to-maintain-readability-in-the-protected-pdf.cs",
-          "file": "apply-blind-watermark-and-configure-text-quality-options-to-maintain-readability-in-the-protected-pdf.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "aspose-cad",
-            "change",
-            "csharp",
-            "dotnet8",
-            "imageoptions",
-            "observer",
-            "pdf",
-            "point",
-            "standalone-example",
-            "the",
-            "watermarkguard"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Apply Blind Watermark and Configure Text Quality Options to Maintain Readability in The Protected PDF in C#",
-            "Apply Blind Watermark and Configure Text Quality Options to Maintain Readability in The Protected PDF using Aspose.CAD for .NET",
-            "Apply Blind Watermark and Configure Text Quality Options to Maintain Readability in The Protected PDF Aspose.CAD .NET example",
-            "AI generated .net code to Apply Blind Watermark and Configure Text Quality Options to Maintain Readability in The Protected PDF",
-            "Aspose.CAD for .NET change-the-observer-point example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
@@ -17011,50 +17184,6 @@
           "package_version": "26.9.0"
         },
         {
-          "title": "List All Layers Then Apply Blind Watermark to Ensure Each Layer Contains The Security Mark",
-          "category": "change-the-observer-point",
-          "path": "change-the-observer-point/list-all-layers-then-apply-blind-watermark-to-ensure-each-layer-contains-the-security-mark.cs",
-          "file": "list-all-layers-then-apply-blind-watermark-to-ensure-each-layer-contains-the-security-mark.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "aspose-cad",
-            "cad",
-            "cadtables",
-            "change",
-            "csharp",
-            "dotnet8",
-            "fileformats",
-            "imageoptions",
-            "observer",
-            "point",
-            "standalone-example",
-            "the",
-            "watermarkguard"
-          ],
-          "formats": [],
-          "search_phrases": [
-            "List All Layers Then Apply Blind Watermark to Ensure Each Layer Contains The Security Mark in C#",
-            "List All Layers Then Apply Blind Watermark to Ensure Each Layer Contains The Security Mark using Aspose.CAD for .NET",
-            "List All Layers Then Apply Blind Watermark to Ensure Each Layer Contains The Security Mark Aspose.CAD .NET example",
-            "AI generated .net code to List All Layers Then Apply Blind Watermark to Ensure Each Layer Contains The Security Mark",
-            "Aspose.CAD for .NET change-the-observer-point example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadTables",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
           "title": "Load A CAD Drawing with Sat Structure Retrieve Layout Names and List All Layers for Documentation",
           "category": "change-the-observer-point",
           "path": "change-the-observer-point/load-a-cad-drawing-with-sat-structure-retrieve-layout-names-and-list-all-layers-for-documentation.cs",
@@ -17434,39 +17563,39 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 33
-        },
-        {
-          "name": "System.IO",
-          "count": 33
-        },
-        {
-          "name": "Aspose.CAD",
-          "count": 33
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad",
           "count": 31
         },
         {
+          "name": "System.IO",
+          "count": 31
+        },
+        {
+          "name": "Aspose.CAD",
+          "count": 31
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad",
+          "count": 30
+        },
+        {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 28
+          "count": 26
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
           "count": 9
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 8
-        },
-        {
           "name": "Aspose.CAD.FileFormats",
           "count": 8
         },
         {
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 7
+        },
+        {
           "name": "Aspose.CAD.WatermarkGuard",
-          "count": 6
+          "count": 4
         },
         {
           "name": "System.Collections.Generic",
@@ -17490,8 +17619,8 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
-        "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats",
+        "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.WatermarkGuard",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
@@ -20189,12 +20318,13 @@
     },
     {
       "name": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images",
-      "file_count": 28,
+      "file_count": 30,
       "files": [
         "apply-custom-background-color-and-draw-color-then-export-dwf-layers-individually-as-png-images.cs",
         "apply-scalemethod-shrinktofit-to-automatically-adjust-dimensions-when-converting-dwg-to-tiff.cs",
         "convert-a-dwg-file-to-pdf-while-preserving-default-model-layout-and-automatic-scaling.cs",
         "convert-a-dxf-file-to-png-by-loading-it-and-applying-default-cadrasterizationoptions.cs",
+        "convert-dwf-layers-to-raster-images-by-applying-identical-cadrasterizationoptions-used-for-dwg-conversion.cs",
         "define-drawcolor-as-black-in-cadrasterizationoptions-to-change-drawing-color-for-pdf-output.cs",
         "enable-tracking-and-capture-rendering-details-while-converting-a-cad-drawing-to-pdf-for-debugging.cs",
         "enable-tracking-by-setting-enabletracking-true-and-observe-rendering-progress-while-saving-as-png.cs",
@@ -20209,6 +20339,7 @@
         "load-a-dxf-drawing-define-explicit-canvas-dimensions-and-save-it-as-pdf-with-default-scaling.cs",
         "observe-default-scalemethod-shrinktofit-effect-when-converting-dxf-to-png-without-explicit-scaling.cs",
         "provide-a-custom-fonts-folder-via-fontsfolder-to-substitute-missing-fonts-during-dxf-to-pdf-conversion.cs",
+        "provide-fontsubstitution-mapping-for-missing-fonts-and-convert-dwf-to-tiff-ensuring-correct-text-appearance.cs",
         "rely-on-default-model-layout-when-no-specific-layout-is-chosen-during-dxf-to-bmp-conversion.cs",
         "select-a-non-default-layout-name-for-rendering-and-export-the-result-as-pdf-with-custom-canvas-size.cs",
         "select-a-specific-layout-name-in-cadrasterizationoptions-to-render-only-that-layout-as-bmp.cs",
@@ -20420,6 +20551,68 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Convert DWF Layers to Raster Images By Applying Identical Cadrasterizationoptions Used for DWG Conversion",
+          "category": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images",
+          "path": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/convert-dwf-layers-to-raster-images-by-applying-identical-cadrasterizationoptions-used-for-dwg-conversion.cs",
+          "file": "convert-dwf-layers-to-raster-images-by-applying-identical-cadrasterizationoptions-used-for-dwg-conversion.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "convert",
+            "csharp",
+            "dotnet8",
+            "drawings",
+            "dwf",
+            "dwg",
+            "dxf",
+            "fileformats",
+            "hatch",
+            "imageoptions",
+            "images",
+            "pdf",
+            "primitives",
+            "raster",
+            "standalone-example",
+            "to"
+          ],
+          "formats": [
+            "dwf",
+            "dwg"
+          ],
+          "search_phrases": [
+            "Convert DWF Layers to Raster Images By Applying Identical Cadrasterizationoptions Used for DWG Conversion in C#",
+            "Convert DWF Layers to Raster Images By Applying Identical Cadrasterizationoptions Used for DWG Conversion using Aspose.CAD for .NET",
+            "Convert DWF Layers to Raster Images By Applying Identical Cadrasterizationoptions Used for DWG Conversion Aspose.CAD .NET example",
+            "AI generated .net code to Convert DWF Layers to Raster Images By Applying Identical Cadrasterizationoptions Used for DWG Conversion",
+            "Aspose.CAD for .NET convert-dwg-and-dxf-drawings-to-pdf-and-raster-images example",
+            "Aspose.CAD DWF C# example",
+            "Aspose.CAD DWG C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Dwf"
           ],
           "standalone": true,
           "validated": true,
@@ -21100,6 +21293,78 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Provide Fontsubstitution Mapping for Missing Fonts and Convert DWF to TIFF Ensuring Correct Text Appearance",
+          "category": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images",
+          "path": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/provide-fontsubstitution-mapping-for-missing-fonts-and-convert-dwf-to-tiff-ensuring-correct-text-appearance.cs",
+          "file": "provide-fontsubstitution-mapping-for-missing-fonts-and-convert-dwf-to-tiff-ensuring-correct-text-appearance.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "convert",
+            "csharp",
+            "dotnet8",
+            "drawable",
+            "drawings",
+            "dwf",
+            "dwg",
+            "dxf",
+            "fileformats",
+            "hatch",
+            "imageoptions",
+            "images",
+            "objects",
+            "pdf",
+            "primitives",
+            "raster",
+            "standalone-example",
+            "text",
+            "tiff",
+            "to",
+            "whip"
+          ],
+          "formats": [
+            "dwf",
+            "tiff"
+          ],
+          "search_phrases": [
+            "Provide Fontsubstitution Mapping for Missing Fonts and Convert DWF to TIFF Ensuring Correct Text Appearance in C#",
+            "Provide Fontsubstitution Mapping for Missing Fonts and Convert DWF to TIFF Ensuring Correct Text Appearance using Aspose.CAD for .NET",
+            "Provide Fontsubstitution Mapping for Missing Fonts and Convert DWF to TIFF Ensuring Correct Text Appearance Aspose.CAD .NET example",
+            "AI generated .net code to Provide Fontsubstitution Mapping for Missing Fonts and Convert DWF to TIFF Ensuring Correct Text Appearance",
+            "Aspose.CAD for .NET convert-dwg-and-dxf-drawings-to-pdf-and-raster-images example",
+            "Convert DWF to TIFF in C#",
+            "Convert DWF to TIFF using Aspose.CAD for .NET",
+            "AI generated .net code to Convert DWF to TIFF",
+            "Aspose.CAD DWF C# example",
+            "Aspose.CAD TIFF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Dwf",
+            "Aspose.CAD.FileFormats.Dwf.Whip.Objects",
+            "Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.Text"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Rely On Default Model Layout When No Specific Layout Is Chosen During DXF to BMP Conversion",
           "category": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images",
           "path": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/rely-on-default-model-layout-when-no-specific-layout-is-chosen-during-dxf-to-bmp-conversion.cs",
@@ -21603,42 +21868,62 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 28
+          "count": 30
         },
         {
           "name": "System.IO",
-          "count": 28
+          "count": 30
         },
         {
           "name": "Aspose.CAD",
-          "count": 28
+          "count": 30
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 28
+          "count": 30
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 15
+          "count": 17
         },
         {
           "name": "System.Linq",
-          "count": 2
+          "count": 4
         },
         {
           "name": "System.Collections.Generic",
-          "count": 1
+          "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Dwf",
-          "count": 1
+          "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Dwf.Whip.Objects",
-          "count": 1
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 2
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.Text",
           "count": 1
         }
       ],
@@ -21648,12 +21933,16 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Dwf",
         "Aspose.CAD.FileFormats.Dwf.Whip.Objects",
+        "Aspose.CAD.FileFormats.Cad.CadObjects",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.Primitives",
         "Aspose.CAD.FileFormats.Cad.CadTables"
       ]
     },
     {
       "name": "create-hatched-rectangles-from-polylines",
-      "file_count": 33,
+      "file_count": 35,
       "files": [
         "add-multiple-cadlwpolyline-rectangles-to-the-drawing-and-fill-each-with-distinct-cadhatch-configurations.cs",
         "add-the-cadhatch-entity-after-defining-all-cadlwpolyline-objects-to-ensure-proper-layering.cs",
@@ -21666,8 +21955,10 @@
         "change-the-hatch-color-of-cadhatch-to-red-and-verify-visual-change-in-the-drawing.cs",
         "configure-cadhatch-with-custom-angle-and-color-then-assign-cadedgeboundarypath-to-complete-definition.cs",
         "configure-the-hatch-angle-on-the-cadhatch-to-achieve-a-desired-diagonal-shading.cs",
+        "create-a-cadedgeboundarypath-from-a-cadlwpolyline-and-use-it-for-a-new-cadhatch.cs",
         "create-a-cadhatch-entity-and-assign-the-cadedgeboundarypath-as-its-boundary.cs",
         "create-a-new-cadlwpolyline-rectangle-and-immediately-fill-it-using-a-cadhatch.cs",
+        "create-a-rectangle-using-cadlwpolyline-define-its-hatch-boundary-with-cadedgeboundarypath-and-fill-it.cs",
         "define-a-cadhatchpatterndata-with-a-named-pattern-and-assign-it-before-saving-the-drawing.cs",
         "define-the-hatch-pattern-using-cadhatchpatterndata-with-a-custom-pattern-name.cs",
         "export-the-drawing-after-applying-multiple-cadhatch-entities-to-verify-all-patterns-render-correctly.cs",
@@ -22222,6 +22513,57 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Create A Cadedgeboundarypath from A Cadlwpolyline and Use It for A New Cadhatch",
+          "category": "create-hatched-rectangles-from-polylines",
+          "path": "create-hatched-rectangles-from-polylines/create-a-cadedgeboundarypath-from-a-cadlwpolyline-and-use-it-for-a-new-cadhatch.cs",
+          "file": "create-a-cadedgeboundarypath-from-a-cadlwpolyline-and-use-it-for-a-new-cadhatch.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "create",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "from",
+            "hatch",
+            "hatched",
+            "imageoptions",
+            "polylines",
+            "primitives",
+            "rectangles",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Create A Cadedgeboundarypath from A Cadlwpolyline and Use It for A New Cadhatch in C#",
+            "Create A Cadedgeboundarypath from A Cadlwpolyline and Use It for A New Cadhatch using Aspose.CAD for .NET",
+            "Create A Cadedgeboundarypath from A Cadlwpolyline and Use It for A New Cadhatch Aspose.CAD .NET example",
+            "AI generated .net code to Create A Cadedgeboundarypath from A Cadlwpolyline and Use It for A New Cadhatch",
+            "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Create A Cadhatch Entity and Assign The Cadedgeboundarypath as Its Boundary",
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/create-a-cadhatch-entity-and-assign-the-cadedgeboundarypath-as-its-boundary.cs",
@@ -22311,6 +22653,57 @@
             "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
             "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Create A Rectangle using Cadlwpolyline Define Its Hatch Boundary with Cadedgeboundarypath and Fill It",
+          "category": "create-hatched-rectangles-from-polylines",
+          "path": "create-hatched-rectangles-from-polylines/create-a-rectangle-using-cadlwpolyline-define-its-hatch-boundary-with-cadedgeboundarypath-and-fill-it.cs",
+          "file": "create-a-rectangle-using-cadlwpolyline-define-its-hatch-boundary-with-cadedgeboundarypath-and-fill-it.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "create",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "from",
+            "hatch",
+            "hatched",
+            "imageoptions",
+            "polylines",
+            "primitives",
+            "rectangles",
+            "standalone-example"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Create A Rectangle using Cadlwpolyline Define Its Hatch Boundary with Cadedgeboundarypath and Fill It in C#",
+            "Create A Rectangle using Cadlwpolyline Define Its Hatch Boundary with Cadedgeboundarypath and Fill It using Aspose.CAD for .NET",
+            "Create A Rectangle using Cadlwpolyline Define Its Hatch Boundary with Cadedgeboundarypath and Fill It Aspose.CAD .NET example",
+            "AI generated .net code to Create A Rectangle using Cadlwpolyline Define Its Hatch Boundary with Cadedgeboundarypath and Fill It",
+            "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives"
           ],
           "standalone": true,
           "validated": true,
@@ -23291,47 +23684,47 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 33
+          "count": 35
         },
         {
           "name": "Aspose.CAD",
-          "count": 33
+          "count": 35
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 33
+          "count": 35
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 32
+          "count": 34
         },
         {
           "name": "System.IO",
-          "count": 32
+          "count": 34
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 30
+          "count": 32
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 26
+          "count": 28
         },
         {
           "name": "System.Linq",
-          "count": 22
+          "count": 24
         },
         {
           "name": "System.Collections.Generic",
-          "count": 20
+          "count": 22
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 20
+          "count": 22
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 13
+          "count": 15
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
@@ -27657,13 +28050,12 @@
     },
     {
       "name": "export-cad-drawings-to-pdf-a",
-      "file_count": 28,
+      "file_count": 27,
       "files": [
         "access-the-corepdfoptions-property-of-pdfoptions-to-modify-pdf-a-compliance-parameters-during-export.cs",
         "adjust-cad-properties-such-as-layers-or-layout-to-customize-the-appearance-prior-to-pdf-a-export.cs",
         "adjust-hatch-rendering-quality-to-ensure-pattern-fidelity-is-maintained-in-the-pdf-a-output.cs",
         "adjust-hatches-quality-option-to-balance-file-size-and-visual-detail-when-exporting-complex-cad-drawings.cs",
-        "apply-a-blind-watermark-to-the-cad-drawing-before-exporting-to-pdf-a-for-document-protection.cs",
         "compare-pdf-a-output-quality-when-using-default-versus-customized-quality-options-for-text-rendering.cs",
         "configure-layout-settings-within-corepdfoptions-to-control-page-size-and-orientation-for-the-pdf-a-document.cs",
         "confirm-that-all-visible-cad-layers-are-included-in-the-exported-pdf-a-file.cs",
@@ -27851,52 +28243,6 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply A Blind Watermark to The CAD Drawing Before Exporting to PDF A for Document Protection",
-          "category": "export-cad-drawings-to-pdf-a",
-          "path": "export-cad-drawings-to-pdf-a/apply-a-blind-watermark-to-the-cad-drawing-before-exporting-to-pdf-a-for-document-protection.cs",
-          "file": "apply-a-blind-watermark-to-the-cad-drawing-before-exporting-to-pdf-a-for-document-protection.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "a",
-            "aspose-cad",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawings",
-            "export",
-            "fileformats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "to",
-            "watermarkguard"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark to The CAD Drawing Before Exporting to PDF A for Document Protection in C#",
-            "Apply A Blind Watermark to The CAD Drawing Before Exporting to PDF A for Document Protection using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to The CAD Drawing Before Exporting to PDF A for Document Protection Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to The CAD Drawing Before Exporting to PDF A for Document Protection",
-            "Aspose.CAD for .NET export-cad-drawings-to-pdf-a example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -28880,23 +29226,23 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 28
+          "count": 27
         },
         {
           "name": "System.IO",
-          "count": 28
+          "count": 27
         },
         {
           "name": "Aspose.CAD",
-          "count": 28
+          "count": 27
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 28
+          "count": 27
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 7
+          "count": 6
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
@@ -28907,10 +29253,6 @@
           "count": 2
         },
         {
-          "name": "Aspose.CAD.WatermarkGuard",
-          "count": 1
-        },
-        {
           "name": "System.Collections.Generic",
           "count": 1
         }
@@ -28919,8 +29261,7 @@
         "Aspose.CAD",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
-        "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.WatermarkGuard"
+        "Aspose.CAD.FileFormats.Cad.CadTables"
       ]
     },
     {
@@ -31727,7 +32068,7 @@
     },
     {
       "name": "export-full-layout-content",
-      "file_count": 40,
+      "file_count": 39,
       "files": [
         "access-references-to-external-files-linked-in-the-drawing-to-ensure-dependencies-are-resolved.cs",
         "adjust-quality-settings-for-text-hatches-and-arcs-within-rasterizationoptions.cs",
@@ -31735,7 +32076,6 @@
         "after-inserting-external-drawing-move-its-elements-to-align-titles-with-existing-layout-headings.cs",
         "apply-a-blind-watermark-after-pdf-generation-to-ensure-watermark-is-embedded-in-final-document.cs",
         "apply-a-blind-watermark-to-the-exported-pdf-document-to-protect-intellectual-property.cs",
-        "apply-a-blind-watermark-to-the-exported-pdf-to-embed-ownership-information-without-visible-marks.cs",
         "assign-the-configured-rasterizationoptions-to-an-exportoptions-instance-before-exporting-the-drawing.cs",
         "call-the-export-method-with-exportoptions-to-generate-a-pdf-file.cs",
         "configure-quality-options-for-text-hatches-and-arcs-to-balance-performance-and-visual-fidelity.cs",
@@ -32019,49 +32359,6 @@
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.WatermarkGuard",
             "Aspose.CAD.FileFormats.Cad"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply A Blind Watermark to The Exported PDF to Embed Ownership Information Without Visible Marks",
-          "category": "export-full-layout-content",
-          "path": "export-full-layout-content/apply-a-blind-watermark-to-the-exported-pdf-to-embed-ownership-information-without-visible-marks.cs",
-          "file": "apply-a-blind-watermark-to-the-exported-pdf-to-embed-ownership-information-without-visible-marks.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "aspose-cad",
-            "content",
-            "csharp",
-            "dotnet8",
-            "export",
-            "full",
-            "imageoptions",
-            "layout",
-            "pdf",
-            "standalone-example",
-            "watermarkguard"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark to The Exported PDF to Embed Ownership Information Without Visible Marks in C#",
-            "Apply A Blind Watermark to The Exported PDF to Embed Ownership Information Without Visible Marks using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to The Exported PDF to Embed Ownership Information Without Visible Marks Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to The Exported PDF to Embed Ownership Information Without Visible Marks",
-            "Aspose.CAD for .NET export-full-layout-content example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -33455,19 +33752,19 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 40
+          "count": 39
         },
         {
           "name": "Aspose.CAD",
-          "count": 40
+          "count": 39
         },
         {
           "name": "System.IO",
-          "count": 40
+          "count": 39
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 38
+          "count": 37
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
@@ -33482,12 +33779,12 @@
           "count": 6
         },
         {
-          "name": "Aspose.CAD.WatermarkGuard",
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
           "count": 3
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 3
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 2
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
@@ -33511,8 +33808,8 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
-        "Aspose.CAD.WatermarkGuard",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.WatermarkGuard",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
         "Aspose.CAD.FileFormats.Cad.CadTables"
       ]
@@ -55217,11 +55514,12 @@
     },
     {
       "name": "work-with-cad-and-bim-drawing-formats",
-      "file_count": 544,
+      "file_count": 527,
       "files": [
         "access-dgn-data-embedded-within-a-dwg-file-and-extract-it-to-a-separate-dgn-file.cs",
         "access-dgn-data-inside-a-dwg-file-and-modify-its-metadata-before-re-exporting.cs",
         "access-dgn-data-inside-a-dwg-file-and-write-it-to-a-memory-stream-for-further-processing.cs",
+        "adjust-cad-properties-before-exporting-cf2-file-to-pdf-in-net.cs",
         "adjust-cad-properties-before-exporting-iges-file-to-pdf-in-net.cs",
         "adjust-cad-properties-before-exporting-obj-file-to-pdf-in-net.cs",
         "adjust-cad-properties-before-exporting-plt-file-to-pdf-in-net.cs",
@@ -55249,21 +55547,12 @@
         "adjust-cad-properties-of-an-ifc-drawing-to-set-default-view-orientation-before-png-export.cs",
         "adjust-cad-properties-of-an-obj-file-to-customize-appearance-prior-to-pdf-conversion.cs",
         "adjust-cad-properties-of-multiple-obj-files-in-a-loop-before-converting-each-to-pdf.cs",
-        "apply-a-blind-watermark-during-pdf-generation-to-protect-intellectual-property-of-cad-drawings.cs",
-        "apply-a-blind-watermark-to-a-dwg-drawing-before-converting-it-to-pdf.cs",
-        "apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-jpeg.cs",
         "apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-png.cs",
-        "apply-a-blind-watermark-to-an-fbx-drawing-before-exporting-the-image-to-pdf.cs",
         "apply-a-blind-watermark-to-an-ifc-drawing-adjust-cad-properties-and-export-to-png-while-handling-errors.cs",
-        "apply-a-blind-watermark-to-an-ifc-drawing-after-loading-it-then-export-the-result-to-png.cs",
         "apply-a-blind-watermark-to-an-ifc-drawing-then-export-to-png-while-handling-export-errors-via-callbacks.cs",
-        "apply-a-blind-watermark-to-an-obj-drawing-before-exporting-the-result-as-a-pdf-document.cs",
-        "apply-a-blind-watermark-to-multiple-fbx-drawings-and-export-each-to-pdf-in-a-single-operation.cs",
-        "apply-a-blind-watermark-to-multiple-ifc-drawings-in-a-loop-and-export-each-to-png.cs",
         "apply-blind-watermark-after-adjusting-cad-properties-of-dxf-files-before-exporting-them-as-pdf.cs",
         "apply-blind-watermark-during-export-of-iges-files-to-pdf-using-pdfoptions.cs",
         "apply-blind-watermark-during-export-of-plt-files-to-pdf-using-pdfoptions.cs",
-        "apply-blind-watermark-during-export-of-plt-files-to-pdf-while-adjusting-cad-properties-for-visual-consistency.cs",
         "apply-cad-property-adjustments-to-improve-rendering-of-complex-cf2-models-in-net.cs",
         "apply-cad-property-adjustments-to-improve-rendering-of-complex-iges-models-in-net.cs",
         "apply-cad-property-adjustments-to-improve-rendering-of-complex-obj-models-in-net.cs",
@@ -55273,15 +55562,12 @@
         "apply-the-sample-code-to-convert-a-drawing-to-png-while-preserving-background-color.cs",
         "assess-impact-of-cad-property-adjustments-on-pdf-file-size-for-stp-exports-in-net.cs",
         "assess-impact-of-cad-property-adjustments-on-pdf-file-size-for-svg-exports-in-net.cs",
-        "batch-convert-iges-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs",
         "batch-convert-iges-files-to-pdf-with-blind-watermark-applied-using-pdfoptions.cs",
-        "batch-convert-iges-files-to-pdf-with-custom-page-size-and-blind-watermark-using-pdfoptions.cs",
         "batch-convert-multiple-dwf-files-to-bmp-using-default-settings-for-raster-image-output.cs",
         "batch-convert-multiple-dwf-files-to-jpeg-using-default-settings-to-produce-image-previews.cs",
         "batch-convert-multiple-dwf-files-to-pdf-using-default-settings-to-streamline-document-generation.cs",
         "batch-convert-multiple-dwfx-files-to-pdf-using-default-settings-to-create-portable-documents.cs",
         "batch-convert-plt-files-to-jpeg-with-high-resolution-using-jpegoptions-and-cadrasterizationoption.cs",
-        "batch-convert-plt-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs",
         "batch-convert-plt-files-to-pdf-with-blind-watermark-applied-using-pdfoptions.cs",
         "batch-convert-plt-files-to-pdf-with-custom-page-size-and-blind-watermark-using-pdfoptions.cs",
         "capture-both-load-and-export-errors-for-fbx-drawings-to-generate-a-detailed-processing-report.cs",
@@ -55320,7 +55606,6 @@
         "convert-autocad-file-to-jpeg-format-in-net.cs",
         "convert-autocad-file-to-pdf-format-in-net.cs",
         "convert-autocad-file-to-png-format-in-net.cs",
-        "convert-dwg-drawings-to-pdf-and-apply-a-blind-watermark-to-secure-the-output.cs",
         "convert-dwg-files-to-pdf-in-c-by-leveraging-aspose-cad-multi-format-support.cs",
         "convert-dxf-drawings-to-pdf-using-programmatic-conversion-capabilities-of-aspose-cad-for-net.cs",
         "convert-iges-files-to-pdf-by-loading-them-and-applying-cadrasterizationoption-with-pdfoptions.cs",
@@ -55395,6 +55680,7 @@
         "explain-the-default-conversion-process-of-a-dwf-drawing-to-pdf-format.cs",
         "explain-the-default-conversion-process-of-a-dwfx-drawing-to-pdf-format.cs",
         "explain-the-limitation-that-dwfx-export-is-documented-only-for-pdf-format.cs",
+        "explain-validation-techniques-for-ensuring-exported-pdf-files-contain-all-original-cf2-drawing-elements.cs",
         "explain-validation-techniques-for-ensuring-exported-png-files-match-expected-rasterization-quality.cs",
         "explain-why-adhering-to-format-constraints-prevents-unsupported-export-attempts-for-stl-and-cf2-files.cs",
         "explain-why-export-operations-use-default-settings-unless-customized-directly-in-code.cs",
@@ -55433,7 +55719,6 @@
         "export-an-opened-dwfx-file-to-pdf-format-following-the-documented-workflow.cs",
         "export-fbx-drawings-to-pdf-and-ensure-that-any-export-errors-trigger-the-registered-callback.cs",
         "export-fbx-drawings-to-pdf-and-use-a-callback-to-capture-any-rendering-exceptions.cs",
-        "export-fbx-drawings-to-pdf-while-applying-blind-watermarks-to-each-file.cs",
         "export-fbx-drawings-to-pdf-while-preserving-original-cad-properties-and-logging-any-errors.cs",
         "export-fbx-drawings-to-pdf-while-simultaneously-logging-any-load-errors-via-callbacks.cs",
         "export-fbx-drawings-to-pdf-while-using-callbacks-to-capture-any-conversion-warnings-as-errors.cs",
@@ -55505,7 +55790,10 @@
         "implement-export-callbacks-to-receive-notifications-after-successful-stl-to-png-conversion.cs",
         "implement-logging-of-autocad-conversion-operations-in-net.cs",
         "implement-logging-of-cf2-load-operations-in-net.cs",
+        "implement-logging-of-iges-load-operations-in-net.cs",
         "implement-logging-of-obj-load-operations-in-net.cs",
+        "implement-logging-of-plt-load-operations-in-net.cs",
+        "implement-logging-of-stl-load-operations-in-net.cs",
         "implement-logging-of-stp-export-operations-in-net.cs",
         "implement-logging-of-svg-export-operations-in-net.cs",
         "implement-retry-logic-for-export-callbacks-that-fail-during-cf2-to-pdf-conversion-attempts.cs",
@@ -55555,13 +55843,11 @@
         "load-a-large-dwg-file-using-recommended-handling-and-export-a-specified-region-to-jpeg.cs",
         "load-a-large-dwg-file-using-recommended-handling-and-export-a-specified-region-to-png.cs",
         "load-an-fbx-drawing-apply-a-blind-watermark-adjust-cad-properties-then-export-to-pdf.cs",
-        "load-an-fbx-drawing-apply-a-blind-watermark-and-export-to-pdf-while-capturing-export-errors.cs",
         "load-an-fbx-drawing-file-and-export-it-to-pdf-while-handling-errors-via-callbacks.cs",
         "load-an-fbx-drawing-handle-any-load-errors-via-callbacks-and-export-to-pdf.cs",
         "load-an-fbx-drawing-modify-its-cad-properties-and-export-the-result-to-pdf-with-callbacks.cs",
         "load-an-fbx-drawing-using-the-image-class-adjust-cad-properties-and-export-to-pdf-with-callbacks.cs",
         "load-an-fbx-drawing-using-the-image-class-adjust-its-cad-properties-then-export-to-pdf.cs",
-        "load-an-fbx-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-pdf.cs",
         "load-an-fbx-drawing-using-the-image-class-then-export-it-to-pdf-without-applying-a-watermark.cs",
         "load-an-ifc-drawing-adjust-its-cad-properties-for-scaling-and-export-to-png-with-callbacks.cs",
         "load-an-ifc-drawing-apply-a-blind-watermark-adjust-cad-properties-and-export-to-png.cs",
@@ -55569,7 +55855,6 @@
         "load-an-ifc-drawing-file-adjust-cad-properties-and-export-the-result-to-png-format.cs",
         "load-an-ifc-drawing-file-using-the-image-class-and-directly-save-it-as-png.cs",
         "load-an-ifc-drawing-handle-load-errors-via-callbacks-and-export-to-png-without-watermark.cs",
-        "load-an-ifc-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-png.cs",
         "load-an-obj-drawing-file-and-convert-it-to-pdf-programmatically-using-aspose-cad-for-net.cs",
         "load-an-obj-file-adjust-its-cad-properties-and-then-apply-a-blind-watermark-before-pdf-export.cs",
         "load-an-obj-file-and-convert-it-directly-to-jpeg-image-format.cs",
@@ -55620,7 +55905,6 @@
         "process-sab-structured-drawings-and-generate-pdf-output-while-preserving-original-geometry.cs",
         "process-sat-and-sab-structured-drawings-sequentially-exporting-each-as-a-separate-pdf-file.cs",
         "process-sat-structured-drawings-and-export-them-directly-to-pdf-using-the-provided-workflow.cs",
-        "programmatically-load-stl-models-apply-a-blind-watermark-and-save-the-result-as-pdf.cs",
         "provide-an-example-of-batch-converting-dwf-files-to-bmp-using-default-settings.cs",
         "provide-an-example-of-batch-converting-dwf-files-to-jpeg-using-default-settings.cs",
         "provide-an-example-of-batch-converting-dwf-files-to-pdf-using-default-settings.cs",
@@ -55645,8 +55929,6 @@
         "render-iges-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-black-using-cadrasterizationo.cs",
         "render-iges-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs",
         "render-iges-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs",
-        "render-iges-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs",
-        "render-iges-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs",
         "render-iges-files-to-pdf-while-handling-export-errors-using-callbacks-during-conversion.cs",
         "render-iges-files-to-pdf-while-preserving-original-line-colors-by-adjusting-cad-properties.cs",
         "render-iges-files-to-pdf-while-setting-background-color-to-gray-and-enabling-anti-aliasing.cs",
@@ -55672,12 +55954,10 @@
         "render-plt-files-to-pdf-while-adjusting-cad-properties-and-background-color-using-cadrasterizationoption.cs",
         "render-plt-files-to-pdf-while-adjusting-cad-properties-and-setting-background-color-to-white.cs",
         "render-plt-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs",
-        "render-plt-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs",
         "render-plt-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs",
         "render-plt-files-to-pdf-while-preserving-original-line-colors-by-adjusting-cad-properties.cs",
         "render-plt-files-to-pdf-while-setting-background-color-to-gray-and-enabling-anti-aliasing.cs",
         "render-plt-files-to-pdf-while-setting-background-color-to-light-gray-using-cadrasterizationoption.cs",
-        "render-plt-files-to-pdf-while-setting-custom-page-size-and-applying-blind-watermark-using-cadrasterizationoption-and.cs",
         "render-plt-files-to-pdf-with-anti-aliasing-enabled-and-background-color-set-to-white-using-cadrasterizationoption.cs",
         "render-plt-files-to-pdf-with-anti-aliasing-enabled-for-smoother-visual-output.cs",
         "render-plt-files-to-pdf-with-custom-page-size-configured-in-cadrasterizationoption.cs",
@@ -55896,6 +56176,65 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.FileFormats.Cad"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Adjust CAD Properties Before Exporting CF2 File to PDF in Net",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/adjust-cad-properties-before-exporting-cf2-file-to-pdf-in-net.cs",
+          "file": "adjust-cad-properties-before-exporting-cf2-file-to-pdf-in-net.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cf2",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "fileformats",
+            "formats",
+            "hatch",
+            "imageoptions",
+            "pdf",
+            "primitives",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "cf2",
+            "pdf"
+          ],
+          "search_phrases": [
+            "Adjust CAD Properties Before Exporting CF2 File to PDF in Net in C#",
+            "Adjust CAD Properties Before Exporting CF2 File to PDF in Net using Aspose.CAD for .NET",
+            "Adjust CAD Properties Before Exporting CF2 File to PDF in Net Aspose.CAD .NET example",
+            "AI generated .net code to Adjust CAD Properties Before Exporting CF2 File to PDF in Net",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD CF2 C# example",
+            "Aspose.CAD PDF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives"
           ],
           "standalone": true,
           "validated": true,
@@ -57199,156 +57538,6 @@
           "package_version": "26.9.0"
         },
         {
-          "title": "Apply A Blind Watermark During PDF Generation to Protect Intellectual Property of CAD Drawings",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-during-pdf-generation-to-protect-intellectual-property-of-cad-drawings.cs",
-          "file": "apply-a-blind-watermark-during-pdf-generation-to-protect-intellectual-property-of-cad-drawings.cs",
-          "api_area": "Cad",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark During PDF Generation to Protect Intellectual Property of CAD Drawings in C#",
-            "Apply A Blind Watermark During PDF Generation to Protect Intellectual Property of CAD Drawings using Aspose.CAD for .NET",
-            "Apply A Blind Watermark During PDF Generation to Protect Intellectual Property of CAD Drawings Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark During PDF Generation to Protect Intellectual Property of CAD Drawings",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply A Blind Watermark to A DWG Drawing Before Converting It to PDF",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-a-dwg-drawing-before-converting-it-to-pdf.cs",
-          "file": "apply-a-blind-watermark-to-a-dwg-drawing-before-converting-it-to-pdf.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "dwg",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "dwg",
-            "pdf"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark to A DWG Drawing Before Converting It to PDF in C#",
-            "Apply A Blind Watermark to A DWG Drawing Before Converting It to PDF using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to A DWG Drawing Before Converting It to PDF Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to A DWG Drawing Before Converting It to PDF",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD DWG C# example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply A Blind Watermark to A DWG Drawing Before Exporting It to JPEG",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-jpeg.cs",
-          "file": "apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-jpeg.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "dwg",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "jpeg",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "dwg",
-            "jpeg"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark to A DWG Drawing Before Exporting It to JPEG in C#",
-            "Apply A Blind Watermark to A DWG Drawing Before Exporting It to JPEG using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to A DWG Drawing Before Exporting It to JPEG Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to A DWG Drawing Before Exporting It to JPEG",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD DWG C# example",
-            "Aspose.CAD JPEG C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
           "title": "Apply A Blind Watermark to A DWG Drawing Before Exporting It to PNG",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-png.cs",
@@ -57391,54 +57580,6 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply A Blind Watermark to An Fbx Drawing Before Exporting The Image to PDF",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-an-fbx-drawing-before-exporting-the-image-to-pdf.cs",
-          "file": "apply-a-blind-watermark-to-an-fbx-drawing-before-exporting-the-image-to-pdf.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark to An Fbx Drawing Before Exporting The Image to PDF in C#",
-            "Apply A Blind Watermark to An Fbx Drawing Before Exporting The Image to PDF using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to An Fbx Drawing Before Exporting The Image to PDF Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to An Fbx Drawing Before Exporting The Image to PDF",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
@@ -57499,57 +57640,6 @@
           "package_version": "26.9.0"
         },
         {
-          "title": "Apply A Blind Watermark to An IFC Drawing After Loading It Then Export The Result to PNG",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-an-ifc-drawing-after-loading-it-then-export-the-result-to-png.cs",
-          "file": "apply-a-blind-watermark-to-an-ifc-drawing-after-loading-it-then-export-the-result-to-png.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "ifc",
-            "imageoptions",
-            "png",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "ifc",
-            "png"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark to An IFC Drawing After Loading It Then Export The Result to PNG in C#",
-            "Apply A Blind Watermark to An IFC Drawing After Loading It Then Export The Result to PNG using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to An IFC Drawing After Loading It Then Export The Result to PNG Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to An IFC Drawing After Loading It Then Export The Result to PNG",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD IFC C# example",
-            "Aspose.CAD PNG C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard",
-            "Aspose.CAD.FileFormats.Cad"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
           "title": "Apply A Blind Watermark to An IFC Drawing Then Export to PNG While Handling Export Errors Via Callbacks",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-an-ifc-drawing-then-export-to-png-while-handling-export-errors-via-callbacks.cs",
@@ -57597,156 +57687,6 @@
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadConsts"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply A Blind Watermark to An OBJ Drawing Before Exporting The Result as A PDF Document",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-an-obj-drawing-before-exporting-the-result-as-a-pdf-document.cs",
-          "file": "apply-a-blind-watermark-to-an-obj-drawing-before-exporting-the-result-as-a-pdf-document.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "obj",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "obj",
-            "pdf"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark to An OBJ Drawing Before Exporting The Result as A PDF Document in C#",
-            "Apply A Blind Watermark to An OBJ Drawing Before Exporting The Result as A PDF Document using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to An OBJ Drawing Before Exporting The Result as A PDF Document Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to An OBJ Drawing Before Exporting The Result as A PDF Document",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD OBJ C# example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply A Blind Watermark to Multiple Fbx Drawings and Export Each to PDF in A Single Operation",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-multiple-fbx-drawings-and-export-each-to-pdf-in-a-single-operation.cs",
-          "file": "apply-a-blind-watermark-to-multiple-fbx-drawings-and-export-each-to-pdf-in-a-single-operation.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark to Multiple Fbx Drawings and Export Each to PDF in A Single Operation in C#",
-            "Apply A Blind Watermark to Multiple Fbx Drawings and Export Each to PDF in A Single Operation using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to Multiple Fbx Drawings and Export Each to PDF in A Single Operation Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to Multiple Fbx Drawings and Export Each to PDF in A Single Operation",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply A Blind Watermark to Multiple IFC Drawings in A Loop and Export Each to PNG",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-multiple-ifc-drawings-in-a-loop-and-export-each-to-png.cs",
-          "file": "apply-a-blind-watermark-to-multiple-ifc-drawings-in-a-loop-and-export-each-to-png.cs",
-          "api_area": "Cad",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "ifc",
-            "imageoptions",
-            "png",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "ifc",
-            "png"
-          ],
-          "search_phrases": [
-            "Apply A Blind Watermark to Multiple IFC Drawings in A Loop and Export Each to PNG in C#",
-            "Apply A Blind Watermark to Multiple IFC Drawings in A Loop and Export Each to PNG using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to Multiple IFC Drawings in A Loop and Export Each to PNG Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to Multiple IFC Drawings in A Loop and Export Each to PNG",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD IFC C# example",
-            "Aspose.CAD PNG C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -57893,57 +57833,6 @@
             "System",
             "System.IO",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply Blind Watermark During Export of PLT Files to PDF While Adjusting CAD Properties for Visual Consistency",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/apply-blind-watermark-during-export-of-plt-files-to-pdf-while-adjusting-cad-properties-for-visual-consistency.cs",
-          "file": "apply-blind-watermark-during-export-of-plt-files-to-pdf-while-adjusting-cad-properties-for-visual-consistency.cs",
-          "api_area": "Cad",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "plt",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf",
-            "plt"
-          ],
-          "search_phrases": [
-            "Apply Blind Watermark During Export of PLT Files to PDF While Adjusting CAD Properties for Visual Consistency in C#",
-            "Apply Blind Watermark During Export of PLT Files to PDF While Adjusting CAD Properties for Visual Consistency using Aspose.CAD for .NET",
-            "Apply Blind Watermark During Export of PLT Files to PDF While Adjusting CAD Properties for Visual Consistency Aspose.CAD .NET example",
-            "AI generated .net code to Apply Blind Watermark During Export of PLT Files to PDF While Adjusting CAD Properties for Visual Consistency",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example",
-            "Aspose.CAD PLT C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.WatermarkGuard"
           ],
@@ -58359,54 +58248,6 @@
           "package_version": "26.9.0"
         },
         {
-          "title": "Batch Convert Iges Files to PDF with Blind Watermark and High Resolution using Pdfoptions and Cadrasterizationoption",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/batch-convert-iges-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs",
-          "file": "batch-convert-iges-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs",
-          "api_area": "Cad",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Batch Convert Iges Files to PDF with Blind Watermark and High Resolution using Pdfoptions and Cadrasterizationoption in C#",
-            "Batch Convert Iges Files to PDF with Blind Watermark and High Resolution using Pdfoptions and Cadrasterizationoption using Aspose.CAD for .NET",
-            "Batch Convert Iges Files to PDF with Blind Watermark and High Resolution using Pdfoptions and Cadrasterizationoption Aspose.CAD .NET example",
-            "AI generated .net code to Batch Convert Iges Files to PDF with Blind Watermark and High Resolution using Pdfoptions and Cadrasterizationoption",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
           "title": "Batch Convert Iges Files to PDF with Blind Watermark Applied using Pdfoptions",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/batch-convert-iges-files-to-pdf-with-blind-watermark-applied-using-pdfoptions.cs",
@@ -58443,55 +58284,6 @@
           "namespaces": [
             "System",
             "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Batch Convert Iges Files to PDF with Custom Page Size and Blind Watermark using Pdfoptions",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/batch-convert-iges-files-to-pdf-with-custom-page-size-and-blind-watermark-using-pdfoptions.cs",
-          "file": "batch-convert-iges-files-to-pdf-with-custom-page-size-and-blind-watermark-using-pdfoptions.cs",
-          "api_area": "Cad",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Batch Convert Iges Files to PDF with Custom Page Size and Blind Watermark using Pdfoptions in C#",
-            "Batch Convert Iges Files to PDF with Custom Page Size and Blind Watermark using Pdfoptions using Aspose.CAD for .NET",
-            "Batch Convert Iges Files to PDF with Custom Page Size and Blind Watermark using Pdfoptions Aspose.CAD .NET example",
-            "AI generated .net code to Batch Convert Iges Files to PDF with Custom Page Size and Blind Watermark using Pdfoptions",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "System.Linq",
             "Aspose.CAD",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.ImageOptions",
@@ -58730,58 +58522,6 @@
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Batch Convert PLT Files to PDF with Blind Watermark and High Resolution using Pdfoptions and Cadrasterizationoption",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/batch-convert-plt-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs",
-          "file": "batch-convert-plt-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "plt",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf",
-            "plt"
-          ],
-          "search_phrases": [
-            "Batch Convert PLT Files to PDF with Blind Watermark and High Resolution using Pdfoptions and Cadrasterizationoption in C#",
-            "Batch Convert PLT Files to PDF with Blind Watermark and High Resolution using Pdfoptions and Cadrasterizationoption using Aspose.CAD for .NET",
-            "Batch Convert PLT Files to PDF with Blind Watermark and High Resolution using Pdfoptions and Cadrasterizationoption Aspose.CAD .NET example",
-            "AI generated .net code to Batch Convert PLT Files to PDF with Blind Watermark and High Resolution using Pdfoptions and Cadrasterizationoption",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example",
-            "Aspose.CAD PLT C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "System.Linq",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -60545,57 +60285,6 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Convert DWG Drawings to PDF and Apply A Blind Watermark to Secure The Output",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/convert-dwg-drawings-to-pdf-and-apply-a-blind-watermark-to-secure-the-output.cs",
-          "file": "convert-dwg-drawings-to-pdf-and-apply-a-blind-watermark-to-secure-the-output.cs",
-          "api_area": "Cad",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "dwg",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "dwg",
-            "pdf"
-          ],
-          "search_phrases": [
-            "Convert DWG Drawings to PDF and Apply A Blind Watermark to Secure The Output in C#",
-            "Convert DWG Drawings to PDF and Apply A Blind Watermark to Secure The Output using Aspose.CAD for .NET",
-            "Convert DWG Drawings to PDF and Apply A Blind Watermark to Secure The Output Aspose.CAD .NET example",
-            "AI generated .net code to Convert DWG Drawings to PDF and Apply A Blind Watermark to Secure The Output",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD DWG C# example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -64004,6 +63693,66 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Explain Validation Techniques for Ensuring Exported PDF Files Contain All Original CF2 Drawing Elements",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/explain-validation-techniques-for-ensuring-exported-pdf-files-contain-all-original-cf2-drawing-elements.cs",
+          "file": "explain-validation-techniques-for-ensuring-exported-pdf-files-contain-all-original-cf2-drawing-elements.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cf2",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "fileformats",
+            "formats",
+            "hatch",
+            "imageoptions",
+            "pdf",
+            "primitives",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "cf2",
+            "pdf"
+          ],
+          "search_phrases": [
+            "Explain Validation Techniques for Ensuring Exported PDF Files Contain All Original CF2 Drawing Elements in C#",
+            "Explain Validation Techniques for Ensuring Exported PDF Files Contain All Original CF2 Drawing Elements using Aspose.CAD for .NET",
+            "Explain Validation Techniques for Ensuring Exported PDF Files Contain All Original CF2 Drawing Elements Aspose.CAD .NET example",
+            "AI generated .net code to Explain Validation Techniques for Ensuring Exported PDF Files Contain All Original CF2 Drawing Elements",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD CF2 C# example",
+            "Aspose.CAD PDF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.CF2"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Explain Validation Techniques for Ensuring Exported PNG Files Match Expected Rasterization Quality",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/explain-validation-techniques-for-ensuring-exported-png-files-match-expected-rasterization-quality.cs",
@@ -65810,52 +65559,6 @@
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Export Fbx Drawings to PDF While Applying Blind Watermarks to Each File",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/export-fbx-drawings-to-pdf-while-applying-blind-watermarks-to-each-file.cs",
-          "file": "export-fbx-drawings-to-pdf-while-applying-blind-watermarks-to-each-file.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Export Fbx Drawings to PDF While Applying Blind Watermarks to Each File in C#",
-            "Export Fbx Drawings to PDF While Applying Blind Watermarks to Each File using Aspose.CAD for .NET",
-            "Export Fbx Drawings to PDF While Applying Blind Watermarks to Each File Aspose.CAD .NET example",
-            "AI generated .net code to Export Fbx Drawings to PDF While Applying Blind Watermarks to Each File",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard",
-            "System.IO"
           ],
           "standalone": true,
           "validated": true,
@@ -69149,6 +68852,60 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Implement Logging of Iges Load Operations in Net",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/implement-logging-of-iges-load-operations-in-net.cs",
+          "file": "implement-logging-of-iges-load-operations-in-net.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "fileformats",
+            "formats",
+            "hatch",
+            "iges",
+            "imageoptions",
+            "primitives",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Implement Logging of Iges Load Operations in Net in C#",
+            "Implement Logging of Iges Load Operations in Net using Aspose.CAD for .NET",
+            "Implement Logging of Iges Load Operations in Net Aspose.CAD .NET example",
+            "AI generated .net code to Implement Logging of Iges Load Operations in Net",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Iges"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Implement Logging of OBJ Load Operations in Net",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/implement-logging-of-obj-load-operations-in-net.cs",
@@ -69183,6 +68940,119 @@
             "System",
             "System.IO",
             "Aspose.CAD"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Implement Logging of PLT Load Operations in Net",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/implement-logging-of-plt-load-operations-in-net.cs",
+          "file": "implement-logging-of-plt-load-operations-in-net.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "fileformats",
+            "formats",
+            "hatch",
+            "imageoptions",
+            "plt",
+            "primitives",
+            "standalone-example",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "plt"
+          ],
+          "search_phrases": [
+            "Implement Logging of PLT Load Operations in Net in C#",
+            "Implement Logging of PLT Load Operations in Net using Aspose.CAD for .NET",
+            "Implement Logging of PLT Load Operations in Net Aspose.CAD .NET example",
+            "AI generated .net code to Implement Logging of PLT Load Operations in Net",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD PLT C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Implement Logging of STL Load Operations in Net",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/implement-logging-of-stl-load-operations-in-net.cs",
+          "file": "implement-logging-of-stl-load-operations-in-net.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "drawing",
+            "fileformats",
+            "formats",
+            "hatch",
+            "imageoptions",
+            "primitives",
+            "standalone-example",
+            "stl",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "stl"
+          ],
+          "search_phrases": [
+            "Implement Logging of STL Load Operations in Net in C#",
+            "Implement Logging of STL Load Operations in Net using Aspose.CAD for .NET",
+            "Implement Logging of STL Load Operations in Net Aspose.CAD .NET example",
+            "AI generated .net code to Implement Logging of STL Load Operations in Net",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD STL C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Stl"
           ],
           "standalone": true,
           "validated": true,
@@ -71427,56 +71297,6 @@
           "package_version": "26.9.0"
         },
         {
-          "title": "Load An Fbx Drawing Apply A Blind Watermark and Export to PDF While Capturing Export Errors",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/load-an-fbx-drawing-apply-a-blind-watermark-and-export-to-pdf-while-capturing-export-errors.cs",
-          "file": "load-an-fbx-drawing-apply-a-blind-watermark-and-export-to-pdf-while-capturing-export-errors.cs",
-          "api_area": "Cad.CadConsts",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "cadconsts",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Load An Fbx Drawing Apply A Blind Watermark and Export to PDF While Capturing Export Errors in C#",
-            "Load An Fbx Drawing Apply A Blind Watermark and Export to PDF While Capturing Export Errors using Aspose.CAD for .NET",
-            "Load An Fbx Drawing Apply A Blind Watermark and Export to PDF While Capturing Export Errors Aspose.CAD .NET example",
-            "AI generated .net code to Load An Fbx Drawing Apply A Blind Watermark and Export to PDF While Capturing Export Errors",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
           "title": "Load An Fbx Drawing File and Export It to PDF While Handling Errors Via Callbacks",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/load-an-fbx-drawing-file-and-export-it-to-pdf-while-handling-errors-via-callbacks.cs",
@@ -71697,52 +71517,6 @@
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Load An Fbx Drawing using The Image Class Apply A Blind Watermark Then Export to PDF",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/load-an-fbx-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-pdf.cs",
-          "file": "load-an-fbx-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-pdf.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Load An Fbx Drawing using The Image Class Apply A Blind Watermark Then Export to PDF in C#",
-            "Load An Fbx Drawing using The Image Class Apply A Blind Watermark Then Export to PDF using Aspose.CAD for .NET",
-            "Load An Fbx Drawing using The Image Class Apply A Blind Watermark Then Export to PDF Aspose.CAD .NET example",
-            "AI generated .net code to Load An Fbx Drawing using The Image Class Apply A Blind Watermark Then Export to PDF",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -72093,55 +71867,6 @@
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Load An IFC Drawing using The Image Class Apply A Blind Watermark Then Export to PNG",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/load-an-ifc-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-png.cs",
-          "file": "load-an-ifc-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-png.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "formats",
-            "ifc",
-            "imageoptions",
-            "png",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "ifc",
-            "png"
-          ],
-          "search_phrases": [
-            "Load An IFC Drawing using The Image Class Apply A Blind Watermark Then Export to PNG in C#",
-            "Load An IFC Drawing using The Image Class Apply A Blind Watermark Then Export to PNG using Aspose.CAD for .NET",
-            "Load An IFC Drawing using The Image Class Apply A Blind Watermark Then Export to PNG Aspose.CAD .NET example",
-            "AI generated .net code to Load An IFC Drawing using The Image Class Apply A Blind Watermark Then Export to PNG",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD IFC C# example",
-            "Aspose.CAD PNG C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -74424,55 +74149,6 @@
           "package_version": "26.9.0"
         },
         {
-          "title": "Programmatically Load STL Models Apply A Blind Watermark and Save The Result as PDF",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/programmatically-load-stl-models-apply-a-blind-watermark-and-save-the-result-as-pdf.cs",
-          "file": "programmatically-load-stl-models-apply-a-blind-watermark-and-save-the-result-as-pdf.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "stl",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf",
-            "stl"
-          ],
-          "search_phrases": [
-            "Programmatically Load STL Models Apply A Blind Watermark and Save The Result as PDF in C#",
-            "Programmatically Load STL Models Apply A Blind Watermark and Save The Result as PDF using Aspose.CAD for .NET",
-            "Programmatically Load STL Models Apply A Blind Watermark and Save The Result as PDF Aspose.CAD .NET example",
-            "AI generated .net code to Programmatically Load STL Models Apply A Blind Watermark and Save The Result as PDF",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example",
-            "Aspose.CAD STL C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
           "title": "Provide An Example of Batch Converting DWF Files to BMP using Default Settings",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/provide-an-example-of-batch-converting-dwf-files-to-bmp-using-default-settings.cs",
@@ -75559,100 +75235,6 @@
             "Render Iges Files to PDF While Applying Blind Watermark and Adjusting CAD Properties using Pdfoptions using Aspose.CAD for .NET",
             "Render Iges Files to PDF While Applying Blind Watermark and Adjusting CAD Properties using Pdfoptions Aspose.CAD .NET example",
             "AI generated .net code to Render Iges Files to PDF While Applying Blind Watermark and Adjusting CAD Properties using Pdfoptions",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Render Iges Files to PDF While Applying Blind Watermark and Setting Background Color to Black",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/render-iges-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs",
-          "file": "render-iges-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Render Iges Files to PDF While Applying Blind Watermark and Setting Background Color to Black in C#",
-            "Render Iges Files to PDF While Applying Blind Watermark and Setting Background Color to Black using Aspose.CAD for .NET",
-            "Render Iges Files to PDF While Applying Blind Watermark and Setting Background Color to Black Aspose.CAD .NET example",
-            "AI generated .net code to Render Iges Files to PDF While Applying Blind Watermark and Setting Background Color to Black",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Render Iges Files to PDF While Applying Blind Watermark using Pdfoptions and Cadrasterizationoption",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/render-iges-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs",
-          "file": "render-iges-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs",
-          "api_area": "Cad",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf"
-          ],
-          "search_phrases": [
-            "Render Iges Files to PDF While Applying Blind Watermark using Pdfoptions and Cadrasterizationoption in C#",
-            "Render Iges Files to PDF While Applying Blind Watermark using Pdfoptions and Cadrasterizationoption using Aspose.CAD for .NET",
-            "Render Iges Files to PDF While Applying Blind Watermark using Pdfoptions and Cadrasterizationoption Aspose.CAD .NET example",
-            "AI generated .net code to Render Iges Files to PDF While Applying Blind Watermark using Pdfoptions and Cadrasterizationoption",
             "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
             "Aspose.CAD PDF C# example"
           ],
@@ -76848,55 +76430,6 @@
           "package_version": "26.9.0"
         },
         {
-          "title": "Render PLT Files to PDF While Applying Blind Watermark and Setting Background Color to Black",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/render-plt-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs",
-          "file": "render-plt-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "plt",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf",
-            "plt"
-          ],
-          "search_phrases": [
-            "Render PLT Files to PDF While Applying Blind Watermark and Setting Background Color to Black in C#",
-            "Render PLT Files to PDF While Applying Blind Watermark and Setting Background Color to Black using Aspose.CAD for .NET",
-            "Render PLT Files to PDF While Applying Blind Watermark and Setting Background Color to Black Aspose.CAD .NET example",
-            "AI generated .net code to Render PLT Files to PDF While Applying Blind Watermark and Setting Background Color to Black",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example",
-            "Aspose.CAD PLT C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
           "title": "Render PLT Files to PDF While Applying Blind Watermark using Pdfoptions and Cadrasterizationoption",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/render-plt-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs",
@@ -77084,57 +76617,6 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Render PLT Files to PDF While Setting Custom Page Size and Applying Blind Watermark using Cadrasterizationoption and",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/render-plt-files-to-pdf-while-setting-custom-page-size-and-applying-blind-watermark-using-cadrasterizationoption-and.cs",
-          "file": "render-plt-files-to-pdf-while-setting-custom-page-size-and-applying-blind-watermark-using-cadrasterizationoption-and.cs",
-          "api_area": "Cad",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "pdf",
-            "plt",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "pdf",
-            "plt"
-          ],
-          "search_phrases": [
-            "Render PLT Files to PDF While Setting Custom Page Size and Applying Blind Watermark using Cadrasterizationoption and in C#",
-            "Render PLT Files to PDF While Setting Custom Page Size and Applying Blind Watermark using Cadrasterizationoption and using Aspose.CAD for .NET",
-            "Render PLT Files to PDF While Setting Custom Page Size and Applying Blind Watermark using Cadrasterizationoption and Aspose.CAD .NET example",
-            "AI generated .net code to Render PLT Files to PDF While Setting Custom Page Size and Applying Blind Watermark using Cadrasterizationoption and",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD PDF C# example",
-            "Aspose.CAD PLT C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -81065,43 +80547,43 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 544
+          "count": 527
         },
         {
           "name": "System.IO",
-          "count": 543
+          "count": 526
         },
         {
           "name": "Aspose.CAD",
-          "count": 543
+          "count": 526
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 505
+          "count": 488
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 254
-        },
-        {
-          "name": "Aspose.CAD.WatermarkGuard",
-          "count": 43
+          "count": 243
         },
         {
           "name": "System.Collections.Generic",
-          "count": 39
+          "count": 44
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 35
+          "count": 40
         },
         {
           "name": "System.Linq",
-          "count": 29
+          "count": 32
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 18
+          "count": 22
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 21
         },
         {
           "name": "Aspose.CAD.FileFormats.Dwf",
@@ -81120,6 +80602,14 @@
           "count": 8
         },
         {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 6
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 6
+        },
+        {
           "name": "System.Threading",
           "count": 2
         },
@@ -81128,7 +80618,7 @@
           "count": 1
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "name": "Aspose.CAD.FileFormats.CF2",
           "count": 1
         },
         {
@@ -81141,6 +80631,14 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Iges",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Stl",
           "count": 1
         },
         {
@@ -81164,10 +80662,6 @@
           "count": 1
         },
         {
-          "name": "Aspose.CAD.Primitives",
-          "count": 1
-        },
-        {
           "name": "Aspose.CAD.FileFormats",
           "count": 1
         },
@@ -81184,13 +80678,13 @@
         "Aspose.CAD",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
-        "Aspose.CAD.WatermarkGuard",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.WatermarkGuard",
         "Aspose.CAD.FileFormats.Dwf",
         "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.FileFormats.Ifc",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch"
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.Primitives"
       ]
     },
     {
@@ -82765,11 +82259,10 @@
     },
     {
       "name": "work-with-cad-files",
-      "file_count": 35,
+      "file_count": 34,
       "files": [
         "adjust-cad-properties-such-as-layer-visibility-to-control-element-display-within-the-drawing.cs",
         "adjust-camera-rotation-by-modifying-vectorrasterizationoptions-properties-to-achieve-the-desired-viewing-angle.cs",
-        "apply-a-blind-watermark-to-the-entire-drawing-to-protect-intellectual-property.cs",
         "change-camera-transform-to-translate-view-position-for-better-focus-on-a-specific-drawing-area.cs",
         "change-the-end-point-of-a-polyline-entity-to-adjust-its-shape-within-the-drawing.cs",
         "control-visibility-mode-through-rasterization-options-to-influence-how-entities-are-rendered.cs",
@@ -82877,47 +82370,6 @@
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property",
-          "category": "work-with-cad-files",
-          "path": "work-with-cad-files/apply-a-blind-watermark-to-the-entire-drawing-to-protect-intellectual-property.cs",
-          "file": "apply-a-blind-watermark-to-the-entire-drawing-to-protect-intellectual-property.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "aspose-cad",
-            "cad",
-            "csharp",
-            "dotnet8",
-            "fileformats",
-            "files",
-            "imageoptions",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [],
-          "search_phrases": [
-            "Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property in C#",
-            "Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property using Aspose.CAD for .NET",
-            "Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property Aspose.CAD .NET example",
-            "AI generated .net code to Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property",
-            "Aspose.CAD for .NET work-with-cad-files example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -84251,23 +83703,23 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 35
+          "count": 34
         },
         {
           "name": "System.IO",
-          "count": 35
+          "count": 34
         },
         {
           "name": "Aspose.CAD",
-          "count": 35
+          "count": 34
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 27
+          "count": 26
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 24
+          "count": 23
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
@@ -84294,10 +83746,6 @@
           "count": 2
         },
         {
-          "name": "Aspose.CAD.WatermarkGuard",
-          "count": 1
-        },
-        {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
           "count": 1
         },
@@ -84318,7 +83766,6 @@
         "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats",
-        "Aspose.CAD.WatermarkGuard",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
       ]

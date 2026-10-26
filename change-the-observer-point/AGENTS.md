@@ -18,15 +18,15 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - Files are standalone `.cs` examples stored directly in this folder.
 
 ## Required Namespaces
-- `using System;` (33 file(s))
-- `using System.IO;` (33 file(s))
-- `using Aspose.CAD;` (33 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (31 file(s))
-- `using Aspose.CAD.ImageOptions;` (28 file(s))
+- `using System;` (31 file(s))
+- `using System.IO;` (31 file(s))
+- `using Aspose.CAD;` (31 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (30 file(s))
+- `using Aspose.CAD.ImageOptions;` (26 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadObjects;` (9 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadTables;` (8 file(s))
 - `using Aspose.CAD.FileFormats;` (8 file(s))
-- `using Aspose.CAD.WatermarkGuard;` (6 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadTables;` (7 file(s))
+- `using Aspose.CAD.WatermarkGuard;` (4 file(s))
 - `using System.Collections.Generic;` (3 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadConsts;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (1 file(s))
@@ -41,7 +41,6 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [access-external-file-references-update-their-paths-and-export-the-drawing-to-pdf-to-verify-links.cs](./access-external-file-references-update-their-paths-and-export-the-drawing-to-pdf-to-verify-links.cs) | access external file references update their paths and export the drawing to pdf to verify links |
 | [apply-a-blind-watermark-to-a-cad-drawing-before-exporting-to-pdf-for-document-security.cs](./apply-a-blind-watermark-to-a-cad-drawing-before-exporting-to-pdf-for-document-security.cs) | apply a blind watermark to a cad drawing before exporting to pdf for document security |
 | [apply-blind-watermark-after-configuring-text-quality-options-to-embed-security-without-degrading-text-clarity.cs](./apply-blind-watermark-after-configuring-text-quality-options-to-embed-security-without-degrading-text-clarity.cs) | apply blind watermark after configuring text quality options to embed security without degrading text clarity |
-| [apply-blind-watermark-and-configure-text-quality-options-to-maintain-readability-in-the-protected-pdf.cs](./apply-blind-watermark-and-configure-text-quality-options-to-maintain-readability-in-the-protected-pdf.cs) | apply blind watermark and configure text quality options to maintain readability in the protected pdf |
 | [change-observer-point-using-rasterizationoptions-observerpoint-and-then-export-to-pdf-to-compare-visual-results.cs](./change-observer-point-using-rasterizationoptions-observerpoint-and-then-export-to-pdf-to-compare-visual-results.cs) | change observer point using rasterizationoptions observerpoint and then export to pdf to compare visual results |
 | [change-observer-point-using-rasterizationoptions-observerpoint-then-move-drawing-down-to-add-a-title-before-exporting.cs](./change-observer-point-using-rasterizationoptions-observerpoint-then-move-drawing-down-to-add-a-title-before-exporting.cs) | change observer point using rasterizationoptions observerpoint then move drawing down to add a title before exporting |
 | [change-the-observer-point-using-rasterizationoptions-observerpoint-to-simulate-different-camera-angles-during-renderi.cs](./change-the-observer-point-using-rasterizationoptions-observerpoint-to-simulate-different-camera-angles-during-renderi.cs) | change the observer point using rasterizationoptions observerpoint to simulate different camera angles during renderi |
@@ -58,7 +57,6 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [list-all-layers-and-apply-blind-watermark-to-each-layer-to-ensure-comprehensive-protection.cs](./list-all-layers-and-apply-blind-watermark-to-each-layer-to-ensure-comprehensive-protection.cs) | list all layers and apply blind watermark to each layer to ensure comprehensive protection |
 | [list-all-layers-before-applying-a-blind-watermark-to-ensure-watermark-covers-required-elements.cs](./list-all-layers-before-applying-a-blind-watermark-to-ensure-watermark-covers-required-elements.cs) | list all layers before applying a blind watermark to ensure watermark covers required elements |
 | [list-all-layers-in-a-loaded-dwg-drawing-to-analyze-layer-organization-before-modification.cs](./list-all-layers-in-a-loaded-dwg-drawing-to-analyze-layer-organization-before-modification.cs) | list all layers in a loaded dwg drawing to analyze layer organization before modification |
-| [list-all-layers-then-apply-blind-watermark-to-ensure-each-layer-contains-the-security-mark.cs](./list-all-layers-then-apply-blind-watermark-to-ensure-each-layer-contains-the-security-mark.cs) | list all layers then apply blind watermark to ensure each layer contains the security mark |
 | [load-a-cad-drawing-with-sat-structure-retrieve-layout-names-and-list-all-layers-for-documentation.cs](./load-a-cad-drawing-with-sat-structure-retrieve-layout-names-and-list-all-layers-for-documentation.cs) | load a cad drawing with sat structure retrieve layout names and list all layers for documentation |
 | [retrieve-layout-names-after-loading-a-cad-file-to-identify-available-drawing-sections.cs](./retrieve-layout-names-after-loading-a-cad-file-to-identify-available-drawing-sections.cs) | retrieve layout names after loading a cad file to identify available drawing sections |
 | [retrieve-layout-names-and-then-set-observer-point-to-focus-on-a-specific-layout-before-rasterization.cs](./retrieve-layout-names-and-then-set-observer-point-to-focus-on-a-specific-layout-before-rasterization.cs) | retrieve layout names and then set observer point to focus on a specific layout before rasterization |
@@ -70,7 +68,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [work-with-3d-cad-files-to-extract-geometry-information-for-engineering-analysis.cs](./work-with-3d-cad-files-to-extract-geometry-information-for-engineering-analysis.cs) | work with 3d cad files to extract geometry information for engineering analysis |
 
 ## Category Statistics
-- Total examples: 33
+- Total examples: 31
 
 ## General Tips
 - Follow root boundaries and testing guide.
@@ -79,5 +77,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-23 | `cad-withheld-repairs-2026-10-23` | examples/repair-withheld-cad-2026-10-23 |
+| 2026-10-26 | `cad-remaining-repairs-2026-10-26` | examples/repair-withheld-cad-2026-10-23 |
 <!-- AUTOGENERATED:END -->

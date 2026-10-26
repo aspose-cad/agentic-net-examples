@@ -6,17 +6,17 @@ Build-validated Aspose.CAD for .NET examples for `adjust-cad-drawing-properties`
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 33
+- Examples: 34
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (33 example(s))
-- `System.IO` (32 example(s))
-- `Aspose.CAD` (32 example(s))
-- `Aspose.CAD.ImageOptions` (31 example(s))
-- `Aspose.CAD.FileFormats.Cad` (22 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (3 example(s))
+- `System` (34 example(s))
+- `System.IO` (33 example(s))
+- `Aspose.CAD` (33 example(s))
+- `Aspose.CAD.ImageOptions` (32 example(s))
+- `Aspose.CAD.FileFormats.Cad` (23 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (4 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadTables` (2 example(s))
 - `System.Collections` (1 example(s))
 

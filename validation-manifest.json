@@ -2,10 +2,10 @@
   "schema_version": 1,
   "product": "Aspose.CAD",
   "package_version": "26.9.0",
-  "verified_on": "2026-10-23",
+  "verified_on": "2026-10-26",
   "catalog_total": 1959,
-  "published_total": 1910,
-  "withheld_total": 49,
+  "published_total": 1895,
+  "withheld_total": 64,
   "examples": [
     {
       "task_id": "44926",
@@ -828,6 +828,16 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
+      "task_id": "45067",
+      "title": "Optimize the workflow by reusing an existing CadRasterImageDef for multiple CadRasterImage instances.",
+      "category": "Add Background Images to DWG Files",
+      "path": "add-background-images-to-dwg-files/optimize-the-workflow-by-reusing-an-existing-cadrasterimagedef-for-multiple-cadrasterimage-instances.cs",
+      "sha256": "21a4d3465cb7e26c4463bca0eb2b0d98fa8f807e1b8510750944d1a83e1accbf",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
+    },
+    {
       "task_id": "45055",
       "title": "Perform a full load\u2011modify\u2011save cycle on a DWG file to embed a background image.",
       "category": "Add Background Images to DWG Files",
@@ -1313,16 +1323,6 @@
       "category": "Add Margins to CAD Drawings",
       "path": "add-margins-to-cad-drawings/adjust-margin-values-for-each-layout-individually-using-cadrasterizationoptions-to-match-varying-drawing-sizes.cs",
       "sha256": "347e4cff4fdb9ef955d43a30f3d28ea12725a514c5bbf322930a77f63b44639a",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "45016",
-      "title": "Apply a blind watermark to a CAD drawing after adding margins and before converting to PDF.",
-      "category": "Add Margins to CAD Drawings",
-      "path": "add-margins-to-cad-drawings/apply-a-blind-watermark-to-a-cad-drawing-after-adding-margins-and-before-converting-to-pdf.cs",
-      "sha256": "0f79db9a136612173313c029d9ee66406b5b19e23024e817565828962c106039",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -1836,6 +1836,16 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "44983",
+      "title": "Set the polyline's color property to enhance visual distinction of the added geometry.",
+      "category": "Add Polylines",
+      "path": "add-polylines/set-the-polyline-color-property-to-enhance-visual-distinction-of-the-added-geometry.cs",
+      "sha256": "5b9ff2605286e83e9c2b92542a419ef29f14fe04105c385be5d497d59249af8d",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
     },
     {
       "task_id": "44997",
@@ -2538,6 +2548,16 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
+      "task_id": "44034",
+      "title": "Verify that setting LineScale after other SVG options does not reset previously configured settings.",
+      "category": "Adjust CAD Drawing Properties",
+      "path": "adjust-cad-drawing-properties/verify-that-setting-linescale-after-other-svg-options-does-not-reset-previously-configured-settings.cs",
+      "sha256": "cc76f17e14ada4c70009e2646c52a1b689767fc34ffb37f80cf523844c8e51b8",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
+    },
+    {
       "task_id": "44027",
       "title": "Verify that the LineScale parameter is serialized correctly in the SVG markup as a style attribute.",
       "category": "Adjust CAD Drawing Properties",
@@ -2976,6 +2996,16 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "45241",
+      "title": "Change fonts used in dimension annotations by setting the DefaultFont field on the drawing's style collection.",
+      "category": "Change Emergency Fonts and Style Fonts",
+      "path": "change-emergency-fonts-and-style-fonts/change-fonts-used-in-dimension-annotations-by-setting-the-defaultfont-field-on-the-drawing-style-collection.cs",
+      "sha256": "a76981f1f3e9bec090c3f3e5232c3522879c6ded4c3d090907c0526c298b1c39",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
     },
     {
       "task_id": "45253",
@@ -3558,16 +3588,6 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
-      "task_id": "45199",
-      "title": "Apply blind watermark and configure text quality options to maintain readability in the protected PDF.",
-      "category": "Change the Observer Point",
-      "path": "change-the-observer-point/apply-blind-watermark-and-configure-text-quality-options-to-maintain-readability-in-the-protected-pdf.cs",
-      "sha256": "997d120a9d82f0294dc4900b8d7eed3235946c32a9d2513aa8a1f28e2263f805",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
       "task_id": "45202",
       "title": "Change observer point using rasterizationOptions.ObserverPoint and then export to PDF to compare visual results.",
       "category": "Change the Observer Point",
@@ -3723,16 +3743,6 @@
       "category": "Change the Observer Point",
       "path": "change-the-observer-point/list-all-layers-in-a-loaded-dwg-drawing-to-analyze-layer-organization-before-modification.cs",
       "sha256": "b02f6cf78641468d23901f905a1be24cd99ab157c82992949c05a85a458a700d",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "45180",
-      "title": "List all layers, then apply blind watermark to ensure each layer contains the security mark.",
-      "category": "Change the Observer Point",
-      "path": "change-the-observer-point/list-all-layers-then-apply-blind-watermark-to-ensure-each-layer-contains-the-security-mark.cs",
-      "sha256": "1f8a69319d1a081316fee342601284fe625423560be6c7111ec523dcffaf892b",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -4488,6 +4498,16 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
+      "task_id": "45992",
+      "title": "Convert DWF layers to raster images by applying identical CadRasterizationOptions used for DWG conversion.",
+      "category": "Convert DWG and DXF Drawings to PDF and Raster Images",
+      "path": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/convert-dwf-layers-to-raster-images-by-applying-identical-cadrasterizationoptions-used-for-dwg-conversion.cs",
+      "sha256": "5404ca24cc98b2e833b9eec50d8e226aae563a044fc7924a45ed85da34540b6a",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
+    },
+    {
       "task_id": "45981",
       "title": "Define DrawColor as black in CadRasterizationOptions to change drawing color for PDF output.",
       "category": "Convert DWG and DXF Drawings to PDF and Raster Images",
@@ -4626,6 +4646,16 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "45986",
+      "title": "Provide FontSubstitution mapping for missing fonts and convert DWF to TIFF, ensuring correct text appearance.",
+      "category": "Convert DWG and DXF Drawings to PDF and Raster Images",
+      "path": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/provide-fontsubstitution-mapping-for-missing-fonts-and-convert-dwf-to-tiff-ensuring-correct-text-appearance.cs",
+      "sha256": "0169b2390a490241ed3afee81ebdead676b2ee5a222527b990ee3d3414afa353",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
     },
     {
       "task_id": "45977",
@@ -4838,6 +4868,16 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
+      "task_id": "45323",
+      "title": "Create a CadEdgeBoundaryPath from a CadLwPolyline and use it for a new CadHatch.",
+      "category": "Create Hatched Rectangles from Polylines",
+      "path": "create-hatched-rectangles-from-polylines/create-a-cadedgeboundarypath-from-a-cadlwpolyline-and-use-it-for-a-new-cadhatch.cs",
+      "sha256": "08e623b79920ec812f75ce1cd0107b7912a46690ec71fddd96d9e9518b2da5e8",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
+    },
+    {
       "task_id": "45306",
       "title": "Create a CadHatch entity and assign the CadEdgeBoundaryPath as its boundary.",
       "category": "Create Hatched Rectangles from Polylines",
@@ -4856,6 +4896,16 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "45327",
+      "title": "Create a rectangle using CadLwPolyline, define its hatch boundary with CadEdgeBoundaryPath, and fill it.",
+      "category": "Create Hatched Rectangles from Polylines",
+      "path": "create-hatched-rectangles-from-polylines/create-a-rectangle-using-cadlwpolyline-define-its-hatch-boundary-with-cadedgeboundarypath-and-fill-it.cs",
+      "sha256": "dcede25cb505b551523098a233aacc8973c3674d7f7326de198ff2d160ef8de0",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
     },
     {
       "task_id": "45322",
@@ -5998,16 +6048,6 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
-      "task_id": "45600",
-      "title": "Apply a blind watermark to the CAD drawing before exporting to PDF/A for document protection.",
-      "category": "Export CAD Drawings to PDF/A",
-      "path": "export-cad-drawings-to-pdf-a/apply-a-blind-watermark-to-the-cad-drawing-before-exporting-to-pdf-a-for-document-protection.cs",
-      "sha256": "1d467002334754e9c04af5f9e32192957874aacb884cd1691cd7f036dbda4ca3",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
       "task_id": "45615",
       "title": "Compare PDF/A output quality when using default versus customized quality options for text rendering.",
       "category": "Export CAD Drawings to PDF/A",
@@ -6943,16 +6983,6 @@
       "category": "Export Full Layout Content",
       "path": "export-full-layout-content/apply-a-blind-watermark-to-the-exported-pdf-document-to-protect-intellectual-property.cs",
       "sha256": "d2298d38a0d805438db35bfa97a489f8e6994488bf9e1f5eb2e4176a594346a6",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "45483",
-      "title": "Apply a blind watermark to the exported PDF to embed ownership information without visible marks.",
-      "category": "Export Full Layout Content",
-      "path": "export-full-layout-content/apply-a-blind-watermark-to-the-exported-pdf-to-embed-ownership-information-without-visible-marks.cs",
-      "sha256": "2daa14c3f1c4dee6152b9dffb126d190e3150d8ff39725ba30eccccfc16aa230",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -12058,6 +12088,16 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
+      "task_id": "44396",
+      "title": "Adjust CAD properties before exporting CF2 file to PDF in .NET.",
+      "category": "Work with CAD and BIM Drawing Formats",
+      "path": "work-with-cad-and-bim-drawing-formats/adjust-cad-properties-before-exporting-cf2-file-to-pdf-in-net.cs",
+      "sha256": "57af839b491fcb6f1aaf736b255061800daef68a90ec8d28e5d0f42dc42bcbc9",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
+    },
+    {
       "task_id": "44393",
       "title": "Adjust CAD properties before exporting IGES file to PDF in .NET.",
       "category": "Work with CAD and BIM Drawing Formats",
@@ -12328,51 +12368,11 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
-      "task_id": "44637",
-      "title": "Apply a blind watermark during PDF generation to protect intellectual property of CAD drawings.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-during-pdf-generation-to-protect-intellectual-property-of-cad-drawings.cs",
-      "sha256": "f0c49e149e4b77c25a3561a8689dde553aac6f022725124028dd71f27e201b13",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44240",
-      "title": "Apply a blind watermark to a DWG drawing before converting it to PDF.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-a-dwg-drawing-before-converting-it-to-pdf.cs",
-      "sha256": "4853ab3a947dc17ec4f84cc13311e64a6598037c2a36b68aee208e02d5f55299",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44242",
-      "title": "Apply a blind watermark to a DWG drawing before exporting it to JPEG.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-jpeg.cs",
-      "sha256": "c3f6875e8e4a0b057652b46c6cb42c6e93f189e00231a1e9c744bcacf58802ee",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
       "task_id": "44241",
       "title": "Apply a blind watermark to a DWG drawing before exporting it to PNG.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-a-dwg-drawing-before-exporting-it-to-png.cs",
       "sha256": "1a46671d220a895ef66447885f4e00c5b34e8438750a0b857eb128d1c61c9f70",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44329",
-      "title": "Apply a blind watermark to an FBX drawing before exporting the image to PDF.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-an-fbx-drawing-before-exporting-the-image-to-pdf.cs",
-      "sha256": "36c5dcdb0c2490791da37bf9ab6b2f24efcad5191456b8eaf16115366cf73530",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -12388,51 +12388,11 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
-      "task_id": "44330",
-      "title": "Apply a blind watermark to an IFC drawing after loading it, then export the result to PNG.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-an-ifc-drawing-after-loading-it-then-export-the-result-to-png.cs",
-      "sha256": "6b99c90b4c72b2377a85d42f74ea5bba292c5af47b8177896ec69b2a1406d382",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
       "task_id": "44334",
       "title": "Apply a blind watermark to an IFC drawing, then export to PNG while handling export errors via callbacks.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-an-ifc-drawing-then-export-to-png-while-handling-export-errors-via-callbacks.cs",
       "sha256": "f0d2f96d7a08bac437159d3b9d0295bad1b5e75f55f4026571bbd29bf48deaf9",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44612",
-      "title": "Apply a blind watermark to an OBJ drawing before exporting the result as a PDF document.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-an-obj-drawing-before-exporting-the-result-as-a-pdf-document.cs",
-      "sha256": "24f3ef83ae58c6a92c70a6780b91ad674eb35bc29d751f3d14032d27fec425bc",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44331",
-      "title": "Apply a blind watermark to multiple FBX drawings and export each to PDF in a single operation.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-multiple-fbx-drawings-and-export-each-to-pdf-in-a-single-operation.cs",
-      "sha256": "f27b5edbd964f5f74fbd9c20813f1a7dd09f3fc16b126447cebcb2073751ab40",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44332",
-      "title": "Apply a blind watermark to multiple IFC drawings in a loop and export each to PNG.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/apply-a-blind-watermark-to-multiple-ifc-drawings-in-a-loop-and-export-each-to-png.cs",
-      "sha256": "29b80c6aa3f5bf432749a7f99408283cbe68de02aa2b35245451185954d392d3",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -12463,16 +12423,6 @@
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/apply-blind-watermark-during-export-of-plt-files-to-pdf-using-pdfoptions.cs",
       "sha256": "2fd96c1f4bc8596304b8d01e10725642bf4431d72597fd04fd970ac7e825b800",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44541",
-      "title": "Apply blind watermark during export of PLT files to PDF while adjusting CAD properties for visual consistency.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/apply-blind-watermark-during-export-of-plt-files-to-pdf-while-adjusting-cad-properties-for-visual-consistency.cs",
-      "sha256": "3356e64ac4f8b7062d40c115d41e6870a294d1e2c6ab1d2e6befa70855320748",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -12568,31 +12518,11 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
-      "task_id": "44556",
-      "title": "Batch convert IGES files to PDF with blind watermark and high resolution using PdfOptions and CadRasterizationOption.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/batch-convert-iges-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs",
-      "sha256": "ab65e92efac6c58bdddc133488fce4cd4cac99ac33074a0cdf722864b78f6f8d",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
       "task_id": "44526",
       "title": "Batch convert IGES files to PDF with blind watermark applied using PdfOptions.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/batch-convert-iges-files-to-pdf-with-blind-watermark-applied-using-pdfoptions.cs",
       "sha256": "3b593f73bb0f1c695993e4116ca5f02a283177a970b24ec10be50a68005c149b",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44545",
-      "title": "Batch convert IGES files to PDF with custom page size and blind watermark using PdfOptions.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/batch-convert-iges-files-to-pdf-with-custom-page-size-and-blind-watermark-using-pdfoptions.cs",
-      "sha256": "2a8c0e7678780f90ce3ed413245da6747d4e8e681c7fb84453daa7325d869f2e",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -12643,16 +12573,6 @@
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/batch-convert-plt-files-to-jpeg-with-high-resolution-using-jpegoptions-and-cadrasterizationoption.cs",
       "sha256": "31d09a53894fb22623d31924504f3e3fe980d0795291641667620dab6440491f",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44557",
-      "title": "Batch convert PLT files to PDF with blind watermark and high resolution using PdfOptions and CadRasterizationOption.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/batch-convert-plt-files-to-pdf-with-blind-watermark-and-high-resolution-using-pdfoptions-and-cadrasterizationoption.cs",
-      "sha256": "176f94f0f181b14acede8c7e697b6e58f59f4f721d7e42d8e559e171848e3a6c",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -13033,16 +12953,6 @@
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/convert-autocad-file-to-png-format-in-net.cs",
       "sha256": "cbf16172b791dfdc643759de87e744402b5773cdf860b00780eec52936f100c0",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44626",
-      "title": "Convert DWG drawings to PDF and apply a blind watermark to secure the output.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/convert-dwg-drawings-to-pdf-and-apply-a-blind-watermark-to-secure-the-output.cs",
-      "sha256": "bc77e2ad9d5df04c3cd37ce978ddc9531a9c77f05cf8c287df6c7fa34fa14cdf",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -13788,6 +13698,16 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
+      "task_id": "44605",
+      "title": "Explain validation techniques for ensuring exported PDF files contain all original CF2 drawing elements.",
+      "category": "Work with CAD and BIM Drawing Formats",
+      "path": "work-with-cad-and-bim-drawing-formats/explain-validation-techniques-for-ensuring-exported-pdf-files-contain-all-original-cf2-drawing-elements.cs",
+      "sha256": "c5d934eb50a960a2583d48f8e70aa12a857782d27f536d2a6508052e51fac311",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
+    },
+    {
       "task_id": "44604",
       "title": "Explain validation techniques for ensuring exported PNG files match expected rasterization quality.",
       "category": "Work with CAD and BIM Drawing Formats",
@@ -14163,16 +14083,6 @@
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/export-fbx-drawings-to-pdf-and-use-a-callback-to-capture-any-rendering-exceptions.cs",
       "sha256": "6619c4a0903cc5a4d25931c2171a3a63b8bcaa203214478ca5a5be183e42961d",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44364",
-      "title": "Export FBX drawings to PDF while applying blind watermarks to each file.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/export-fbx-drawings-to-pdf-while-applying-blind-watermarks-to-each-file.cs",
-      "sha256": "f05f51c8b01ac81ee1bb570dffe3299313824cee5a4a192ec062686935190c9b",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -14888,6 +14798,16 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
+      "task_id": "44447",
+      "title": "Implement logging of IGES load operations in .NET.",
+      "category": "Work with CAD and BIM Drawing Formats",
+      "path": "work-with-cad-and-bim-drawing-formats/implement-logging-of-iges-load-operations-in-net.cs",
+      "sha256": "3f4fc9a02ab392570942e91add7f25f696a7f978ced63d3a61f2a8e9194b96b3",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
+    },
+    {
       "task_id": "44446",
       "title": "Implement logging of OBJ load operations in .NET.",
       "category": "Work with CAD and BIM Drawing Formats",
@@ -14896,6 +14816,26 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "44448",
+      "title": "Implement logging of PLT load operations in .NET.",
+      "category": "Work with CAD and BIM Drawing Formats",
+      "path": "work-with-cad-and-bim-drawing-formats/implement-logging-of-plt-load-operations-in-net.cs",
+      "sha256": "618f9de8c70860fce587efee4199d3ece6484936e858a48a0348ea1b4687f13f",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
+    },
+    {
+      "task_id": "44449",
+      "title": "Implement logging of STL load operations in .NET.",
+      "category": "Work with CAD and BIM Drawing Formats",
+      "path": "work-with-cad-and-bim-drawing-formats/implement-logging-of-stl-load-operations-in-net.cs",
+      "sha256": "ba6e1bbe8696a283501333b765521128417868b30960575b2de6ff56dc94ecc4",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
     },
     {
       "task_id": "44443",
@@ -15388,16 +15328,6 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
-      "task_id": "44321",
-      "title": "Load an FBX drawing, apply a blind watermark, and export to PDF while capturing export errors.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/load-an-fbx-drawing-apply-a-blind-watermark-and-export-to-pdf-while-capturing-export-errors.cs",
-      "sha256": "fa75e591f7a7012798a0a7c73845f58e394a012757039a05ad22031433d94271",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
       "task_id": "44313",
       "title": "Load an FBX drawing file and export it to PDF while handling errors via callbacks.",
       "category": "Work with CAD and BIM Drawing Formats",
@@ -15443,16 +15373,6 @@
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/load-an-fbx-drawing-using-the-image-class-adjust-its-cad-properties-then-export-to-pdf.cs",
       "sha256": "5bd64b5642500bdd2fc33895683f299cf071a43aaefc1e06f7019c57f5b7bcd6",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44327",
-      "title": "Load an FBX drawing using the Image class, apply a blind watermark, then export to PDF.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/load-an-fbx-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-pdf.cs",
-      "sha256": "f45376b65130ffb2b410072ae126b6db976ad915f21bd49fac19cb6d16e12835",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -15523,16 +15443,6 @@
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/load-an-ifc-drawing-handle-load-errors-via-callbacks-and-export-to-png-without-watermark.cs",
       "sha256": "cb975be286cca56d9213dd91adde7958ee420ea765890363c2a58cb38f5fc932",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44328",
-      "title": "Load an IFC drawing using the Image class, apply a blind watermark, then export to PNG.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/load-an-ifc-drawing-using-the-image-class-apply-a-blind-watermark-then-export-to-png.cs",
-      "sha256": "7bde7b348f224a87b05f1b2880f284112d20c08e0224dd2190408bc555fec59a",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -16038,16 +15948,6 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
-      "task_id": "44635",
-      "title": "Programmatically load STL models, apply a blind watermark, and save the result as PDF.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/programmatically-load-stl-models-apply-a-blind-watermark-and-save-the-result-as-pdf.cs",
-      "sha256": "d3bfc2e4c364d13714ee3d745d9828bcde789b216fed7c8d556c8e8857d1060c",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
       "task_id": "44185",
       "title": "Provide an example of batch converting DWF files to BMP using default settings.",
       "category": "Work with CAD and BIM Drawing Formats",
@@ -16283,26 +16183,6 @@
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/render-iges-files-to-pdf-while-applying-blind-watermark-and-adjusting-cad-properties-using-pdfoptions.cs",
       "sha256": "caf01322624ca8c9ee15b89500ec8e8de40b7bed7a607ee81ea8e90627556d1e",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44550",
-      "title": "Render IGES files to PDF while applying blind watermark and setting background color to black.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/render-iges-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs",
-      "sha256": "e76f50104c2722c2a8ad8a47cc025d5f1bd0fbb25f56d38595c92c901c347f41",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44518",
-      "title": "Render IGES files to PDF while applying blind watermark using PdfOptions and CadRasterizationOption.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/render-iges-files-to-pdf-while-applying-blind-watermark-using-pdfoptions-and-cadrasterizationoption.cs",
-      "sha256": "429d032d53bd681a65ef072d1f10c7f2e924c71825c4eba0fb7b961b8370f5c7",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -16558,16 +16438,6 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
-      "task_id": "44551",
-      "title": "Render PLT files to PDF while applying blind watermark and setting background color to black.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/render-plt-files-to-pdf-while-applying-blind-watermark-and-setting-background-color-to-black.cs",
-      "sha256": "41b28d8b51fb3e39b6a3ff63aee21ff81a7c7dd6aabe18053b4194b0c5b6e3e3",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
       "task_id": "44519",
       "title": "Render PLT files to PDF while applying blind watermark using PdfOptions and CadRasterizationOption.",
       "category": "Work with CAD and BIM Drawing Formats",
@@ -16603,16 +16473,6 @@
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/render-plt-files-to-pdf-while-setting-background-color-to-light-gray-using-cadrasterizationoption.cs",
       "sha256": "688bc0c61e9f1614c27a16618157af5f353f77ae594de589ed4ca6e419b3b43b",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44531",
-      "title": "Render PLT files to PDF while setting custom page size and applying blind watermark using CadRasterizationOption and PdfOptions.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/render-plt-files-to-pdf-while-setting-custom-page-size-and-applying-blind-watermark-using-cadrasterizationoption-and.cs",
-      "sha256": "9c8f19e9b637960a20f97c4acf0c848cc69a76c55e3c7367edf9f75795f063fd",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -17833,16 +17693,6 @@
       "category": "Work with CAD Files",
       "path": "work-with-cad-files/adjust-camera-rotation-by-modifying-vectorrasterizationoptions-properties-to-achieve-the-desired-viewing-angle.cs",
       "sha256": "28ce0a3e8e4fe1781d7dee81a70b8bd9bd80a79173755eb92e1159e91c1bd46a",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "44796",
-      "title": "Apply a blind watermark to the entire drawing to protect intellectual property.",
-      "category": "Work with CAD Files",
-      "path": "work-with-cad-files/apply-a-blind-watermark-to-the-entire-drawing-to-protect-intellectual-property.cs",
-      "sha256": "3fbdee461abff262c1b4ce2811c7b328d8ff365ed8504984aa750f0cde668f4f",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"

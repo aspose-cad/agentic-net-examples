@@ -6,19 +6,19 @@ Build-validated Aspose.CAD for .NET examples for `create-hatched-rectangles-from
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 33
+- Examples: 35
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (33 example(s))
-- `Aspose.CAD` (33 example(s))
-- `Aspose.CAD.FileFormats.Cad` (33 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (32 example(s))
-- `System.IO` (32 example(s))
-- `Aspose.CAD.ImageOptions` (30 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadConsts` (26 example(s))
-- `System.Linq` (22 example(s))
+- `System` (35 example(s))
+- `Aspose.CAD` (35 example(s))
+- `Aspose.CAD.FileFormats.Cad` (35 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (34 example(s))
+- `System.IO` (34 example(s))
+- `Aspose.CAD.ImageOptions` (32 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadConsts` (28 example(s))
+- `System.Linq` (24 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -34,10 +34,10 @@ Build-validated Aspose.CAD for .NET examples for `create-hatched-rectangles-from
 | [Change The Hatch Color of Cadhatch to Red and Verify Visual Change in The Drawing](./change-the-hatch-color-of-cadhatch-to-red-and-verify-visual-change-in-the-drawing.cs) | Cad | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
 | [Configure Cadhatch with Custom Angle and Color Then Assign Cadedgeboundarypath to Complete Definition](./configure-cadhatch-with-custom-angle-and-color-then-assign-cadedgeboundarypath-to-complete-definition.cs) | Cad | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
 | [Configure The Hatch Angle On The Cadhatch to Achieve A Desired Diagonal Shading](./configure-the-hatch-angle-on-the-cadhatch-to-achieve-a-desired-diagonal-shading.cs) | Cad.CadConsts | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
+| [Create A Cadedgeboundarypath from A Cadlwpolyline and Use It for A New Cadhatch](./create-a-cadedgeboundarypath-from-a-cadlwpolyline-and-use-it-for-a-new-cadhatch.cs) | ImageOptions | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
 | [Create A Cadhatch Entity and Assign The Cadedgeboundarypath as Its Boundary](./create-a-cadhatch-entity-and-assign-the-cadedgeboundarypath-as-its-boundary.cs) | Cad | aspose-cad, cad, cadobjects, create, csharp, dotnet8, fileformats, from |
 | [Create A New Cadlwpolyline Rectangle and Immediately Fill It using A Cadhatch](./create-a-new-cadlwpolyline-rectangle-and-immediately-fill-it-using-a-cadhatch.cs) | Cad.CadConsts | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
-| [Define A Cadhatchpatterndata with A Named Pattern and Assign It Before Saving The Drawing](./define-a-cadhatchpatterndata-with-a-named-pattern-and-assign-it-before-saving-the-drawing.cs) | Cad.CadConsts | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
-| [Define The Hatch Pattern using Cadhatchpatterndata with A Custom Pattern Name](./define-the-hatch-pattern-using-cadhatchpatterndata-with-a-custom-pattern-name.cs) | Cad | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
+| [Create A Rectangle using Cadlwpolyline Define Its Hatch Boundary with Cadedgeboundarypath and Fill It](./create-a-rectangle-using-cadlwpolyline-define-its-hatch-boundary-with-cadedgeboundarypath-and-fill-it.cs) | ImageOptions | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
 
 ## Agent Guidance
 - Prefer the local `AGENTS.md` instructions for category-specific rules.

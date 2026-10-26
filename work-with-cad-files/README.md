@@ -6,16 +6,16 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-files`.
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 35
+- Examples: 34
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (35 example(s))
-- `System.IO` (35 example(s))
-- `Aspose.CAD` (35 example(s))
-- `Aspose.CAD.ImageOptions` (27 example(s))
-- `Aspose.CAD.FileFormats.Cad` (24 example(s))
+- `System` (34 example(s))
+- `System.IO` (34 example(s))
+- `Aspose.CAD` (34 example(s))
+- `Aspose.CAD.ImageOptions` (26 example(s))
+- `Aspose.CAD.FileFormats.Cad` (23 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (10 example(s))
 - `System.Linq` (5 example(s))
 - `System.Collections.Generic` (5 example(s))
@@ -25,7 +25,6 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-files`.
 |---------|----------|------|
 | [Adjust CAD Properties Such as Layer Visibility to Control Element Display Within The Drawing](./adjust-cad-properties-such-as-layer-visibility-to-control-element-display-within-the-drawing.cs) | Cad | aspose-cad, cad, cadtables, csharp, dotnet8, fileformats, files, imageoptions |
 | [Adjust Camera Rotation By Modifying Vectorrasterizationoptions Properties to Achieve The Desired Viewing Angle](./adjust-camera-rotation-by-modifying-vectorrasterizationoptions-properties-to-achieve-the-desired-viewing-angle.cs) | ImageOptions | aspose-cad, cad, csharp, dotnet8, fileformats, files, imageoptions, standalone-example |
-| [Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property](./apply-a-blind-watermark-to-the-entire-drawing-to-protect-intellectual-property.cs) | ImageOptions | aspose-cad, cad, csharp, dotnet8, fileformats, files, imageoptions, standalone-example |
 | [Change Camera Transform to Translate View Position for Better Focus On A Specific Drawing Area](./change-camera-transform-to-translate-view-position-for-better-focus-on-a-specific-drawing-area.cs) | ImageOptions | aspose-cad, cad, csharp, dotnet8, files, imageoptions, standalone-example, with |
 | [Change The End Point of A Polyline Entity to Adjust Its Shape Within The Drawing](./change-the-end-point-of-a-polyline-entity-to-adjust-its-shape-within-the-drawing.cs) | Cad | aspose-cad, cad, cadconsts, cadobjects, csharp, dotnet8, fileformats, files |
 | [Control Visibility Mode Through Rasterization Options to Influence How Entities Are Rendered](./control-visibility-mode-through-rasterization-options-to-influence-how-entities-are-rendered.cs) | ImageOptions | aspose-cad, cad, cadobjects, cadtables, csharp, dotnet8, fileformats, files |
@@ -38,6 +37,7 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-files`.
 | [Increase Line Thickness of Chosen Entities to Enhance Visual Prominence in The Rendered Image](./increase-line-thickness-of-chosen-entities-to-enhance-visual-prominence-in-the-rendered-image.cs) | ImageOptions | aspose-cad, cad, csharp, dotnet8, fileformats, files, imageoptions, standalone-example |
 | [Insert An External DXF Drawing into An Existing DWG File to Combine Design Elements](./insert-an-external-dxf-drawing-into-an-existing-dwg-file-to-combine-design-elements.cs) | Cad | aspose-cad, cad, csharp, dotnet8, dwg, dxf, fileformats, files |
 | [Iterate Over Each Table Row to Read Individual Cell Values for Analysis](./iterate-over-each-table-row-to-read-individual-cell-values-for-analysis.cs) | Cad | aspose-cad, cad, csharp, dotnet8, fileformats, files, standalone-example, with |
+| [Load A DWG File for Reading to Extract Entity Information Without Modifying Content](./load-a-dwg-file-for-reading-to-extract-entity-information-without-modifying-content.cs) | Cad | aspose-cad, cad, cadobjects, csharp, dotnet8, dwg, fileformats, files |
 
 ## Agent Guidance
 - Prefer the local `AGENTS.md` instructions for category-specific rules.

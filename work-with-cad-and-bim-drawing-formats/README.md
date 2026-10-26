@@ -6,19 +6,19 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-and-bim-drawing-
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 544
+- Examples: 527
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (544 example(s))
-- `System.IO` (543 example(s))
-- `Aspose.CAD` (543 example(s))
-- `Aspose.CAD.ImageOptions` (505 example(s))
-- `Aspose.CAD.FileFormats.Cad` (254 example(s))
-- `Aspose.CAD.WatermarkGuard` (43 example(s))
-- `System.Collections.Generic` (39 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (35 example(s))
+- `System` (527 example(s))
+- `System.IO` (526 example(s))
+- `Aspose.CAD` (526 example(s))
+- `Aspose.CAD.ImageOptions` (488 example(s))
+- `Aspose.CAD.FileFormats.Cad` (243 example(s))
+- `System.Collections.Generic` (44 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (40 example(s))
+- `System.Linq` (32 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -26,6 +26,7 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-and-bim-drawing-
 | [Access DGN Data Embedded Within A DWG File and Extract It to A Separate DGN File](./access-dgn-data-embedded-within-a-dwg-file-and-extract-it-to-a-separate-dgn-file.cs) | Work With Cad And Bim Drawing Formats | and, aspose-cad, bim, cad, csharp, dgn, dotnet8, drawing |
 | [Access DGN Data Inside A DWG File and Modify Its Metadata Before Re Exporting](./access-dgn-data-inside-a-dwg-file-and-modify-its-metadata-before-re-exporting.cs) | Cad | and, aspose-cad, bim, cad, csharp, dgn, dotnet8, drawing |
 | [Access DGN Data Inside A DWG File and Write It to A Memory Stream for Further Processing](./access-dgn-data-inside-a-dwg-file-and-write-it-to-a-memory-stream-for-further-processing.cs) | Cad | and, aspose-cad, bim, cad, csharp, dgn, dotnet8, drawing |
+| [Adjust CAD Properties Before Exporting CF2 File to PDF in Net](./adjust-cad-properties-before-exporting-cf2-file-to-pdf-in-net.cs) | ImageOptions | and, aspose-cad, bim, cad, cadconsts, cadobjects, cf2, csharp |
 | [Adjust CAD Properties Before Exporting Iges File to PDF in Net](./adjust-cad-properties-before-exporting-iges-file-to-pdf-in-net.cs) | ImageOptions | and, aspose-cad, bim, cad, cadobjects, cadtables, csharp, dotnet8 |
 | [Adjust CAD Properties Before Exporting OBJ File to PDF in Net](./adjust-cad-properties-before-exporting-obj-file-to-pdf-in-net.cs) | ImageOptions | and, aspose-cad, bim, cad, csharp, dotnet8, drawing, fileformats |
 | [Adjust CAD Properties Before Exporting PLT File to PDF in Net](./adjust-cad-properties-before-exporting-plt-file-to-pdf-in-net.cs) | ImageOptions | and, aspose-cad, bim, cad, csharp, dotnet8, drawing, fileformats |
@@ -37,7 +38,6 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-and-bim-drawing-
 | [Adjust CAD Properties of A Loaded Collada Drawing Before Exporting It to PDF](./adjust-cad-properties-of-a-loaded-collada-drawing-before-exporting-it-to-pdf.cs) | ImageOptions | and, aspose-cad, bim, cad, cadobjects, cadtables, csharp, dotnet8 |
 | [Adjust CAD Properties of A Loaded Dxb Drawing Before Exporting It to PDF](./adjust-cad-properties-of-a-loaded-dxb-drawing-before-exporting-it-to-pdf.cs) | ImageOptions | and, aspose-cad, bim, cad, cadobjects, cadtables, csharp, dotnet8 |
 | [Adjust CAD Properties of An Fbx Drawing to Change Line Thickness Before Exporting to PDF](./adjust-cad-properties-of-an-fbx-drawing-to-change-line-thickness-before-exporting-to-pdf.cs) | ImageOptions | and, aspose-cad, bim, cad, csharp, dotnet8, drawing, fileformats |
-| [Adjust CAD Properties of An Fbx Drawing to Change Line Weight Before Exporting to PDF](./adjust-cad-properties-of-an-fbx-drawing-to-change-line-weight-before-exporting-to-pdf.cs) | ImageOptions | and, aspose-cad, bim, cad, cadobjects, cadtables, csharp, dotnet8 |
 
 ## Agent Guidance
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
