@@ -10,6 +10,10 @@ Agent-generated C# examples for Aspose.CAD for .NET, compiled, executed, and val
 ## Overview
 This repository provides working code examples demonstrating Aspose.CAD for .NET capabilities. All examples are automatically generated, compiled, and validated using the Aspose.CAD Examples Generator.
 
+## Repair and validation status
+
+The publication contains **1,894 examples across 45 categories**, targeting .NET 8 and Aspose.CAD 26.9.0. The latest repair batch recovered **34 of 39 failed tasks** using controlled drawing inputs; five remain unresolved and are excluded. See [VALIDATION.md](./VALIDATION.md) for the count reconciliation, evidence, and remaining limitations.
+
 ## Repository Structure
 Examples are organized by feature category:
 - `access-entities-inside-block-objects/` - 34 example(s)
