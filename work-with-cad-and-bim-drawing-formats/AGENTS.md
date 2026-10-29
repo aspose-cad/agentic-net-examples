@@ -18,27 +18,27 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - Files are standalone `.cs` examples stored directly in this folder.
 
 ## Required Namespaces
-- `using System;` (527 file(s))
-- `using System.IO;` (526 file(s))
-- `using Aspose.CAD;` (526 file(s))
-- `using Aspose.CAD.ImageOptions;` (488 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (243 file(s))
-- `using System.Collections.Generic;` (44 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (40 file(s))
-- `using System.Linq;` (32 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (22 file(s))
-- `using Aspose.CAD.WatermarkGuard;` (21 file(s))
+- `using System;` (526 file(s))
+- `using System.IO;` (525 file(s))
+- `using Aspose.CAD;` (525 file(s))
+- `using Aspose.CAD.ImageOptions;` (487 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (244 file(s))
+- `using System.Collections.Generic;` (49 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (44 file(s))
+- `using System.Linq;` (37 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (26 file(s))
+- `using Aspose.CAD.WatermarkGuard;` (25 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadTables;` (18 file(s))
+- `using System.Diagnostics;` (16 file(s))
 - `using Aspose.CAD.FileFormats.Dwf;` (16 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadTables;` (14 file(s))
-- `using System.Diagnostics;` (11 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (11 file(s))
+- `using Aspose.CAD.Primitives;` (11 file(s))
 - `using System.Threading.Tasks;` (8 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (6 file(s))
-- `using Aspose.CAD.Primitives;` (6 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;` (6 file(s))
 - `using System.Threading;` (2 file(s))
 - `using Aspose.CAD.FileFormats.Ifc;` (1 file(s))
 - `using Aspose.CAD.FileFormats.CF2;` (1 file(s))
 - `using System.Security.Cryptography;` (1 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Iges;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Stl;` (1 file(s))
@@ -151,7 +151,6 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [convert-obj-files-to-pdf-and-verify-that-the-resulting-document-preserves-original-model-dimensions.cs](./convert-obj-files-to-pdf-and-verify-that-the-resulting-document-preserves-original-model-dimensions.cs) | convert obj files to pdf and verify that the resulting document preserves original model dimensions |
 | [convert-plt-files-to-jpeg-by-loading-them-and-applying-cadrasterizationoption-with-jpegoptions.cs](./convert-plt-files-to-jpeg-by-loading-them-and-applying-cadrasterizationoption-with-jpegoptions.cs) | convert plt files to jpeg by loading them and applying cadrasterizationoption with jpegoptions |
 | [convert-plt-files-to-pdf-by-loading-them-and-applying-cadrasterizationoption-with-pdfoptions.cs](./convert-plt-files-to-pdf-by-loading-them-and-applying-cadrasterizationoption-with-pdfoptions.cs) | convert plt files to pdf by loading them and applying cadrasterizationoption with pdfoptions |
-| [create-a-c-utility-that-loads-obj-files-applies-blind-watermarks-and-saves-pdfs-with-error-callbacks.cs](./create-a-c-utility-that-loads-obj-files-applies-blind-watermarks-and-saves-pdfs-with-error-callbacks.cs) | create a c utility that loads obj files applies blind watermarks and saves pdfs with error callbacks |
 | [create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-bmp-and-verifies-image-dimensions.cs](./create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-bmp-and-verifies-image-dimensions.cs) | create a script that loads a dwf drawing extracts layers exports to bmp and verifies image dimensions |
 | [create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-jpeg-and-records-file-size.cs](./create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-jpeg-and-records-file-size.cs) | create a script that loads a dwf drawing extracts layers exports to jpeg and records file size |
 | [create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-pdf-and-logs-the-result.cs](./create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-pdf-and-logs-the-result.cs) | create a script that loads a dwf drawing extracts layers exports to pdf and logs the result |
@@ -583,7 +582,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [write-code-that-loads-a-dxb-drawing-modifies-its-cad-properties-and-confirms-successful-export-via-callback.cs](./write-code-that-loads-a-dxb-drawing-modifies-its-cad-properties-and-confirms-successful-export-via-callback.cs) | write code that loads a dxb drawing modifies its cad properties and confirms successful export via callback |
 
 ## Category Statistics
-- Total examples: 527
+- Total examples: 526
 
 ## General Tips
 - Follow root boundaries and testing guide.
@@ -592,5 +591,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-26 | `cad-remaining-repairs-2026-10-26` | examples/repair-withheld-cad-2026-10-23 |
+| 2026-10-29 | `cad-failed39-repairs-2026-10-29` | examples/repair-withheld-cad-2026-10-23 |
 <!-- AUTOGENERATED:END -->

@@ -18,7 +18,7 @@ Build-validated Aspose.CAD for .NET examples for `create-hatched-rectangles-from
 - `System.IO` (34 example(s))
 - `Aspose.CAD.ImageOptions` (32 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadConsts` (28 example(s))
-- `System.Linq` (24 example(s))
+- `System.Linq` (25 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |

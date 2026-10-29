@@ -15,17 +15,17 @@ Build-validated Aspose.CAD for .NET examples for `configure-quality-options-for-
 - `System.IO` (29 example(s))
 - `Aspose.CAD` (29 example(s))
 - `Aspose.CAD.ImageOptions` (29 example(s))
-- `Aspose.CAD.FileFormats.Cad` (7 example(s))
-- `System.Diagnostics` (2 example(s))
-- `System.Reflection` (1 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (1 example(s))
+- `Aspose.CAD.FileFormats.Cad` (9 example(s))
+- `System.Diagnostics` (4 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (3 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects.Hatch` (3 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
 |---------|----------|------|
 | [Adjust Quality Arc to A Medium Level and Compare Arc Smoothness Against Default Configuration](./adjust-quality-arc-to-a-medium-level-and-compare-arc-smoothness-against-default-configuration.cs) | Cad | and, arcs, aspose-cad, cad, configure, csharp, dotnet8, fileformats |
 | [Adjust Quality Arc to Control Arc Smoothness and Reduce Visual Jagged Edges](./adjust-quality-arc-to-control-arc-smoothness-and-reduce-visual-jagged-edges.cs) | ImageOptions | and, arcs, aspose-cad, cad, configure, csharp, dotnet8, fileformats |
-| [Adjust Quality Hatch to A Medium Level and Compare Hatch Pattern Density Within Output](./adjust-quality-hatch-to-a-medium-level-and-compare-hatch-pattern-density-within-output.cs) | ImageOptions | and, arcs, aspose-cad, configure, csharp, dotnet8, for, hatches |
+| [Adjust Quality Hatch to A Medium Level and Compare Hatch Pattern Density Within Output](./adjust-quality-hatch-to-a-medium-level-and-compare-hatch-pattern-density-within-output.cs) | ImageOptions | and, arcs, aspose-cad, cad, cadconsts, cadobjects, cadtables, configure |
 | [After Export Compare Rasterized Image Against Reference to Verify Quality Settings Achieved Desired Fidelity](./after-export-compare-rasterized-image-against-reference-to-verify-quality-settings-achieved-desired-fidelity.cs) | ImageOptions | and, arcs, aspose-cad, configure, csharp, dotnet8, for, hatches |
 | [Apply Quality Settings After Loading The CAD Drawing But Before Any Transformation Operations](./apply-quality-settings-after-loading-the-cad-drawing-but-before-any-transformation-operations.cs) | ImageOptions | and, arcs, aspose-cad, configure, csharp, dotnet8, for, hatches |
 | [Apply Quality Settings Only to Raster Export Operations as They Do Not Affect Vector Outputs](./apply-quality-settings-only-to-raster-export-operations-as-they-do-not-affect-vector-outputs.cs) | ImageOptions | and, arcs, aspose-cad, cad, configure, csharp, dotnet8, fileformats |

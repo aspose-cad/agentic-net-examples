@@ -14,11 +14,11 @@ Build-validated Aspose.CAD for .NET examples for `export-full-layout-content`.
 - `System` (39 example(s))
 - `Aspose.CAD` (39 example(s))
 - `System.IO` (39 example(s))
-- `Aspose.CAD.ImageOptions` (37 example(s))
-- `Aspose.CAD.FileFormats.Cad` (27 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (11 example(s))
-- `System.Linq` (6 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadConsts` (3 example(s))
+- `Aspose.CAD.ImageOptions` (38 example(s))
+- `Aspose.CAD.FileFormats.Cad` (28 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (12 example(s))
+- `System.Linq` (7 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadConsts` (6 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -26,7 +26,7 @@ Build-validated Aspose.CAD for .NET examples for `export-full-layout-content`.
 | [Access References to External Files Linked in The Drawing to Ensure Dependencies Are Resolved](./access-references-to-external-files-linked-in-the-drawing-to-ensure-dependencies-are-resolved.cs) | Cad.CadObjects | aspose-cad, cad, cadobjects, content, csharp, dotnet8, export, fileformats |
 | [Adjust Quality Settings for Text Hatches and Arcs Within Rasterizationoptions](./adjust-quality-settings-for-text-hatches-and-arcs-within-rasterizationoptions.cs) | ImageOptions | aspose-cad, content, csharp, dotnet8, export, full, imageoptions, layout |
 | [Adjust Rasterization Quality Settings for Arcs to Reduce Aliasing Artifacts in The Exported PDF](./adjust-rasterization-quality-settings-for-arcs-to-reduce-aliasing-artifacts-in-the-exported-pdf.cs) | ImageOptions | aspose-cad, cad, content, csharp, dotnet8, export, fileformats, full |
-| [After Inserting External Drawing Move Its Elements to Align Titles with Existing Layout Headings](./after-inserting-external-drawing-move-its-elements-to-align-titles-with-existing-layout-headings.cs) | ImageOptions | aspose-cad, cad, cadobjects, content, csharp, dotnet8, export, fileformats |
+| [After Inserting External Drawing Move Its Elements to Align Titles with Existing Layout Headings](./after-inserting-external-drawing-move-its-elements-to-align-titles-with-existing-layout-headings.cs) | ImageOptions | aspose-cad, cad, cadconsts, cadobjects, cadtables, content, csharp, dotnet8 |
 | [Apply A Blind Watermark After PDF Generation to Ensure Watermark Is Embedded in Final Document](./apply-a-blind-watermark-after-pdf-generation-to-ensure-watermark-is-embedded-in-final-document.cs) | ImageOptions | aspose-cad, content, csharp, dotnet8, export, full, imageoptions, layout |
 | [Apply A Blind Watermark to The Exported PDF Document to Protect Intellectual Property](./apply-a-blind-watermark-to-the-exported-pdf-document-to-protect-intellectual-property.cs) | ImageOptions | aspose-cad, cad, content, csharp, dotnet8, export, fileformats, full |
 | [Assign The Configured Rasterizationoptions to An Exportoptions Instance Before Exporting The Drawing](./assign-the-configured-rasterizationoptions-to-an-exportoptions-instance-before-exporting-the-drawing.cs) | ImageOptions | aspose-cad, cad, content, csharp, dotnet8, export, fileformats, full |

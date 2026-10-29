@@ -16,9 +16,9 @@ Build-validated Aspose.CAD for .NET examples for `access-entities-inside-block-o
 - `Aspose.CAD.FileFormats.Cad` (33 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (33 example(s))
 - `System.IO` (33 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (14 example(s))
-- `System.Collections.Generic` (6 example(s))
-- `Aspose.CAD.ImageOptions` (5 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadTables` (15 example(s))
+- `System.Collections.Generic` (7 example(s))
+- `Aspose.CAD.ImageOptions` (6 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |

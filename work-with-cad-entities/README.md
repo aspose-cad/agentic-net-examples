@@ -12,13 +12,13 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-entities`.
 
 ## Common Namespaces
 - `System` (35 example(s))
+- `System.IO` (35 example(s))
 - `Aspose.CAD` (35 example(s))
 - `Aspose.CAD.FileFormats.Cad` (35 example(s))
-- `System.IO` (34 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (34 example(s))
 - `System.Linq` (20 example(s))
 - `Aspose.CAD.ImageOptions` (20 example(s))
-- `System.Collections.Generic` (12 example(s))
+- `System.Collections.Generic` (13 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -33,7 +33,7 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-entities`.
 | [Create A Custom Entity List That Includes Entities with Non Default Lineweight Attributes](./create-a-custom-entity-list-that-includes-entities-with-non-default-lineweight-attributes.cs) | Cad | aspose-cad, cad, cadobjects, csharp, dotnet8, entities, fileformats, standalone-example |
 | [Create A Custom List Cadentity Containing Only Cadmtext Entities for Selective Export](./create-a-custom-list-cadentity-containing-only-cadmtext-entities-for-selective-export.cs) | Cad.CadConsts | aspose-cad, cad, cadconsts, cadobjects, csharp, dotnet8, entities, fileformats |
 | [Create A Custom List Cadentity Containing Only Cadtext Entities for Selective Export](./create-a-custom-list-cadentity-containing-only-cadtext-entities-for-selective-export.cs) | Cad | aspose-cad, cad, cadconsts, cadobjects, csharp, dotnet8, entities, fileformats |
-| [Create A New Mtext Entity with Multiline Content Before Adding to Model Space](./create-a-new-mtext-entity-with-multiline-content-before-adding-to-model-space.cs) | Cad | aspose-cad, cad, cadconsts, cadobjects, csharp, dotnet8, entities, fileformats |
+| [Create A New Mtext Entity with Multiline Content Before Adding to Model Space](./create-a-new-mtext-entity-with-multiline-content-before-adding-to-model-space.cs) | ImageOptions | aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, dotnet8, entities |
 | [Create A New Text Entity with The Desired Content Before Adding to Model Space](./create-a-new-text-entity-with-the-desired-content-before-adding-to-model-space.cs) | Cad | aspose-cad, cad, cadobjects, csharp, dotnet8, entities, fileformats, standalone-example |
 | [Decrease Line Weight of Selected Entities By Assigning A Smaller Lineweight Value](./decrease-line-weight-of-selected-entities-by-assigning-a-smaller-lineweight-value.cs) | Cad | aspose-cad, cad, cadobjects, csharp, dotnet8, entities, fileformats, standalone-example |
 | [Ensure Updatesize Is Called After Any Entity Removal Operation to Preserve Drawing Extents](./ensure-updatesize-is-called-after-any-entity-removal-operation-to-preserve-drawing-extents.cs) | Cad | aspose-cad, cad, cadobjects, cadtables, csharp, dotnet8, entities, fileformats |

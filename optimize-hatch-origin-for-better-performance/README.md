@@ -17,8 +17,8 @@ Build-validated Aspose.CAD for .NET examples for `optimize-hatch-origin-for-bett
 - `Aspose.CAD.FileFormats.Cad` (26 example(s))
 - `Aspose.CAD.ImageOptions` (24 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (17 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects.Hatch` (11 example(s))
-- `Aspose.CAD.Primitives` (9 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects.Hatch` (12 example(s))
+- `Aspose.CAD.Primitives` (10 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -37,7 +37,7 @@ Build-validated Aspose.CAD for .NET examples for `optimize-hatch-origin-for-bett
 | [Ensure The Updated Hatch Origin Does Not Exceed The Drawing Coordinate Limits](./ensure-the-updated-hatch-origin-does-not-exceed-the-drawing-coordinate-limits.cs) | Cad | aspose-cad, better, cad, cadobjects, csharp, dotnet8, fileformats, for |
 | [Implement A Fallback to Retain The Original Origin If Distance Calculation Fails for A Hatch](./implement-a-fallback-to-retain-the-original-origin-if-distance-calculation-fails-for-a-hatch.cs) | Cad | aspose-cad, better, cad, cadconsts, cadobjects, csharp, dotnet8, fileformats |
 | [Implement Error Handling for Cases Where Hatch Boundary Data Is Unavailable During Distance Calculation](./implement-error-handling-for-cases-where-hatch-boundary-data-is-unavailable-during-distance-calculation.cs) | ImageOptions | aspose-cad, better, cad, cadobjects, cadtables, csharp, dotnet8, fileformats |
-| [Integrate The Hatch Origin Adjustment Steps into An Existing CAD Processing Workflow](./integrate-the-hatch-origin-adjustment-steps-into-an-existing-cad-processing-workflow.cs) | Cad.CadObjects | aspose-cad, better, cad, cadobjects, csharp, dotnet8, fileformats, for |
+| [Integrate The Hatch Origin Adjustment Steps into An Existing CAD Processing Workflow](./integrate-the-hatch-origin-adjustment-steps-into-an-existing-cad-processing-workflow.cs) | ImageOptions | aspose-cad, better, cad, cadconsts, cadobjects, cadtables, csharp, dotnet8 |
 
 ## Agent Guidance
 - Prefer the local `AGENTS.md` instructions for category-specific rules.

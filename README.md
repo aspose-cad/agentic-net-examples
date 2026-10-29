@@ -20,7 +20,7 @@ Examples are organized by feature category:
 - `add-polylines/` - 34 example(s)
 - `add-text-and-mtext-entities-beside-existing-text/` - 35 example(s)
 - `adjust-cad-drawing-properties/` - 34 example(s)
-- `apply-blind-watermarks/` - 8 example(s)
+- `apply-blind-watermarks/` - 9 example(s)
 - `calculate-circle-area-and-circumference/` - 30 example(s)
 - `change-emergency-fonts-and-style-fonts/` - 28 example(s)
 - `change-polyline-width/` - 30 example(s)
@@ -44,14 +44,14 @@ Examples are organized by feature category:
 - `get-cad-layout-names/` - 30 example(s)
 - `get-cad-layout-size/` - 35 example(s)
 - `get-external-file-references/` - 31 example(s)
-- `insert-dxf-or-dwg-drawings-into-dwg-files/` - 30 example(s)
+- `insert-dxf-or-dwg-drawings-into-dwg-files/` - 29 example(s)
 - `optimize-hatch-origin-for-better-performance/` - 29 example(s)
 - `remove-borders-from-the-output-canvas/` - 30 example(s)
 - `remove-cad-entities/` - 29 example(s)
 - `search-attributes-inside-insert-entities/` - 29 example(s)
 - `validate-and-replace-external-image-references/` - 40 example(s)
 - `work-with-3d-cad-files/` - 32 example(s)
-- `work-with-cad-and-bim-drawing-formats/` - 527 example(s)
+- `work-with-cad-and-bim-drawing-formats/` - 526 example(s)
 - `work-with-cad-entities/` - 35 example(s)
 - `work-with-cad-files/` - 34 example(s)
 - `work-with-cad-fonts/` - 29 example(s)
@@ -200,4 +200,4 @@ Other Aspose products with agentic, build-validated example repositories:
 All examples use [Aspose.CAD for .NET](https://products.aspose.com/cad/net/) and require a valid license for production use. See [licensing options](https://purchase.aspose.com/buy).
 
 ---
-*Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-10-26*
+*Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-10-29*

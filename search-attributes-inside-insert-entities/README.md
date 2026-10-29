@@ -16,9 +16,9 @@ Build-validated Aspose.CAD for .NET examples for `search-attributes-inside-inser
 - `Aspose.CAD` (26 example(s))
 - `Aspose.CAD.FileFormats.Cad` (26 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (24 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (15 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadTables` (16 example(s))
 - `System.Collections.Generic` (5 example(s))
-- `Aspose.CAD.ImageOptions` (4 example(s))
+- `System.Linq` (5 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -30,7 +30,7 @@ Build-validated Aspose.CAD for .NET examples for `search-attributes-inside-inser
 | [Confirm That The Drawing Block Definitions Are Accessible Before Processing Nested Inserts](./confirm-that-the-drawing-block-definitions-are-accessible-before-processing-nested-inserts.cs) | Cad | aspose-cad, attributes, cad, cadobjects, cadtables, csharp, dotnet8, entities |
 | [Continue Scanning Remaining Entities After A Match to Locate Additional Attributes](./continue-scanning-remaining-entities-after-a-match-to-locate-additional-attributes.cs) | Cad | aspose-cad, attributes, cad, cadobjects, cadtables, csharp, dotnet8, entities |
 | [Dispose of The Drawing Object After Completing The Attribute Search to Release Resources](./dispose-of-the-drawing-object-after-completing-the-attribute-search-to-release-resources.cs) | Cad | aspose-cad, attributes, cad, cadobjects, cadtables, csharp, dotnet8, entities |
-| [Document The Attribute Search Implementation Steps Within Code Comments for Maintainability](./document-the-attribute-search-implementation-steps-within-code-comments-for-maintainability.cs) | ImageOptions | aspose-cad, attributes, cad, cadobjects, csharp, dotnet8, entities, fileformats |
+| [Document The Attribute Search Implementation Steps Within Code Comments for Maintainability](./document-the-attribute-search-implementation-steps-within-code-comments-for-maintainability.cs) | ImageOptions | aspose-cad, attributes, cad, cadconsts, cadobjects, cadtables, csharp, dotnet8 |
 | [Ensure Proper Disposal of Temporary Objects Created During Recursive Block Traversal to Prevent Memory Leaks](./ensure-proper-disposal-of-temporary-objects-created-during-recursive-block-traversal-to-prevent-memory-leaks.cs) | Cad | aspose-cad, attributes, cad, cadobjects, cadtables, csharp, dotnet8, entities |
 | [Ensure That All Resources Including Block Definitions and Temporary Objects Are Released After Search Completion](./ensure-that-all-resources-including-block-definitions-and-temporary-objects-are-released-after-search-completion.cs) | Cad | aspose-cad, attributes, cad, cadobjects, cadtables, csharp, dotnet8, entities |
 | [Handle Nested Inserts By Recursively Accessing Block Contents for Deeper Attribute Searches](./handle-nested-inserts-by-recursively-accessing-block-contents-for-deeper-attribute-searches.cs) | Cad | aspose-cad, attributes, cad, cadobjects, cadtables, csharp, dotnet8, entities |

@@ -4,9 +4,9 @@
   "framework": "net8.0",
   "package": "Aspose.CAD",
   "package_version": "26.9.0",
-  "total_examples": 1895,
+  "total_examples": 1894,
   "total_categories": 45,
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-29",
   "categories": [
     {
       "name": "access-entities-inside-block-objects",
@@ -1079,20 +1079,27 @@
           "category": "access-entities-inside-block-objects",
           "path": "access-entities-inside-block-objects/navigate-block-hierarchy-and-references-to-locate-deeply-nested-blocks-for-entity-extraction.cs",
           "file": "navigate-block-hierarchy-and-references-to-locate-deeply-nested-blocks-for-entity-extraction.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "access",
             "aspose-cad",
             "block",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "entities",
             "fileformats",
+            "hatch",
+            "imageoptions",
             "inside",
             "objects",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -1104,11 +1111,20 @@
           ],
           "namespaces": [
             "System",
-            "System.Collections",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -1512,30 +1528,54 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 14
+          "count": 15
         },
         {
           "name": "System.Collections.Generic",
-          "count": 6
+          "count": 7
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 5
+          "count": 6
         },
         {
           "name": "System.Linq",
-          "count": 4
+          "count": 5
         },
         {
           "name": "Image image = Image.Load(inputPath)",
           "count": 2
         },
         {
-          "name": "System.Collections",
-          "count": 2
+          "name": "System.Numerics",
+          "count": 1
         },
         {
-          "name": "System.Numerics",
+          "name": "System.Collections",
+          "count": 1
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
           "count": 1
         }
       ],
@@ -1544,7 +1584,12 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.ImageOptions"
+        "Aspose.CAD.ImageOptions",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -1976,12 +2021,21 @@
             "access",
             "and",
             "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
+            "fileformats",
+            "hatch",
             "imageoptions",
             "polyline",
+            "primitives",
             "standalone-example",
-            "vertices"
+            "underlaydefinition",
+            "vertices",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -1994,8 +2048,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -2844,18 +2909,26 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 25
+          "count": 26
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 23
+          "count": 24
         },
         {
           "name": "System.Collections.Generic",
-          "count": 13
+          "count": 14
+        },
+        {
+          "name": "System.Linq",
+          "count": 7
         },
         {
           "name": "Aspose.CAD.ImageOptions",
+          "count": 7
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
           "count": 7
         },
         {
@@ -2863,39 +2936,43 @@
           "count": 6
         },
         {
-          "name": "System.Linq",
-          "count": 6
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 6
-        },
-        {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
           "count": 5
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 2
         },
         {
           "name": "System.Collections",
           "count": 2
         },
         {
-          "name": "Aspose.CAD.WatermarkGuard",
-          "count": 1
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 2
         },
         {
           "name": "System.Reflection",
           "count": 1
         },
         {
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
           "name": "System.Text",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.Primitives",
           "count": 1
         },
         {
@@ -2908,8 +2985,8 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.ImageOptions",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
         "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
         "Aspose.CAD.WatermarkGuard",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
@@ -3613,21 +3690,28 @@
           "category": "add-background-images-to-dwg-files",
           "path": "add-background-images-to-dwg-files/implement-error-handling-when-the-image-file-path-on-cadrasterimagedef-is-missing-or-invalid.cs",
           "file": "implement-error-handling-when-the-image-file-path-on-cadrasterimagedef-is-missing-or-invalid.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "aspose-cad",
             "background",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "dwg",
             "fileformats",
             "files",
+            "hatch",
+            "imageoptions",
             "images",
+            "primitives",
             "standalone-example",
-            "to"
+            "to",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -3640,9 +3724,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -4238,12 +4332,13 @@
           "category": "add-background-images-to-dwg-files",
           "path": "add-background-images-to-dwg-files/use-cadblocktableobject-to-process-added-objects-after-adding-both-cadrasterimage-and-cadbaseobject.cs",
           "file": "use-cadblocktableobject-to-process-added-objects-after-adding-both-cadrasterimage-and-cadbaseobject.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "aspose-cad",
             "background",
             "cad",
+            "cadconsts",
             "cadobjects",
             "cadtables",
             "csharp",
@@ -4251,9 +4346,14 @@
             "dwg",
             "fileformats",
             "files",
+            "hatch",
+            "imageoptions",
             "images",
+            "primitives",
             "standalone-example",
-            "to"
+            "to",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -4265,13 +4365,20 @@
           ],
           "namespaces": [
             "System",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
-            "Aspose.CAD.FileFormats.Cad.CadTables"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -4379,21 +4486,28 @@
           "category": "add-background-images-to-dwg-files",
           "path": "add-background-images-to-dwg-files/verify-that-the-cadblocktableobject-reflects-the-added-background-after-processing-in-the-drawing.cs",
           "file": "verify-that-the-cadblocktableobject-reflects-the-added-background-after-processing-in-the-drawing.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "aspose-cad",
             "background",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "dwg",
             "fileformats",
             "files",
+            "hatch",
+            "imageoptions",
             "images",
+            "primitives",
             "standalone-example",
-            "to"
+            "to",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -4408,9 +4522,17 @@
             "System.IO",
             "System.Linq",
             "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -4442,31 +4564,43 @@
         },
         {
           "name": "System.Linq",
-          "count": 22
-        },
-        {
-          "name": "System.Collections.Generic",
-          "count": 18
+          "count": 23
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 17
+          "count": 20
+        },
+        {
+          "name": "System.Collections.Generic",
+          "count": 19
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 3
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 1
+          "count": 5
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 1
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 4
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 1
+          "count": 4
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 3
         }
       ],
       "key_apis": [
@@ -4475,9 +4609,11 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-        "Aspose.CAD.Primitives"
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -5469,24 +5605,28 @@
           "category": "add-background-images-to-dxf-files",
           "path": "add-background-images-to-dxf-files/insert-the-cadrasterimage-into-drawing-entities-and-then-move-the-drawing-down-to-add-a-title.cs",
           "file": "insert-the-cadrasterimage-into-drawing-entities-and-then-move-the-drawing-down-to-add-a-title.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "aspose-cad",
             "background",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "dxf",
             "fileformats",
             "files",
+            "hatch",
             "imageoptions",
             "images",
-            "polylines",
+            "primitives",
             "standalone-example",
             "to",
-            "vertices"
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -5498,15 +5638,20 @@
           ],
           "namespaces": [
             "System",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
-            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-            "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -5908,18 +6053,34 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 4
+          "count": 5
         },
         {
           "name": "System.Collections",
           "count": 1
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+          "name": "System.Diagnostics",
           "count": 1
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
           "count": 1
         }
       ],
@@ -5929,8 +6090,11 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -8746,22 +8910,29 @@
           "category": "add-text-and-mtext-entities-beside-existing-text",
           "path": "add-text-and-mtext-entities-beside-existing-text/add-new-entities-to-the-drawing-entities-collection-after-inserting-them-into-the-model-space-block.cs",
           "file": "add-new-entities-to-the-drawing-entities-collection-after-inserting-them-into-the-model-space-block.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "and",
             "aspose-cad",
             "beside",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "entities",
             "existing",
             "fileformats",
+            "hatch",
+            "imageoptions",
             "mtext",
+            "primitives",
             "standalone-example",
-            "text"
+            "text",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -8773,12 +8944,20 @@
           ],
           "namespaces": [
             "System",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -8925,22 +9104,29 @@
           "category": "add-text-and-mtext-entities-beside-existing-text",
           "path": "add-text-and-mtext-entities-beside-existing-text/assign-the-softowner-property-of-the-new-cadmtext-entity-using-the-obtained-block-table-record-handle.cs",
           "file": "assign-the-softowner-property-of-the-new-cadmtext-entity-using-the-obtained-block-table-record-handle.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "and",
             "aspose-cad",
             "beside",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "entities",
             "existing",
             "fileformats",
+            "hatch",
+            "imageoptions",
             "mtext",
+            "primitives",
             "standalone-example",
-            "text"
+            "text",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -8952,12 +9138,20 @@
           ],
           "namespaces": [
             "System",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -9013,22 +9207,29 @@
           "category": "add-text-and-mtext-entities-beside-existing-text",
           "path": "add-text-and-mtext-entities-beside-existing-text/confirm-that-each-new-entity-is-added-to-the-model-space-block-to-appear-in-model-space.cs",
           "file": "confirm-that-each-new-entity-is-added-to-the-model-space-block-to-appear-in-model-space.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "and",
             "aspose-cad",
             "beside",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "entities",
             "existing",
             "fileformats",
+            "hatch",
+            "imageoptions",
             "mtext",
+            "primitives",
             "standalone-example",
-            "text"
+            "text",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -9041,9 +9242,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -10261,15 +10472,22 @@
             "aspose-cad",
             "beside",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "entities",
             "existing",
             "fileformats",
+            "hatch",
             "imageoptions",
             "mtext",
+            "primitives",
             "standalone-example",
-            "text"
+            "text",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -10282,9 +10500,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad"
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -10312,22 +10540,46 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 32
+          "count": 33
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 14
+          "count": 17
         },
         {
           "name": "System.Linq",
-          "count": 13
+          "count": 15
         },
         {
           "name": "System.Collections.Generic",
-          "count": 6
+          "count": 8
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 8
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
           "count": 4
         },
         {
@@ -10340,7 +10592,12 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.ImageOptions",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -11818,12 +12075,13 @@
     },
     {
       "name": "apply-blind-watermarks",
-      "file_count": 8,
+      "file_count": 9,
       "files": [
         "add-blind-watermark-using-an-image-to-a-cad-drawing-and-verify-its-presence-programmatically.cs",
         "add-blind-watermark-using-text-to-a-cad-drawing-and-verify-its-presence-programmatically.cs",
         "check-a-cad-file-for-blind-watermark-presence-before-archiving-to-ensure-traceability.cs",
         "convert-dwg-files-to-pdf-while-embedding-a-text-blind-watermark-during-the-conversion-process.cs",
+        "detect-an-existing-blind-watermark-in-a-cad-file-before-performing-any-further-processing.cs",
         "detect-existing-blind-watermark-in-a-cad-file-before-performing-format-conversion-to-ensure-compliance.cs",
         "generate-a-sample-cad-file-that-visually-demonstrates-the-effect-of-a-text-blind-watermark.cs",
         "integrate-blind-watermark-addition-into-an-automated-workflow-that-processes-multiple-cad-files-sequentially.cs",
@@ -12002,6 +12260,62 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Detect An Existing Blind Watermark in A CAD File Before Performing Any Further Processing",
+          "category": "apply-blind-watermarks",
+          "path": "apply-blind-watermarks/detect-an-existing-blind-watermark-in-a-cad-file-before-performing-any-further-processing.cs",
+          "file": "detect-an-existing-blind-watermark-in-a-cad-file-before-performing-any-further-processing.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "apply",
+            "aspose-cad",
+            "blind",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "hatch",
+            "imageoptions",
+            "primitives",
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard",
+            "watermarks"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Detect An Existing Blind Watermark in A CAD File Before Performing Any Further Processing in C#",
+            "Detect An Existing Blind Watermark in A CAD File Before Performing Any Further Processing using Aspose.CAD for .NET",
+            "Detect An Existing Blind Watermark in A CAD File Before Performing Any Further Processing Aspose.CAD .NET example",
+            "AI generated .net code to Detect An Existing Blind Watermark in A CAD File Before Performing Any Further Processing",
+            "Aspose.CAD for .NET apply-blind-watermarks example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Detect Existing Blind Watermark in A CAD File Before Performing Format Conversion to Ensure Compliance",
           "category": "apply-blind-watermarks",
           "path": "apply-blind-watermarks/detect-existing-blind-watermark-in-a-cad-file-before-performing-format-conversion-to-ensure-compliance.cs",
@@ -12171,30 +12485,62 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 8
+          "count": 9
         },
         {
           "name": "System.IO",
-          "count": 8
+          "count": 9
         },
         {
           "name": "Aspose.CAD",
-          "count": 8
+          "count": 9
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 8
+          "count": 9
         },
         {
           "name": "Aspose.CAD.WatermarkGuard",
-          "count": 8
+          "count": 9
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 7
+          "count": 8
         },
         {
           "name": "System.Linq",
+          "count": 2
+        },
+        {
+          "name": "System.Collections.Generic",
+          "count": 1
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
           "count": 1
         }
       ],
@@ -12202,7 +12548,13 @@
         "Aspose.CAD",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.WatermarkGuard",
-        "Aspose.CAD.FileFormats.Cad"
+        "Aspose.CAD.FileFormats.Cad",
+        "Aspose.CAD.FileFormats.Cad.CadObjects",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.Primitives"
       ]
     },
     {
@@ -17918,14 +18270,21 @@
           "tags": [
             "aspose-cad",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "configure",
             "csharp",
             "dotnet8",
             "fileformats",
+            "hatch",
             "imageoptions",
             "options",
             "pen",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -17937,10 +18296,20 @@
           ],
           "namespaces": [
             "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "System.IO"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -18981,22 +19350,46 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 5
+          "count": 6
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 3
+          "count": 4
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 1
+          "count": 2
+        },
+        {
+          "name": "System.Collections.Generic",
+          "count": 2
         },
         {
           "name": "static Aspose.CAD.LineCap",
           "count": 1
         },
         {
-          "name": "System.Collections.Generic",
+          "name": "System.Linq",
+          "count": 1
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
           "count": 1
         },
         {
@@ -19014,7 +19407,11 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.FileFormats.Cad.CadConsts"
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -19150,16 +19547,25 @@
             "and",
             "arcs",
             "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "configure",
             "csharp",
             "dotnet8",
+            "fileformats",
             "for",
+            "hatch",
             "hatches",
             "imageoptions",
             "options",
+            "primitives",
             "quality",
             "standalone-example",
-            "text"
+            "text",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -19172,8 +19578,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -19855,16 +20272,25 @@
             "and",
             "arcs",
             "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "configure",
             "csharp",
             "dotnet8",
+            "fileformats",
             "for",
+            "hatch",
             "hatches",
             "imageoptions",
             "options",
+            "primitives",
             "quality",
             "standalone-example",
-            "text"
+            "text",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -19877,8 +20303,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -20289,22 +20726,50 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 7
+          "count": 9
         },
         {
           "name": "System.Diagnostics",
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 3
+        },
+        {
+          "name": "System.Linq",
+          "count": 2
+        },
+        {
+          "name": "System.Collections.Generic",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
           "count": 2
         },
         {
           "name": "System.Reflection",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
           "count": 1
         }
       ],
@@ -20313,7 +20778,12 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch"
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -20955,6 +21425,9 @@
             "and",
             "aspose-cad",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "convert",
             "csharp",
             "dotnet8",
@@ -20962,13 +21435,17 @@
             "dwg",
             "dxf",
             "fileformats",
+            "hatch",
             "imageoptions",
             "images",
             "pdf",
+            "primitives",
             "raster",
             "standalone-example",
             "tiff",
-            "to"
+            "to",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [
             "tiff"
@@ -20985,9 +21462,18 @@
             "System",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad"
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -21887,15 +22373,31 @@
           "count": 17
         },
         {
+          "name": "System.Collections.Generic",
+          "count": 4
+        },
+        {
           "name": "System.Linq",
           "count": 4
         },
         {
-          "name": "System.Collections.Generic",
+          "name": "Aspose.CAD.FileFormats.Dwf",
           "count": 3
         },
         {
-          "name": "Aspose.CAD.FileFormats.Dwf",
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
           "count": 3
         },
         {
@@ -21903,23 +22405,19 @@
           "count": 2
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 2
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 2
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 2
-        },
-        {
-          "name": "Aspose.CAD.Primitives",
-          "count": 2
-        },
-        {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 2
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
           "count": 1
         },
         {
@@ -21932,11 +22430,11 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Dwf",
-        "Aspose.CAD.FileFormats.Dwf.Whip.Objects",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
         "Aspose.CAD.Primitives",
+        "Aspose.CAD.FileFormats.Dwf.Whip.Objects",
         "Aspose.CAD.FileFormats.Cad.CadTables"
       ]
     },
@@ -23297,23 +23795,27 @@
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/save-the-drawing-containing-multiple-hatched-rectangles-to-verify-persistence-of-hatch-settings.cs",
           "file": "save-the-drawing-containing-multiple-hatched-rectangles-to-verify-persistence-of-hatch-settings.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "create",
             "csharp",
             "dotnet8",
             "fileformats",
             "from",
+            "hatch",
             "hatched",
             "imageoptions",
             "polylines",
+            "primitives",
             "rectangles",
             "standalone-example",
-            "vertices"
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -23326,13 +23828,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
-            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-            "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -23637,22 +24145,27 @@
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/utilize-cadhatchpatterndata-to-define-a-custom-hatch-pattern-with-specific-line-spacing.cs",
           "file": "utilize-cadhatchpatterndata-to-define-a-custom-hatch-pattern-with-specific-line-spacing.cs",
-          "api_area": "Cad.CadConsts",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "create",
             "csharp",
             "dotnet8",
             "fileformats",
             "from",
+            "hatch",
             "hatched",
             "imageoptions",
             "polylines",
+            "primitives",
             "rectangles",
-            "standalone-example"
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -23663,16 +24176,21 @@
             "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
-            "Aspose.CAD.FileFormats.Cad.CadObjects",
             "System",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
             "Aspose.CAD.ImageOptions",
-            "var cadImage = (CadImage)Image.Load(inputPath)"
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -23712,34 +24230,46 @@
         },
         {
           "name": "System.Linq",
-          "count": 24
+          "count": 25
         },
         {
           "name": "System.Collections.Generic",
-          "count": 22
+          "count": 24
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 22
+          "count": 24
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 15
+          "count": 17
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-          "count": 11
+          "count": 9
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-          "count": 7
+          "count": 6
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 2
         },
         {
           "name": "System.Collections",
-          "count": 1
-        },
-        {
-          "name": "var cadImage = (CadImage)Image.Load(inputPath)",
           "count": 1
         }
       ],
@@ -23752,7 +24282,8 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
         "Aspose.CAD.Primitives",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition"
       ]
     },
     {
@@ -23988,16 +24519,22 @@
             "a",
             "aspose-cad",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "delete",
             "dotnet8",
             "entities",
             "fileformats",
+            "hatch",
             "imageoptions",
             "inside",
+            "primitives",
             "rectangle",
-            "standalone-example"
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -24009,13 +24546,20 @@
           ],
           "namespaces": [
             "System",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -24267,16 +24811,20 @@
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "delete",
             "dotnet8",
             "entities",
             "fileformats",
+            "hatch",
             "imageoptions",
             "inside",
+            "primitives",
             "rectangle",
             "standalone-example",
-            "vertices"
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -24288,15 +24836,20 @@
           ],
           "namespaces": [
             "System",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
-            "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-            "Aspose.CAD.FileFormats.Cad.CadConsts"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -25248,23 +25801,35 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-          "count": 15
+          "count": 14
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 12
+          "count": 13
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 8
+          "count": 10
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 1
+          "count": 3
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 1
+          "count": 3
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 2
         }
       ],
       "key_apis": [
@@ -28476,14 +29041,22 @@
             "a",
             "aspose-cad",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "drawings",
             "export",
+            "fileformats",
+            "hatch",
             "imageoptions",
             "pdf",
+            "primitives",
             "standalone-example",
-            "to"
+            "to",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [
             "pdf"
@@ -28499,8 +29072,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -29242,18 +29826,46 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 6
+          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 2
+          "count": 3
         },
         {
           "name": "System.Linq",
-          "count": 2
+          "count": 3
         },
         {
           "name": "System.Collections.Generic",
+          "count": 2
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
           "count": 1
         }
       ],
@@ -29261,7 +29873,13 @@
         "Aspose.CAD",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadObjects",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -32243,16 +32861,22 @@
           "tags": [
             "aspose-cad",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "content",
             "csharp",
             "dotnet8",
             "export",
             "fileformats",
             "full",
+            "hatch",
             "imageoptions",
             "layout",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -32266,10 +32890,18 @@
             "System",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -33508,14 +34140,23 @@
           "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "content",
             "csharp",
             "dotnet8",
             "export",
+            "fileformats",
             "full",
+            "hatch",
             "imageoptions",
             "layout",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -33528,8 +34169,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -33622,19 +34274,26 @@
           "category": "export-full-layout-content",
           "path": "export-full-layout-content/utilize-getlayers-to-retrieve-layer-collections-for-each-layout-to-apply-layer-specific-processing.cs",
           "file": "utilize-getlayers-to-retrieve-layer-collections-for-each-layout-to-apply-layer-specific-processing.cs",
-          "api_area": "Cad.CadObjects",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "content",
             "csharp",
             "dotnet8",
             "export",
             "fileformats",
             "full",
+            "hatch",
+            "imageoptions",
             "layout",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -33645,12 +34304,21 @@
             "Aspose.CAD for .NET export-full-layout-content example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadObjects",
             "System",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.FileFormats.Cad"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -33764,42 +34432,54 @@
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 37
+          "count": 38
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 27
+          "count": 28
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 11
+          "count": 12
         },
         {
           "name": "System.Linq",
-          "count": 6
+          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 3
-        },
-        {
-          "name": "Aspose.CAD.WatermarkGuard",
-          "count": 2
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 2
+          "count": 6
         },
         {
           "name": "System.Collections.Generic",
-          "count": 2
+          "count": 5
         },
         {
-          "name": "System.Reflection",
-          "count": 1
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 5
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 5
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 4
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 3
+        },
+        {
+          "name": "System.Reflection",
           "count": 1
         }
       ],
@@ -33809,9 +34489,11 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
-        "Aspose.CAD.WatermarkGuard",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.WatermarkGuard",
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.Primitives"
       ]
     },
     {
@@ -42750,19 +43432,26 @@
           "category": "get-cad-layout-size",
           "path": "get-cad-layout-size/export-cad-files-to-pdf-with-custom-quality-settings-and-verify-layout-dimensions-match-original-sizes.cs",
           "file": "export-cad-files-to-pdf-with-custom-quality-settings-and-verify-layout-dimensions-match-original-sizes.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "fileformats",
             "get",
+            "hatch",
             "imageoptions",
             "layout",
             "pdf",
+            "primitives",
             "size",
-            "standalone-example"
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [
             "pdf"
@@ -42776,12 +43465,21 @@
             "Aspose.CAD PDF C# example"
           ],
           "namespaces": [
-            "Aspose.CAD",
             "System",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -42841,15 +43539,21 @@
           "tags": [
             "aspose-cad",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "fileformats",
             "get",
+            "hatch",
             "imageoptions",
             "layout",
+            "primitives",
             "size",
-            "standalone-example"
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -42862,10 +43566,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -43937,7 +44650,7 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 24
+          "count": 25
         },
         {
           "name": "Aspose.CAD.ImageOptions",
@@ -43945,30 +44658,42 @@
         },
         {
           "name": "System.Collections.Generic",
-          "count": 13
+          "count": 15
         },
         {
           "name": "System.Linq",
-          "count": 7
+          "count": 8
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 5
+          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 3
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
           "count": 2
         },
         {
           "name": "System.Collections",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.Primitives",
           "count": 1
         },
         {
@@ -43984,7 +44709,9 @@
         "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-        "Aspose.CAD.Primitives"
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -45361,7 +46088,7 @@
     },
     {
       "name": "insert-dxf-or-dwg-drawings-into-dwg-files",
-      "file_count": 30,
+      "file_count": 29,
       "files": [
         "access-and-manipulate-the-cadblockdictionary-to-remove-an-unwanted-block-entity-from-the-drawing.cs",
         "add-the-cadblockdictionary-to-the-drawing-blockentities-collection-for-block-management-during-the-insertion-process.cs",
@@ -45380,7 +46107,6 @@
         "get-layout-names-from-the-drawing-to-determine-insertion-points-for-external-blocks.cs",
         "identify-external-file-references-that-need-updating-after-inserting-a-new-block.cs",
         "insert-a-dwg-drawing-into-an-existing-dwg-file-using-a-cadinsertobject-instance.cs",
-        "insert-a-dxf-drawing-into-a-dwg-file-by-using-a-cadinsertobject-reference.cs",
         "iterate-through-cadblockdictionary-entries-to-locate-a-specific-block-by-name.cs",
         "list-all-layer-names-that-contain-entities-from-the-inserted-cadblockentity-for-further-processing.cs",
         "obtain-references-to-external-files-used-by-the-drawing-before-performing-block-insertion.cs",
@@ -45627,17 +46353,26 @@
           "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "drawings",
             "dwg",
             "dxf",
+            "fileformats",
             "files",
+            "hatch",
             "imageoptions",
             "insert",
             "into",
             "or",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -45650,8 +46385,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -46157,55 +46903,6 @@
             "System.Linq",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
-          "title": "Insert A DXF Drawing into A DWG File By using A Cadinsertobject Reference",
-          "category": "insert-dxf-or-dwg-drawings-into-dwg-files",
-          "path": "insert-dxf-or-dwg-drawings-into-dwg-files/insert-a-dxf-drawing-into-a-dwg-file-by-using-a-cadinsertobject-reference.cs",
-          "file": "insert-a-dxf-drawing-into-a-dwg-file-by-using-a-cadinsertobject-reference.cs",
-          "api_area": "Cad",
-          "tags": [
-            "aspose-cad",
-            "cad",
-            "cadobjects",
-            "csharp",
-            "dotnet8",
-            "drawings",
-            "dwg",
-            "dxf",
-            "fileformats",
-            "files",
-            "insert",
-            "into",
-            "or",
-            "standalone-example"
-          ],
-          "formats": [
-            "dwg",
-            "dxf"
-          ],
-          "search_phrases": [
-            "Insert A DXF Drawing into A DWG File By using A Cadinsertobject Reference in C#",
-            "Insert A DXF Drawing into A DWG File By using A Cadinsertobject Reference using Aspose.CAD for .NET",
-            "Insert A DXF Drawing into A DWG File By using A Cadinsertobject Reference Aspose.CAD .NET example",
-            "AI generated .net code to Insert A DXF Drawing into A DWG File By using A Cadinsertobject Reference",
-            "Aspose.CAD for .NET insert-dxf-or-dwg-drawings-into-dwg-files example",
-            "Aspose.CAD DWG C# example",
-            "Aspose.CAD DXF C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "System.Linq",
-            "Aspose.CAD",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects"
           ],
@@ -46764,15 +47461,15 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 30
+          "count": 29
         },
         {
           "name": "System.IO",
-          "count": 30
+          "count": 29
         },
         {
           "name": "Aspose.CAD",
-          "count": 30
+          "count": 29
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
@@ -46792,19 +47489,39 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 10
+          "count": 11
         },
         {
           "name": "System.Collections.Generic",
-          "count": 5
+          "count": 6
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 4
         },
         {
           "name": "System.Collections",
           "count": 3
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 3
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 1
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Blocks",
@@ -46818,7 +47535,10 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Blocks"
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -47501,12 +48221,14 @@
           "category": "optimize-hatch-origin-for-better-performance",
           "path": "optimize-hatch-origin-for-better-performance/integrate-the-hatch-origin-adjustment-steps-into-an-existing-cad-processing-workflow.cs",
           "file": "integrate-the-hatch-origin-adjustment-steps-into-an-existing-cad-processing-workflow.cs",
-          "api_area": "Cad.CadObjects",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "better",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "fileformats",
@@ -47516,7 +48238,10 @@
             "optimize",
             "origin",
             "performance",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -47527,12 +48252,21 @@
             "Aspose.CAD for .NET optimize-hatch-origin-for-better-performance example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadObjects",
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -48189,27 +48923,27 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 11
+          "count": 12
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 9
+          "count": 10
         },
         {
           "name": "System.Collections.Generic",
-          "count": 9
+          "count": 10
         },
         {
           "name": "System.Linq",
-          "count": 8
+          "count": 9
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 6
+          "count": 7
         },
         {
           "name": "System.Diagnostics",
-          "count": 4
+          "count": 5
         },
         {
           "name": "System.Reflection",
@@ -48217,7 +48951,15 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 2
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 1
         }
       ],
       "key_apis": [
@@ -48228,7 +48970,9 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
         "Aspose.CAD.Primitives",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -51258,16 +52002,22 @@
             "aspose-cad",
             "attributes",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "entities",
             "fileformats",
+            "hatch",
             "imageoptions",
             "insert",
             "inside",
+            "primitives",
             "search",
-            "standalone-example"
+            "standalone-example",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -51280,11 +52030,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
             "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -52204,10 +52962,14 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 15
+          "count": 16
         },
         {
           "name": "System.Collections.Generic",
+          "count": 5
+        },
+        {
+          "name": "System.Linq",
           "count": 5
         },
         {
@@ -52215,12 +52977,28 @@
           "count": 4
         },
         {
-          "name": "System.Linq",
-          "count": 4
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 3
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 2
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 1
         },
         {
           "name": "System.Reflection",
@@ -52233,7 +53011,11 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.ImageOptions",
-        "Aspose.CAD.FileFormats.Cad.CadConsts"
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -55514,7 +56296,7 @@
     },
     {
       "name": "work-with-cad-and-bim-drawing-formats",
-      "file_count": 527,
+      "file_count": 526,
       "files": [
         "access-dgn-data-embedded-within-a-dwg-file-and-extract-it-to-a-separate-dgn-file.cs",
         "access-dgn-data-inside-a-dwg-file-and-modify-its-metadata-before-re-exporting.cs",
@@ -55613,7 +56395,6 @@
         "convert-obj-files-to-pdf-and-verify-that-the-resulting-document-preserves-original-model-dimensions.cs",
         "convert-plt-files-to-jpeg-by-loading-them-and-applying-cadrasterizationoption-with-jpegoptions.cs",
         "convert-plt-files-to-pdf-by-loading-them-and-applying-cadrasterizationoption-with-pdfoptions.cs",
-        "create-a-c-utility-that-loads-obj-files-applies-blind-watermarks-and-saves-pdfs-with-error-callbacks.cs",
         "create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-bmp-and-verifies-image-dimensions.cs",
         "create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-jpeg-and-records-file-size.cs",
         "create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-pdf-and-logs-the-result.cs",
@@ -56635,6 +57416,7 @@
             "aspose-cad",
             "bim",
             "cad",
+            "cadconsts",
             "cadobjects",
             "cadtables",
             "csharp",
@@ -56642,9 +57424,13 @@
             "drawing",
             "fileformats",
             "formats",
+            "hatch",
             "imageoptions",
             "pdf",
+            "primitives",
             "standalone-example",
+            "underlaydefinition",
+            "watermarkguard",
             "with",
             "work"
           ],
@@ -56661,12 +57447,20 @@
           ],
           "namespaces": [
             "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
             "Aspose.CAD.FileFormats.Cad.CadTables",
-            "System.IO"
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -60620,56 +61414,6 @@
           "package_version": "26.9.0"
         },
         {
-          "title": "Create A C Utility That Loads OBJ Files Applies Blind Watermarks and Saves Pdfs with Error Callbacks",
-          "category": "work-with-cad-and-bim-drawing-formats",
-          "path": "work-with-cad-and-bim-drawing-formats/create-a-c-utility-that-loads-obj-files-applies-blind-watermarks-and-saves-pdfs-with-error-callbacks.cs",
-          "file": "create-a-c-utility-that-loads-obj-files-applies-blind-watermarks-and-saves-pdfs-with-error-callbacks.cs",
-          "api_area": "ImageOptions",
-          "tags": [
-            "and",
-            "aspose-cad",
-            "bim",
-            "cad",
-            "cadconsts",
-            "csharp",
-            "dotnet8",
-            "drawing",
-            "fileformats",
-            "formats",
-            "imageoptions",
-            "obj",
-            "standalone-example",
-            "watermarkguard",
-            "with",
-            "work"
-          ],
-          "formats": [
-            "obj"
-          ],
-          "search_phrases": [
-            "Create A C Utility That Loads OBJ Files Applies Blind Watermarks and Saves Pdfs with Error Callbacks in C#",
-            "Create A C Utility That Loads OBJ Files Applies Blind Watermarks and Saves Pdfs with Error Callbacks using Aspose.CAD for .NET",
-            "Create A C Utility That Loads OBJ Files Applies Blind Watermarks and Saves Pdfs with Error Callbacks Aspose.CAD .NET example",
-            "AI generated .net code to Create A C Utility That Loads OBJ Files Applies Blind Watermarks and Saves Pdfs with Error Callbacks",
-            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
-            "Aspose.CAD OBJ C# example"
-          ],
-          "namespaces": [
-            "System",
-            "System.IO",
-            "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.WatermarkGuard",
-            "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadConsts"
-          ],
-          "standalone": true,
-          "validated": true,
-          "framework": "net8.0",
-          "package": "Aspose.CAD",
-          "package_version": "26.9.0"
-        },
-        {
           "title": "Create A Script That Loads A DWF Drawing Extracts Layers Exports to BMP and Verifies Image Dimensions",
           "category": "work-with-cad-and-bim-drawing-formats",
           "path": "work-with-cad-and-bim-drawing-formats/create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-bmp-and-verifies-image-dimensions.cs",
@@ -62731,15 +63475,22 @@
             "aspose-cad",
             "bim",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
             "fileformats",
             "formats",
+            "hatch",
             "imageoptions",
             "jpeg",
             "plt",
+            "primitives",
             "standalone-example",
+            "underlaydefinition",
+            "watermarkguard",
             "with",
             "work"
           ],
@@ -62759,9 +63510,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad"
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -73069,12 +73830,20 @@
             "aspose-cad",
             "bim",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
+            "fileformats",
             "formats",
+            "hatch",
             "imageoptions",
+            "primitives",
             "standalone-example",
+            "underlaydefinition",
+            "watermarkguard",
             "with",
             "work"
           ],
@@ -73089,8 +73858,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -77379,14 +78159,22 @@
             "aspose-cad",
             "bim",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
+            "fileformats",
             "formats",
+            "hatch",
             "imageoptions",
             "jpeg",
             "plt",
+            "primitives",
             "standalone-example",
+            "underlaydefinition",
+            "watermarkguard",
             "with",
             "work"
           ],
@@ -77406,8 +78194,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -78167,15 +78966,22 @@
             "aspose-cad",
             "bim",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "drawing",
             "dxf",
             "fileformats",
             "formats",
+            "hatch",
             "imageoptions",
             "pdf",
+            "primitives",
             "standalone-example",
+            "underlaydefinition",
+            "watermarkguard",
             "with",
             "work"
           ],
@@ -78195,9 +79001,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad"
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -80547,54 +81363,62 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 527
+          "count": 526
         },
         {
           "name": "System.IO",
-          "count": 526
+          "count": 525
         },
         {
           "name": "Aspose.CAD",
-          "count": 526
+          "count": 525
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 488
+          "count": 487
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 243
+          "count": 244
         },
         {
           "name": "System.Collections.Generic",
-          "count": 44
+          "count": 49
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 40
+          "count": 44
         },
         {
           "name": "System.Linq",
-          "count": 32
+          "count": 37
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 22
+          "count": 26
         },
         {
           "name": "Aspose.CAD.WatermarkGuard",
-          "count": 21
+          "count": 25
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 18
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 16
         },
         {
           "name": "Aspose.CAD.FileFormats.Dwf",
           "count": 16
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 14
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 11
         },
         {
-          "name": "System.Diagnostics",
+          "name": "Aspose.CAD.Primitives",
           "count": 11
         },
         {
@@ -80602,11 +81426,7 @@
           "count": 8
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 6
-        },
-        {
-          "name": "Aspose.CAD.Primitives",
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
           "count": 6
         },
         {
@@ -80623,10 +81443,6 @@
         },
         {
           "name": "System.Security.Cryptography",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
           "count": 1
         },
         {
@@ -80681,8 +81497,8 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.WatermarkGuard",
-        "Aspose.CAD.FileFormats.Dwf",
         "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Dwf",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
         "Aspose.CAD.Primitives"
       ]
@@ -81157,18 +81973,23 @@
           "category": "work-with-cad-entities",
           "path": "work-with-cad-entities/create-a-new-mtext-entity-with-multiline-content-before-adding-to-model-space.cs",
           "file": "create-a-new-mtext-entity-with-multiline-content-before-adding-to-model-space.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "entities",
             "fileformats",
+            "hatch",
             "imageoptions",
+            "primitives",
             "standalone-example",
+            "underlaydefinition",
+            "watermarkguard",
             "with",
             "work"
           ],
@@ -81181,13 +82002,21 @@
             "Aspose.CAD for .NET work-with-cad-entities example"
           ],
           "namespaces": [
-            "Aspose.CAD",
             "System",
+            "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad.CadConsts"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -82212,16 +83041,16 @@
           "count": 35
         },
         {
+          "name": "System.IO",
+          "count": 35
+        },
+        {
           "name": "Aspose.CAD",
           "count": 35
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
           "count": 35
-        },
-        {
-          "name": "System.IO",
-          "count": 34
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
@@ -82237,7 +83066,7 @@
         },
         {
           "name": "System.Collections.Generic",
-          "count": 12
+          "count": 13
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
@@ -82245,7 +83074,27 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 4
+          "count": 5
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 1
         }
       ],
       "key_apis": [
@@ -82254,7 +83103,11 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {

@@ -6,19 +6,19 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-and-bim-drawing-
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 527
+- Examples: 526
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (527 example(s))
-- `System.IO` (526 example(s))
-- `Aspose.CAD` (526 example(s))
-- `Aspose.CAD.ImageOptions` (488 example(s))
-- `Aspose.CAD.FileFormats.Cad` (243 example(s))
-- `System.Collections.Generic` (44 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (40 example(s))
-- `System.Linq` (32 example(s))
+- `System` (526 example(s))
+- `System.IO` (525 example(s))
+- `Aspose.CAD` (525 example(s))
+- `Aspose.CAD.ImageOptions` (487 example(s))
+- `Aspose.CAD.FileFormats.Cad` (244 example(s))
+- `System.Collections.Generic` (49 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (44 example(s))
+- `System.Linq` (37 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -35,7 +35,7 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-and-bim-drawing-
 | [Adjust CAD Properties Before Exporting SVG File to PDF in Net](./adjust-cad-properties-before-exporting-svg-file-to-pdf-in-net.cs) | ImageOptions | and, aspose-cad, bim, cad, csharp, dotnet8, drawing, fileformats |
 | [Adjust CAD Properties During Rendering of Iges Files to Modify Line Colors and Weights](./adjust-cad-properties-during-rendering-of-iges-files-to-modify-line-colors-and-weights.cs) | ImageOptions | and, aspose-cad, bim, cad, cadobjects, csharp, dotnet8, drawing |
 | [Adjust CAD Properties During Rendering of PLT Files to Modify Line Colors and Weights](./adjust-cad-properties-during-rendering-of-plt-files-to-modify-line-colors-and-weights.cs) | ImageOptions | and, aspose-cad, bim, cad, csharp, dotnet8, drawing, fileformats |
-| [Adjust CAD Properties of A Loaded Collada Drawing Before Exporting It to PDF](./adjust-cad-properties-of-a-loaded-collada-drawing-before-exporting-it-to-pdf.cs) | ImageOptions | and, aspose-cad, bim, cad, cadobjects, cadtables, csharp, dotnet8 |
+| [Adjust CAD Properties of A Loaded Collada Drawing Before Exporting It to PDF](./adjust-cad-properties-of-a-loaded-collada-drawing-before-exporting-it-to-pdf.cs) | ImageOptions | and, aspose-cad, bim, cad, cadconsts, cadobjects, cadtables, csharp |
 | [Adjust CAD Properties of A Loaded Dxb Drawing Before Exporting It to PDF](./adjust-cad-properties-of-a-loaded-dxb-drawing-before-exporting-it-to-pdf.cs) | ImageOptions | and, aspose-cad, bim, cad, cadobjects, cadtables, csharp, dotnet8 |
 | [Adjust CAD Properties of An Fbx Drawing to Change Line Thickness Before Exporting to PDF](./adjust-cad-properties-of-an-fbx-drawing-to-change-line-thickness-before-exporting-to-pdf.cs) | ImageOptions | and, aspose-cad, bim, cad, csharp, dotnet8, drawing, fileformats |
 

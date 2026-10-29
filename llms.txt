@@ -2,11 +2,11 @@
 
 > Build-validated, standalone C# examples for Aspose.CAD for .NET and .NET 8.
 
-- Examples: 1895
+- Examples: 1894
 - Categories: 45
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Last updated: 2026-10-26
+- Last updated: 2026-10-29
 - Coding-agent instructions: ./AGENTS.md
 - Structured index: ./index.json
 - Search discovery index: ./search-index.json
@@ -25,7 +25,7 @@
 - [add-polylines](./add-polylines/): 34 standalone examples; instructions in [AGENTS.md](./add-polylines/AGENTS.md); guide in [README.md](./add-polylines/README.md); common namespaces: System, Aspose.CAD, Aspose.CAD.FileFormats.Cad.CadObjects
 - [add-text-and-mtext-entities-beside-existing-text](./add-text-and-mtext-entities-beside-existing-text/): 35 standalone examples; instructions in [AGENTS.md](./add-text-and-mtext-entities-beside-existing-text/AGENTS.md); guide in [README.md](./add-text-and-mtext-entities-beside-existing-text/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [adjust-cad-drawing-properties](./adjust-cad-drawing-properties/): 34 standalone examples; instructions in [AGENTS.md](./adjust-cad-drawing-properties/AGENTS.md); guide in [README.md](./adjust-cad-drawing-properties/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [apply-blind-watermarks](./apply-blind-watermarks/): 8 standalone examples; instructions in [AGENTS.md](./apply-blind-watermarks/AGENTS.md); guide in [README.md](./apply-blind-watermarks/README.md); common namespaces: System, System.IO, Aspose.CAD
+- [apply-blind-watermarks](./apply-blind-watermarks/): 9 standalone examples; instructions in [AGENTS.md](./apply-blind-watermarks/AGENTS.md); guide in [README.md](./apply-blind-watermarks/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [calculate-circle-area-and-circumference](./calculate-circle-area-and-circumference/): 30 standalone examples; instructions in [AGENTS.md](./calculate-circle-area-and-circumference/AGENTS.md); guide in [README.md](./calculate-circle-area-and-circumference/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [change-emergency-fonts-and-style-fonts](./change-emergency-fonts-and-style-fonts/): 28 standalone examples; instructions in [AGENTS.md](./change-emergency-fonts-and-style-fonts/AGENTS.md); guide in [README.md](./change-emergency-fonts-and-style-fonts/README.md); common namespaces: Aspose.CAD, System, System.IO
 - [change-polyline-width](./change-polyline-width/): 30 standalone examples; instructions in [AGENTS.md](./change-polyline-width/AGENTS.md); guide in [README.md](./change-polyline-width/README.md); common namespaces: System, System.IO, Aspose.CAD
@@ -49,15 +49,15 @@
 - [get-cad-layout-names](./get-cad-layout-names/): 30 standalone examples; instructions in [AGENTS.md](./get-cad-layout-names/AGENTS.md); guide in [README.md](./get-cad-layout-names/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [get-cad-layout-size](./get-cad-layout-size/): 35 standalone examples; instructions in [AGENTS.md](./get-cad-layout-size/AGENTS.md); guide in [README.md](./get-cad-layout-size/README.md); common namespaces: System, Aspose.CAD, System.IO
 - [get-external-file-references](./get-external-file-references/): 31 standalone examples; instructions in [AGENTS.md](./get-external-file-references/AGENTS.md); guide in [README.md](./get-external-file-references/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [insert-dxf-or-dwg-drawings-into-dwg-files](./insert-dxf-or-dwg-drawings-into-dwg-files/): 30 standalone examples; instructions in [AGENTS.md](./insert-dxf-or-dwg-drawings-into-dwg-files/AGENTS.md); guide in [README.md](./insert-dxf-or-dwg-drawings-into-dwg-files/README.md); common namespaces: System, System.IO, Aspose.CAD
+- [insert-dxf-or-dwg-drawings-into-dwg-files](./insert-dxf-or-dwg-drawings-into-dwg-files/): 29 standalone examples; instructions in [AGENTS.md](./insert-dxf-or-dwg-drawings-into-dwg-files/AGENTS.md); guide in [README.md](./insert-dxf-or-dwg-drawings-into-dwg-files/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [optimize-hatch-origin-for-better-performance](./optimize-hatch-origin-for-better-performance/): 29 standalone examples; instructions in [AGENTS.md](./optimize-hatch-origin-for-better-performance/AGENTS.md); guide in [README.md](./optimize-hatch-origin-for-better-performance/README.md); common namespaces: Aspose.CAD, System, System.IO
 - [remove-borders-from-the-output-canvas](./remove-borders-from-the-output-canvas/): 30 standalone examples; instructions in [AGENTS.md](./remove-borders-from-the-output-canvas/AGENTS.md); guide in [README.md](./remove-borders-from-the-output-canvas/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [remove-cad-entities](./remove-cad-entities/): 29 standalone examples; instructions in [AGENTS.md](./remove-cad-entities/AGENTS.md); guide in [README.md](./remove-cad-entities/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [search-attributes-inside-insert-entities](./search-attributes-inside-insert-entities/): 29 standalone examples; instructions in [AGENTS.md](./search-attributes-inside-insert-entities/AGENTS.md); guide in [README.md](./search-attributes-inside-insert-entities/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [validate-and-replace-external-image-references](./validate-and-replace-external-image-references/): 40 standalone examples; instructions in [AGENTS.md](./validate-and-replace-external-image-references/AGENTS.md); guide in [README.md](./validate-and-replace-external-image-references/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-3d-cad-files](./work-with-3d-cad-files/): 32 standalone examples; instructions in [AGENTS.md](./work-with-3d-cad-files/AGENTS.md); guide in [README.md](./work-with-3d-cad-files/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [work-with-cad-and-bim-drawing-formats](./work-with-cad-and-bim-drawing-formats/): 527 standalone examples; instructions in [AGENTS.md](./work-with-cad-and-bim-drawing-formats/AGENTS.md); guide in [README.md](./work-with-cad-and-bim-drawing-formats/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [work-with-cad-entities](./work-with-cad-entities/): 35 standalone examples; instructions in [AGENTS.md](./work-with-cad-entities/AGENTS.md); guide in [README.md](./work-with-cad-entities/README.md); common namespaces: System, Aspose.CAD, Aspose.CAD.FileFormats.Cad
+- [work-with-cad-and-bim-drawing-formats](./work-with-cad-and-bim-drawing-formats/): 526 standalone examples; instructions in [AGENTS.md](./work-with-cad-and-bim-drawing-formats/AGENTS.md); guide in [README.md](./work-with-cad-and-bim-drawing-formats/README.md); common namespaces: System, System.IO, Aspose.CAD
+- [work-with-cad-entities](./work-with-cad-entities/): 35 standalone examples; instructions in [AGENTS.md](./work-with-cad-entities/AGENTS.md); guide in [README.md](./work-with-cad-entities/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-files](./work-with-cad-files/): 34 standalone examples; instructions in [AGENTS.md](./work-with-cad-files/AGENTS.md); guide in [README.md](./work-with-cad-files/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-fonts](./work-with-cad-fonts/): 29 standalone examples; instructions in [AGENTS.md](./work-with-cad-fonts/AGENTS.md); guide in [README.md](./work-with-cad-fonts/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-layouts](./work-with-cad-layouts/): 30 standalone examples; instructions in [AGENTS.md](./work-with-cad-layouts/AGENTS.md); guide in [README.md](./work-with-cad-layouts/README.md); common namespaces: System, System.IO, Aspose.CAD
@@ -89,7 +89,7 @@
 - [Add Cad2dpoint Objects Sequentially to Outline The Shape of The Cadlwpolyline](./add-polylines/add-cad2dpoint-objects-sequentially-to-outline-the-shape-of-the-cadlwpolyline.cs) - Cad; tags: add, aspose-cad, cad, cadconsts, cadobjects, csharp
 - [Add Cad3dpoint Objects Sequentially to Define The Path of The Cadpolyline](./add-polylines/add-cad3dpoint-objects-sequentially-to-define-the-path-of-the-cadpolyline.cs) - Cad.CadObjects; tags: add, aspose-cad, cad, cadobjects, csharp, dotnet8
 ### add-text-and-mtext-entities-beside-existing-text
-- [Add New Entities to The Drawing Entities Collection After Inserting Them into The Model Space Block](./add-text-and-mtext-entities-beside-existing-text/add-new-entities-to-the-drawing-entities-collection-after-inserting-them-into-the-model-space-block.cs) - Cad; tags: add, and, aspose-cad, beside, cad, cadobjects
+- [Add New Entities to The Drawing Entities Collection After Inserting Them into The Model Space Block](./add-text-and-mtext-entities-beside-existing-text/add-new-entities-to-the-drawing-entities-collection-after-inserting-them-into-the-model-space-block.cs) - ImageOptions; tags: add, and, aspose-cad, beside, cad, cadconsts
 - [Add The New Cadmtext Entity to The Drawing Entities Collection for Proper Inclusion](./add-text-and-mtext-entities-beside-existing-text/add-the-new-cadmtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs) - Cad; tags: add, and, aspose-cad, beside, cad, cadobjects
 - [Add The New Cadtext Entity to The Drawing Entities Collection for Proper Inclusion](./add-text-and-mtext-entities-beside-existing-text/add-the-new-cadtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs) - Cad; tags: add, and, aspose-cad, beside, cad, cadobjects
 ### adjust-cad-drawing-properties
@@ -123,7 +123,7 @@
 ### configure-quality-options-for-text-hatches-and-arcs
 - [Adjust Quality Arc to A Medium Level and Compare Arc Smoothness Against Default Configuration](./configure-quality-options-for-text-hatches-and-arcs/adjust-quality-arc-to-a-medium-level-and-compare-arc-smoothness-against-default-configuration.cs) - Cad; tags: and, arcs, aspose-cad, cad, configure, csharp
 - [Adjust Quality Arc to Control Arc Smoothness and Reduce Visual Jagged Edges](./configure-quality-options-for-text-hatches-and-arcs/adjust-quality-arc-to-control-arc-smoothness-and-reduce-visual-jagged-edges.cs) - ImageOptions; tags: and, arcs, aspose-cad, cad, configure, csharp
-- [Adjust Quality Hatch to A Medium Level and Compare Hatch Pattern Density Within Output](./configure-quality-options-for-text-hatches-and-arcs/adjust-quality-hatch-to-a-medium-level-and-compare-hatch-pattern-density-within-output.cs) - ImageOptions; tags: and, arcs, aspose-cad, configure, csharp, dotnet8
+- [Adjust Quality Hatch to A Medium Level and Compare Hatch Pattern Density Within Output](./configure-quality-options-for-text-hatches-and-arcs/adjust-quality-hatch-to-a-medium-level-and-compare-hatch-pattern-density-within-output.cs) - ImageOptions; tags: and, arcs, aspose-cad, cad, cadconsts, cadobjects
 ### convert-dwg-and-dxf-drawings-to-pdf-and-raster-images
 - [Apply Custom Background Color and Draw Color Then Export DWF Layers Individually as PNG Images](./convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/apply-custom-background-color-and-draw-color-then-export-dwf-layers-individually-as-png-images.cs) - Cad; tags: and, aspose-cad, cad, convert, csharp, dotnet8
 - [Apply Scalemethod Shrinktofit to Automatically Adjust Dimensions When Converting DWG to TIFF](./convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/apply-scalemethod-shrinktofit-to-automatically-adjust-dimensions-when-converting-dwg-to-tiff.cs) - ImageOptions; tags: and, aspose-cad, cad, convert, csharp, dotnet8

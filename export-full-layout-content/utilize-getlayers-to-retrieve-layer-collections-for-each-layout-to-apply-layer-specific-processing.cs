@@ -1,77 +1,53 @@
-using Aspose.CAD.FileFormats.Cad.CadObjects;
 using System;
 using System.IO;
 using System.Linq;
+using System.Collections.Generic;
+using System.Diagnostics;
 using Aspose.CAD;
+using Aspose.CAD.ImageOptions;
 using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;
+using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;
+using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
+using Aspose.CAD.Primitives;
+using Aspose.CAD.WatermarkGuard;
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        try
-        {
-                // Validate arguments
-                if (args.Length < 2)
-                {
-                    Console.WriteLine("Usage: <input-cad-file> <output-directory>");
-                    return;
-                }
+class Program {
 
-                string inputPath = args[0];
-                string outputDir = args[1];
+ static void Require(bool ok,string message) {if(!ok)throw new InvalidOperationException(message);}
+ static bool Input(string path) {if(File.Exists(path))return true;Console.WriteLine("Input file not found: "+path);return false;}
 
-                // Verify input file exists
-                if (!File.Exists(inputPath))
-                {
-                    Console.WriteLine($"Input file not found: {inputPath}");
-                    return;
-                }
 
-                // Ensure output directory exists
-                if (!Directory.Exists(outputDir))
-                {
-                    Directory.CreateDirectory(outputDir);
-                }
 
-                // Load the CAD image
-                using (CadImage cadImage = (CadImage)Image.Load(inputPath))
-                {
-                    // Iterate through each layout defined in the drawing
-                    foreach (var layoutKvp in cadImage.Layouts)
-                    {
-                        string layoutName = layoutKvp.Key;
-                        CadLayout layout = layoutKvp.Value;
 
-                        // Retrieve entities that belong to the current layout.
-                        // Entities expose LayoutTabName (or similar) to indicate their layout.
-                        var layoutEntities = cadImage.Entities
-                            .Where(e => string.Equals(e.LayoutTabName, layoutName, StringComparison.OrdinalIgnoreCase));
 
-                        // Collect distinct layer names used by these entities.
-                        var layerNames = layoutEntities
-                            .Select(e => e.LayerName)          // LayerName is the property that holds the layer identifier.
-                            .Where(name => !string.IsNullOrEmpty(name))
-                            .Distinct()
-                            .ToList();
+ static CadRasterizationOptions Raster() {return new CadRasterizationOptions {PageWidth=800,PageHeight=600,BackgroundColor=Color.White};}
+ static void Pdf(Image image,string path,CadRasterizationOptions raster) {
+  bool called=false,complete=false;int errors=0;
+  raster.RenderResult=result=>{called=true;complete=result.IsRenderComplete;errors+=result.Failures.Count;foreach(var failure in result.Failures)Console.WriteLine("Render diagnostic: "+failure.RenderCode+" "+failure.Message);};
+  image.Save(path,new PdfOptions {VectorRasterizationOptions=raster});
+  Require(called&&complete&&errors==0,"PDF render callback did not confirm a complete render.");
+  Require(File.ReadAllBytes(path).Take(5).SequenceEqual(System.Text.Encoding.ASCII.GetBytes("%PDF-")),"PDF header missing.");
+ }
 
-                        // Example layer‑specific processing: output layer information.
-                        Console.WriteLine($"Layout: {layoutName}");
-                        foreach (string layer in layerNames)
-                        {
-                            // Placeholder for actual processing per layer.
-                            Console.WriteLine($"  Layer: {layer}");
-                        }
 
-                        // Additional processing per layout can be inserted here.
-                    }
-                }
-    
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"CAD processing failed: {ex.Message}");
-            return;
-        }
-}
+ static int Main(string[] args) {try {
+
+ string input="input.dwg";if(!Input(input))return 0;Directory.CreateDirectory("output");
+ using(var cad=(CadImage)Image.Load(input)) {
+  var allLayers=cad.Layers.GetLayersNames();Require(allLayers.Count>0,"No drawing layers.");int index=0;
+  foreach(CadLayout layout in cad.Layouts.Values) {
+   // GetLayersNames is drawing-wide. Layout membership comes from ownership.
+   var names=cad.Entities.Where(e=>e.SoftOwner==layout.BlockTableRecordHandle||e.LayoutTabName==layout.LayoutName).Select(e=>e.LayerName).Where(n=>!string.IsNullOrWhiteSpace(n)).Distinct().ToArray();
+   Console.WriteLine(layout.LayoutName+": "+string.Join(",",names));
+   if(names.Length==0)continue;
+   var raster=Raster();raster.Layouts=new[]{layout.LayoutName};raster.Layers=names;Pdf(cad,"output/layout-"+index+++".pdf",raster);
+  }
+  Require(index>0,"No layout with entities was exported.");
+ }
+
+ Console.WriteLine("Verified task 45487");return 0;
+} catch(Exception ex) {Console.Error.WriteLine(ex.Message);return 1;} }
 }

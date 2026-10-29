@@ -16,9 +16,9 @@ Build-validated Aspose.CAD for .NET examples for `add-background-images-to-dwg-f
 - `Aspose.CAD` (30 example(s))
 - `Aspose.CAD.FileFormats.Cad` (29 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (26 example(s))
-- `System.Linq` (22 example(s))
-- `System.Collections.Generic` (18 example(s))
-- `Aspose.CAD.ImageOptions` (17 example(s))
+- `System.Linq` (23 example(s))
+- `Aspose.CAD.ImageOptions` (20 example(s))
+- `System.Collections.Generic` (19 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |

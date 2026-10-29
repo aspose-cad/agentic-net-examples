@@ -16,9 +16,9 @@ Build-validated Aspose.CAD for .NET examples for `configure-pen-options`.
 - `Aspose.CAD` (33 example(s))
 - `Aspose.CAD.ImageOptions` (33 example(s))
 - `Aspose.CAD.FileFormats.Cad` (27 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (5 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (3 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadConsts` (1 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (6 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadTables` (4 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadConsts` (2 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -29,7 +29,7 @@ Build-validated Aspose.CAD for .NET examples for `configure-pen-options`.
 | [Assign Additional Pen Attributes in Penoptions Like Line Join or Cap Style as Needed](./assign-additional-pen-attributes-in-penoptions-like-line-join-or-cap-style-as-needed.cs) | ImageOptions | aspose-cad, cad, configure, csharp, dotnet8, fileformats, imageoptions, options |
 | [Attach The Configured Rasterizationoptions to The CAD Rendering Method Call](./attach-the-configured-rasterizationoptions-to-the-cad-rendering-method-call.cs) | Cad | aspose-cad, cad, configure, csharp, dotnet8, fileformats, imageoptions, options |
 | [Capture and Analyze Memory Usage When Disposing Rasterizationoptions After Multiple Rendering Cycles](./capture-and-analyze-memory-usage-when-disposing-rasterizationoptions-after-multiple-rendering-cycles.cs) | ImageOptions | aspose-cad, cad, configure, csharp, dotnet8, fileformats, imageoptions, options |
-| [Capture Performance Metrics While Rendering with Different Penoptions Configurations to Assess Processing Impact](./capture-performance-metrics-while-rendering-with-different-penoptions-configurations-to-assess-processing-impact.cs) | ImageOptions | aspose-cad, cad, configure, csharp, dotnet8, fileformats, imageoptions, options |
+| [Capture Performance Metrics While Rendering with Different Penoptions Configurations to Assess Processing Impact](./capture-performance-metrics-while-rendering-with-different-penoptions-configurations-to-assess-processing-impact.cs) | ImageOptions | aspose-cad, cad, cadconsts, cadobjects, cadtables, configure, csharp, dotnet8 |
 | [Choose A Dash Style for The Pen in Penoptions Such as Dotted or Dash Dot](./choose-a-dash-style-for-the-pen-in-penoptions-such-as-dotted-or-dash-dot.cs) | ImageOptions | aspose-cad, cad, configure, csharp, dotnet8, fileformats, imageoptions, options |
 | [Combine Pen Color and Dash Style Settings in Penoptions to Achieve Distinct Visual Representation of Specific Entitie](./combine-pen-color-and-dash-style-settings-in-penoptions-to-achieve-distinct-visual-representation-of-specific-entitie.cs) | ImageOptions | aspose-cad, cad, configure, csharp, dotnet8, fileformats, imageoptions, options |
 | [Compare Rendering Results When Penoptions Width Is Set to Zero Versus A Positive Value to Understand Default Behavior](./compare-rendering-results-when-penoptions-width-is-set-to-zero-versus-a-positive-value-to-understand-default-behavior.cs) | ImageOptions | aspose-cad, configure, csharp, dotnet8, imageoptions, options, pen, standalone-example |

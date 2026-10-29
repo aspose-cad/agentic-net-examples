@@ -2,10 +2,10 @@
   "schema_version": 1,
   "product": "Aspose.CAD",
   "package_version": "26.9.0",
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-10-29",
   "catalog_total": 1959,
-  "published_total": 1895,
-  "withheld_total": 64,
+  "published_total": 1894,
+  "withheld_total": 65,
   "examples": [
     {
       "task_id": "44926",
@@ -252,10 +252,10 @@
       "title": "Navigate block hierarchy and references to locate deeply nested blocks for entity extraction.",
       "category": "Access Entities Inside Block Objects",
       "path": "access-entities-inside-block-objects/navigate-block-hierarchy-and-references-to-locate-deeply-nested-blocks-for-entity-extraction.cs",
-      "sha256": "1b17ead0effeb6c527768cab2d016944af12c097428eff96bfa540553e5d9d0d",
+      "sha256": "4059c74b790c5e307d080ae592bbd0aef38be3941483ddb0134fef84a4761230",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "44935",
@@ -442,10 +442,10 @@
       "title": "Handle callback errors during export operations by implementing try\u2011catch blocks around the export method.",
       "category": "Access Polyline and 3DFace Vertices",
       "path": "access-polyline-and-3dface-vertices/handle-callback-errors-during-export-operations-by-implementing-try-catch-blocks-around-the-export-method.cs",
-      "sha256": "3dc4180316c11cb41602c9ee571558b285c57f8ba25c00091c48432f75aad33d",
+      "sha256": "300e4b9ed2819a612ad15518d1adc812f278765db0e76c7ca10c395f80d103cf",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "44955",
@@ -792,10 +792,10 @@
       "title": "Implement error handling when the image file path on CadRasterImageDef is missing or invalid.",
       "category": "Add Background Images to DWG Files",
       "path": "add-background-images-to-dwg-files/implement-error-handling-when-the-image-file-path-on-cadrasterimagedef-is-missing-or-invalid.cs",
-      "sha256": "19ccc0a75742a7702be8294c43f09a283f4bf63a2be40b8e421ea8292e562ee8",
+      "sha256": "d40622f186a75e95ec94c0ad7ae984e5f3c2faf3cda7ea788d7b87c9ada48a33",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Compile/run with controlled drawing inputs; console diagnostics checked. This is not proof for every real-world drawing."
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45048",
@@ -932,10 +932,10 @@
       "title": "Use CadBlockTableObject to process added objects after adding both CadRasterImage and CadBaseObject.",
       "category": "Add Background Images to DWG Files",
       "path": "add-background-images-to-dwg-files/use-cadblocktableobject-to-process-added-objects-after-adding-both-cadrasterimage-and-cadbaseobject.cs",
-      "sha256": "b2e9c39f21ca94db47a7e42503c97d771af79048aec18215c42fbc8b7863bf30",
+      "sha256": "a45fa517bcb5d3732cf94678743c1844a4ea8fcfa9caf501624e3af98155702c",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45056",
@@ -962,10 +962,10 @@
       "title": "Verify that the CadBlockTableObject reflects the added background after processing in the drawing.",
       "category": "Add Background Images to DWG Files",
       "path": "add-background-images-to-dwg-files/verify-that-the-cadblocktableobject-reflects-the-added-background-after-processing-in-the-drawing.cs",
-      "sha256": "671c07e68ee762b336e9ed9d444726e875fe6b79428b3fe694d661774bfb8332",
+      "sha256": "a8c26d7259438c0bd7aa8f7588f332f59e727c71b9a5be027e65e0c041471a50",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45101",
@@ -1182,10 +1182,10 @@
       "title": "Insert the CadRasterImage into drawing entities and then move the drawing down to add a title.",
       "category": "Add Background Images to DXF Files",
       "path": "add-background-images-to-dxf-files/insert-the-cadrasterimage-into-drawing-entities-and-then-move-the-drawing-down-to-add-a-title.cs",
-      "sha256": "8b9aa239779db6cd2b48f2a505d2c17cd735f08f3750239cc7e343d1f37ff6d0",
+      "sha256": "56512814bb190d5c4375ef801e5e0d2a38fcdf34eef119beece758a877127020",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45075",
@@ -1882,10 +1882,10 @@
       "title": "Add new entities to the drawing's entities collection after inserting them into the \"*MODEL_SPACE\" block.",
       "category": "Add TEXT and MTEXT Entities Beside Existing Text",
       "path": "add-text-and-mtext-entities-beside-existing-text/add-new-entities-to-the-drawing-entities-collection-after-inserting-them-into-the-model-space-block.cs",
-      "sha256": "4655cc70d9a7833f9328d82bd0c5bf9053d36e0c567e1326ca224e838c5bdb7e",
+      "sha256": "388de181595277cd37d76095f390d5ebd7b89f97cd8279e2406850709ab02be2",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45120",
@@ -1922,10 +1922,10 @@
       "title": "Assign the SoftOwner property of the new CadMText entity using the obtained block table record handle.",
       "category": "Add TEXT and MTEXT Entities Beside Existing Text",
       "path": "add-text-and-mtext-entities-beside-existing-text/assign-the-softowner-property-of-the-new-cadmtext-entity-using-the-obtained-block-table-record-handle.cs",
-      "sha256": "a34d5a3e87c7582650f1e28da09a30cf22e88f2f9acb19f3c65b6e0ffdbe9762",
+      "sha256": "54f50a94c7720acea5f0fb223d8009ecd6bcbf314484799e3b7b533d74aa06d3",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45112",
@@ -1942,10 +1942,10 @@
       "title": "Confirm that each new entity is added to the \"*MODEL_SPACE\" block to appear in model space.",
       "category": "Add TEXT and MTEXT Entities Beside Existing Text",
       "path": "add-text-and-mtext-entities-beside-existing-text/confirm-that-each-new-entity-is-added-to-the-model-space-block-to-appear-in-model-space.cs",
-      "sha256": "a065c82526bb85804a6fe6433e6d7f2c048fc16d6f88c8535bf24592dc763559",
+      "sha256": "6b19d891d52f77844077b01c5deeead9c536437d31196e9e79eb6eaab4109f50",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45107",
@@ -2222,10 +2222,10 @@
       "title": "Validate visual placement of new CadText entities relative to existing text after positioning them to the right.",
       "category": "Add TEXT and MTEXT Entities Beside Existing Text",
       "path": "add-text-and-mtext-entities-beside-existing-text/validate-visual-placement-of-new-cadtext-entities-relative-to-existing-text-after-positioning-them-to-the-right.cs",
-      "sha256": "c811aaaf099eacaa9df584d2d7c8625942693a9d1bb986d1511eaa4c061820d0",
+      "sha256": "bef41715077d0516269dd6e89927907850f1e80b3e83e0799294696581aa47b1",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "44020",
@@ -2606,6 +2606,16 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "44054",
+      "title": "Detect an existing blind watermark in a CAD file before performing any further processing.",
+      "category": "Apply Blind Watermarks",
+      "path": "apply-blind-watermarks/detect-an-existing-blind-watermark-in-a-cad-file-before-performing-any-further-processing.cs",
+      "sha256": "546f62108a362b6ccea4f8d23c45c92eddd454710be06f07b5281825bd55d6b6",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "44055",
@@ -3902,10 +3912,10 @@
       "title": "Capture performance metrics while rendering with different PenOptions configurations to assess processing impact.",
       "category": "Configure Pen Options",
       "path": "configure-pen-options/capture-performance-metrics-while-rendering-with-different-penoptions-configurations-to-assess-processing-impact.cs",
-      "sha256": "5ddbbf71512ba76af118413747a44bf158eae0c7b9fffe6a7b38e7cae0ada035",
+      "sha256": "2d9e5ee126062371274c21fec9fae56e8c878ff6cf9f215b15cb334af273dd0a",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45903",
@@ -4192,10 +4202,10 @@
       "title": "Adjust Quality.Hatch to a medium level and compare hatch pattern density within output.",
       "category": "Configure Quality Options for Text, Hatches, and Arcs",
       "path": "configure-quality-options-for-text-hatches-and-arcs/adjust-quality-hatch-to-a-medium-level-and-compare-hatch-pattern-density-within-output.cs",
-      "sha256": "db3eb9689c123d77827f49f68f8963cc02c89eb3675d2b6304b10c1c3d99fa12",
+      "sha256": "5cbcc7c38b769b863f6af52f05575f70a90c1ee05583b7c0a7d1d5d098c5d03e",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45966",
@@ -4362,10 +4372,10 @@
       "title": "Log Quality property values before export to facilitate debugging of visual quality issues.",
       "category": "Configure Quality Options for Text, Hatches, and Arcs",
       "path": "configure-quality-options-for-text-hatches-and-arcs/log-quality-property-values-before-export-to-facilitate-debugging-of-visual-quality-issues.cs",
-      "sha256": "806a09ac5b9913f1bc7d3d8056910d388c78590453603ec291031c64739beda9",
+      "sha256": "f7c1297b5fb61dd439e8035bd6f66986e9c0ece0b21488a437a982b9902a8362",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45952",
@@ -4582,10 +4592,10 @@
       "title": "Iterate through CadImage.Layers, apply individual CadRasterizationOptions, and save each layer as separate TIFF files.",
       "category": "Convert DWG and DXF Drawings to PDF and Raster Images",
       "path": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/iterate-through-cadimage-layers-apply-individual-cadrasterizationoptions-and-save-each-layer-as-separate-tiff-files.cs",
-      "sha256": "3c901d59240e64c587c34687fe3845dbb18b85d3fbee8888b7125b2b31058310",
+      "sha256": "7ad770f656a5ff377db06ec7ff91a18350d9bda636ed0d677177d7d31c4ace4d",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45969",
@@ -5032,10 +5042,10 @@
       "title": "Save the drawing containing multiple hatched rectangles to verify persistence of hatch settings.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/save-the-drawing-containing-multiple-hatched-rectangles-to-verify-persistence-of-hatch-settings.cs",
-      "sha256": "eb5c8cd4f3b4d2e649a96875cd9c76e109091efd87bc4e96e5b457dd63435f26",
+      "sha256": "a31892cd1a1a9f9173660457a918dbeea69b2346fec69f79e8a8a8970d500660",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45311",
@@ -5102,10 +5112,10 @@
       "title": "Utilize CadHatchPatternData to define a custom hatch pattern with specific line spacing.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/utilize-cadhatchpatterndata-to-define-a-custom-hatch-pattern-with-specific-line-spacing.cs",
-      "sha256": "431bbdee1811d61397af4dae899be33200011dff4fa789ad03b371223348d540",
+      "sha256": "0e53823f7f09c47342a0153f74e1f38c0d324c4d586713ecde43c4b157743b5c",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45363",
@@ -5152,10 +5162,10 @@
       "title": "Batch delete all entities that intersect the hatch\u2011filled rectangle area.",
       "category": "Delete Entities Inside a Rectangle",
       "path": "delete-entities-inside-a-rectangle/batch-delete-all-entities-that-intersect-the-hatch-filled-rectangle-area.cs",
-      "sha256": "d454425abccea105ca183dab1beddc82de47306efb4c31c4d7343782051c22c3",
+      "sha256": "135e23f1c9573594c2e2262877cf7979d3016a177abab789a11bf5e64318ce51",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45341",
@@ -5212,10 +5222,10 @@
       "title": "Create a rectangle as a polyline, fill it with hatch, then batch remove entities inside the hatch.",
       "category": "Delete Entities Inside a Rectangle",
       "path": "delete-entities-inside-a-rectangle/create-a-rectangle-as-a-polyline-fill-it-with-hatch-then-batch-remove-entities-inside-the-hatch.cs",
-      "sha256": "d04159539c963ee36ca3ea8d70bd71402a8894890b8fd35766f0b48065225ad0",
+      "sha256": "52975d7ae5ffeaa3d9b12ca019a3140d2f5bd2438c5e204f96ca8b6c3f738dd2",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45366",
@@ -6102,10 +6112,10 @@
       "title": "Document steps required to enable PDF/A\u20111a compliance using CorePdfOptions.Compliance property.",
       "category": "Export CAD Drawings to PDF/A",
       "path": "export-cad-drawings-to-pdf-a/document-steps-required-to-enable-pdf-a-1a-compliance-using-corepdfoptions-compliance-property.cs",
-      "sha256": "0b34469a217e9e22c64fb5c9c2a3937757bec7eee1e0931eb8f95de54bbb8329",
+      "sha256": "12844405e054483537127a8377161bae8fb732de245997f99e00e75a79c1fad8",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45607",
@@ -6962,10 +6972,10 @@
       "title": "After inserting external drawing, move its elements to align titles with existing layout headings.",
       "category": "Export Full Layout Content",
       "path": "export-full-layout-content/after-inserting-external-drawing-move-its-elements-to-align-titles-with-existing-layout-headings.cs",
-      "sha256": "7e3c4651f5a096e84c20abba9d145db822e0d58534cb13d6102d4d2f6f0f9244",
+      "sha256": "6286995c0ac3a1955cf9341d3a19b2713f8bf4e20d1d8b253a1aa408a3623b22",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45495",
@@ -7262,10 +7272,10 @@
       "title": "Set ExportAllLayoutContent to true and verify that plot area boundaries no longer clip layout content.",
       "category": "Export Full Layout Content",
       "path": "export-full-layout-content/set-exportalllayoutcontent-to-true-and-verify-that-plot-area-boundaries-no-longer-clip-layout-content.cs",
-      "sha256": "62797eed3dfd1b4a479ba7729ce14009faf445cc2ca04f8582207d114b2a7c98",
+      "sha256": "a4ab2d1a3472f209c711084cd4752ea2e5db20edf4e259e518a41c9dcc0b8755",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45460",
@@ -7292,10 +7302,10 @@
       "title": "Utilize GetLayers to retrieve layer collections for each layout to apply layer\u2011specific processing.",
       "category": "Export Full Layout Content",
       "path": "export-full-layout-content/utilize-getlayers-to-retrieve-layer-collections-for-each-layout-to-apply-layer-specific-processing.cs",
-      "sha256": "48b45e37b445e07a24191cba12c22adb8001ba47d300b6b80c26776144c994b4",
+      "sha256": "7efaa9a2ea227fa3d8e9c27ea2ec1cb8fa4e0c8be8d4ec09728325cee92ede82",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45464",
@@ -9282,10 +9292,10 @@
       "title": "Export CAD files to PDF with custom quality settings and verify layout dimensions match original sizes.",
       "category": "Get CAD Layout Size",
       "path": "get-cad-layout-size/export-cad-files-to-pdf-with-custom-quality-settings-and-verify-layout-dimensions-match-original-sizes.cs",
-      "sha256": "2ddcc9566eb186880cfe5aa8ae485d76521d7e6abd10fec7329635079347b412",
+      "sha256": "e0906808f297033d12e33262f2570674610dcd4d337204af3a5e7c8569f48965",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45742",
@@ -9302,10 +9312,10 @@
       "title": "Generate a CAD file, insert external references, and calculate layout size including referenced content.",
       "category": "Get CAD Layout Size",
       "path": "get-cad-layout-size/generate-a-cad-file-insert-external-references-and-calculate-layout-size-including-referenced-content.cs",
-      "sha256": "631bc5ab4d056adcd5f3aca4b12938e75ea24c06218fb3d79e2b29e3ebecc6c2",
+      "sha256": "86b1c78e8f283b97893ec2ed49d403c1c4e33a34822e349cd05e4839db2507ad",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45730",
@@ -9922,10 +9932,10 @@
       "title": "Check that all external file references are resolved before finalizing insertion.",
       "category": "Insert DXF or DWG Drawings into DWG Files",
       "path": "insert-dxf-or-dwg-drawings-into-dwg-files/check-that-all-external-file-references-are-resolved-before-finalizing-insertion.cs",
-      "sha256": "c45b5d583b079d30208dda845a24df67532a60d91263ceceaef818f84d594622",
+      "sha256": "4fb4aa973c27a99ec7baa1d6fc0235913868499c0489094157e114f95904fe2d",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45770",
@@ -10033,16 +10043,6 @@
       "category": "Insert DXF or DWG Drawings into DWG Files",
       "path": "insert-dxf-or-dwg-drawings-into-dwg-files/insert-a-dwg-drawing-into-an-existing-dwg-file-using-a-cadinsertobject-instance.cs",
       "sha256": "69e7aff4c5186095d2baa108b71f2997a6b04ff654393c59d1e7faf2c18fc343",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
-      "task_id": "45757",
-      "title": "Insert a DXF drawing into a DWG file by using a CadInsertObject reference.",
-      "category": "Insert DXF or DWG Drawings into DWG Files",
-      "path": "insert-dxf-or-dwg-drawings-into-dwg-files/insert-a-dxf-drawing-into-a-dwg-file-by-using-a-cadinsertobject-reference.cs",
-      "sha256": "b2b9231fa4d11eac3e3857033e4c0b8e1075b1b6998102be3bf955a40f6923e7",
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
@@ -10312,10 +10312,10 @@
       "title": "Integrate the hatch origin adjustment steps into an existing CAD processing workflow.",
       "category": "Optimize Hatch Origin for Better Performance",
       "path": "optimize-hatch-origin-for-better-performance/integrate-the-hatch-origin-adjustment-steps-into-an-existing-cad-processing-workflow.cs",
-      "sha256": "0e37c8ef66bb616377907f035da480e0d2cb39b5f450c28a22ae75102c303db1",
+      "sha256": "535568e830039ba30d1fdcf0d199fed3c30bc2d6f4d5b77d9dd8e5eccc9888cc",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45782",
@@ -11122,10 +11122,10 @@
       "title": "Document the attribute search implementation steps within code comments for maintainability.",
       "category": "Search Attributes Inside Insert Entities",
       "path": "search-attributes-inside-insert-entities/document-the-attribute-search-implementation-steps-within-code-comments-for-maintainability.cs",
-      "sha256": "bd3df604d754b87ace7b8cac55bae52cb5d4ff459320111455fcaf7698cc6e88",
+      "sha256": "0cf3cd0d6d5e99bc6095f0f058383d2d8948399ff9cc775c3a578dda64c8db47",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "45891",
@@ -12182,10 +12182,10 @@
       "title": "Adjust CAD properties of a loaded COLLADA drawing before exporting it to PDF.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/adjust-cad-properties-of-a-loaded-collada-drawing-before-exporting-it-to-pdf.cs",
-      "sha256": "77a8cff9d5893047ffcb5d838aa40e9f850c02b630240909cbaa2b549517d1ad",
+      "sha256": "ad9561c37c219583b84ca3ce9e80d417472bd6a0117f3273226138afcc500448",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "44292",
@@ -13028,16 +13028,6 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
-      "task_id": "44638",
-      "title": "Create a C# utility that loads OBJ files, applies blind watermarks, and saves PDFs with error callbacks.",
-      "category": "Work with CAD and BIM Drawing Formats",
-      "path": "work-with-cad-and-bim-drawing-formats/create-a-c-utility-that-loads-obj-files-applies-blind-watermarks-and-saves-pdfs-with-error-callbacks.cs",
-      "sha256": "eec1bd80115ccc2c71bec7aff6184b662d87be162f9641457b70fb02c0c4a696",
-      "compile_status": "passed",
-      "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
-    },
-    {
       "task_id": "44189",
       "title": "Create a script that loads a DWF drawing, extracts layers, exports to BMP, and verifies image dimensions.",
       "category": "Work with CAD and BIM Drawing Formats",
@@ -13492,10 +13482,10 @@
       "title": "Enable anti\u2011aliasing in CadRasterizationOption when rendering PLT files to JPEG for better quality.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/enable-anti-aliasing-in-cadrasterizationoption-when-rendering-plt-files-to-jpeg-for-better-quality.cs",
-      "sha256": "1a068de281fc69de39e40db49cc3696721b3e0f29ec2ea7896a15dd9ca00188b",
+      "sha256": "e4bfba1a23040cf7c3ff08110cdd36293315334bcc940c8c6bd198fb64e141fc",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "44502",
@@ -15712,10 +15702,10 @@
       "title": "Open a DWFx file to prepare it for export operations.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/open-a-dwfx-file-to-prepare-it-for-export-operations.cs",
-      "sha256": "da97f0bac6eaa91aa9f193895a1c0e03e5e09ba69ccd33a3dcfbd06afc4b51d3",
+      "sha256": "3f8ac552bf9d18db5973e10ddab4a1a7b8873e14ed31f8cd4a2966131af87bc9",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "44437",
@@ -16642,10 +16632,10 @@
       "title": "Set resolution DPI in CadRasterizationOption for PLT files exported to JPEG output.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/set-resolution-dpi-in-cadrasterizationoption-for-plt-files-exported-to-jpeg-output.cs",
-      "sha256": "efcc0f208956ade2d1eca5a5c71a7499836de66d996ccba91ed4b5ab1657b800",
+      "sha256": "479f4a83f579b407d918306f1d87fedc8334a0020325f3f86a1d1061db2f79fc",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "44217",
@@ -16812,10 +16802,10 @@
       "title": "Use C# to load DXF files, modify properties, and export them as PDF documents.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/use-c-to-load-dxf-files-modify-properties-and-export-them-as-pdf-documents.cs",
-      "sha256": "e78268c2bb036eaa6d04b911ac2e88e3dd3f97d06b7caa5592c9dde38cf9f7d5",
+      "sha256": "9935ad3ff7923c3d6acb69a09338cb284836866e80cccdb20dfbc0b8caa8f4d8",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "44271",
@@ -17432,10 +17422,10 @@
       "title": "Create a new MTEXT entity with multiline content before adding to model space.",
       "category": "Work with CAD Entities",
       "path": "work-with-cad-entities/create-a-new-mtext-entity-with-multiline-content-before-adding-to-model-space.cs",
-      "sha256": "3608974e5eefa0a08890b34dc49a029a19165faa50cd33a4d698f4b34571d8b2",
+      "sha256": "8f84314338e731d9149ed94ce694c5ddf494897fb487cda43d57248495ad6e5a",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
     },
     {
       "task_id": "44748",

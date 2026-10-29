@@ -15,10 +15,10 @@ Build-validated Aspose.CAD for .NET examples for `export-cad-drawings-to-pdf-a`.
 - `System.IO` (27 example(s))
 - `Aspose.CAD` (27 example(s))
 - `Aspose.CAD.ImageOptions` (27 example(s))
-- `Aspose.CAD.FileFormats.Cad` (6 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (2 example(s))
-- `System.Linq` (2 example(s))
-- `System.Collections.Generic` (1 example(s))
+- `Aspose.CAD.FileFormats.Cad` (7 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadTables` (3 example(s))
+- `System.Linq` (3 example(s))
+- `System.Collections.Generic` (2 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -32,7 +32,7 @@ Build-validated Aspose.CAD for .NET examples for `export-cad-drawings-to-pdf-a`.
 | [Confirm That All Visible CAD Layers Are Included in The Exported PDF A File](./confirm-that-all-visible-cad-layers-are-included-in-the-exported-pdf-a-file.cs) | ImageOptions | a, aspose-cad, cad, cadtables, csharp, dotnet8, drawings, export |
 | [Confirm That The PDF A File Size Remains Within Acceptable Limits After Applying High Quality Text and Hatch Settings](./confirm-that-the-pdf-a-file-size-remains-within-acceptable-limits-after-applying-high-quality-text-and-hatch-settings.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, imageoptions |
 | [Create A Pdfoptions Object to Configure PDF A Export Settings for The Loaded CAD Drawing](./create-a-pdfoptions-object-to-configure-pdf-a-export-settings-for-the-loaded-cad-drawing.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, imageoptions |
-| [Document Steps Required to Enable PDF A 1a Compliance using Corepdfoptions Compliance Property](./document-steps-required-to-enable-pdf-a-1a-compliance-using-corepdfoptions-compliance-property.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, imageoptions |
+| [Document Steps Required to Enable PDF A 1a Compliance using Corepdfoptions Compliance Property](./document-steps-required-to-enable-pdf-a-1a-compliance-using-corepdfoptions-compliance-property.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, dotnet8 |
 | [Export The Drawing using The Configured Pdfoptions to Generate A PDF A File At The Specified Path](./export-the-drawing-using-the-configured-pdfoptions-to-generate-a-pdf-a-file-at-the-specified-path.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, imageoptions |
 | [Handle Any Errors That Occur During The Export Process By Implementing Try Catch Blocks Around The Export Call](./handle-any-errors-that-occur-during-the-export-process-by-implementing-try-catch-blocks-around-the-export-call.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, imageoptions |
 | [Incorporate Custom Layout Adjustments to Reposition CAD Elements Before Exporting to Meet Design Requirements](./incorporate-custom-layout-adjustments-to-reposition-cad-elements-before-exporting-to-meet-design-requirements.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, fileformats |
