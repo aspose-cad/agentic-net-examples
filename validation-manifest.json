@@ -1562,10 +1562,10 @@
       "title": "Add Cad3DPoint objects sequentially to define the path of the CadPolyline.",
       "category": "Add Polylines",
       "path": "add-polylines/add-cad3dpoint-objects-sequentially-to-define-the-path-of-the-cadpolyline.cs",
-      "sha256": "5289bd91a95839b23bb3b58986a1e1acda5e7e816aaab6da594aed5978584de6",
+      "sha256": "e3d550af90e7419b49af3680dd54f960cfa12dfbcd9185437e239251b34dad2e",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Compile/run with controlled drawing inputs; console diagnostics checked. This is not proof for every real-world drawing."
+      "verification": "Recompiled and executed after whitespace-only cleanup (2026-10-29), .NET 8 / Aspose.CAD 26.9.0; runtime checks safe missing-input handling."
     },
     {
       "task_id": "44978",

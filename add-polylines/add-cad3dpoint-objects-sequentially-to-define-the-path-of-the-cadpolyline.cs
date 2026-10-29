@@ -16,7 +16,7 @@ namespace CadPolylineExample
             // Input CAD file (DWG, DXF, etc.)
             string inputPath = "input.dwg";
 
-            
+
         if (!File.Exists(inputPath))
         {
             Console.WriteLine($"Input file not found: {inputPath}");
