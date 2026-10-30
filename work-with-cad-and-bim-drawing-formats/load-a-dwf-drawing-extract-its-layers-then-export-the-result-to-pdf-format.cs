@@ -1,9 +1,11 @@
+using System.Linq;
 using System;
 using System.IO;
+using System.Collections.Generic;
 using Aspose.CAD;
 using Aspose.CAD.ImageOptions;
-using Aspose.CAD.FileFormats.Cad;
-using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Dwf;
+using Aspose.CAD.FileFormats.Dwf.Whip.Objects;
 
 namespace CadLayerExtractionAndPdfExport
 {
@@ -36,16 +38,20 @@ namespace CadLayerExtractionAndPdfExport
                 // Load the DWF drawing
                 using (Image image = Image.Load(sourcePath))
                 {
-                    // Cast to CadImage to access CAD-specific members
-                    CadImage cadImage = (CadImage)image;
+                    // Cast to DwfImage to access DWF-specific members
+                    DwfImage dwf = image as DwfImage;
+                    if (dwf == null)
+                    {
+                        Console.Error.WriteLine("Failed to load DWF image.");
+                        return;
+                    }
 
                     // Extract and list layer names
-                    foreach (CadLayerTable layerObj in cadImage.Layers)
+                    List<string> layerNames = dwf.Layers.GetLayersNames();
+                    Console.WriteLine("Layers found in the DWF file:");
+                    foreach (string name in layerNames)
                     {
-                        if (layerObj is CadLayerTable layer)
-                        {
-                            Console.WriteLine($"Layer: {layer.Name}");
-                        }
+                        Console.WriteLine($"- {name}");
                     }
 
                     // Prepare PDF export options
@@ -54,12 +60,15 @@ namespace CadLayerExtractionAndPdfExport
                         VectorRasterizationOptions = new CadRasterizationOptions
                         {
                             PageWidth = 1600,
-                            PageHeight = 1200
+                            PageHeight = 1200,
+                            // Export only the extracted layers
+                            Layers = layerNames.ToArray()
                         }
                     };
 
                     // Export the drawing to PDF
-                    cadImage.Save(outputPath, pdfOptions);
+                    dwf.Save(outputPath, pdfOptions);
+                    Console.WriteLine($"PDF exported successfully to: {outputPath}");
                 }
             }
             catch (Exception ex)

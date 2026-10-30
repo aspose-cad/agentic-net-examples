@@ -21,13 +21,12 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - `using System;` (27 file(s))
 - `using System.IO;` (27 file(s))
 - `using Aspose.CAD;` (25 file(s))
-- `using Aspose.CAD.ImageOptions;` (23 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (10 file(s))
-- `using System.Collections.Generic;` (5 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (4 file(s))
+- `using Aspose.CAD.ImageOptions;` (22 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (11 file(s))
+- `using System.Collections.Generic;` (6 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (5 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadTables;` (3 file(s))
 - `using System.Linq;` (1 file(s))
-- `using Aspose.CAD.WatermarkGuard;` (1 file(s))
 - `using System.Text;` (1 file(s))
 
 ## Files in this folder
@@ -39,7 +38,6 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [add-margins-to-a-cad-drawing-then-extract-the-resulting-pdf-to-verify-border-dimensions.cs](./add-margins-to-a-cad-drawing-then-extract-the-resulting-pdf-to-verify-border-dimensions.cs) | add margins to a cad drawing then extract the resulting pdf to verify border dimensions |
 | [adjust-cad-properties-such-as-line-weight-before-applying-margins-to-ensure-visual-consistency-in-the-pdf.cs](./adjust-cad-properties-such-as-line-weight-before-applying-margins-to-ensure-visual-consistency-in-the-pdf.cs) | adjust cad properties such as line weight before applying margins to ensure visual consistency in the pdf |
 | [adjust-margin-values-for-each-layout-individually-using-cadrasterizationoptions-to-match-varying-drawing-sizes.cs](./adjust-margin-values-for-each-layout-individually-using-cadrasterizationoptions-to-match-varying-drawing-sizes.cs) | adjust margin values for each layout individually using cadrasterizationoptions to match varying drawing sizes |
-| [apply-a-blind-watermark-to-a-cad-drawing-after-adding-margins-and-before-converting-to-pdf.cs](./apply-a-blind-watermark-to-a-cad-drawing-after-adding-margins-and-before-converting-to-pdf.cs) | apply a blind watermark to a cad drawing after adding margins and before converting to pdf |
 | [combine-multiple-dxf-drawings-set-unified-margins-and-export-the-assembled-composition-as-a-single-pdf-file.cs](./combine-multiple-dxf-drawings-set-unified-margins-and-export-the-assembled-composition-as-a-single-pdf-file.cs) | combine multiple dxf drawings set unified margins and export the assembled composition as a single pdf file |
 | [ensure-successful-pdf-export-after-adding-margins-by-validating-rasterization-options-and-file-paths.cs](./ensure-successful-pdf-export-after-adding-margins-by-validating-rasterization-options-and-file-paths.cs) | ensure successful pdf export after adding margins by validating rasterization options and file paths |
 | [export-a-3d-cad-file-with-added-margins-to-pdf-while-preserving-three-dimensional-geometry.cs](./export-a-3d-cad-file-with-added-margins-to-pdf-while-preserving-three-dimensional-geometry.cs) | export a 3d cad file with added margins to pdf while preserving three dimensional geometry |
@@ -56,6 +54,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [programmatically-insert-a-dwg-drawing-into-another-cad-file-configure-margins-and-generate-a-combined-pdf.cs](./programmatically-insert-a-dwg-drawing-into-another-cad-file-configure-margins-and-generate-a-combined-pdf.cs) | programmatically insert a dwg drawing into another cad file configure margins and generate a combined pdf |
 | [retrieve-external-file-references-adjust-their-paths-then-add-margins-and-export-the-updated-drawing-to-pdf.cs](./retrieve-external-file-references-adjust-their-paths-then-add-margins-and-export-the-updated-drawing-to-pdf.cs) | retrieve external file references adjust their paths then add margins and export the updated drawing to pdf |
 | [retrieve-layout-names-from-a-cad-document-before-applying-margins-to-select-the-appropriate-layout.cs](./retrieve-layout-names-from-a-cad-document-before-applying-margins-to-select-the-appropriate-layout.cs) | retrieve layout names from a cad document before applying margins to select the appropriate layout |
+| [retrieve-layout-sizes-from-a-cad-document-to-calculate-appropriate-margin-values-for-each-layout.cs](./retrieve-layout-sizes-from-a-cad-document-to-calculate-appropriate-margin-values-for-each-layout.cs) | retrieve layout sizes from a cad document to calculate appropriate margin values for each layout |
 | [select-a-specific-layout-by-name-apply-unique-margins-and-export-the-result-to-pdf.cs](./select-a-specific-layout-by-name-apply-unique-margins-and-export-the-result-to-pdf.cs) | select a specific layout by name apply unique margins and export the result to pdf |
 | [use-cadrasterizationoptions-to-set-different-margin-values-for-top-bottom-left-and-right-edges.cs](./use-cadrasterizationoptions-to-set-different-margin-values-for-top-bottom-left-and-right-edges.cs) | use cadrasterizationoptions to set different margin values for top bottom left and right edges |
 | [validate-that-margin-settings-do-not-exceed-layout-dimensions-to-prevent-clipping-during-pdf-export.cs](./validate-that-margin-settings-do-not-exceed-layout-dimensions-to-prevent-clipping-during-pdf-export.cs) | validate that margin settings do not exceed layout dimensions to prevent clipping during pdf export |
@@ -71,5 +70,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-22 | `cad-catalog-2026-10-22` | [examples/batch-cad-catalog-2026-10-22](https://github.com/aspose-cad/agentic-net-examples/tree/examples/batch-cad-catalog-2026-10-22) |
+| 2026-10-29 | `cad-failed39-repairs-2026-10-29` | examples/verified-cad-repairs-2026-10-29 |
 <!-- AUTOGENERATED:END -->

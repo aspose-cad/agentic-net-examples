@@ -1,63 +1,43 @@
 using System;
 using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.Diagnostics;
 using Aspose.CAD;
 using Aspose.CAD.ImageOptions;
 using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;
+using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;
+using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
+using Aspose.CAD.Primitives;
+using Aspose.CAD.WatermarkGuard;
 
-class Program
-{
-    static void Main()
-    {
-        const string inputPath = "input.plt";
-        const string outputPath = "output.jpg";
+class Program {
 
-        if (!File.Exists(inputPath))
-        {
-            Console.Error.WriteLine($"Input file not found: {inputPath}");
-            return;
-        }
+ static void Require(bool ok,string message) {if(!ok)throw new InvalidOperationException(message);}
+ static bool Input(string path) {if(File.Exists(path))return true;Console.WriteLine("Input file not found: "+path);return false;}
 
-        string outputDir = Path.GetDirectoryName(outputPath);
-        if (!string.IsNullOrEmpty(outputDir) && !Directory.Exists(outputDir))
-        {
-            Directory.CreateDirectory(outputDir);
-        }
 
-        try
-        {
-            // Load the PLT file
-            using (Image cadImage = Image.Load(inputPath))
-            {
-                // Configure rasterization options with high quality and anti‑aliasing
-                CadRasterizationOptions rasterOptions = new CadRasterizationOptions
-                {
-                    Quality = new RasterizationQuality
-                    {
-                        Text = RasterizationQualityValue.High,
-                        Hatch = RasterizationQualityValue.High,
-                        Arc = RasterizationQualityValue.High
-                    },
-                    PageWidth = 1600,
-                    PageHeight = 1200,
-                    GraphicsOptions = new GraphicsOptions()
-                };
 
-                // Enable anti‑aliasing if supported via GraphicsOptions
-                // (Assuming default GraphicsOptions enables anti‑aliasing; adjust if specific properties exist)
-                
-                // Set JPEG save options and attach the rasterization settings
-                JpegOptions jpegOptions = new JpegOptions
-                {
-                    VectorRasterizationOptions = rasterOptions
-                };
 
-                // Save the rendered image as JPEG
-                cadImage.Save(outputPath, jpegOptions);
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"CAD processing failed: {ex.Message}");
-        }
-    }
+
+ static CadRasterizationOptions Raster() {return new CadRasterizationOptions {PageWidth=800,PageHeight=600,BackgroundColor=Color.White};}
+
+
+
+ static int Main(string[] args) {try {
+
+ string input="input.plt";if(!Input(input))return 0;Directory.CreateDirectory("output");
+ using(Image image=Image.Load(input)) {
+  var raster=Raster();raster.GraphicsOptions=new GraphicsOptions {SmoothingMode=SmoothingMode.AntiAlias};
+  // DPI metadata is owned by output ResolutionSettings; page dimensions select pixel dimensions.
+  var jpeg=new JpegOptions {Quality=90,ResolutionSettings=new ResolutionSetting(300,300),VectorRasterizationOptions=raster};
+  image.Save("output/plt.jpg",jpeg);var bytes=File.ReadAllBytes("output/plt.jpg");Require(bytes.Length>10&&bytes[0]==255&&bytes[1]==216,"JPEG output missing.");
+  Require(jpeg.ResolutionSettings.HorizontalResolution==300&&jpeg.ResolutionSettings.VerticalResolution==300,"DPI configuration changed.");
+ }
+
+ Console.WriteLine("Verified task 44503");return 0;
+} catch(Exception ex) {Console.Error.WriteLine(ex.Message);return 1;} }
 }

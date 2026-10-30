@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Aspose.CAD;
-using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Dwf;
 
 namespace ExtractDwfLayers
 {
@@ -22,26 +22,45 @@ namespace ExtractDwfLayers
                     return;
                 }
 
-                // Load the DWF drawing using Aspose.CAD.Image.Load
+                // Load the DWF drawing
                 using (Image image = Image.Load(sourcePath))
                 {
-                    // Cast the loaded image to CadImage to access CAD-specific members
-                    Image cadImage = image ;
-                    if (cadImage == null)
+                    // Cast to DwfImage to access DWF-specific members
+                    DwfImage dwf = image as DwfImage;
+                    if (dwf == null)
                     {
-                        Console.Error.WriteLine("Failed to cast loaded image to CadImage.");
+                        Console.Error.WriteLine("Failed to cast loaded image to DwfImage.");
                         return;
                     }
 
-                    // NOTE: The current Aspose.CAD API does not expose a LayerTable or equivalent
-                    // structure for DWF files. Therefore extracting layer information is not supported.
-                    Console.WriteLine("Layer extraction is not supported: CadImage does not provide a LayerTable in the current API.");
+                    // Extract layer names
+                    List<string> layerNames = new List<string>();
+                    try
+                    {
+                        // The DwfLayersList provides GetLayersNames() according to the API
+                        var names = dwf.Layers.GetLayersNames();
+                        if (names != null)
+                        {
+                            layerNames.AddRange(names);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.Error.WriteLine($"Error retrieving layer names: {ex.Message}");
+                        return;
+                    }
+
+                    // Store layers in a collection (already in layerNames)
+                    Console.WriteLine("Extracted layer names:");
+                    foreach (var name in layerNames)
+                    {
+                        Console.WriteLine($"- {name}");
+                    }
                 }
             }
             catch (Exception ex)
             {
                 Console.Error.WriteLine($"CAD processing failed: {ex.Message}");
-                return;
             }
         }
     }

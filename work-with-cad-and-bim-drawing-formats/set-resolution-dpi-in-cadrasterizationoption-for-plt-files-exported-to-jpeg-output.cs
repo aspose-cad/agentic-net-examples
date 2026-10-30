@@ -1,59 +1,43 @@
 using System;
 using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.Diagnostics;
 using Aspose.CAD;
 using Aspose.CAD.ImageOptions;
+using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;
+using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;
+using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
+using Aspose.CAD.Primitives;
+using Aspose.CAD.WatermarkGuard;
 
-class Program
-{
-    static void Main()
-    {
-        try
-        {
-            // Input CAD file path
-            string inputPath = "input.dwg";
+class Program {
 
-            if (!File.Exists(inputPath))
-            {
-                Console.WriteLine($"Input file not found: {inputPath}");
-                return;
-            }
+ static void Require(bool ok,string message) {if(!ok)throw new InvalidOperationException(message);}
+ static bool Input(string path) {if(File.Exists(path))return true;Console.WriteLine("Input file not found: "+path);return false;}
 
-            // Output JPEG file path
-            string outputPath = "output.jpg";
 
-            // Ensure output directory exists
-            string outputDir = Path.GetDirectoryName(outputPath);
-            if (!string.IsNullOrEmpty(outputDir))
-            {
-                Directory.CreateDirectory(outputDir);
-            }
 
-            // Desired DPI for the rasterized image
-            const float dpi = 300f;
-            // Page size in inches (e.g., standard Letter size)
-            const float pageWidthInches = 8.5f;
-            const float pageHeightInches = 11f;
 
-            // Configure rasterization options to emulate the required DPI
-            CadRasterizationOptions rasterOptions = new CadRasterizationOptions
-            {
-                PageWidth = pageWidthInches * dpi,   // width in pixels
-                PageHeight = pageHeightInches * dpi // height in pixels
-            };
 
-            // Set up JPEG save options and attach the rasterization settings
-            JpegOptions jpegOptions = new JpegOptions
-            {
-                VectorRasterizationOptions = rasterOptions
-            };
+ static CadRasterizationOptions Raster() {return new CadRasterizationOptions {PageWidth=800,PageHeight=600,BackgroundColor=Color.White};}
 
-            // Load the CAD image, rasterize and save as JPEG
-            Image cadImage = Image.Load(inputPath);
-            cadImage.Save(outputPath, jpegOptions);
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"CAD processing failed: {ex.Message}");
-        }
-    }
+
+
+ static int Main(string[] args) {try {
+
+ string input="input.plt";if(!Input(input))return 0;Directory.CreateDirectory("output");
+ using(Image image=Image.Load(input)) {
+  var raster=Raster();raster.GraphicsOptions=new GraphicsOptions {SmoothingMode=SmoothingMode.AntiAlias};
+  // DPI metadata is owned by output ResolutionSettings; page dimensions select pixel dimensions.
+  var jpeg=new JpegOptions {Quality=90,ResolutionSettings=new ResolutionSetting(300,300),VectorRasterizationOptions=raster};
+  image.Save("output/plt.jpg",jpeg);var bytes=File.ReadAllBytes("output/plt.jpg");Require(bytes.Length>10&&bytes[0]==255&&bytes[1]==216,"JPEG output missing.");
+  Require(jpeg.ResolutionSettings.HorizontalResolution==300&&jpeg.ResolutionSettings.VerticalResolution==300,"DPI configuration changed.");
+ }
+
+ Console.WriteLine("Verified task 44500");return 0;
+} catch(Exception ex) {Console.Error.WriteLine(ex.Message);return 1;} }
 }

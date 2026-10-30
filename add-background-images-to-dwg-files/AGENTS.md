@@ -18,15 +18,21 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - Files are standalone `.cs` examples stored directly in this folder.
 
 ## Required Namespaces
-- `using System;` (30 file(s))
-- `using System.IO;` (30 file(s))
-- `using Aspose.CAD;` (27 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (26 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (23 file(s))
-- `using System.Linq;` (20 file(s))
-- `using System.Collections.Generic;` (16 file(s))
-- `using Aspose.CAD.ImageOptions;` (15 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadTables;` (2 file(s))
+- `using System;` (33 file(s))
+- `using System.IO;` (33 file(s))
+- `using Aspose.CAD;` (30 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (29 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (26 file(s))
+- `using System.Linq;` (23 file(s))
+- `using Aspose.CAD.ImageOptions;` (20 file(s))
+- `using System.Collections.Generic;` (19 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadTables;` (5 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (4 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (4 file(s))
+- `using Aspose.CAD.Primitives;` (4 file(s))
+- `using System.Diagnostics;` (3 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;` (3 file(s))
+- `using Aspose.CAD.WatermarkGuard;` (3 file(s))
 
 ## Files in this folder
 | File | Description |
@@ -46,9 +52,11 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [ensure-each-added-cadrasterimage-references-its-own-cadrasterimagedef-without-sharing-definitions.cs](./ensure-each-added-cadrasterimage-references-its-own-cadrasterimagedef-without-sharing-definitions.cs) | ensure each added cadrasterimage references its own cadrasterimagedef without sharing definitions |
 | [ensure-the-image-file-path-set-on-cadrasterimagedef-points-to-a-valid-external-image-file.cs](./ensure-the-image-file-path-set-on-cadrasterimagedef-points-to-a-valid-external-image-file.cs) | ensure the image file path set on cadrasterimagedef points to a valid external image file |
 | [export-the-dwg-with-the-new-background-image-to-a-different-location-using-the-save-method.cs](./export-the-dwg-with-the-new-background-image-to-a-different-location-using-the-save-method.cs) | export the dwg with the new background image to a different location using the save method |
+| [implement-error-handling-when-the-image-file-path-on-cadrasterimagedef-is-missing-or-invalid.cs](./implement-error-handling-when-the-image-file-path-on-cadrasterimagedef-is-missing-or-invalid.cs) | implement error handling when the image file path on cadrasterimagedef is missing or invalid |
 | [insert-multiple-cadrasterimage-objects-as-layered-backgrounds-by-adding-each-to-cadimage-objects.cs](./insert-multiple-cadrasterimage-objects-as-layered-backgrounds-by-adding-each-to-cadimage-objects.cs) | insert multiple cadrasterimage objects as layered backgrounds by adding each to cadimage objects |
 | [instantiate-a-cadrasterimage-object-and-link-it-to-the-previously-created-cadrasterimagedef.cs](./instantiate-a-cadrasterimage-object-and-link-it-to-the-previously-created-cadrasterimagedef.cs) | instantiate a cadrasterimage object and link it to the previously created cadrasterimagedef |
 | [load-a-dwg-file-into-a-cadimage-instance-before-adding-a-background-image.cs](./load-a-dwg-file-into-a-cadimage-instance-before-adding-a-background-image.cs) | load a dwg file into a cadimage instance before adding a background image |
+| [optimize-the-workflow-by-reusing-an-existing-cadrasterimagedef-for-multiple-cadrasterimage-instances.cs](./optimize-the-workflow-by-reusing-an-existing-cadrasterimagedef-for-multiple-cadrasterimage-instances.cs) | optimize the workflow by reusing an existing cadrasterimagedef for multiple cadrasterimage instances |
 | [perform-a-full-load-modify-save-cycle-on-a-dwg-file-to-embed-a-background-image.cs](./perform-a-full-load-modify-save-cycle-on-a-dwg-file-to-embed-a-background-image.cs) | perform a full load modify save cycle on a dwg file to embed a background image |
 | [remove-a-previously-added-cadrasterimage-from-cadimage-objects-before-inserting-a-new-background.cs](./remove-a-previously-added-cadrasterimage-from-cadimage-objects-before-inserting-a-new-background.cs) | remove a previously added cadrasterimage from cadimage objects before inserting a new background |
 | [reorder-cadimage-objects-to-place-cadbaseobject-before-cadrasterimage-for-different-layering-effect.cs](./reorder-cadimage-objects-to-place-cadbaseobject-before-cadrasterimage-for-different-layering-effect.cs) | reorder cadimage objects to place cadbaseobject before cadrasterimage for different layering effect |
@@ -56,6 +64,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [save-the-modified-dwg-file-after-processing-the-added-background-objects-successfully.cs](./save-the-modified-dwg-file-after-processing-the-added-background-objects-successfully.cs) | save the modified dwg file after processing the added background objects successfully |
 | [update-the-cadblocktableobject-with-the-new-cadrasterimage-and-cadbaseobject-to-finalize-changes.cs](./update-the-cadblocktableobject-with-the-new-cadrasterimage-and-cadbaseobject-to-finalize-changes.cs) | update the cadblocktableobject with the new cadrasterimage and cadbaseobject to finalize changes |
 | [use-a-loop-to-add-several-cadrasterimagedef-and-cadrasterimage-pairs-as-sequential-backgrounds.cs](./use-a-loop-to-add-several-cadrasterimagedef-and-cadrasterimage-pairs-as-sequential-backgrounds.cs) | use a loop to add several cadrasterimagedef and cadrasterimage pairs as sequential backgrounds |
+| [use-cadblocktableobject-to-batch-process-multiple-background-image-insertions-in-one-operation.cs](./use-cadblocktableobject-to-batch-process-multiple-background-image-insertions-in-one-operation.cs) | use cadblocktableobject to batch process multiple background image insertions in one operation |
 | [use-cadblocktableobject-to-commit-changes-after-updating-cadimage-objects-with-background-elements-successfully.cs](./use-cadblocktableobject-to-commit-changes-after-updating-cadimage-objects-with-background-elements-successfully.cs) | use cadblocktableobject to commit changes after updating cadimage objects with background elements successfully |
 | [use-cadblocktableobject-to-process-added-objects-after-adding-both-cadrasterimage-and-cadbaseobject.cs](./use-cadblocktableobject-to-process-added-objects-after-adding-both-cadrasterimage-and-cadbaseobject.cs) | use cadblocktableobject to process added objects after adding both cadrasterimage and cadbaseobject |
 | [validate-that-cadimage-objects-contains-both-cadrasterimage-and-cadbaseobject-after-insertion-and-before-saving.cs](./validate-that-cadimage-objects-contains-both-cadrasterimage-and-cadbaseobject-after-insertion-and-before-saving.cs) | validate that cadimage objects contains both cadrasterimage and cadbaseobject after insertion and before saving |
@@ -63,7 +72,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [verify-that-the-cadblocktableobject-reflects-the-added-background-after-processing-in-the-drawing.cs](./verify-that-the-cadblocktableobject-reflects-the-added-background-after-processing-in-the-drawing.cs) | verify that the cadblocktableobject reflects the added background after processing in the drawing |
 
 ## Category Statistics
-- Total examples: 30
+- Total examples: 33
 
 ## General Tips
 - Follow root boundaries and testing guide.
@@ -72,5 +81,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-22 | `cad-catalog-2026-10-22` | [examples/batch-cad-catalog-2026-10-22](https://github.com/aspose-cad/agentic-net-examples/tree/examples/batch-cad-catalog-2026-10-22) |
+| 2026-10-29 | `cad-failed39-repairs-2026-10-29` | examples/verified-cad-repairs-2026-10-29 |
 <!-- AUTOGENERATED:END -->

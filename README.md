@@ -10,30 +10,34 @@ Agent-generated C# examples for Aspose.CAD for .NET, compiled, executed, and val
 ## Overview
 This repository provides working code examples demonstrating Aspose.CAD for .NET capabilities. All examples are automatically generated, compiled, and validated using the Aspose.CAD Examples Generator.
 
+## Repair and validation status
+
+The publication contains **1,894 examples across 45 categories**, targeting .NET 8 and Aspose.CAD 26.9.0. The latest repair batch recovered **34 of 39 failed tasks** using controlled drawing inputs; five remain unresolved and are excluded. See [VALIDATION.md](./VALIDATION.md) for the count reconciliation, evidence, and remaining limitations.
+
 ## Repository Structure
 Examples are organized by feature category:
 - `access-entities-inside-block-objects/` - 34 example(s)
-- `access-polyline-and-3dface-vertices/` - 26 example(s)
-- `add-background-images-to-dwg-files/` - 30 example(s)
-- `add-background-images-to-dxf-files/` - 29 example(s)
+- `access-polyline-and-3dface-vertices/` - 29 example(s)
+- `add-background-images-to-dwg-files/` - 33 example(s)
+- `add-background-images-to-dxf-files/` - 30 example(s)
 - `add-margins-to-cad-drawings/` - 27 example(s)
-- `add-polylines/` - 26 example(s)
+- `add-polylines/` - 34 example(s)
 - `add-text-and-mtext-entities-beside-existing-text/` - 35 example(s)
-- `adjust-cad-drawing-properties/` - 33 example(s)
-- `apply-blind-watermarks/` - 8 example(s)
+- `adjust-cad-drawing-properties/` - 34 example(s)
+- `apply-blind-watermarks/` - 9 example(s)
 - `calculate-circle-area-and-circumference/` - 30 example(s)
-- `change-emergency-fonts-and-style-fonts/` - 26 example(s)
+- `change-emergency-fonts-and-style-fonts/` - 28 example(s)
 - `change-polyline-width/` - 30 example(s)
-- `change-the-observer-point/` - 33 example(s)
+- `change-the-observer-point/` - 31 example(s)
 - `configure-pen-options/` - 33 example(s)
 - `configure-quality-options-for-text-hatches-and-arcs/` - 29 example(s)
-- `convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/` - 27 example(s)
-- `create-hatched-rectangles-from-polylines/` - 26 example(s)
-- `delete-entities-inside-a-rectangle/` - 29 example(s)
+- `convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/` - 30 example(s)
+- `create-hatched-rectangles-from-polylines/` - 35 example(s)
+- `delete-entities-inside-a-rectangle/` - 30 example(s)
 - `edit-object-hyperlinks/` - 30 example(s)
 - `exclude-hidden-and-named-layers-from-export/` - 30 example(s)
-- `export-cad-drawings-to-pdf-a/` - 28 example(s)
-- `export-cad-files/` - 28 example(s)
+- `export-cad-drawings-to-pdf-a/` - 27 example(s)
+- `export-cad-files/` - 35 example(s)
 - `export-drawing-viewports/` - 30 example(s)
 - `export-full-layout-content/` - 39 example(s)
 - `export-part-of-a-cad-image/` - 30 example(s)
@@ -44,19 +48,19 @@ Examples are organized by feature category:
 - `get-cad-layout-names/` - 30 example(s)
 - `get-cad-layout-size/` - 35 example(s)
 - `get-external-file-references/` - 31 example(s)
-- `insert-dxf-or-dwg-drawings-into-dwg-files/` - 30 example(s)
-- `optimize-hatch-origin-for-better-performance/` - 27 example(s)
+- `insert-dxf-or-dwg-drawings-into-dwg-files/` - 29 example(s)
+- `optimize-hatch-origin-for-better-performance/` - 29 example(s)
 - `remove-borders-from-the-output-canvas/` - 30 example(s)
 - `remove-cad-entities/` - 29 example(s)
 - `search-attributes-inside-insert-entities/` - 29 example(s)
 - `validate-and-replace-external-image-references/` - 40 example(s)
-- `work-with-3d-cad-files/` - 31 example(s)
-- `work-with-cad-and-bim-drawing-formats/` - 535 example(s)
+- `work-with-3d-cad-files/` - 32 example(s)
+- `work-with-cad-and-bim-drawing-formats/` - 526 example(s)
 - `work-with-cad-entities/` - 35 example(s)
-- `work-with-cad-files/` - 35 example(s)
+- `work-with-cad-files/` - 34 example(s)
 - `work-with-cad-fonts/` - 29 example(s)
 - `work-with-cad-layouts/` - 30 example(s)
-- `work-with-cad-text/` - 33 example(s)
+- `work-with-cad-text/` - 35 example(s)
 
 Each category contains standalone `.cs` files that can be compiled and run independently.
 
@@ -200,4 +204,4 @@ Other Aspose products with agentic, build-validated example repositories:
 All examples use [Aspose.CAD for .NET](https://products.aspose.com/cad/net/) and require a valid license for production use. See [licensing options](https://purchase.aspose.com/buy).
 
 ---
-*Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-10-22*
+*Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-10-29*

@@ -18,21 +18,27 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - Files are standalone `.cs` examples stored directly in this folder.
 
 ## Required Namespaces
-- `using System;` (26 file(s))
-- `using System.IO;` (26 file(s))
-- `using Aspose.CAD;` (23 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (22 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (20 file(s))
-- `using System.Collections.Generic;` (11 file(s))
-- `using Aspose.CAD.ImageOptions;` (6 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadTables;` (6 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects.Polylines;` (4 file(s))
-- `using System.Linq;` (3 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects.Vertices;` (2 file(s))
+- `using System;` (29 file(s))
+- `using System.IO;` (29 file(s))
+- `using Aspose.CAD;` (26 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (26 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (24 file(s))
+- `using System.Collections.Generic;` (14 file(s))
+- `using System.Linq;` (7 file(s))
+- `using Aspose.CAD.ImageOptions;` (7 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadTables;` (7 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.Polylines;` (6 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.Vertices;` (5 file(s))
+- `using Aspose.CAD.WatermarkGuard;` (2 file(s))
 - `using System.Collections;` (2 file(s))
-- `using Aspose.CAD.WatermarkGuard;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (2 file(s))
+- `using Aspose.CAD.Primitives;` (2 file(s))
 - `using System.Reflection;` (1 file(s))
+- `using System.Diagnostics;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;` (1 file(s))
 - `using System.Text;` (1 file(s))
+- `using var cadImage = (CadImage)Image.Load(inputPath);` (1 file(s))
 
 ## Files in this folder
 | File | Description |
@@ -52,20 +58,23 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [insert-a-dxf-dwg-drawing-into-another-drawing-and-then-extract-vertices-from-the-combined-polyline-entities.cs](./insert-a-dxf-dwg-drawing-into-another-drawing-and-then-extract-vertices-from-the-combined-polyline-entities.cs) | insert a dxf dwg drawing into another drawing and then extract vertices from the combined polyline entities |
 | [iterate-through-drawing-entities-to-find-polyline-objects-and-collect-their-entity-identifiers-for-further-processing.cs](./iterate-through-drawing-entities-to-find-polyline-objects-and-collect-their-entity-identifiers-for-further-processing.cs) | iterate through drawing entities to find polyline objects and collect their entity identifiers for further processing |
 | [load-a-cad-drawing-into-the-application-and-verify-successful-initialization-of-the-drawing-object.cs](./load-a-cad-drawing-into-the-application-and-verify-successful-initialization-of-the-drawing-object.cs) | load a cad drawing into the application and verify successful initialization of the drawing object |
+| [move-drawing-objects-to-adjust-title-position-and-verify-that-vertex-coordinates-remain-unchanged-after-movement.cs](./move-drawing-objects-to-adjust-title-position-and-verify-that-vertex-coordinates-remain-unchanged-after-movement.cs) | move drawing objects to adjust title position and verify that vertex coordinates remain unchanged after movement |
 | [obtain-references-to-external-files-linked-in-a-drawing-to-ensure-all-geometry-sources-are-accessible.cs](./obtain-references-to-external-files-linked-in-a-drawing-to-ensure-all-geometry-sources-are-accessible.cs) | obtain references to external files linked in a drawing to ensure all geometry sources are accessible |
 | [retrieve-3d-face-geometry-from-3dface-entities-and-compute-surface-area-for-each-face.cs](./retrieve-3d-face-geometry-from-3dface-entities-and-compute-surface-area-for-each-face.cs) | retrieve 3d face geometry from 3dface entities and compute surface area for each face |
 | [retrieve-3d-face-geometry-from-3dface-entities-and-validate-normal-vectors-for-correctness.cs](./retrieve-3d-face-geometry-from-3dface-entities-and-validate-normal-vectors-for-correctness.cs) | retrieve 3d face geometry from 3dface entities and validate normal vectors for correctness |
+| [retrieve-broken-line-geometry-from-polyline-entities-and-calculate-total-length-for-each-polyline.cs](./retrieve-broken-line-geometry-from-polyline-entities-and-calculate-total-length-for-each-polyline.cs) | retrieve broken line geometry from polyline entities and calculate total length for each polyline |
 | [retrieve-broken-line-geometry-from-polyline-entities-and-compare-it-with-expected-geometric-specifications.cs](./retrieve-broken-line-geometry-from-polyline-entities-and-compare-it-with-expected-geometric-specifications.cs) | retrieve broken line geometry from polyline entities and compare it with expected geometric specifications |
 | [retrieve-layout-names-from-a-drawing-and-log-each-layout-for-debugging-vertex-extraction-processes.cs](./retrieve-layout-names-from-a-drawing-and-log-each-layout-for-debugging-vertex-extraction-processes.cs) | retrieve layout names from a drawing and log each layout for debugging vertex extraction processes |
 | [set-quality-options-for-text-hatches-and-arcs-to-improve-rendering-before-exporting-vertex-data.cs](./set-quality-options-for-text-hatches-and-arcs-to-improve-rendering-before-exporting-vertex-data.cs) | set quality options for text hatches and arcs to improve rendering before exporting vertex data |
 | [use-drawing-entity-navigation-to-access-nested-entities-inside-block-references-and-extract-their-vertices.cs](./use-drawing-entity-navigation-to-access-nested-entities-inside-block-references-and-extract-their-vertices.cs) | use drawing entity navigation to access nested entities inside block references and extract their vertices |
 | [use-drawing-entity-navigation-to-locate-block-references-containing-polylines-and-extract-their-vertex-data.cs](./use-drawing-entity-navigation-to-locate-block-references-containing-polylines-and-extract-their-vertex-data.cs) | use drawing entity navigation to locate block references containing polylines and extract their vertex data |
+| [work-with-3d-files-within-the-cad-environment-to-extract-3dface-vertex-data-for-three-dimensional-modeling.cs](./work-with-3d-files-within-the-cad-environment-to-extract-3dface-vertex-data-for-three-dimensional-modeling.cs) | work with 3d files within the cad environment to extract 3dface vertex data for three dimensional modeling |
 | [work-with-cad-entity-collections-to-batch-process-vertex-extraction-for-all-polyline-and-3dface-objects.cs](./work-with-cad-entity-collections-to-batch-process-vertex-extraction-for-all-polyline-and-3dface-objects.cs) | work with cad entity collections to batch process vertex extraction for all polyline and 3dface objects |
 | [work-with-cad-entity-collections-to-filter-entities-by-layer-name-before-extracting-vertex-coordinates.cs](./work-with-cad-entity-collections-to-filter-entities-by-layer-name-before-extracting-vertex-coordinates.cs) | work with cad entity collections to filter entities by layer name before extracting vertex coordinates |
 | [work-with-entities-to-modify-geometry-by-translating-vertex-coordinates-of-selected-polyline-objects.cs](./work-with-entities-to-modify-geometry-by-translating-vertex-coordinates-of-selected-polyline-objects.cs) | work with entities to modify geometry by translating vertex coordinates of selected polyline objects |
 
 ## Category Statistics
-- Total examples: 26
+- Total examples: 29
 
 ## General Tips
 - Follow root boundaries and testing guide.
@@ -74,5 +83,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-22 | `cad-catalog-2026-10-22` | [examples/batch-cad-catalog-2026-10-22](https://github.com/aspose-cad/agentic-net-examples/tree/examples/batch-cad-catalog-2026-10-22) |
+| 2026-10-29 | `cad-failed39-repairs-2026-10-29` | examples/verified-cad-repairs-2026-10-29 |
 <!-- AUTOGENERATED:END -->

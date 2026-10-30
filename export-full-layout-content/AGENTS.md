@@ -21,16 +21,19 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - `using System;` (39 file(s))
 - `using Aspose.CAD;` (39 file(s))
 - `using System.IO;` (39 file(s))
-- `using Aspose.CAD.ImageOptions;` (37 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (26 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (10 file(s))
-- `using System.Linq;` (6 file(s))
-- `using Aspose.CAD.WatermarkGuard;` (3 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (2 file(s))
-- `using System.Collections.Generic;` (2 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (1 file(s))
+- `using Aspose.CAD.ImageOptions;` (38 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (28 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (12 file(s))
+- `using System.Linq;` (7 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (6 file(s))
+- `using System.Collections.Generic;` (5 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (5 file(s))
+- `using Aspose.CAD.WatermarkGuard;` (5 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadTables;` (4 file(s))
+- `using System.Diagnostics;` (3 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;` (3 file(s))
+- `using Aspose.CAD.Primitives;` (3 file(s))
 - `using System.Reflection;` (1 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadTables;` (1 file(s))
 
 ## Files in this folder
 | File | Description |
@@ -41,7 +44,6 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [after-inserting-external-drawing-move-its-elements-to-align-titles-with-existing-layout-headings.cs](./after-inserting-external-drawing-move-its-elements-to-align-titles-with-existing-layout-headings.cs) | after inserting external drawing move its elements to align titles with existing layout headings |
 | [apply-a-blind-watermark-after-pdf-generation-to-ensure-watermark-is-embedded-in-final-document.cs](./apply-a-blind-watermark-after-pdf-generation-to-ensure-watermark-is-embedded-in-final-document.cs) | apply a blind watermark after pdf generation to ensure watermark is embedded in final document |
 | [apply-a-blind-watermark-to-the-exported-pdf-document-to-protect-intellectual-property.cs](./apply-a-blind-watermark-to-the-exported-pdf-document-to-protect-intellectual-property.cs) | apply a blind watermark to the exported pdf document to protect intellectual property |
-| [apply-a-blind-watermark-to-the-exported-pdf-to-embed-ownership-information-without-visible-marks.cs](./apply-a-blind-watermark-to-the-exported-pdf-to-embed-ownership-information-without-visible-marks.cs) | apply a blind watermark to the exported pdf to embed ownership information without visible marks |
 | [assign-the-configured-rasterizationoptions-to-an-exportoptions-instance-before-exporting-the-drawing.cs](./assign-the-configured-rasterizationoptions-to-an-exportoptions-instance-before-exporting-the-drawing.cs) | assign the configured rasterizationoptions to an exportoptions instance before exporting the drawing |
 | [call-the-export-method-with-exportoptions-to-generate-a-pdf-file.cs](./call-the-export-method-with-exportoptions-to-generate-a-pdf-file.cs) | call the export method with exportoptions to generate a pdf file |
 | [configure-quality-options-for-text-hatches-and-arcs-to-balance-performance-and-visual-fidelity.cs](./configure-quality-options-for-text-hatches-and-arcs-to-balance-performance-and-visual-fidelity.cs) | configure quality options for text hatches and arcs to balance performance and visual fidelity |
@@ -59,6 +61,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [load-a-cad-drawing-using-the-drawing-api-before-any-export-operations.cs](./load-a-cad-drawing-using-the-drawing-api-before-any-export-operations.cs) | load a cad drawing using the drawing api before any export operations |
 | [modify-hatch-origin-points-after-insertion-to-align-hatch-patterns-with-surrounding-geometry.cs](./modify-hatch-origin-points-after-insertion-to-align-hatch-patterns-with-surrounding-geometry.cs) | modify hatch origin points after insertion to align hatch patterns with surrounding geometry |
 | [modify-hatch-origin-points-after-insertion-to-ensure-hatch-alignment-with-existing-geometry.cs](./modify-hatch-origin-points-after-insertion-to-ensure-hatch-alignment-with-existing-geometry.cs) | modify hatch origin points after insertion to ensure hatch alignment with existing geometry |
+| [modify-hatch-origins-after-insertion-to-match-the-coordinate-system-of-the-target-layout.cs](./modify-hatch-origins-after-insertion-to-match-the-coordinate-system-of-the-target-layout.cs) | modify hatch origins after insertion to match the coordinate system of the target layout |
 | [move-inserted-drawing-elements-to-adjust-title-placement-for-proper-visual-hierarchy.cs](./move-inserted-drawing-elements-to-adjust-title-placement-for-proper-visual-hierarchy.cs) | move inserted drawing elements to adjust title placement for proper visual hierarchy |
 | [move-inserted-elements-after-insertion-to-adjust-title-placement-and-improve-layout-readability.cs](./move-inserted-elements-after-insertion-to-adjust-title-placement-and-improve-layout-readability.cs) | move inserted elements after insertion to adjust title placement and improve layout readability |
 | [obtain-the-list-of-layers-with-getlayers-to-analyze-layer-visibility.cs](./obtain-the-list-of-layers-with-getlayers-to-analyze-layer-visibility.cs) | obtain the list of layers with getlayers to analyze layer visibility |
@@ -85,5 +88,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-22 | `cad-catalog-2026-10-22` | [examples/batch-cad-catalog-2026-10-22](https://github.com/aspose-cad/agentic-net-examples/tree/examples/batch-cad-catalog-2026-10-22) |
+| 2026-10-29 | `cad-failed39-repairs-2026-10-29` | examples/verified-cad-repairs-2026-10-29 |
 <!-- AUTOGENERATED:END -->

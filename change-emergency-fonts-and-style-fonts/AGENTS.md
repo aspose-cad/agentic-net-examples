@@ -18,17 +18,19 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - Files are standalone `.cs` examples stored directly in this folder.
 
 ## Required Namespaces
-- `using Aspose.CAD;` (26 file(s))
-- `using System;` (26 file(s))
-- `using System.IO;` (26 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (23 file(s))
-- `using Aspose.CAD.ImageOptions;` (21 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (8 file(s))
-- `using System.Linq;` (3 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadTables;` (2 file(s))
+- `using Aspose.CAD;` (28 file(s))
+- `using System;` (28 file(s))
+- `using System.IO;` (28 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (25 file(s))
+- `using Aspose.CAD.ImageOptions;` (22 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects;` (9 file(s))
+- `using System.Linq;` (4 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadTables;` (3 file(s))
+- `using System.Collections.Generic;` (2 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (2 file(s))
 - `using System.Diagnostics;` (1 file(s))
-- `using System.Collections.Generic;` (1 file(s))
-- `using Aspose.CAD.FileFormats.Cad.CadConsts;` (1 file(s))
+- `using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;` (1 file(s))
+- `using Aspose.CAD.Primitives;` (1 file(s))
 
 ## Files in this folder
 | File | Description |
@@ -38,6 +40,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [apply-a-new-defaultfont-to-all-text-styles-and-confirm-that-block-references-inherit-the-updated-font.cs](./apply-a-new-defaultfont-to-all-text-styles-and-confirm-that-block-references-inherit-the-updated-font.cs) | apply a new defaultfont to all text styles and confirm that block references inherit the updated font |
 | [apply-the-defaultfont-change-to-text-entities-within-nested-blocks-to-ensure-uniform-font-usage.cs](./apply-the-defaultfont-change-to-text-entities-within-nested-blocks-to-ensure-uniform-font-usage.cs) | apply the defaultfont change to text entities within nested blocks to ensure uniform font usage |
 | [assess-performance-impact-when-applying-the-defaultfont-change-to-large-drawings-with-many-text-entities.cs](./assess-performance-impact-when-applying-the-defaultfont-change-to-large-drawings-with-many-text-entities.cs) | assess performance impact when applying the defaultfont change to large drawings with many text entities |
+| [change-fonts-used-in-dimension-annotations-by-setting-the-defaultfont-field-on-the-drawing-style-collection.cs](./change-fonts-used-in-dimension-annotations-by-setting-the-defaultfont-field-on-the-drawing-style-collection.cs) | change fonts used in dimension annotations by setting the defaultfont field on the drawing style collection |
 | [compare-default-font-behavior-across-different-cad-versions-to-identify-compatibility-issues-with-emergency-fonts.cs](./compare-default-font-behavior-across-different-cad-versions-to-identify-compatibility-issues-with-emergency-fonts.cs) | compare default font behavior across different cad versions to identify compatibility issues with emergency fonts |
 | [compare-text-appearance-before-and-after-changing-the-emergency-font-to-assess-visual-impact.cs](./compare-text-appearance-before-and-after-changing-the-emergency-font-to-assess-visual-impact.cs) | compare text appearance before and after changing the emergency font to assess visual impact |
 | [control-font-rendering-during-export-by-configuring-the-defaultfont-field-to-match-the-target-device.cs](./control-font-rendering-during-export-by-configuring-the-defaultfont-field-to-match-the-target-device.cs) | control font rendering during export by configuring the defaultfont field to match the target device |
@@ -50,6 +53,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [iterate-through-text-style-objects-and-assign-a-new-emergency-font-via-the-defaultfont-field.cs](./iterate-through-text-style-objects-and-assign-a-new-emergency-font-via-the-defaultfont-field.cs) | iterate through text style objects and assign a new emergency font via the defaultfont field |
 | [load-a-cad-drawing-set-the-defaultfont-field-and-verify-text-entities-reflect-the-change.cs](./load-a-cad-drawing-set-the-defaultfont-field-and-verify-text-entities-reflect-the-change.cs) | load a cad drawing set the defaultfont field and verify text entities reflect the change |
 | [log-the-defaultfont-field-value-after-modification-to-confirm-the-emergency-font-update-succeeded.cs](./log-the-defaultfont-field-value-after-modification-to-confirm-the-emergency-font-update-succeeded.cs) | log the defaultfont field value after modification to confirm the emergency font update succeeded |
+| [modify-text-style-definitions-to-use-a-new-emergency-font-by-updating-the-defaultfont-field.cs](./modify-text-style-definitions-to-use-a-new-emergency-font-by-updating-the-defaultfont-field.cs) | modify text style definitions to use a new emergency font by updating the defaultfont field |
 | [replace-missing-fonts-in-a-cad-file-with-the-specified-emergency-font-using-the-defaultfont-field.cs](./replace-missing-fonts-in-a-cad-file-with-the-specified-emergency-font-using-the-defaultfont-field.cs) | replace missing fonts in a cad file with the specified emergency font using the defaultfont field |
 | [retrieve-the-current-defaultfont-value-from-the-cad-document-programmatically-for-logging-purposes.cs](./retrieve-the-current-defaultfont-value-from-the-cad-document-programmatically-for-logging-purposes.cs) | retrieve the current defaultfont value from the cad document programmatically for logging purposes |
 | [set-a-fallback-emergency-font-using-the-defaultfont-field-to-handle-missing-glyphs-during-rendering.cs](./set-a-fallback-emergency-font-using-the-defaultfont-field-to-handle-missing-glyphs-during-rendering.cs) | set a fallback emergency font using the defaultfont field to handle missing glyphs during rendering |
@@ -61,7 +65,7 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [verify-that-changing-the-emergency-font-does-not-corrupt-geometry-data-within-the-cad-drawing.cs](./verify-that-changing-the-emergency-font-does-not-corrupt-geometry-data-within-the-cad-drawing.cs) | verify that changing the emergency font does not corrupt geometry data within the cad drawing |
 
 ## Category Statistics
-- Total examples: 26
+- Total examples: 28
 
 ## General Tips
 - Follow root boundaries and testing guide.
@@ -70,5 +74,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-22 | `cad-catalog-2026-10-22` | [examples/batch-cad-catalog-2026-10-22](https://github.com/aspose-cad/agentic-net-examples/tree/examples/batch-cad-catalog-2026-10-22) |
+| 2026-10-29 | `cad-failed39-repairs-2026-10-29` | examples/verified-cad-repairs-2026-10-29 |
 <!-- AUTOGENERATED:END -->

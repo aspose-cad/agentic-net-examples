@@ -6,19 +6,19 @@ Build-validated Aspose.CAD for .NET examples for `change-the-observer-point`.
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 33
+- Examples: 31
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (33 example(s))
-- `System.IO` (33 example(s))
-- `Aspose.CAD` (33 example(s))
-- `Aspose.CAD.FileFormats.Cad` (31 example(s))
-- `Aspose.CAD.ImageOptions` (28 example(s))
+- `System` (31 example(s))
+- `System.IO` (31 example(s))
+- `Aspose.CAD` (31 example(s))
+- `Aspose.CAD.FileFormats.Cad` (30 example(s))
+- `Aspose.CAD.ImageOptions` (26 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (9 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (8 example(s))
 - `Aspose.CAD.FileFormats` (8 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadTables` (7 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -29,7 +29,6 @@ Build-validated Aspose.CAD for .NET examples for `change-the-observer-point`.
 | [Access External File References Update Their Paths and Export The Drawing to PDF to Verify Links](./access-external-file-references-update-their-paths-and-export-the-drawing-to-pdf-to-verify-links.cs) | Cad | aspose-cad, cad, change, csharp, dotnet8, fileformats, imageoptions, observer |
 | [Apply A Blind Watermark to A CAD Drawing Before Exporting to PDF for Document Security](./apply-a-blind-watermark-to-a-cad-drawing-before-exporting-to-pdf-for-document-security.cs) | ImageOptions | aspose-cad, cad, change, csharp, dotnet8, fileformats, imageoptions, observer |
 | [Apply Blind Watermark After Configuring Text Quality Options to Embed Security Without Degrading Text Clarity](./apply-blind-watermark-after-configuring-text-quality-options-to-embed-security-without-degrading-text-clarity.cs) | ImageOptions | aspose-cad, cad, change, csharp, dotnet8, fileformats, imageoptions, observer |
-| [Apply Blind Watermark and Configure Text Quality Options to Maintain Readability in The Protected PDF](./apply-blind-watermark-and-configure-text-quality-options-to-maintain-readability-in-the-protected-pdf.cs) | ImageOptions | aspose-cad, change, csharp, dotnet8, imageoptions, observer, pdf, point |
 | [Change Observer Point using Rasterizationoptions Observerpoint and Then Export to PDF to Compare Visual Results](./change-observer-point-using-rasterizationoptions-observerpoint-and-then-export-to-pdf-to-compare-visual-results.cs) | ImageOptions | aspose-cad, cad, change, csharp, dotnet8, fileformats, imageoptions, observer |
 | [Change Observer Point using Rasterizationoptions Observerpoint Then Move Drawing Down to Add A Title Before Exporting](./change-observer-point-using-rasterizationoptions-observerpoint-then-move-drawing-down-to-add-a-title-before-exporting.cs) | ImageOptions | aspose-cad, cad, cadobjects, change, csharp, dotnet8, fileformats, imageoptions |
 | [Change The Observer Point using Rasterizationoptions Observerpoint to Simulate Different Camera Angles During Renderi](./change-the-observer-point-using-rasterizationoptions-observerpoint-to-simulate-different-camera-angles-during-renderi.cs) | ImageOptions | aspose-cad, cad, change, csharp, dotnet8, fileformats, imageoptions, observer |
@@ -38,6 +37,7 @@ Build-validated Aspose.CAD for .NET examples for `change-the-observer-point`.
 | [Configure Quality Options for Hatch Patterns to Achieve Smoother Shading in Rasterized Output](./configure-quality-options-for-hatch-patterns-to-achieve-smoother-shading-in-rasterized-output.cs) | ImageOptions | aspose-cad, cad, change, csharp, dotnet8, fileformats, imageoptions, observer |
 | [Configure Quality Options for Text and Arcs Then Export to PDF to Assess Combined Rendering Quality](./configure-quality-options-for-text-and-arcs-then-export-to-pdf-to-assess-combined-rendering-quality.cs) | ImageOptions | aspose-cad, cad, change, csharp, dotnet8, fileformats, imageoptions, observer |
 | [Configure Quality Options for Text Rendering to Improve Readability in The Exported PDF File](./configure-quality-options-for-text-rendering-to-improve-readability-in-the-exported-pdf-file.cs) | ImageOptions | aspose-cad, change, csharp, dotnet8, imageoptions, observer, pdf, point |
+| [Export A CAD Drawing to PDF After Adjusting The Observer Point for Optimal Perspective](./export-a-cad-drawing-to-pdf-after-adjusting-the-observer-point-for-optimal-perspective.cs) | ImageOptions | aspose-cad, cad, change, csharp, dotnet8, fileformats, imageoptions, observer |
 
 ## Agent Guidance
 - Prefer the local `AGENTS.md` instructions for category-specific rules.

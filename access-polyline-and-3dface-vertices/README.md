@@ -6,19 +6,19 @@ Build-validated Aspose.CAD for .NET examples for `access-polyline-and-3dface-ver
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 26
+- Examples: 29
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (26 example(s))
-- `System.IO` (26 example(s))
-- `Aspose.CAD` (23 example(s))
-- `Aspose.CAD.FileFormats.Cad` (22 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (20 example(s))
-- `System.Collections.Generic` (11 example(s))
-- `Aspose.CAD.ImageOptions` (6 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (6 example(s))
+- `System` (29 example(s))
+- `System.IO` (29 example(s))
+- `Aspose.CAD` (26 example(s))
+- `Aspose.CAD.FileFormats.Cad` (26 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (24 example(s))
+- `System.Collections.Generic` (14 example(s))
+- `System.Linq` (7 example(s))
+- `Aspose.CAD.ImageOptions` (7 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -32,7 +32,7 @@ Build-validated Aspose.CAD for .NET examples for `access-polyline-and-3dface-ver
 | [Generate A New CAD File Containing Only Extracted Polyline Vertices and Save It for Downstream Processing](./generate-a-new-cad-file-containing-only-extracted-polyline-vertices-and-save-it-for-downstream-processing.cs) | Access Polyline And 3Dface Vertices | 3dface, access, and, aspose-cad, csharp, dotnet8, polyline, standalone-example |
 | [Get List of All Layers in A Drawing and Map Layer Names to Associated Polyline Entities](./get-list-of-all-layers-in-a-drawing-and-map-layer-names-to-associated-polyline-entities.cs) | Cad | 3dface, access, and, aspose-cad, cad, cadobjects, cadtables, csharp |
 | [Get Size of A Specific Layout and Adjust Viewport Scaling Before Extracting Vertex Coordinates](./get-size-of-a-specific-layout-and-adjust-viewport-scaling-before-extracting-vertex-coordinates.cs) | ImageOptions | 3dface, access, and, aspose-cad, cad, cadobjects, csharp, dotnet8 |
-| [Handle Callback Errors During Export Operations By Implementing Try Catch Blocks Around The Export Method](./handle-callback-errors-during-export-operations-by-implementing-try-catch-blocks-around-the-export-method.cs) | ImageOptions | 3dface, access, and, aspose-cad, csharp, dotnet8, imageoptions, polyline |
+| [Handle Callback Errors During Export Operations By Implementing Try Catch Blocks Around The Export Method](./handle-callback-errors-during-export-operations-by-implementing-try-catch-blocks-around-the-export-method.cs) | ImageOptions | 3dface, access, and, aspose-cad, cad, cadconsts, cadobjects, cadtables |
 | [Identify Entity Types Within A Drawing and Create Separate Collections for Polylines and 3dface Entities](./identify-entity-types-within-a-drawing-and-create-separate-collections-for-polylines-and-3dface-entities.cs) | Cad | 3dface, access, and, aspose-cad, cad, cadobjects, cadtables, csharp |
 | [Identify Entity Types Within A Drawing to Separate Polylines 3dface Objects and Other CAD Elements](./identify-entity-types-within-a-drawing-to-separate-polylines-3dface-objects-and-other-cad-elements.cs) | Cad | 3dface, access, and, aspose-cad, cad, cadobjects, csharp, dotnet8 |
 | [Insert A DXF DWG Drawing into Another Drawing and Then Extract Vertices from The Combined Polyline Entities](./insert-a-dxf-dwg-drawing-into-another-drawing-and-then-extract-vertices-from-the-combined-polyline-entities.cs) | Cad | 3dface, access, and, aspose-cad, cad, cadobjects, cadtables, csharp |

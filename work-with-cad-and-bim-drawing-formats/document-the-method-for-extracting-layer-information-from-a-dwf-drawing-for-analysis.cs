@@ -1,8 +1,7 @@
 using System;
 using System.IO;
 using Aspose.CAD;
-using Aspose.CAD.FileFormats.Cad;
-using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Dwf;
 
 class Program
 {
@@ -20,41 +19,30 @@ class Program
         {
             using (Image image = Image.Load(inputPath))
             {
-                if (image is not CadImage cadImage)
+                if (image is not DwfImage dwfImage)
                 {
-                    Console.Error.WriteLine("Failed to load the DWF file as a CAD image.");
+                    Console.Error.WriteLine("Failed to load the DWF file as a DwfImage.");
                     return;
                 }
 
-                var layers = cadImage.Layers;
-                if (layers == null)
+                var layersList = dwfImage.Layers;
+                if (layersList == null || layersList.Count == 0)
                 {
                     Console.WriteLine("No layers found in the drawing.");
                     return;
                 }
 
-                bool anyLayer = false;
-                Console.WriteLine("Layer information:");
-                foreach (var obj in layers)
+                var layerNames = layersList.GetLayersNames();
+                if (layerNames == null || layerNames.Count == 0)
                 {
-                    if (obj is CadLayerTable layer)
-                    {
-                        anyLayer = true;
-                        string name = layer.Name ?? "<Unnamed>";
-                        short colorId = layer.ColorId;
-                        int flags = layer.Flags;
-
-                        bool isOff = colorId < 0;
-                        bool isFrozen = (flags & 1) != 0;
-                        bool isVisible = !(isOff || isFrozen);
-
-                        Console.WriteLine($"- Name: {name}, ColorId: {colorId}, Visible: {isVisible}");
-                    }
+                    Console.WriteLine("No layer names retrieved.");
+                    return;
                 }
 
-                if (!anyLayer)
+                Console.WriteLine("Layer information:");
+                foreach (var name in layerNames)
                 {
-                    Console.WriteLine("No layer entries found.");
+                    Console.WriteLine($"- Name: {name}");
                 }
             }
         }

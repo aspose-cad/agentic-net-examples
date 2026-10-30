@@ -1,74 +1,48 @@
-using Aspose.CAD.FileFormats.Cad.CadObjects;
 using System;
 using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.Diagnostics;
 using Aspose.CAD;
-using Aspose.CAD.FileFormats.Cad;
 using Aspose.CAD.ImageOptions;
+using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;
+using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;
+using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
+using Aspose.CAD.Primitives;
+using Aspose.CAD.WatermarkGuard;
 
-namespace OptimizeHatchOrigin
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            try
-            {
-                // Path to the source CAD file
-                string sourcePath = "input.dwg";
-                // Path for the output PDF file
-                string outputPath = "output.pdf";
+class Program {
 
-                // Verify source file exists
-                if (!File.Exists(sourcePath))
-                {
-                    Console.Error.WriteLine($"Source file not found: {sourcePath}");
-                    return;
-                }
+ static void Require(bool ok,string message) {if(!ok)throw new InvalidOperationException(message);}
+ static bool Input(string path) {if(File.Exists(path))return true;Console.WriteLine("Input file not found: "+path);return false;}
 
-                // Load the CAD image
-                using (CadImage cadImage = (CadImage)Image.Load(sourcePath))
-                {
-                    // Iterate through all top‑level entities
-                    foreach (CadEntityBase entity in cadImage.Entities)
-                    {
-                        // Identify hatch entities by type name (fallback if specific class is unavailable)
-                        if (entity.TypeName != null && entity.TypeName.ToString().Contains("Hatch", StringComparison.OrdinalIgnoreCase))
-                        {
-                            // Use dynamic to avoid compile‑time dependency on a specific hatch class
-                            dynamic hatch = entity;
-                            try
-                            {
-                                // Attempt to read current origin (if the property exists)
-                                var currentOrigin = hatch.Origin;
 
-                                // Create a new origin point (using the default constructor)
-                                var newOrigin = new Aspose.CAD.FileFormats.Cad.CadObjects.CadPoint();
 
-                                // Example shift logic – actual X/Y properties may not be exposed in this SDK version
-                                // If X/Y are available, they could be set like:
-                                // newOrigin.X = currentOrigin.X + 10.0;
-                                // newOrigin.Y = currentOrigin.Y + 5.0;
 
-                                // Assign the new origin back to the hatch (if the setter exists)
-                                hatch.Origin = newOrigin;
-                            }
-                            catch
-                            {
-                                // Silently ignore if the hatch entity does not expose Origin or related members
-                            }
-                        }
-                    }
+ static void SaveCad(CadImage cad,string path) {cad.Save(path,new DxfOptions {OutputMode=CadOutputMode.Convert});}
 
-                    // Save the modified CAD image to PDF
-                    PdfOptions pdfOptions = new PdfOptions();
-                    cadImage.Save(outputPath, pdfOptions);
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"CAD processing failed: {ex.Message}");
-                return;
-            }
-        }
-    }
+
+
+
+ static int Main(string[] args) {try {
+
+ string input="input.dxf";if(!Input(input))return 0;Directory.CreateDirectory("output");string[] handles;
+ using(var cad=(CadImage)Image.Load(input)) {
+  var hatches=cad.Entities.OfType<CadHatch>().ToArray();Require(hatches.Length>0,"No model hatches.");handles=hatches.Select(h=>h.ObjectHandle).ToArray();
+  foreach(var hatch in hatches) {
+   Require(hatch.PatternDefinitions!=null&&hatch.PatternDefinitions.Count>0,"Solid hatch has no line-family origin to adjust.");
+   foreach(var pattern in hatch.PatternDefinitions)pattern.LineBasePoint=new Cad2DPoint(10,20);
+  }
+  SaveCad(cad,"output/hatch-origin.dxf");
+ }
+ using(var saved=(CadImage)Image.Load("output/hatch-origin.dxf")) {
+  foreach(var handle in handles)Require(saved.Entities.OfType<CadHatch>().Single(h=>h.ObjectHandle==handle).PatternDefinitions.All(p=>p.LineBasePoint.X==10&&p.LineBasePoint.Y==20),"Pattern line-family origin did not persist.");
+  Console.WriteLine("Updated each pattern line-family base point; seed points remain unchanged.");
+ }
+
+ Console.WriteLine("Verified task 45797");return 0;
+} catch(Exception ex) {Console.Error.WriteLine(ex.Message);return 1;} }
 }
