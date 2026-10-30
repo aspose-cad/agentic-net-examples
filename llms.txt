@@ -2,11 +2,11 @@
 
 > Build-validated, standalone C# examples for Aspose.CAD for .NET and .NET 8.
 
-- Examples: 1894
+- Examples: 1895
 - Categories: 45
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Last updated: 2026-10-29
+- Last updated: 2026-10-30
 - Coding-agent instructions: ./AGENTS.md
 - Structured index: ./index.json
 - Search discovery index: ./search-index.json
@@ -49,7 +49,7 @@
 - [get-cad-layout-names](./get-cad-layout-names/): 30 standalone examples; instructions in [AGENTS.md](./get-cad-layout-names/AGENTS.md); guide in [README.md](./get-cad-layout-names/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [get-cad-layout-size](./get-cad-layout-size/): 35 standalone examples; instructions in [AGENTS.md](./get-cad-layout-size/AGENTS.md); guide in [README.md](./get-cad-layout-size/README.md); common namespaces: System, Aspose.CAD, System.IO
 - [get-external-file-references](./get-external-file-references/): 31 standalone examples; instructions in [AGENTS.md](./get-external-file-references/AGENTS.md); guide in [README.md](./get-external-file-references/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [insert-dxf-or-dwg-drawings-into-dwg-files](./insert-dxf-or-dwg-drawings-into-dwg-files/): 29 standalone examples; instructions in [AGENTS.md](./insert-dxf-or-dwg-drawings-into-dwg-files/AGENTS.md); guide in [README.md](./insert-dxf-or-dwg-drawings-into-dwg-files/README.md); common namespaces: System, System.IO, Aspose.CAD
+- [insert-dxf-or-dwg-drawings-into-dwg-files](./insert-dxf-or-dwg-drawings-into-dwg-files/): 30 standalone examples; instructions in [AGENTS.md](./insert-dxf-or-dwg-drawings-into-dwg-files/AGENTS.md); guide in [README.md](./insert-dxf-or-dwg-drawings-into-dwg-files/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [optimize-hatch-origin-for-better-performance](./optimize-hatch-origin-for-better-performance/): 29 standalone examples; instructions in [AGENTS.md](./optimize-hatch-origin-for-better-performance/AGENTS.md); guide in [README.md](./optimize-hatch-origin-for-better-performance/README.md); common namespaces: Aspose.CAD, System, System.IO
 - [remove-borders-from-the-output-canvas](./remove-borders-from-the-output-canvas/): 30 standalone examples; instructions in [AGENTS.md](./remove-borders-from-the-output-canvas/AGENTS.md); guide in [README.md](./remove-borders-from-the-output-canvas/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [remove-cad-entities](./remove-cad-entities/): 29 standalone examples; instructions in [AGENTS.md](./remove-cad-entities/AGENTS.md); guide in [README.md](./remove-cad-entities/README.md); common namespaces: System, System.IO, Aspose.CAD

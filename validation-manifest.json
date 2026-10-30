@@ -2,10 +2,10 @@
   "schema_version": 1,
   "product": "Aspose.CAD",
   "package_version": "26.9.0",
-  "verified_on": "2026-10-29",
+  "verified_on": "2026-10-30",
   "catalog_total": 1959,
-  "published_total": 1894,
-  "withheld_total": 65,
+  "published_total": 1895,
+  "withheld_total": 64,
   "examples": [
     {
       "task_id": "44926",
@@ -10046,6 +10046,16 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "45757",
+      "title": "Insert a DXF drawing into a DWG file by using a CadInsertObject reference.",
+      "category": "Insert DXF or DWG Drawings into DWG Files",
+      "path": "insert-dxf-or-dwg-drawings-into-dwg-files/insert-a-dxf-drawing-into-a-dwg-file-by-using-a-cadinsertobject-reference.cs",
+      "sha256": "140f2b028a128ea8156693a483717cd4d549f7b60155ee1c31cea6a311f651eb",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8 / Aspose.CAD 26.9.0 drawing-input tests: native DwgImage writer preserves an existing DWG, geometry, handles, layouts, block ownership, paper-space entities and a rotated insert after DWG reload. Bounded external importer supports LINE/CIRCLE/TEXT; unsupported dependencies are rejected."
     },
     {
       "task_id": "45766",

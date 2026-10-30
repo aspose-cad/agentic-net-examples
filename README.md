@@ -12,7 +12,7 @@ This repository provides working code examples demonstrating Aspose.CAD for .NET
 
 ## Repair and validation status
 
-The publication contains **1,894 examples across 45 categories**, targeting .NET 8 and Aspose.CAD 26.9.0. The latest repair batch recovered **34 of 39 failed tasks** using controlled drawing inputs; five remain unresolved and are excluded. See [VALIDATION.md](./VALIDATION.md) for the count reconciliation, evidence, and remaining limitations.
+This branch contains **1,895 examples across 45 categories**, targeting .NET 8 and Aspose.CAD 26.9.0. The October 30 fix recovers DXF insertion into an existing DWG and verifies preservation after reload. Together with the previous batch, **35 of the original 39 failures are recovered; four watermark export cases remain unresolved and excluded**. See [VALIDATION.md](./VALIDATION.md) for evidence, counts, and limits.
 
 ## Repository Structure
 Examples are organized by feature category:
@@ -48,7 +48,7 @@ Examples are organized by feature category:
 - `get-cad-layout-names/` - 30 example(s)
 - `get-cad-layout-size/` - 35 example(s)
 - `get-external-file-references/` - 31 example(s)
-- `insert-dxf-or-dwg-drawings-into-dwg-files/` - 29 example(s)
+- `insert-dxf-or-dwg-drawings-into-dwg-files/` - 30 example(s)
 - `optimize-hatch-origin-for-better-performance/` - 29 example(s)
 - `remove-borders-from-the-output-canvas/` - 30 example(s)
 - `remove-cad-entities/` - 29 example(s)
@@ -204,4 +204,4 @@ Other Aspose products with agentic, build-validated example repositories:
 All examples use [Aspose.CAD for .NET](https://products.aspose.com/cad/net/) and require a valid license for production use. See [licensing options](https://purchase.aspose.com/buy).
 
 ---
-*Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-10-29*
+*Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-10-30*
