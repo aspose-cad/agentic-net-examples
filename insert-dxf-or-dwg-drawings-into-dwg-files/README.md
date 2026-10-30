@@ -6,18 +6,18 @@ Build-validated Aspose.CAD for .NET examples for `insert-dxf-or-dwg-drawings-int
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 29
+- Examples: 30
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (29 example(s))
-- `System.IO` (29 example(s))
-- `Aspose.CAD` (29 example(s))
-- `Aspose.CAD.FileFormats.Cad` (29 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (27 example(s))
-- `System.Linq` (13 example(s))
-- `Aspose.CAD.ImageOptions` (11 example(s))
+- `System` (30 example(s))
+- `System.IO` (30 example(s))
+- `Aspose.CAD` (30 example(s))
+- `Aspose.CAD.FileFormats.Cad` (30 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (28 example(s))
+- `System.Linq` (14 example(s))
+- `Aspose.CAD.ImageOptions` (12 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadTables` (11 example(s))
 
 ## Representative Examples

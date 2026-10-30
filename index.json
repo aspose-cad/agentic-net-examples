@@ -4,9 +4,9 @@
   "framework": "net8.0",
   "package": "Aspose.CAD",
   "package_version": "26.9.0",
-  "total_examples": 1894,
+  "total_examples": 1895,
   "total_categories": 45,
-  "last_updated": "2026-10-29",
+  "last_updated": "2026-10-30",
   "categories": [
     {
       "name": "access-entities-inside-block-objects",
@@ -46088,7 +46088,7 @@
     },
     {
       "name": "insert-dxf-or-dwg-drawings-into-dwg-files",
-      "file_count": 29,
+      "file_count": 30,
       "files": [
         "access-and-manipulate-the-cadblockdictionary-to-remove-an-unwanted-block-entity-from-the-drawing.cs",
         "add-the-cadblockdictionary-to-the-drawing-blockentities-collection-for-block-management-during-the-insertion-process.cs",
@@ -46107,6 +46107,7 @@
         "get-layout-names-from-the-drawing-to-determine-insertion-points-for-external-blocks.cs",
         "identify-external-file-references-that-need-updating-after-inserting-a-new-block.cs",
         "insert-a-dwg-drawing-into-an-existing-dwg-file-using-a-cadinsertobject-instance.cs",
+        "insert-a-dxf-drawing-into-a-dwg-file-by-using-a-cadinsertobject-reference.cs",
         "iterate-through-cadblockdictionary-entries-to-locate-a-specific-block-by-name.cs",
         "list-all-layer-names-that-contain-entities-from-the-inserted-cadblockentity-for-further-processing.cs",
         "obtain-references-to-external-files-used-by-the-drawing-before-performing-block-insertion.cs",
@@ -46913,6 +46914,61 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Insert A DXF Drawing into A DWG File By using A Cadinsertobject Reference",
+          "category": "insert-dxf-or-dwg-drawings-into-dwg-files",
+          "path": "insert-dxf-or-dwg-drawings-into-dwg-files/insert-a-dxf-drawing-into-a-dwg-file-by-using-a-cadinsertobject-reference.cs",
+          "file": "insert-a-dxf-drawing-into-a-dwg-file-by-using-a-cadinsertobject-reference.cs",
+          "api_area": "Cad",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "csharp",
+            "dotnet8",
+            "drawings",
+            "dwg",
+            "dxf",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "insert",
+            "into",
+            "or",
+            "standalone-example"
+          ],
+          "formats": [
+            "dwg",
+            "dxf"
+          ],
+          "search_phrases": [
+            "Insert A DXF Drawing into A DWG File By using A Cadinsertobject Reference in C#",
+            "Insert A DXF Drawing into A DWG File By using A Cadinsertobject Reference using Aspose.CAD for .NET",
+            "Insert A DXF Drawing into A DWG File By using A Cadinsertobject Reference Aspose.CAD .NET example",
+            "AI generated .net code to Insert A DXF Drawing into A DWG File By using A Cadinsertobject Reference",
+            "Aspose.CAD for .NET insert-dxf-or-dwg-drawings-into-dwg-files example",
+            "Aspose.CAD DWG C# example",
+            "Aspose.CAD DXF C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Globalization",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Iterate Through Cadblockdictionary Entries to Locate A Specific Block By Name",
           "category": "insert-dxf-or-dwg-drawings-into-dwg-files",
           "path": "insert-dxf-or-dwg-drawings-into-dwg-files/iterate-through-cadblockdictionary-entries-to-locate-a-specific-block-by-name.cs",
@@ -47461,31 +47517,31 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 29
+          "count": 30
         },
         {
           "name": "System.IO",
-          "count": 29
+          "count": 30
         },
         {
           "name": "Aspose.CAD",
-          "count": 29
+          "count": 30
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 29
+          "count": 30
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 27
+          "count": 28
         },
         {
           "name": "System.Linq",
-          "count": 13
+          "count": 14
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 11
+          "count": 12
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
@@ -47493,11 +47549,11 @@
         },
         {
           "name": "System.Collections.Generic",
-          "count": 6
+          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 4
+          "count": 5
         },
         {
           "name": "System.Collections",
@@ -47525,6 +47581,10 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Blocks",
+          "count": 1
+        },
+        {
+          "name": "System.Globalization",
           "count": 1
         }
       ],
