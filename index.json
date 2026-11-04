@@ -4,7 +4,7 @@
   "framework": "net8.0",
   "package": "Aspose.CAD",
   "package_version": "26.9.0",
-  "total_examples": 1904,
+  "total_examples": 1905,
   "total_categories": 45,
   "last_updated": "2026-11-04",
   "categories": [
@@ -16842,7 +16842,7 @@
     },
     {
       "name": "change-the-observer-point",
-      "file_count": 31,
+      "file_count": 32,
       "files": [
         "access-external-file-references-and-replace-them-with-updated-files-before-exporting-to-pdf.cs",
         "access-external-file-references-in-a-cad-drawing-to-ensure-all-linked-resources-are-available.cs",
@@ -16867,6 +16867,7 @@
         "list-all-layers-before-applying-a-blind-watermark-to-ensure-watermark-covers-required-elements.cs",
         "list-all-layers-in-a-loaded-dwg-drawing-to-analyze-layer-organization-before-modification.cs",
         "load-a-cad-drawing-with-sat-structure-retrieve-layout-names-and-list-all-layers-for-documentation.cs",
+        "load-a-cad-file-with-sat-structure-and-then-retrieve-its-layout-names-for-further-processing.cs",
         "retrieve-layout-names-after-loading-a-cad-file-to-identify-available-drawing-sections.cs",
         "retrieve-layout-names-and-then-set-observer-point-to-focus-on-a-specific-layout-before-rasterization.cs",
         "retrieve-layout-names-then-set-observer-point-to-focus-on-the-chosen-layout-before-rasterizing.cs",
@@ -17891,6 +17892,47 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Load A CAD File with Sat Structure and Then Retrieve Its Layout Names for Further Processing",
+          "category": "change-the-observer-point",
+          "path": "change-the-observer-point/load-a-cad-file-with-sat-structure-and-then-retrieve-its-layout-names-for-further-processing.cs",
+          "file": "load-a-cad-file-with-sat-structure-and-then-retrieve-its-layout-names-for-further-processing.cs",
+          "api_area": "Cad",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "cadobjects",
+            "change",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "observer",
+            "point",
+            "standalone-example",
+            "the"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Load A CAD File with Sat Structure and Then Retrieve Its Layout Names for Further Processing in C#",
+            "Load A CAD File with Sat Structure and Then Retrieve Its Layout Names for Further Processing using Aspose.CAD for .NET",
+            "Load A CAD File with Sat Structure and Then Retrieve Its Layout Names for Further Processing Aspose.CAD .NET example",
+            "AI generated .net code to Load A CAD File with Sat Structure and Then Retrieve Its Layout Names for Further Processing",
+            "Aspose.CAD for .NET change-the-observer-point example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Retrieve Layout Names After Loading A CAD File to Identify Available Drawing Sections",
           "category": "change-the-observer-point",
           "path": "change-the-observer-point/retrieve-layout-names-after-loading-a-cad-file-to-identify-available-drawing-sections.cs",
@@ -18227,19 +18269,19 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 31
+          "count": 32
         },
         {
           "name": "System.IO",
-          "count": 31
+          "count": 32
         },
         {
           "name": "Aspose.CAD",
-          "count": 31
+          "count": 32
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 30
+          "count": 31
         },
         {
           "name": "Aspose.CAD.ImageOptions",
@@ -18247,7 +18289,7 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 9
+          "count": 10
         },
         {
           "name": "Aspose.CAD.FileFormats",
@@ -18267,6 +18309,10 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 1
+        },
+        {
+          "name": "System.Linq",
           "count": 1
         },
         {

@@ -2,11 +2,19 @@
 
 ## Publication counts
 
-This branch proposes **1,904 examples across 45 categories** from the 1,959-task catalog; **55 tasks are withheld**. Relative to merged main's 1,895 examples, it adds eight native watermark workflows: **44059, 44062, 44065, 44066, 44067, 44068, 44069 and 44796**. It also recovers DGN comparison task **44122**. No previously published source is removed.
+This branch proposes **1,905 examples across 45 categories** from the 1,959-task catalog; **54 tasks are withheld**. Relative to merged main's 1,904 examples, it adds the native SAT-container layout reader **45173**. No previously published source is removed.
 
-The earlier checkpoints were 1,864 + 60 added IDs - 30 withheld IDs = 1,894, followed by the 45757 recovery to 1,895. This branch adds eight native watermark examples and one DGN comparison: **1,895 + 8 + 1 = 1,904**. Publication counts differ from historical catalog-run statistics.
+The earlier checkpoints were 1,864 + 60 added IDs - 30 withheld IDs = 1,894, followed by 45757 to 1,895, eight native watermark examples to 1,903 and DGN comparison 44122 to 1,904. This branch adds one: **1,904 + 1 = 1,905**. Publication counts differ from historical catalog-run statistics.
 
-The original completed run processed 1,959 tasks with 1,920 successes and 39 failures. Subsequent repair batches recovered 35 of those failures; four PDF/PNG watermark operations remain unresolved. The nine additions here come from the wider withheld inventory and do not change that 35/39 figure.
+The original completed run processed 1,959 tasks with 1,920 successes and 39 failures. Subsequent repair batches recovered 35 of those failures; four PDF/PNG watermark operations remain unresolved. The prior nine repairs and this SAT-container reader come from the wider withheld inventory and do not change that 35/39 figure.
+
+## SAT-container layouts (45173) — November 4
+
+The sample loads a native DWG/DXF as `CadImage`, checks for non-empty text ACIS/SAT records on actual `CadObjectWithAcisData` objects (including block definitions), and reads layout names from that same drawing. It does not cast a standalone SAT image to `CadImage` or manufacture layout names. The official public `conic_pyramid.dxf` fixture exposes nine ACIS objects and the actual `Model` and `Layout1` records. Text groups can be obfuscated; the sample checks their presence without decoding or exporting SAT. Binary-only ACIS and mesh data are explicitly outside scope. This is not SAT kernel/solid-validity certification.
+
+The exact source compiles and runs on .NET 8/Aspose.CAD 26.9. Eight checks pass: default and relative-path positive invocations; five rejection cases (native input without SAT, a 3D mesh without SAT, a non-native model, an explicit missing input and invalid arguments); and a no-input smoke check. All source/fixture hashes are retained, and original inputs remain byte-identical. The sample never saves or reconstructs the drawing.
+
+The presence check follows the public [DXF 3DSOLID proprietary-data groups](https://help.autodesk.com/cloudhelp/2020/ENU/AutoCAD-DXF/files/GUID-19AB1C40-0BE0-4F32-BCAB-04B37044A0D3.htm). Positive fixture coverage is a native DXF containing text ACIS/SAT; it does not establish standalone SAT layouts or arbitrary binary DWG kernel access.
 
 ## Native watermark workflows — November 4
 
@@ -40,11 +48,11 @@ The bounded external importer supports LINE, CIRCLE and TEXT, with checks for la
 
 A 24-case local matrix checked DWG/DXF/OBJ inputs, PDF/PNG/DXF/3D-PDF outputs, and Render/Convert modes. Changing modes or enabling 3D PDF did not resolve the requested PDF/PNG protection. The rendered PDFs were not loadable by `Image.Load` in these tests. A DXF Convert control embeds and validates the expected payload successfully, so this is not a blanket failure of blind watermarking.
 
-These four cases remain excluded. A visible overlay, embedded metadata, a DXF substitute, or a completed render is not reported as successful blind-watermark protection. They are a subset of the 55 withheld catalog tasks in this candidate.
+These four cases remain excluded. A visible overlay, embedded metadata, a DXF substitute, or a completed render is not reported as successful blind-watermark protection. They are a subset of the 54 withheld catalog tasks in this candidate.
 
 ## Corpus validation
 
-The merged 1,895-example baseline passed [main run 41079861290](https://github.com/aspose-cad/agentic-net-examples/actions/runs/41079861290). The expanded 1,904-example candidate has separate full-corpus checks on its pull request; inspect the checks for the current source commit rather than reusing the baseline result. The nine added sources have separate exact-source drawing-input compile/run evidence and failure controls. The original 45757 drawing-preservation evidence is retained.
+Merged main's 1,904-example baseline passed [run 41909423202](https://github.com/aspose-cad/agentic-net-examples/actions/runs/41909423202). The expanded 1,905-source candidate has its own full-corpus PR checks; inspect the current source commit. Task 45173 has separate drawing-input checks and rejection controls. Prior native watermark, DGN comparison and 45757 drawing-preservation evidence is retained.
 
 Most corpus executions check missing-input handling; their success does not establish drawing-specific functional correctness for the entire repository. Earlier raster/hatch/text persistence checks use editable DXF output. PDF/A export configuration is not independent conformance certification, and preview generation is not a visual quality review.
 
