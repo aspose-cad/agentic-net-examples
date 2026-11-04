@@ -4,8 +4,8 @@
   "package_version": "26.9.0",
   "verified_on": "2026-11-04",
   "catalog_total": 1959,
-  "published_total": 1903,
-  "withheld_total": 56,
+  "published_total": 1904,
+  "withheld_total": 55,
   "examples": [
     {
       "task_id": "44926",
@@ -12166,6 +12166,16 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "44122",
+      "title": "Access DGN data within a DWG and compare it against a reference DGN file for differences.",
+      "category": "Work with CAD and BIM Drawing Formats",
+      "path": "work-with-cad-and-bim-drawing-formats/access-dgn-data-within-a-dwg-and-compare-it-against-a-reference-dgn-file-for-differences.cs",
+      "sha256": "223e587d97d3ebf86512d8cd458af71b485cf9366ce7bac8112fdb9aaaa51140",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run: public DWG DGN-underlay fixture plus official DGN files; matching/different comparisons, Windows-style relative path normalization, missing/wrong model and broken/unused link controls, input hash preservation. Counts describe SDK-visible entities (evaluation-limited); full-file SHA-256 reports byte differences, not geometry equivalence. SDK underlay-loading errors fail explicitly. No embedded DGN extraction or rendering is claimed."
     },
     {
       "task_id": "44396",

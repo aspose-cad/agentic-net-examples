@@ -51,7 +51,7 @@ Examples are organized by feature category:
 - `search-attributes-inside-insert-entities/` - 29 example(s)
 - `validate-and-replace-external-image-references/` - 40 example(s)
 - `work-with-3d-cad-files/` - 32 example(s)
-- `work-with-cad-and-bim-drawing-formats/` - 526 example(s)
+- `work-with-cad-and-bim-drawing-formats/` - 527 example(s)
 - `work-with-cad-entities/` - 35 example(s)
 - `work-with-cad-files/` - 35 example(s)
 - `work-with-cad-fonts/` - 29 example(s)

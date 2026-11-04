@@ -4,7 +4,7 @@
   "framework": "net8.0",
   "package": "Aspose.CAD",
   "package_version": "26.9.0",
-  "total_examples": 1903,
+  "total_examples": 1904,
   "total_categories": 45,
   "last_updated": "2026-11-04",
   "categories": [
@@ -56668,11 +56668,12 @@
     },
     {
       "name": "work-with-cad-and-bim-drawing-formats",
-      "file_count": 526,
+      "file_count": 527,
       "files": [
         "access-dgn-data-embedded-within-a-dwg-file-and-extract-it-to-a-separate-dgn-file.cs",
         "access-dgn-data-inside-a-dwg-file-and-modify-its-metadata-before-re-exporting.cs",
         "access-dgn-data-inside-a-dwg-file-and-write-it-to-a-memory-stream-for-further-processing.cs",
+        "access-dgn-data-within-a-dwg-and-compare-it-against-a-reference-dgn-file-for-differences.cs",
         "adjust-cad-properties-before-exporting-cf2-file-to-pdf-in-net.cs",
         "adjust-cad-properties-before-exporting-iges-file-to-pdf-in-net.cs",
         "adjust-cad-properties-before-exporting-obj-file-to-pdf-in-net.cs",
@@ -57329,6 +57330,61 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.FileFormats.Cad"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Access DGN Data Within A DWG and Compare It Against A Reference DGN File for Differences",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/access-dgn-data-within-a-dwg-and-compare-it-against-a-reference-dgn-file-for-differences.cs",
+          "file": "access-dgn-data-within-a-dwg-and-compare-it-against-a-reference-dgn-file-for-differences.cs",
+          "api_area": "Cad",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dgn",
+            "dotnet8",
+            "drawing",
+            "dwg",
+            "fileformats",
+            "formats",
+            "standalone-example",
+            "underlaydefinition",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "dgn",
+            "dwg"
+          ],
+          "search_phrases": [
+            "Access DGN Data Within A DWG and Compare It Against A Reference DGN File for Differences in C#",
+            "Access DGN Data Within A DWG and Compare It Against A Reference DGN File for Differences using Aspose.CAD for .NET",
+            "Access DGN Data Within A DWG and Compare It Against A Reference DGN File for Differences Aspose.CAD .NET example",
+            "AI generated .net code to Access DGN Data Within A DWG and Compare It Against A Reference DGN File for Differences",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD DGN C# example",
+            "Aspose.CAD DWG C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Security.Cryptography",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Dgn"
           ],
           "standalone": true,
           "validated": true,
@@ -81735,15 +81791,15 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 526
+          "count": 527
         },
         {
           "name": "System.IO",
-          "count": 525
+          "count": 526
         },
         {
           "name": "Aspose.CAD",
-          "count": 525
+          "count": 526
         },
         {
           "name": "Aspose.CAD.ImageOptions",
@@ -81751,19 +81807,19 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 244
+          "count": 245
         },
         {
           "name": "System.Collections.Generic",
-          "count": 49
+          "count": 50
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 44
+          "count": 45
         },
         {
           "name": "System.Linq",
-          "count": 37
+          "count": 38
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
@@ -81799,11 +81855,19 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-          "count": 6
+          "count": 7
+        },
+        {
+          "name": "System.Security.Cryptography",
+          "count": 2
         },
         {
           "name": "System.Threading",
           "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Dgn",
+          "count": 1
         },
         {
           "name": "Aspose.CAD.FileFormats.Ifc",
@@ -81811,10 +81875,6 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.CF2",
-          "count": 1
-        },
-        {
-          "name": "System.Security.Cryptography",
           "count": 1
         },
         {

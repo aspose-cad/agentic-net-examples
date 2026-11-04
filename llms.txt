@@ -2,7 +2,7 @@
 
 > Build-validated, standalone C# examples for Aspose.CAD for .NET and .NET 8.
 
-- Examples: 1903
+- Examples: 1904
 - Categories: 45
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
@@ -56,7 +56,7 @@
 - [search-attributes-inside-insert-entities](./search-attributes-inside-insert-entities/): 29 standalone examples; instructions in [AGENTS.md](./search-attributes-inside-insert-entities/AGENTS.md); guide in [README.md](./search-attributes-inside-insert-entities/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [validate-and-replace-external-image-references](./validate-and-replace-external-image-references/): 40 standalone examples; instructions in [AGENTS.md](./validate-and-replace-external-image-references/AGENTS.md); guide in [README.md](./validate-and-replace-external-image-references/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-3d-cad-files](./work-with-3d-cad-files/): 32 standalone examples; instructions in [AGENTS.md](./work-with-3d-cad-files/AGENTS.md); guide in [README.md](./work-with-3d-cad-files/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [work-with-cad-and-bim-drawing-formats](./work-with-cad-and-bim-drawing-formats/): 526 standalone examples; instructions in [AGENTS.md](./work-with-cad-and-bim-drawing-formats/AGENTS.md); guide in [README.md](./work-with-cad-and-bim-drawing-formats/README.md); common namespaces: System, System.IO, Aspose.CAD
+- [work-with-cad-and-bim-drawing-formats](./work-with-cad-and-bim-drawing-formats/): 527 standalone examples; instructions in [AGENTS.md](./work-with-cad-and-bim-drawing-formats/AGENTS.md); guide in [README.md](./work-with-cad-and-bim-drawing-formats/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-entities](./work-with-cad-entities/): 35 standalone examples; instructions in [AGENTS.md](./work-with-cad-entities/AGENTS.md); guide in [README.md](./work-with-cad-entities/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-files](./work-with-cad-files/): 35 standalone examples; instructions in [AGENTS.md](./work-with-cad-files/AGENTS.md); guide in [README.md](./work-with-cad-files/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-fonts](./work-with-cad-fonts/): 29 standalone examples; instructions in [AGENTS.md](./work-with-cad-fonts/AGENTS.md); guide in [README.md](./work-with-cad-fonts/README.md); common namespaces: System, System.IO, Aspose.CAD
