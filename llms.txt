@@ -2,11 +2,11 @@
 
 > Build-validated, standalone C# examples for Aspose.CAD for .NET and .NET 8.
 
-- Examples: 1895
+- Examples: 1903
 - Categories: 45
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Last updated: 2026-10-30
+- Last updated: 2026-11-04
 - Coding-agent instructions: ./AGENTS.md
 - Structured index: ./index.json
 - Search discovery index: ./search-index.json
@@ -25,7 +25,7 @@
 - [add-polylines](./add-polylines/): 34 standalone examples; instructions in [AGENTS.md](./add-polylines/AGENTS.md); guide in [README.md](./add-polylines/README.md); common namespaces: System, Aspose.CAD, Aspose.CAD.FileFormats.Cad.CadObjects
 - [add-text-and-mtext-entities-beside-existing-text](./add-text-and-mtext-entities-beside-existing-text/): 35 standalone examples; instructions in [AGENTS.md](./add-text-and-mtext-entities-beside-existing-text/AGENTS.md); guide in [README.md](./add-text-and-mtext-entities-beside-existing-text/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [adjust-cad-drawing-properties](./adjust-cad-drawing-properties/): 34 standalone examples; instructions in [AGENTS.md](./adjust-cad-drawing-properties/AGENTS.md); guide in [README.md](./adjust-cad-drawing-properties/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [apply-blind-watermarks](./apply-blind-watermarks/): 9 standalone examples; instructions in [AGENTS.md](./apply-blind-watermarks/AGENTS.md); guide in [README.md](./apply-blind-watermarks/README.md); common namespaces: System, System.IO, Aspose.CAD
+- [apply-blind-watermarks](./apply-blind-watermarks/): 16 standalone examples; instructions in [AGENTS.md](./apply-blind-watermarks/AGENTS.md); guide in [README.md](./apply-blind-watermarks/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [calculate-circle-area-and-circumference](./calculate-circle-area-and-circumference/): 30 standalone examples; instructions in [AGENTS.md](./calculate-circle-area-and-circumference/AGENTS.md); guide in [README.md](./calculate-circle-area-and-circumference/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [change-emergency-fonts-and-style-fonts](./change-emergency-fonts-and-style-fonts/): 28 standalone examples; instructions in [AGENTS.md](./change-emergency-fonts-and-style-fonts/AGENTS.md); guide in [README.md](./change-emergency-fonts-and-style-fonts/README.md); common namespaces: Aspose.CAD, System, System.IO
 - [change-polyline-width](./change-polyline-width/): 30 standalone examples; instructions in [AGENTS.md](./change-polyline-width/AGENTS.md); guide in [README.md](./change-polyline-width/README.md); common namespaces: System, System.IO, Aspose.CAD
@@ -58,7 +58,7 @@
 - [work-with-3d-cad-files](./work-with-3d-cad-files/): 32 standalone examples; instructions in [AGENTS.md](./work-with-3d-cad-files/AGENTS.md); guide in [README.md](./work-with-3d-cad-files/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-and-bim-drawing-formats](./work-with-cad-and-bim-drawing-formats/): 526 standalone examples; instructions in [AGENTS.md](./work-with-cad-and-bim-drawing-formats/AGENTS.md); guide in [README.md](./work-with-cad-and-bim-drawing-formats/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-entities](./work-with-cad-entities/): 35 standalone examples; instructions in [AGENTS.md](./work-with-cad-entities/AGENTS.md); guide in [README.md](./work-with-cad-entities/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [work-with-cad-files](./work-with-cad-files/): 34 standalone examples; instructions in [AGENTS.md](./work-with-cad-files/AGENTS.md); guide in [README.md](./work-with-cad-files/README.md); common namespaces: System, System.IO, Aspose.CAD
+- [work-with-cad-files](./work-with-cad-files/): 35 standalone examples; instructions in [AGENTS.md](./work-with-cad-files/AGENTS.md); guide in [README.md](./work-with-cad-files/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-fonts](./work-with-cad-fonts/): 29 standalone examples; instructions in [AGENTS.md](./work-with-cad-fonts/AGENTS.md); guide in [README.md](./work-with-cad-fonts/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-layouts](./work-with-cad-layouts/): 30 standalone examples; instructions in [AGENTS.md](./work-with-cad-layouts/AGENTS.md); guide in [README.md](./work-with-cad-layouts/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [work-with-cad-text](./work-with-cad-text/): 35 standalone examples; instructions in [AGENTS.md](./work-with-cad-text/AGENTS.md); guide in [README.md](./work-with-cad-text/README.md); common namespaces: System, System.IO, Aspose.CAD
@@ -231,7 +231,7 @@
 ### work-with-cad-files
 - [Adjust CAD Properties Such as Layer Visibility to Control Element Display Within The Drawing](./work-with-cad-files/adjust-cad-properties-such-as-layer-visibility-to-control-element-display-within-the-drawing.cs) - Cad; tags: aspose-cad, cad, cadtables, csharp, dotnet8, fileformats
 - [Adjust Camera Rotation By Modifying Vectorrasterizationoptions Properties to Achieve The Desired Viewing Angle](./work-with-cad-files/adjust-camera-rotation-by-modifying-vectorrasterizationoptions-properties-to-achieve-the-desired-viewing-angle.cs) - ImageOptions; tags: aspose-cad, cad, csharp, dotnet8, fileformats, files
-- [Change Camera Transform to Translate View Position for Better Focus On A Specific Drawing Area](./work-with-cad-files/change-camera-transform-to-translate-view-position-for-better-focus-on-a-specific-drawing-area.cs) - ImageOptions; tags: aspose-cad, cad, csharp, dotnet8, files, imageoptions
+- [Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property](./work-with-cad-files/apply-a-blind-watermark-to-the-entire-drawing-to-protect-intellectual-property.cs) - ImageOptions; tags: aspose-cad, cad, csharp, dotnet8, fileformats, files
 ### work-with-cad-fonts
 - [Adjust Rendering Options If Substituted Fonts Affect The Layout of The Exported Image](./work-with-cad-fonts/adjust-rendering-options-if-substituted-fonts-affect-the-layout-of-the-exported-image.cs) - ImageOptions; tags: aspose-cad, cad, csharp, dotnet8, fileformats, fonts
 - [Adjust The Export Settings If Substituted Fonts Cause Unexpected Text Clipping or Overlap](./work-with-cad-fonts/adjust-the-export-settings-if-substituted-fonts-cause-unexpected-text-clipping-or-overlap.cs) - ImageOptions; tags: aspose-cad, cad, csharp, dotnet8, fileformats, fonts
