@@ -18,13 +18,14 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 - Files are standalone `.cs` examples stored directly in this folder.
 
 ## Required Namespaces
-- `using System;` (9 file(s))
-- `using System.IO;` (9 file(s))
-- `using Aspose.CAD;` (9 file(s))
-- `using Aspose.CAD.ImageOptions;` (9 file(s))
-- `using Aspose.CAD.WatermarkGuard;` (9 file(s))
-- `using Aspose.CAD.FileFormats.Cad;` (8 file(s))
-- `using System.Linq;` (2 file(s))
+- `using System;` (16 file(s))
+- `using System.IO;` (16 file(s))
+- `using Aspose.CAD;` (16 file(s))
+- `using Aspose.CAD.ImageOptions;` (16 file(s))
+- `using Aspose.CAD.WatermarkGuard;` (16 file(s))
+- `using Aspose.CAD.FileFormats.Cad;` (15 file(s))
+- `using System.Linq;` (9 file(s))
+- `using System.Security.Cryptography;` (7 file(s))
 - `using System.Collections.Generic;` (1 file(s))
 - `using System.Diagnostics;` (1 file(s))
 - `using Aspose.CAD.FileFormats.Cad.CadObjects;` (1 file(s))
@@ -43,12 +44,19 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 | [convert-dwg-files-to-pdf-while-embedding-a-text-blind-watermark-during-the-conversion-process.cs](./convert-dwg-files-to-pdf-while-embedding-a-text-blind-watermark-during-the-conversion-process.cs) | convert dwg files to pdf while embedding a text blind watermark during the conversion process |
 | [detect-an-existing-blind-watermark-in-a-cad-file-before-performing-any-further-processing.cs](./detect-an-existing-blind-watermark-in-a-cad-file-before-performing-any-further-processing.cs) | detect an existing blind watermark in a cad file before performing any further processing |
 | [detect-existing-blind-watermark-in-a-cad-file-before-performing-format-conversion-to-ensure-compliance.cs](./detect-existing-blind-watermark-in-a-cad-file-before-performing-format-conversion-to-ensure-compliance.cs) | detect existing blind watermark in a cad file before performing format conversion to ensure compliance |
+| [detect-existing-blind-watermark-in-cad-files-as-part-of-a-validation-step-before-publishing.cs](./detect-existing-blind-watermark-in-cad-files-as-part-of-a-validation-step-before-publishing.cs) | detect existing blind watermark in cad files as part of a validation step before publishing |
 | [generate-a-sample-cad-file-that-visually-demonstrates-the-effect-of-a-text-blind-watermark.cs](./generate-a-sample-cad-file-that-visually-demonstrates-the-effect-of-a-text-blind-watermark.cs) | generate a sample cad file that visually demonstrates the effect of a text blind watermark |
+| [integrate-blind-watermark-addition-into-an-automated-workflow-that-builds-and-publishes-cad-assets.cs](./integrate-blind-watermark-addition-into-an-automated-workflow-that-builds-and-publishes-cad-assets.cs) | integrate blind watermark addition into an automated workflow that builds and publishes cad assets |
 | [integrate-blind-watermark-addition-into-an-automated-workflow-that-processes-multiple-cad-files-sequentially.cs](./integrate-blind-watermark-addition-into-an-automated-workflow-that-processes-multiple-cad-files-sequentially.cs) | integrate blind watermark addition into an automated workflow that processes multiple cad files sequentially |
+| [integrate-blind-watermark-detection-into-an-automated-pipeline-that-validates-cad-files-prior-to-publishing.cs](./integrate-blind-watermark-detection-into-an-automated-pipeline-that-validates-cad-files-prior-to-publishing.cs) | integrate blind watermark detection into an automated pipeline that validates cad files prior to publishing |
+| [integrate-blind-watermark-detection-into-automated-quality-checks-that-run-after-cad-file-conversion.cs](./integrate-blind-watermark-detection-into-automated-quality-checks-that-run-after-cad-file-conversion.cs) | integrate blind watermark detection into automated quality checks that run after cad file conversion |
 | [load-a-cad-drawing-apply-an-image-blind-watermark-then-export-to-png-for-web-use.cs](./load-a-cad-drawing-apply-an-image-blind-watermark-then-export-to-png-for-web-use.cs) | load a cad drawing apply an image blind watermark then export to png for web use |
+| [support-blind-watermarking-for-multiple-cad-formats-by-applying-consistent-settings-across-different-file-types.cs](./support-blind-watermarking-for-multiple-cad-formats-by-applying-consistent-settings-across-different-file-types.cs) | support blind watermarking for multiple cad formats by applying consistent settings across different file types |
+| [support-blind-watermarking-for-multiple-cad-formats-by-applying-the-same-watermark-to-each-loaded-drawing.cs](./support-blind-watermarking-for-multiple-cad-formats-by-applying-the-same-watermark-to-each-loaded-drawing.cs) | support blind watermarking for multiple cad formats by applying the same watermark to each loaded drawing |
+| [verify-that-only-supported-cad-formats-receive-blind-watermarks-by-checking-format-compatibility-before-applying.cs](./verify-that-only-supported-cad-formats-receive-blind-watermarks-by-checking-format-compatibility-before-applying.cs) | verify that only supported cad formats receive blind watermarks by checking format compatibility before applying |
 
 ## Category Statistics
-- Total examples: 9
+- Total examples: 16
 
 ## General Tips
 - Follow root boundaries and testing guide.
@@ -57,5 +65,5 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 <!-- AUTOGENERATED:START -->
 | Date | Run ID | Branch/Commit |
 |------|--------|---------------|
-| 2026-10-30 | `cad-native-dwg-insert-2026-10-30` | examples/native-dwg-insert-2026-10-30 |
+| 2026-11-04 | `cad-native-watermark-repairs-2026-11-04` | examples/native-watermark-repairs-2026-11-04 |
 <!-- AUTOGENERATED:END -->

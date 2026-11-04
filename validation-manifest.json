@@ -2,10 +2,10 @@
   "schema_version": 1,
   "product": "Aspose.CAD",
   "package_version": "26.9.0",
-  "verified_on": "2026-10-30",
+  "verified_on": "2026-11-04",
   "catalog_total": 1959,
-  "published_total": 1895,
-  "withheld_total": 64,
+  "published_total": 1904,
+  "withheld_total": 55,
   "examples": [
     {
       "task_id": "44926",
@@ -2628,6 +2628,16 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
+      "task_id": "44059",
+      "title": "Detect existing blind watermark in CAD files as part of a validation step before publishing.",
+      "category": "Apply Blind Watermarks",
+      "path": "apply-blind-watermarks/detect-existing-blind-watermark-in-cad-files-as-part-of-a-validation-step-before-publishing.cs",
+      "sha256": "6840f9be5281e40b36c1e194998e7be4bc4de37c11236f700f8db1b40c40fbbc",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled native DWG/DXF inputs, known-payload validation and wrong-payload rejection. Embedding cases preserve entity count/layout names and original input hashes. Separate absence/capacity/model controls fail without publishing an asset. This does not verify PDF/PNG protection or arbitrary drawings."
+    },
+    {
       "task_id": "44070",
       "title": "Generate a sample CAD file that visually demonstrates the effect of a text blind watermark.",
       "category": "Apply Blind Watermarks",
@@ -2636,6 +2646,16 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "44065",
+      "title": "Integrate blind watermark addition into an automated workflow that builds and publishes CAD assets.",
+      "category": "Apply Blind Watermarks",
+      "path": "apply-blind-watermarks/integrate-blind-watermark-addition-into-an-automated-workflow-that-builds-and-publishes-cad-assets.cs",
+      "sha256": "eb8540690b2fec696ee8d7dfcc6b0a2f6b6fddfd6dc78075109497bc36d0ca14",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled native DWG/DXF inputs, known-payload validation and wrong-payload rejection. Embedding cases preserve entity count/layout names and original input hashes. Separate absence/capacity/model controls fail without publishing an asset. This does not verify PDF/PNG protection or arbitrary drawings."
     },
     {
       "task_id": "44064",
@@ -2648,6 +2668,26 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
+      "task_id": "44066",
+      "title": "Integrate blind watermark detection into an automated pipeline that validates CAD files prior to publishing.",
+      "category": "Apply Blind Watermarks",
+      "path": "apply-blind-watermarks/integrate-blind-watermark-detection-into-an-automated-pipeline-that-validates-cad-files-prior-to-publishing.cs",
+      "sha256": "380e6037c57b18313377d30bd7e9704c599b86841eff112e360731e4ba2d246c",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled native DWG/DXF inputs, known-payload validation and wrong-payload rejection. Embedding cases preserve entity count/layout names and original input hashes. Separate absence/capacity/model controls fail without publishing an asset. This does not verify PDF/PNG protection or arbitrary drawings."
+    },
+    {
+      "task_id": "44067",
+      "title": "Integrate blind watermark detection into automated quality checks that run after CAD file conversion.",
+      "category": "Apply Blind Watermarks",
+      "path": "apply-blind-watermarks/integrate-blind-watermark-detection-into-automated-quality-checks-that-run-after-cad-file-conversion.cs",
+      "sha256": "b8753cf9a82292c86d3e8c952900256130b9333259d0019db5924d25fbf44c05",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled native DWG/DXF inputs, known-payload validation and wrong-payload rejection. Embedding cases preserve entity count/layout names and original input hashes. Separate absence/capacity/model controls fail without publishing an asset. This does not verify PDF/PNG protection or arbitrary drawings."
+    },
+    {
       "task_id": "44041",
       "title": "Load a CAD drawing, apply an image blind watermark, then export to PNG for web use.",
       "category": "Apply Blind Watermarks",
@@ -2656,6 +2696,36 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "44069",
+      "title": "Support blind watermarking for multiple CAD formats by applying consistent settings across different file types.",
+      "category": "Apply Blind Watermarks",
+      "path": "apply-blind-watermarks/support-blind-watermarking-for-multiple-cad-formats-by-applying-consistent-settings-across-different-file-types.cs",
+      "sha256": "8026e9aeb6dcc6a5cbf377dc3f1159ee443b1a5ace0e33d99ac832fc79d92041",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled native DWG/DXF inputs, known-payload validation and wrong-payload rejection. Embedding cases preserve entity count/layout names and original input hashes. Separate absence/capacity/model controls fail without publishing an asset. This does not verify PDF/PNG protection or arbitrary drawings."
+    },
+    {
+      "task_id": "44068",
+      "title": "Support blind watermarking for multiple CAD formats by applying the same watermark to each loaded drawing.",
+      "category": "Apply Blind Watermarks",
+      "path": "apply-blind-watermarks/support-blind-watermarking-for-multiple-cad-formats-by-applying-the-same-watermark-to-each-loaded-drawing.cs",
+      "sha256": "69c65fb33a354049a0904c94071f9810cff9023f47af3e708ffbf061e543d09d",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled native DWG/DXF inputs, known-payload validation and wrong-payload rejection. Embedding cases preserve entity count/layout names and original input hashes. Separate absence/capacity/model controls fail without publishing an asset. This does not verify PDF/PNG protection or arbitrary drawings."
+    },
+    {
+      "task_id": "44062",
+      "title": "Verify that only supported CAD formats receive blind watermarks by checking format compatibility before applying.",
+      "category": "Apply Blind Watermarks",
+      "path": "apply-blind-watermarks/verify-that-only-supported-cad-formats-receive-blind-watermarks-by-checking-format-compatibility-before-applying.cs",
+      "sha256": "c0dd5b4b41bc4d29368a32d8760a7440fe3b4f60d5d5724713039298600611f2",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled native DWG/DXF inputs, known-payload validation and wrong-payload rejection. Embedding cases preserve entity count/layout names and original input hashes. Separate absence/capacity/model controls fail without publishing an asset. This does not verify PDF/PNG protection or arbitrary drawings."
     },
     {
       "task_id": "45139",
@@ -12098,6 +12168,16 @@
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
     },
     {
+      "task_id": "44122",
+      "title": "Access DGN data within a DWG and compare it against a reference DGN file for differences.",
+      "category": "Work with CAD and BIM Drawing Formats",
+      "path": "work-with-cad-and-bim-drawing-formats/access-dgn-data-within-a-dwg-and-compare-it-against-a-reference-dgn-file-for-differences.cs",
+      "sha256": "223e587d97d3ebf86512d8cd458af71b485cf9366ce7bac8112fdb9aaaa51140",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run: public DWG DGN-underlay fixture plus official DGN files; matching/different comparisons, Windows-style relative path normalization, missing/wrong model and broken/unused link controls, input hash preservation. Counts describe SDK-visible entities (evaluation-limited); full-file SHA-256 reports byte differences, not geometry equivalence. SDK underlay-loading errors fail explicitly. No embedded DGN extraction or rendering is claimed."
+    },
+    {
       "task_id": "44396",
       "title": "Adjust CAD properties before exporting CF2 file to PDF in .NET.",
       "category": "Work with CAD and BIM Drawing Formats",
@@ -17696,6 +17776,16 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "44796",
+      "title": "Apply a blind watermark to the entire drawing to protect intellectual property.",
+      "category": "Work with CAD Files",
+      "path": "work-with-cad-files/apply-a-blind-watermark-to-the-entire-drawing-to-protect-intellectual-property.cs",
+      "sha256": "a131572fba4ca881c21ebd19d32e0b2b4504ef82825689134b4fe28779202284",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled native DWG/DXF inputs, known-payload validation and wrong-payload rejection. Embedding cases preserve entity count/layout names and original input hashes. Separate absence/capacity/model controls fail without publishing an asset. This does not verify PDF/PNG protection or arbitrary drawings."
     },
     {
       "task_id": "44799",

@@ -2,11 +2,25 @@
 
 ## Publication counts
 
-This branch publishes **1,895 examples across 45 categories** from the 1,959-task catalog; **64 tasks are withheld**. Relative to the merged October 29 publication on main, this change adds one verified example: task **45757**. No previously published example is removed.
+This branch proposes **1,904 examples across 45 categories** from the 1,959-task catalog; **55 tasks are withheld**. Relative to merged main's 1,895 examples, it adds eight native watermark workflows: **44059, 44062, 44065, 44066, 44067, 44068, 44069 and 44796**. It also recovers DGN comparison task **44122**. No previously published source is removed.
 
-The earlier October 29 release reconciled its count as 1,864 + 60 added task IDs - 30 withheld IDs = 1,894. The October 30 recovery brings that total to **1,895**. These publication inventories differ from historical catalog-run statistics.
+The earlier checkpoints were 1,864 + 60 added IDs - 30 withheld IDs = 1,894, followed by the 45757 recovery to 1,895. This branch adds eight native watermark examples and one DGN comparison: **1,895 + 8 + 1 = 1,904**. Publication counts differ from historical catalog-run statistics.
 
-The original completed run processed 1,959 tasks with 1,920 successes and 39 failures. The subsequent repair batches recovered 34 on October 29 and one on October 30: **35 recoveries, four unresolved**. The original run history is unchanged.
+The original completed run processed 1,959 tasks with 1,920 successes and 39 failures. Subsequent repair batches recovered 35 of those failures; four PDF/PNG watermark operations remain unresolved. The nine additions here come from the wider withheld inventory and do not change that 35/39 figure.
+
+## Native watermark workflows — November 4
+
+The eight exact sources compile and run with controlled DWG/DXF drawings. They verify the owner's known expected text payload and reject an incorrect one. Embedding saves a pending DXF with Convert mode, checks embedding after Save, reloads and validates the actual saved file, preserves drawing entity counts/layout names and source input hashes, then moves the verified file to its final name. Watermark encoding can change geometry; bit-identical output geometry is not claimed.
+
+Presence-check tasks require the known expected payload; there is no arbitrary-watermark detector. Multi-format coverage is bounded to native DWG/DXF inputs and verified DXF output. The asset-publication sample produces a verified local artifact directory, not an external Git upload. Five failure controls reject absent payloads, wrong native models and low-capacity drawings without publishing output or a readiness manifest. All eight positive cases and all five controls pass.
+
+## DGN underlay comparison (44122) — November 4
+
+The sample follows each `CadDgnUnderlay.AcDbUnderlayDefinitionObjectId` to its `CadDgnDefinition` in `Objects`, normalizes Windows path separators and resolves relative paths from the DWG directory. It loads referenced and reference files as `DgnImage`, compares SDK-visible entity-type counts and versions, and reports full-file SHA-256 byte equality. Equal counts do not establish geometric equivalence; evaluation mode can truncate exposed entities. This is external-underlay comparison, not extraction of embedded DGN geometry. It does not modify or save inputs.
+
+The exact source passed 11 checks: two drawing-input comparisons (matching and different DGN files, including a relative path from another working directory), seven missing/model/link rejection cases, one no-input smoke check, and one explicit SDK loading-error control. Fixtures include the official public `BlockRefDgn.dwg` and camera/seed DGN files. The underlay's referenced filename is populated with the official DGN fixture for the test; original fixture hashes are retained. All input hashes remain unchanged.
+
+A separate SDK-generated DWG underlay fixture loads when its external DGN is absent but raises `ImageLoadException`/`NullReferenceException` in native bounds calculation when the DGN is present. Changing model name, initializing flags/clipping/extrusion, or loading from a stream did not resolve that case. The sample returns a failure for it; it does not enable `IgnoreErrors`, hide references, or claim this SDK loading limitation is repaired. Successful comparison is bounded to loadable DWGs and SDK-exposed entity data. The positive drawing-input tests ran on macOS; corpus Linux checks separately exercise missing-input handling.
 
 ## Existing DWG insertion repair (45757)
 
@@ -26,11 +40,11 @@ The bounded external importer supports LINE, CIRCLE and TEXT, with checks for la
 
 A 24-case local matrix checked DWG/DXF/OBJ inputs, PDF/PNG/DXF/3D-PDF outputs, and Render/Convert modes. Changing modes or enabling 3D PDF did not resolve the requested PDF/PNG protection. The rendered PDFs were not loadable by `Image.Load` in these tests. A DXF Convert control embeds and validates the expected payload successfully, so this is not a blanket failure of blind watermarking.
 
-These four cases remain excluded. A visible overlay, embedded metadata, a DXF substitute, or a completed render is not reported as successful blind-watermark protection. They are a subset of the 64 withheld catalog tasks.
+These four cases remain excluded. A visible overlay, embedded metadata, a DXF substitute, or a completed render is not reported as successful blind-watermark protection. They are a subset of the 55 withheld catalog tasks in this candidate.
 
 ## Corpus validation
 
-The merged 1,894-example corpus passed [Linux run 40895028436](https://github.com/aspose-cad/agentic-net-examples/actions/runs/40895028436). The current 1,895-example branch requires its own CI run. The new source has separate drawing-input compile/run and preservation/negative-control evidence.
+The merged 1,895-example baseline passed [main run 41079861290](https://github.com/aspose-cad/agentic-net-examples/actions/runs/41079861290). The expanded 1,904-example candidate has separate full-corpus checks on its pull request; inspect the checks for the current source commit rather than reusing the baseline result. The nine added sources have separate exact-source drawing-input compile/run evidence and failure controls. The original 45757 drawing-preservation evidence is retained.
 
 Most corpus executions check missing-input handling; their success does not establish drawing-specific functional correctness for the entire repository. Earlier raster/hatch/text persistence checks use editable DXF output. PDF/A export configuration is not independent conformance certification, and preview generation is not a visual quality review.
 

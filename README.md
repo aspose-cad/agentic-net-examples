@@ -10,10 +10,6 @@ Agent-generated C# examples for Aspose.CAD for .NET, compiled, executed, and val
 ## Overview
 This repository provides working code examples demonstrating Aspose.CAD for .NET capabilities. All examples are automatically generated, compiled, and validated using the Aspose.CAD Examples Generator.
 
-## Repair and validation status
-
-This branch contains **1,895 examples across 45 categories**, targeting .NET 8 and Aspose.CAD 26.9.0. The October 30 fix recovers DXF insertion into an existing DWG and verifies preservation after reload. Together with the previous batch, **35 of the original 39 failures are recovered; four watermark export cases remain unresolved and excluded**. See [VALIDATION.md](./VALIDATION.md) for evidence, counts, and limits.
-
 ## Repository Structure
 Examples are organized by feature category:
 - `access-entities-inside-block-objects/` - 34 example(s)
@@ -24,7 +20,7 @@ Examples are organized by feature category:
 - `add-polylines/` - 34 example(s)
 - `add-text-and-mtext-entities-beside-existing-text/` - 35 example(s)
 - `adjust-cad-drawing-properties/` - 34 example(s)
-- `apply-blind-watermarks/` - 9 example(s)
+- `apply-blind-watermarks/` - 16 example(s)
 - `calculate-circle-area-and-circumference/` - 30 example(s)
 - `change-emergency-fonts-and-style-fonts/` - 28 example(s)
 - `change-polyline-width/` - 30 example(s)
@@ -55,9 +51,9 @@ Examples are organized by feature category:
 - `search-attributes-inside-insert-entities/` - 29 example(s)
 - `validate-and-replace-external-image-references/` - 40 example(s)
 - `work-with-3d-cad-files/` - 32 example(s)
-- `work-with-cad-and-bim-drawing-formats/` - 526 example(s)
+- `work-with-cad-and-bim-drawing-formats/` - 527 example(s)
 - `work-with-cad-entities/` - 35 example(s)
-- `work-with-cad-files/` - 34 example(s)
+- `work-with-cad-files/` - 35 example(s)
 - `work-with-cad-fonts/` - 29 example(s)
 - `work-with-cad-layouts/` - 30 example(s)
 - `work-with-cad-text/` - 35 example(s)
@@ -204,4 +200,4 @@ Other Aspose products with agentic, build-validated example repositories:
 All examples use [Aspose.CAD for .NET](https://products.aspose.com/cad/net/) and require a valid license for production use. See [licensing options](https://purchase.aspose.com/buy).
 
 ---
-*Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-10-30*
+*Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-11-04*

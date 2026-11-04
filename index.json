@@ -4,9 +4,9 @@
   "framework": "net8.0",
   "package": "Aspose.CAD",
   "package_version": "26.9.0",
-  "total_examples": 1895,
+  "total_examples": 1904,
   "total_categories": 45,
-  "last_updated": "2026-10-30",
+  "last_updated": "2026-11-04",
   "categories": [
     {
       "name": "access-entities-inside-block-objects",
@@ -12075,7 +12075,7 @@
     },
     {
       "name": "apply-blind-watermarks",
-      "file_count": 9,
+      "file_count": 16,
       "files": [
         "add-blind-watermark-using-an-image-to-a-cad-drawing-and-verify-its-presence-programmatically.cs",
         "add-blind-watermark-using-text-to-a-cad-drawing-and-verify-its-presence-programmatically.cs",
@@ -12083,9 +12083,16 @@
         "convert-dwg-files-to-pdf-while-embedding-a-text-blind-watermark-during-the-conversion-process.cs",
         "detect-an-existing-blind-watermark-in-a-cad-file-before-performing-any-further-processing.cs",
         "detect-existing-blind-watermark-in-a-cad-file-before-performing-format-conversion-to-ensure-compliance.cs",
+        "detect-existing-blind-watermark-in-cad-files-as-part-of-a-validation-step-before-publishing.cs",
         "generate-a-sample-cad-file-that-visually-demonstrates-the-effect-of-a-text-blind-watermark.cs",
+        "integrate-blind-watermark-addition-into-an-automated-workflow-that-builds-and-publishes-cad-assets.cs",
         "integrate-blind-watermark-addition-into-an-automated-workflow-that-processes-multiple-cad-files-sequentially.cs",
-        "load-a-cad-drawing-apply-an-image-blind-watermark-then-export-to-png-for-web-use.cs"
+        "integrate-blind-watermark-detection-into-an-automated-pipeline-that-validates-cad-files-prior-to-publishing.cs",
+        "integrate-blind-watermark-detection-into-automated-quality-checks-that-run-after-cad-file-conversion.cs",
+        "load-a-cad-drawing-apply-an-image-blind-watermark-then-export-to-png-for-web-use.cs",
+        "support-blind-watermarking-for-multiple-cad-formats-by-applying-consistent-settings-across-different-file-types.cs",
+        "support-blind-watermarking-for-multiple-cad-formats-by-applying-the-same-watermark-to-each-loaded-drawing.cs",
+        "verify-that-only-supported-cad-formats-receive-blind-watermarks-by-checking-format-compatibility-before-applying.cs"
       ],
       "examples": [
         {
@@ -12357,6 +12364,49 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Detect Existing Blind Watermark in CAD Files as Part of A Validation Step Before Publishing",
+          "category": "apply-blind-watermarks",
+          "path": "apply-blind-watermarks/detect-existing-blind-watermark-in-cad-files-as-part-of-a-validation-step-before-publishing.cs",
+          "file": "detect-existing-blind-watermark-in-cad-files-as-part-of-a-validation-step-before-publishing.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "apply",
+            "aspose-cad",
+            "blind",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "standalone-example",
+            "watermarkguard",
+            "watermarks"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Detect Existing Blind Watermark in CAD Files as Part of A Validation Step Before Publishing in C#",
+            "Detect Existing Blind Watermark in CAD Files as Part of A Validation Step Before Publishing using Aspose.CAD for .NET",
+            "Detect Existing Blind Watermark in CAD Files as Part of A Validation Step Before Publishing Aspose.CAD .NET example",
+            "AI generated .net code to Detect Existing Blind Watermark in CAD Files as Part of A Validation Step Before Publishing",
+            "Aspose.CAD for .NET apply-blind-watermarks example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Security.Cryptography",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.WatermarkGuard"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Generate A Sample CAD File That Visually Demonstrates The Effect of A Text Blind Watermark",
           "category": "apply-blind-watermarks",
           "path": "apply-blind-watermarks/generate-a-sample-cad-file-that-visually-demonstrates-the-effect-of-a-text-blind-watermark.cs",
@@ -12398,6 +12448,49 @@
           "package_version": "26.9.0"
         },
         {
+          "title": "Integrate Blind Watermark Addition into An Automated Workflow That Builds and Publishes CAD Assets",
+          "category": "apply-blind-watermarks",
+          "path": "apply-blind-watermarks/integrate-blind-watermark-addition-into-an-automated-workflow-that-builds-and-publishes-cad-assets.cs",
+          "file": "integrate-blind-watermark-addition-into-an-automated-workflow-that-builds-and-publishes-cad-assets.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "apply",
+            "aspose-cad",
+            "blind",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "standalone-example",
+            "watermarkguard",
+            "watermarks"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Integrate Blind Watermark Addition into An Automated Workflow That Builds and Publishes CAD Assets in C#",
+            "Integrate Blind Watermark Addition into An Automated Workflow That Builds and Publishes CAD Assets using Aspose.CAD for .NET",
+            "Integrate Blind Watermark Addition into An Automated Workflow That Builds and Publishes CAD Assets Aspose.CAD .NET example",
+            "AI generated .net code to Integrate Blind Watermark Addition into An Automated Workflow That Builds and Publishes CAD Assets",
+            "Aspose.CAD for .NET apply-blind-watermarks example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Security.Cryptography",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.WatermarkGuard"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
           "title": "Integrate Blind Watermark Addition into An Automated Workflow That Processes Multiple CAD Files Sequentially",
           "category": "apply-blind-watermarks",
           "path": "apply-blind-watermarks/integrate-blind-watermark-addition-into-an-automated-workflow-that-processes-multiple-cad-files-sequentially.cs",
@@ -12427,6 +12520,92 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.WatermarkGuard"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Integrate Blind Watermark Detection into An Automated Pipeline That Validates CAD Files Prior to Publishing",
+          "category": "apply-blind-watermarks",
+          "path": "apply-blind-watermarks/integrate-blind-watermark-detection-into-an-automated-pipeline-that-validates-cad-files-prior-to-publishing.cs",
+          "file": "integrate-blind-watermark-detection-into-an-automated-pipeline-that-validates-cad-files-prior-to-publishing.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "apply",
+            "aspose-cad",
+            "blind",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "standalone-example",
+            "watermarkguard",
+            "watermarks"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Integrate Blind Watermark Detection into An Automated Pipeline That Validates CAD Files Prior to Publishing in C#",
+            "Integrate Blind Watermark Detection into An Automated Pipeline That Validates CAD Files Prior to Publishing using Aspose.CAD for .NET",
+            "Integrate Blind Watermark Detection into An Automated Pipeline That Validates CAD Files Prior to Publishing Aspose.CAD .NET example",
+            "AI generated .net code to Integrate Blind Watermark Detection into An Automated Pipeline That Validates CAD Files Prior to Publishing",
+            "Aspose.CAD for .NET apply-blind-watermarks example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Security.Cryptography",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.WatermarkGuard"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Integrate Blind Watermark Detection into Automated Quality Checks That Run After CAD File Conversion",
+          "category": "apply-blind-watermarks",
+          "path": "apply-blind-watermarks/integrate-blind-watermark-detection-into-automated-quality-checks-that-run-after-cad-file-conversion.cs",
+          "file": "integrate-blind-watermark-detection-into-automated-quality-checks-that-run-after-cad-file-conversion.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "apply",
+            "aspose-cad",
+            "blind",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "standalone-example",
+            "watermarkguard",
+            "watermarks"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Integrate Blind Watermark Detection into Automated Quality Checks That Run After CAD File Conversion in C#",
+            "Integrate Blind Watermark Detection into Automated Quality Checks That Run After CAD File Conversion using Aspose.CAD for .NET",
+            "Integrate Blind Watermark Detection into Automated Quality Checks That Run After CAD File Conversion Aspose.CAD .NET example",
+            "AI generated .net code to Integrate Blind Watermark Detection into Automated Quality Checks That Run After CAD File Conversion",
+            "Aspose.CAD for .NET apply-blind-watermarks example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Security.Cryptography",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
@@ -12480,36 +12659,169 @@
           "framework": "net8.0",
           "package": "Aspose.CAD",
           "package_version": "26.9.0"
+        },
+        {
+          "title": "Support Blind Watermarking for Multiple CAD Formats By Applying Consistent Settings Across Different File Types",
+          "category": "apply-blind-watermarks",
+          "path": "apply-blind-watermarks/support-blind-watermarking-for-multiple-cad-formats-by-applying-consistent-settings-across-different-file-types.cs",
+          "file": "support-blind-watermarking-for-multiple-cad-formats-by-applying-consistent-settings-across-different-file-types.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "apply",
+            "aspose-cad",
+            "blind",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "standalone-example",
+            "watermarkguard",
+            "watermarks"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Support Blind Watermarking for Multiple CAD Formats By Applying Consistent Settings Across Different File Types in C#",
+            "Support Blind Watermarking for Multiple CAD Formats By Applying Consistent Settings Across Different File Types using Aspose.CAD for .NET",
+            "Support Blind Watermarking for Multiple CAD Formats By Applying Consistent Settings Across Different File Types Aspose.CAD .NET example",
+            "AI generated .net code to Support Blind Watermarking for Multiple CAD Formats By Applying Consistent Settings Across Different File Types",
+            "Aspose.CAD for .NET apply-blind-watermarks example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Security.Cryptography",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.WatermarkGuard"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Support Blind Watermarking for Multiple CAD Formats By Applying The Same Watermark to Each Loaded Drawing",
+          "category": "apply-blind-watermarks",
+          "path": "apply-blind-watermarks/support-blind-watermarking-for-multiple-cad-formats-by-applying-the-same-watermark-to-each-loaded-drawing.cs",
+          "file": "support-blind-watermarking-for-multiple-cad-formats-by-applying-the-same-watermark-to-each-loaded-drawing.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "apply",
+            "aspose-cad",
+            "blind",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "standalone-example",
+            "watermarkguard",
+            "watermarks"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Support Blind Watermarking for Multiple CAD Formats By Applying The Same Watermark to Each Loaded Drawing in C#",
+            "Support Blind Watermarking for Multiple CAD Formats By Applying The Same Watermark to Each Loaded Drawing using Aspose.CAD for .NET",
+            "Support Blind Watermarking for Multiple CAD Formats By Applying The Same Watermark to Each Loaded Drawing Aspose.CAD .NET example",
+            "AI generated .net code to Support Blind Watermarking for Multiple CAD Formats By Applying The Same Watermark to Each Loaded Drawing",
+            "Aspose.CAD for .NET apply-blind-watermarks example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Security.Cryptography",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.WatermarkGuard"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Verify That Only Supported CAD Formats Receive Blind Watermarks By Checking Format Compatibility Before Applying",
+          "category": "apply-blind-watermarks",
+          "path": "apply-blind-watermarks/verify-that-only-supported-cad-formats-receive-blind-watermarks-by-checking-format-compatibility-before-applying.cs",
+          "file": "verify-that-only-supported-cad-formats-receive-blind-watermarks-by-checking-format-compatibility-before-applying.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "apply",
+            "aspose-cad",
+            "blind",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "imageoptions",
+            "standalone-example",
+            "watermarkguard",
+            "watermarks"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Verify That Only Supported CAD Formats Receive Blind Watermarks By Checking Format Compatibility Before Applying in C#",
+            "Verify That Only Supported CAD Formats Receive Blind Watermarks By Checking Format Compatibility Before Applying using Aspose.CAD for .NET",
+            "Verify That Only Supported CAD Formats Receive Blind Watermarks By Checking Format Compatibility Before Applying Aspose.CAD .NET example",
+            "AI generated .net code to Verify That Only Supported CAD Formats Receive Blind Watermarks By Checking Format Compatibility Before Applying",
+            "Aspose.CAD for .NET apply-blind-watermarks example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Security.Cryptography",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.WatermarkGuard"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
         }
       ],
       "required_namespaces": [
         {
           "name": "System",
-          "count": 9
+          "count": 16
         },
         {
           "name": "System.IO",
-          "count": 9
+          "count": 16
         },
         {
           "name": "Aspose.CAD",
-          "count": 9
+          "count": 16
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 9
+          "count": 16
         },
         {
           "name": "Aspose.CAD.WatermarkGuard",
-          "count": 9
+          "count": 16
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 8
+          "count": 15
         },
         {
           "name": "System.Linq",
-          "count": 2
+          "count": 9
+        },
+        {
+          "name": "System.Security.Cryptography",
+          "count": 7
         },
         {
           "name": "System.Collections.Generic",
@@ -56356,11 +56668,12 @@
     },
     {
       "name": "work-with-cad-and-bim-drawing-formats",
-      "file_count": 526,
+      "file_count": 527,
       "files": [
         "access-dgn-data-embedded-within-a-dwg-file-and-extract-it-to-a-separate-dgn-file.cs",
         "access-dgn-data-inside-a-dwg-file-and-modify-its-metadata-before-re-exporting.cs",
         "access-dgn-data-inside-a-dwg-file-and-write-it-to-a-memory-stream-for-further-processing.cs",
+        "access-dgn-data-within-a-dwg-and-compare-it-against-a-reference-dgn-file-for-differences.cs",
         "adjust-cad-properties-before-exporting-cf2-file-to-pdf-in-net.cs",
         "adjust-cad-properties-before-exporting-iges-file-to-pdf-in-net.cs",
         "adjust-cad-properties-before-exporting-obj-file-to-pdf-in-net.cs",
@@ -57017,6 +57330,61 @@
             "System.IO",
             "Aspose.CAD",
             "Aspose.CAD.FileFormats.Cad"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Access DGN Data Within A DWG and Compare It Against A Reference DGN File for Differences",
+          "category": "work-with-cad-and-bim-drawing-formats",
+          "path": "work-with-cad-and-bim-drawing-formats/access-dgn-data-within-a-dwg-and-compare-it-against-a-reference-dgn-file-for-differences.cs",
+          "file": "access-dgn-data-within-a-dwg-and-compare-it-against-a-reference-dgn-file-for-differences.cs",
+          "api_area": "Cad",
+          "tags": [
+            "and",
+            "aspose-cad",
+            "bim",
+            "cad",
+            "cadobjects",
+            "csharp",
+            "dgn",
+            "dotnet8",
+            "drawing",
+            "dwg",
+            "fileformats",
+            "formats",
+            "standalone-example",
+            "underlaydefinition",
+            "with",
+            "work"
+          ],
+          "formats": [
+            "dgn",
+            "dwg"
+          ],
+          "search_phrases": [
+            "Access DGN Data Within A DWG and Compare It Against A Reference DGN File for Differences in C#",
+            "Access DGN Data Within A DWG and Compare It Against A Reference DGN File for Differences using Aspose.CAD for .NET",
+            "Access DGN Data Within A DWG and Compare It Against A Reference DGN File for Differences Aspose.CAD .NET example",
+            "AI generated .net code to Access DGN Data Within A DWG and Compare It Against A Reference DGN File for Differences",
+            "Aspose.CAD for .NET work-with-cad-and-bim-drawing-formats example",
+            "Aspose.CAD DGN C# example",
+            "Aspose.CAD DWG C# example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Security.Cryptography",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Dgn"
           ],
           "standalone": true,
           "validated": true,
@@ -81423,15 +81791,15 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 526
+          "count": 527
         },
         {
           "name": "System.IO",
-          "count": 525
+          "count": 526
         },
         {
           "name": "Aspose.CAD",
-          "count": 525
+          "count": 526
         },
         {
           "name": "Aspose.CAD.ImageOptions",
@@ -81439,19 +81807,19 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 244
+          "count": 245
         },
         {
           "name": "System.Collections.Generic",
-          "count": 49
+          "count": 50
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 44
+          "count": 45
         },
         {
           "name": "System.Linq",
-          "count": 37
+          "count": 38
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
@@ -81487,11 +81855,19 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-          "count": 6
+          "count": 7
+        },
+        {
+          "name": "System.Security.Cryptography",
+          "count": 2
         },
         {
           "name": "System.Threading",
           "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Dgn",
+          "count": 1
         },
         {
           "name": "Aspose.CAD.FileFormats.Ifc",
@@ -81499,10 +81875,6 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.CF2",
-          "count": 1
-        },
-        {
-          "name": "System.Security.Cryptography",
           "count": 1
         },
         {
@@ -83172,10 +83544,11 @@
     },
     {
       "name": "work-with-cad-files",
-      "file_count": 34,
+      "file_count": 35,
       "files": [
         "adjust-cad-properties-such-as-layer-visibility-to-control-element-display-within-the-drawing.cs",
         "adjust-camera-rotation-by-modifying-vectorrasterizationoptions-properties-to-achieve-the-desired-viewing-angle.cs",
+        "apply-a-blind-watermark-to-the-entire-drawing-to-protect-intellectual-property.cs",
         "change-camera-transform-to-translate-view-position-for-better-focus-on-a-specific-drawing-area.cs",
         "change-the-end-point-of-a-polyline-entity-to-adjust-its-shape-within-the-drawing.cs",
         "control-visibility-mode-through-rasterization-options-to-influence-how-entities-are-rendered.cs",
@@ -83283,6 +83656,49 @@
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property",
+          "category": "work-with-cad-files",
+          "path": "work-with-cad-files/apply-a-blind-watermark-to-the-entire-drawing-to-protect-intellectual-property.cs",
+          "file": "apply-a-blind-watermark-to-the-entire-drawing-to-protect-intellectual-property.cs",
+          "api_area": "ImageOptions",
+          "tags": [
+            "aspose-cad",
+            "cad",
+            "csharp",
+            "dotnet8",
+            "fileformats",
+            "files",
+            "imageoptions",
+            "standalone-example",
+            "watermarkguard",
+            "with",
+            "work"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property in C#",
+            "Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property using Aspose.CAD for .NET",
+            "Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property Aspose.CAD .NET example",
+            "AI generated .net code to Apply A Blind Watermark to The Entire Drawing to Protect Intellectual Property",
+            "Aspose.CAD for .NET work-with-cad-files example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Security.Cryptography",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.WatermarkGuard"
           ],
           "standalone": true,
           "validated": true,
@@ -84616,23 +85032,23 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 34
+          "count": 35
         },
         {
           "name": "System.IO",
-          "count": 34
+          "count": 35
         },
         {
           "name": "Aspose.CAD",
-          "count": 34
+          "count": 35
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 26
+          "count": 27
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 23
+          "count": 24
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
@@ -84640,7 +85056,7 @@
         },
         {
           "name": "System.Linq",
-          "count": 5
+          "count": 6
         },
         {
           "name": "System.Collections.Generic",
@@ -84657,6 +85073,14 @@
         {
           "name": "Aspose.CAD.FileFormats",
           "count": 2
+        },
+        {
+          "name": "System.Security.Cryptography",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 1
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
@@ -84679,6 +85103,7 @@
         "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats",
+        "Aspose.CAD.WatermarkGuard",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
       ]
