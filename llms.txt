@@ -2,7 +2,7 @@
 
 > Build-validated, standalone C# examples for Aspose.CAD for .NET and .NET 8.
 
-- Examples: 1904
+- Examples: 1905
 - Categories: 45
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
@@ -29,7 +29,7 @@
 - [calculate-circle-area-and-circumference](./calculate-circle-area-and-circumference/): 30 standalone examples; instructions in [AGENTS.md](./calculate-circle-area-and-circumference/AGENTS.md); guide in [README.md](./calculate-circle-area-and-circumference/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [change-emergency-fonts-and-style-fonts](./change-emergency-fonts-and-style-fonts/): 28 standalone examples; instructions in [AGENTS.md](./change-emergency-fonts-and-style-fonts/AGENTS.md); guide in [README.md](./change-emergency-fonts-and-style-fonts/README.md); common namespaces: Aspose.CAD, System, System.IO
 - [change-polyline-width](./change-polyline-width/): 30 standalone examples; instructions in [AGENTS.md](./change-polyline-width/AGENTS.md); guide in [README.md](./change-polyline-width/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [change-the-observer-point](./change-the-observer-point/): 31 standalone examples; instructions in [AGENTS.md](./change-the-observer-point/AGENTS.md); guide in [README.md](./change-the-observer-point/README.md); common namespaces: System, System.IO, Aspose.CAD
+- [change-the-observer-point](./change-the-observer-point/): 32 standalone examples; instructions in [AGENTS.md](./change-the-observer-point/AGENTS.md); guide in [README.md](./change-the-observer-point/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [configure-pen-options](./configure-pen-options/): 33 standalone examples; instructions in [AGENTS.md](./configure-pen-options/AGENTS.md); guide in [README.md](./configure-pen-options/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [configure-quality-options-for-text-hatches-and-arcs](./configure-quality-options-for-text-hatches-and-arcs/): 29 standalone examples; instructions in [AGENTS.md](./configure-quality-options-for-text-hatches-and-arcs/AGENTS.md); guide in [README.md](./configure-quality-options-for-text-hatches-and-arcs/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [convert-dwg-and-dxf-drawings-to-pdf-and-raster-images](./convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/): 30 standalone examples; instructions in [AGENTS.md](./convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/AGENTS.md); guide in [README.md](./convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/README.md); common namespaces: System, System.IO, Aspose.CAD

@@ -6,17 +6,17 @@ Build-validated Aspose.CAD for .NET examples for `change-the-observer-point`.
 - Product: Aspose.CAD
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Examples: 31
+- Examples: 32
 - Standalone: yes
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (31 example(s))
-- `System.IO` (31 example(s))
-- `Aspose.CAD` (31 example(s))
-- `Aspose.CAD.FileFormats.Cad` (30 example(s))
+- `System` (32 example(s))
+- `System.IO` (32 example(s))
+- `Aspose.CAD` (32 example(s))
+- `Aspose.CAD.FileFormats.Cad` (31 example(s))
 - `Aspose.CAD.ImageOptions` (26 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (9 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (10 example(s))
 - `Aspose.CAD.FileFormats` (8 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadTables` (7 example(s))
 

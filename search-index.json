@@ -8,7 +8,7 @@
   "last_updated": "2026-11-04",
   "purpose": "Search, SEO, GEO/AEO, and AI-agent discovery metadata for validated examples.",
   "document_count": 96,
-  "example_count": 1904,
+  "example_count": 1905,
   "documents": [
     {
       "path": "README.md",
@@ -27884,6 +27884,69 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadTables",
         "System.IO"
+      ],
+      "framework": "net8.0",
+      "package": "Aspose.CAD",
+      "package_version": "26.9.0",
+      "validated": true,
+      "standalone": true
+    },
+    {
+      "path": "change-the-observer-point/load-a-cad-file-with-sat-structure-and-then-retrieve-its-layout-names-for-further-processing.cs",
+      "title": "Load A CAD File with Sat Structure and Then Retrieve Its Layout Names for Further Processing",
+      "category": "change-the-observer-point",
+      "api_area": "Cad",
+      "description": "Standalone C# example for Cad in change-the-observer-point using Aspose.CAD 26.9.0.",
+      "keywords": [
+        "Aspose.CAD",
+        "C#",
+        ".NET 8",
+        "change-the-observer-point",
+        "Cad",
+        "aspose-cad",
+        "cadobjects",
+        "change",
+        "csharp",
+        "dotnet8",
+        "fileformats",
+        "observer",
+        "point",
+        "standalone-example",
+        "the",
+        "System",
+        "System.IO",
+        "System.Linq",
+        "Aspose.CAD.FileFormats.Cad",
+        "Aspose.CAD.FileFormats.Cad.CadObjects"
+      ],
+      "search_phrases": [
+        "Load A CAD File with Sat Structure and Then Retrieve Its Layout Names for Further Processing in C#",
+        "Load A CAD File with Sat Structure and Then Retrieve Its Layout Names for Further Processing using Aspose.CAD for .NET",
+        "Load A CAD File with Sat Structure and Then Retrieve Its Layout Names for Further Processing Aspose.CAD .NET example",
+        "AI generated .net code to Load A CAD File with Sat Structure and Then Retrieve Its Layout Names for Further Processing",
+        "Aspose.CAD for .NET change-the-observer-point example"
+      ],
+      "formats": [],
+      "tags": [
+        "aspose-cad",
+        "cad",
+        "cadobjects",
+        "change",
+        "csharp",
+        "dotnet8",
+        "fileformats",
+        "observer",
+        "point",
+        "standalone-example",
+        "the"
+      ],
+      "namespaces": [
+        "System",
+        "System.IO",
+        "System.Linq",
+        "Aspose.CAD",
+        "Aspose.CAD.FileFormats.Cad",
+        "Aspose.CAD.FileFormats.Cad.CadObjects"
       ],
       "framework": "net8.0",
       "package": "Aspose.CAD",

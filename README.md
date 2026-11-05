@@ -24,7 +24,7 @@ Examples are organized by feature category:
 - `calculate-circle-area-and-circumference/` - 30 example(s)
 - `change-emergency-fonts-and-style-fonts/` - 28 example(s)
 - `change-polyline-width/` - 30 example(s)
-- `change-the-observer-point/` - 31 example(s)
+- `change-the-observer-point/` - 32 example(s)
 - `configure-pen-options/` - 33 example(s)
 - `configure-quality-options-for-text-hatches-and-arcs/` - 29 example(s)
 - `convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/` - 30 example(s)
