@@ -1,90 +1,67 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Collections.Generic;
+using System.Diagnostics;
 using Aspose.CAD;
+using Aspose.CAD.ImageOptions;
 using Aspose.CAD.FileFormats.Cad;
 using Aspose.CAD.FileFormats.Cad.CadObjects;
-using Aspose.CAD.ImageOptions;
+using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;
+using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;
+using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
+using Aspose.CAD.Primitives;
+using Aspose.CAD.FileFormats.Tiff.Enums;
 
-class Program
-{
-    static void Main()
-    {
-        const string sourceFile = "sample.dwg";
-        const string rasterFile = "background.png";
-        const string outputFolder = "Output";
-        const string outputFile = "result.png";
+class Program {
 
-        if (!File.Exists(sourceFile))
-        {
-            Console.Error.WriteLine($"Source DWG file not found: {sourceFile}");
-            return;
-        }
+ static void Require(bool ok,string message) {if(!ok)throw new InvalidOperationException(message);}
+ static bool Input(string path) {if(File.Exists(path))return true;Console.WriteLine("Input file not found: "+path);return false;}
+ static string Handle() {return "F"+Guid.NewGuid().ToString("N").Substring(0,14).ToUpperInvariant();}
+ static CadLayout Model(CadImage cad) {return cad.Layouts.Values.First(l=>l.LayoutName.Equals("Model",StringComparison.OrdinalIgnoreCase));}
+ static CadBlockEntity ModelBlock(CadImage cad) {string owner=Model(cad).BlockTableRecordHandle;return cad.BlockEntities.Values.Cast<CadBlockEntity>().First(b=>b.CadBlockTableObject?.ObjectHandle==owner);}
+ static void Add(CadImage cad,params CadEntityBase[] entities) {
+  string owner=Model(cad).BlockTableRecordHandle;var block=ModelBlock(cad);
+  foreach(var entity in entities) {entity.SoftOwner=owner;if(string.IsNullOrEmpty(entity.ObjectHandle))entity.ObjectHandle=Handle();block.AddEntity(entity);}
+  cad.Entities=cad.Entities.Concat(entities).ToArray();
+ }
+ static void SaveCad(CadImage cad,string path) {cad.Save(path,new DxfOptions {OutputMode=CadOutputMode.Convert});}
 
-        if (!File.Exists(rasterFile))
-        {
-            Console.Error.WriteLine($"Raster image file not found: {rasterFile}");
-            return;
-        }
 
-        try
-        {
-            if (!Directory.Exists(outputFolder))
-                Directory.CreateDirectory(outputFolder);
 
-            using (Image image = Image.Load(sourceFile))
-            {
-                var cadImage = (CadImage)image;
 
-                // Create raster image definition
-                var rasterDef = new CadRasterImageDef
-                {
-                    FileName = rasterFile,
-                    ImageSizeU = 100.0,
-                    ImageSizeV = 100.0
-                };
 
-                // Create raster image entity
-                var insertionPoint = new Cad3DPoint(0.0, 0.0, 0.0);
-                var uVector = new Cad3DPoint(100.0, 0.0, 0.0);
-                var vVector = new Cad3DPoint(0.0, 100.0, 0.0);
-                var rasterImage = new CadRasterImage(rasterDef, insertionPoint, uVector, vVector);
 
-                // Add definition to Objects collection
-                var objectsList = cadImage.Objects.ToList();
-                objectsList.Add(rasterDef);
-                cadImage.Objects = objectsList.ToArray();
 
-                // Add raster image entity to Entities collection
-                var entitiesList = cadImage.Entities.ToList();
-                entitiesList.Add(rasterImage);
-                cadImage.Entities = entitiesList.ToArray();
 
-                // Validation
-                bool containsRasterDef = cadImage.Objects.Any(o => o is CadRasterImageDef);
-                bool containsOtherObject = cadImage.Objects.Any(o => !(o is CadRasterImageDef));
-                bool containsRasterEntity = cadImage.Entities.Any(e => e is CadRasterImage);
 
-                if (containsRasterDef && containsOtherObject && containsRasterEntity)
-                {
-                    Console.WriteLine("Validation succeeded: Objects contain a raster definition and other objects, and Entities contain a raster image.");
-                }
-                else
-                {
-                    Console.Error.WriteLine("Validation failed: Required object types are missing.");
-                }
 
-                // Save as PNG
-                string outputPath = Path.Combine(outputFolder, outputFile);
-                var pngOptions = new PngOptions();
-                cadImage.Save(outputPath, pngOptions);
-                Console.WriteLine($"File saved successfully to: {outputPath}");
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"An error occurred: {ex.Message}");
-        }
-    }
+
+ static CadRasterImage AddRaster(CadImage cad,string path,double x=600) {
+  Require(File.Exists(path),"Raster source is missing: "+path);string owner=Model(cad).BlockTableRecordHandle;
+  CadRasterImageDef definition;using(Image pixels=Image.Load(path))definition=new CadRasterImageDef(Path.GetFullPath(path),pixels.Width,pixels.Height) {ObjectHandle=Handle(),SoftOwner=owner};
+  cad.Objects=cad.Objects.Concat(new CadBaseObject[]{definition}).ToArray();
+  var image=new CadRasterImage(definition,new Cad3DPoint(x,0,0),new Cad3DPoint(1,0,0),new Cad3DPoint(0,1,0)) {ObjectHandle=Handle(),SoftOwner=owner,ImageDefReference=definition.ObjectHandle};Add(cad,image);return image;
+ }
+
+
+
+
+ static int Main(string[] args) {try {
+string input="input.dxf";if(!Input(input))return 0;Directory.CreateDirectory("output");
+
+ if(!Input("background.png"))return 0;
+ using(var cad=(CadImage)Image.Load(input)) {
+  var originalObjects=cad.Objects.ToArray();var original=cad.Entities.Select(e=>e.ObjectHandle).ToHashSet();
+  var raster=AddRaster(cad,"background.png");
+  // CadRasterImage derives from CadEntityBase, not CadBaseObject: it belongs in Entities.
+  CadBaseObject definition=cad.Objects.OfType<CadRasterImageDef>().Single(d=>d.ObjectHandle==raster.ImageDefReference);
+  Require(cad.Objects.Contains(definition)&&cad.Entities.Contains(raster)&&originalObjects.All(cad.Objects.Contains),"Definition/entity collection registration failed.");
+  string handle=raster.ObjectHandle,reference=raster.ImageDefReference;SaveCad(cad,"output/background.dxf");
+  using(var saved=(CadImage)Image.Load("output/background.dxf")) {Require(original.All(saved.Entities.Select(e=>e.ObjectHandle).Contains),"Existing entities were lost.");Require(saved.Entities.OfType<CadRasterImage>().Single(e=>e.ObjectHandle==handle).ImageDefReference==reference&&saved.Objects.OfType<CadRasterImageDef>().Any(d=>d.ObjectHandle==reference),"Raster definition link did not persist.");}
+ }
+
+Console.WriteLine("Verified task 45056");return 0;
+} catch(Exception ex) {Console.Error.WriteLine(ex.Message);return 1;} }
 }

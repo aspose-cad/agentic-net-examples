@@ -43,3 +43,8 @@ Build-validated Aspose.CAD for .NET examples for `delete-entities-inside-a-recta
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+
+## November 6 verified repairs
+
+Tasks 45344, 45345, 45353 have refreshed native drawing-input verification and persisted-output checks. See [repair evidence and limits](../VALIDATION.md#november-6-rerun-repairs).
