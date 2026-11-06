@@ -1,124 +1,75 @@
-using Aspose.CAD.FileFormats.Cad.CadConsts;
 using System;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Aspose.CAD;
+using Aspose.CAD.ImageOptions;
 using Aspose.CAD.FileFormats.Cad;
 using Aspose.CAD.FileFormats.Cad.CadObjects;
 using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;
+using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;
+using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
 using Aspose.CAD.Primitives;
-using Aspose.CAD.ImageOptions;
+using Aspose.CAD.FileFormats.Tiff.Enums;
 
-class ReplaceCadHatch
-{
-    static void Main(string[] args)
-    {
-        // Input and output file paths (replace with actual paths)
-        string inputPath = @"C:\Input\sample.dxf";
-        string outputPath = @"C:\Output\sample_modified.dxf";
+class Program {
 
-        if (!File.Exists(inputPath))
-        {
-            Console.WriteLine($"Input file not found: {inputPath}");
-            return;
-        }
+ static void Require(bool ok,string message) {if(!ok)throw new InvalidOperationException(message);}
+ static bool Input(string path) {if(File.Exists(path))return true;Console.WriteLine("Input file not found: "+path);return false;}
+ static string Handle() {return "F"+Guid.NewGuid().ToString("N").Substring(0,14).ToUpperInvariant();}
+ static CadLayout Model(CadImage cad) {return cad.Layouts.Values.First(l=>l.LayoutName.Equals("Model",StringComparison.OrdinalIgnoreCase));}
+ static CadBlockEntity ModelBlock(CadImage cad) {string owner=Model(cad).BlockTableRecordHandle;return cad.BlockEntities.Values.Cast<CadBlockEntity>().First(b=>b.CadBlockTableObject?.ObjectHandle==owner);}
+ static void Add(CadImage cad,params CadEntityBase[] entities) {
+  string owner=Model(cad).BlockTableRecordHandle;var block=ModelBlock(cad);
+  foreach(var entity in entities) {entity.SoftOwner=owner;if(string.IsNullOrEmpty(entity.ObjectHandle))entity.ObjectHandle=Handle();block.AddEntity(entity);}
+  cad.Entities=cad.Entities.Concat(entities).ToArray();
+ }
+ static void SaveCad(CadImage cad,string path) {cad.Save(path,new DxfOptions {OutputMode=CadOutputMode.Convert});}
 
-        string outputDir = Path.GetDirectoryName(outputPath);
-        if (!string.IsNullOrEmpty(outputDir) && !Directory.Exists(outputDir))
-        {
-            Directory.CreateDirectory(outputDir);
-        }
 
-        try
-        {
-            // Load the CAD drawing
-            CadImage cadImage = (CadImage)Image.Load(inputPath);
+ static CadHatch Hatch(string owner,double x,double spacing,bool solid=false) {
+  var points=new[]{new Point2D(x,0),new Point2D(x+100,0),new Point2D(x+100,50),new Point2D(x,50)};
+  var edges=new CadEdgeBoundaryPath {NumberOfEdges=4,EdgeTypes=new List<short>{1,1,1,1},Objects=new List<ICadBoundaryPathEntity>()};
+  for(int i=0;i<4;i++)edges.Objects.Add(new CadBoundaryPathLine {FirstPoint=points[i],SecondPoint=points[(i+1)%4]});
+  var pattern=new CadHatchPatternData {LineAngle=45,LineBasePoint=new Cad2DPoint(0,0),LineOffset=new Cad2DPoint(0,spacing),DashLengthCount=0,DashLengths=new List<double>()};
+  return new CadHatch {ObjectHandle=Handle(),SoftOwner=owner,PatternName=solid?"SOLID":"USER",SolidFillFlag=(short)(solid?1:0),HatchPatternType=0,HatchScaleOrSpacing=1,NumberOfBoundaries=1,NumberOfPatternDefinitions=(short)(solid?0:1),PatternDefinitions=solid?new List<CadHatchPatternData>():new List<CadHatchPatternData>{pattern},BoundaryPaths=new List<CadHatchBoundaryPathContainer>{new CadHatchBoundaryPathContainer {PathType=0,BoundaryPath=new List<ICadBoundaryPath>{edges},SourceBoundaryObjects=new List<string>()}}};
+ }
 
-            // Model space block name is typically "*Model_Space"
-            const string modelSpaceName = "*Model_Space";
-            if (!cadImage.BlockEntities.ContainsKey(modelSpaceName))
-            {
-                Console.WriteLine("Model space block not found.");
-                return;
-            }
 
-            CadBlockEntity modelSpace = cadImage.BlockEntities[modelSpaceName];
+ static void Remove(CadImage cad,HashSet<CadEntityBase> selected) {
+  foreach(var block in cad.BlockEntities.Values.Cast<CadBlockEntity>())foreach(var entity in block.Entities.Where(selected.Contains).ToArray())block.Entities.Remove(entity);
+  cad.Entities=cad.Entities.Where(e=>!selected.Contains(e)).ToArray();
+ }
 
-            // Find the first hatch entity
-            var oldHatch = modelSpace.Entities.OfType<CadHatch>().FirstOrDefault();
 
-            if (oldHatch == null)
-            {
-                Console.WriteLine("No hatch entity found to replace.");
-                return;
-            }
 
-            // Remove the old hatch
-            bool removed = modelSpace.Entities.Remove(oldHatch);
-            if (!removed)
-            {
-                Console.WriteLine("Failed to remove the existing hatch entity.");
-                return;
-            }
 
-            // Create a new hatch with a different pattern name and parameters
-            var newHatch = new CadHatch
-            {
-                PatternName = "ANSI31",
-                HatchAngle = 45.0,
-                HatchScaleOrSpacing = 0.5,
-                AssociativeFlag = 1
-            };
 
-            // Define custom pattern data (example: simple line pattern)
-            var patternData = new CadHatchPatternData
-            {
-                LineAngle = 45.0,
-                DashLengthCount = 0,
-                DashLengths = new List<double>()
-            };
-            newHatch.PatternDefinitions = new List<CadHatchPatternData> { patternData };
 
-            // Define a rectangular polyline boundary for the hatch
-            var polyBoundary = new CadPolylineBoundaryPath
-            {
-                IsClosed = true,
-                MaxArrayLen = 0,
-                Bugles = new List<double>(),
-                HasBugle = false
-            };
-            polyBoundary.Vertices.Add(new Point2D(0, 0));
-            polyBoundary.Vertices.Add(new Point2D(100, 0));
-            polyBoundary.Vertices.Add(new Point2D(100, 50));
-            polyBoundary.Vertices.Add(new Point2D(0, 50));
-            polyBoundary.MaxArrayLen = polyBoundary.Vertices.Count;
 
-            var boundaryContainer = new CadHatchBoundaryPathContainer
-            {
-                PathType = 2, // Polyline boundary
-                BoundaryPath = new List<ICadBoundaryPath> { polyBoundary },
-                SourceBoundaryObjects = new List<string>()
-            };
 
-            newHatch.BoundaryPaths = new List<CadHatchBoundaryPathContainer> { boundaryContainer };
+ static void VerifyHatches(CadImage saved,Dictionary<string,(double Angle,short Color,double Spacing)> expected) {
+  foreach(var kv in expected){var h=saved.Entities.OfType<CadHatch>().Single(e=>e.ObjectHandle==kv.Key);Require(h.BoundaryPaths.Count>0&&h.NumberOfBoundaries==h.BoundaryPaths.Count,"Hatch boundaries did not persist.");Require(h.SoftOwner==Model(saved).BlockTableRecordHandle,"Hatch owner did not persist.");Require(Math.Abs(h.HatchAngle-kv.Value.Angle)<1e-8&&h.ColorId==kv.Value.Color,"Hatch angle/color did not persist.");Require(h.PatternDefinitions!=null&&h.PatternDefinitions.Count==1&&Math.Abs(h.PatternDefinitions[0].LineOffset.Y-kv.Value.Spacing)<1e-8,"Hatch line family did not persist.");}
+ }
 
-            // Add the new hatch to the model space
-            modelSpace.AddEntity(newHatch);
+ static int Main(string[] args) {try {
+string input="input.dxf";if(!Input(input))return 0;Directory.CreateDirectory("output");
 
-            // Save the modified drawing
-            var dxfOptions = new DxfOptions
-            {
-                OutputMode = CadOutputMode.Convert,
-                DxfFileFormat = CadFileFormat.Ascii
-            };
-            cadImage.Save(outputPath, dxfOptions);
+ var expected=new Dictionary<string,(double Angle,short Color,double Spacing)>();string[] original;string[] removed=Array.Empty<string>();
+ using(var cad=(CadImage)Image.Load(input)) {
+  original=cad.Entities.Select(e=>e.ObjectHandle).ToArray();
 
-            Console.WriteLine($"Hatch replaced and file saved to: {outputPath}");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"An error occurred: {ex.Message}");
-        }
-    }
+  var old=cad.Entities.OfType<CadHatch>().FirstOrDefault(h=>h.SoftOwner==Model(cad).BlockTableRecordHandle);Require(old!=null,"No existing hatch to replace.");removed=new[]{old.ObjectHandle};
+  var replacement=Hatch(old.SoftOwner,0,9);replacement.BoundaryPaths=old.BoundaryPaths;replacement.NumberOfBoundaries=old.NumberOfBoundaries;replacement.LayerName=old.LayerName;replacement.ColorId=old.ColorId;replacement.HatchAngle=old.HatchAngle;
+  Remove(cad,new HashSet<CadEntityBase>{old});Add(cad,replacement);expected[replacement.ObjectHandle]=(replacement.HatchAngle,replacement.ColorId,9);
+
+  SaveCad(cad,"output/hatches.dxf");
+
+ }
+ using(var saved=(CadImage)Image.Load("output/hatches.dxf")) {VerifyHatches(saved,expected);var handles=saved.Entities.Select(e=>e.ObjectHandle).ToHashSet();Require(original.Where(h=>!removed.Contains(h)).All(handles.Contains)&&removed.All(h=>!handles.Contains(h)),"Hatch changes lost unrelated entities or retained replaced hatches.");Console.WriteLine("Verified persisted hatch configurations: "+expected.Count);}
+
+Console.WriteLine("Verified task 45326");return 0;
+} catch(Exception ex) {Console.Error.WriteLine(ex.Message);return 1;} }
 }

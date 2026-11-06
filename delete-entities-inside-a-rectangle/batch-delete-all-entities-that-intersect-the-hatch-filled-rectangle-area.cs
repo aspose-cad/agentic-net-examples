@@ -12,7 +12,7 @@ using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;
 using Aspose.CAD.FileFormats.Cad.CadTables;
 using Aspose.CAD.FileFormats.Cad.CadConsts;
 using Aspose.CAD.Primitives;
-using Aspose.CAD.WatermarkGuard;
+using Aspose.CAD.FileFormats.Tiff.Enums;
 
 class Program {
 
@@ -36,8 +36,6 @@ class Program {
   var pattern=new CadHatchPatternData {LineAngle=45,LineBasePoint=new Cad2DPoint(0,0),LineOffset=new Cad2DPoint(0,spacing),DashLengthCount=0,DashLengths=new List<double>()};
   return new CadHatch {ObjectHandle=Handle(),SoftOwner=owner,PatternName=solid?"SOLID":"USER",SolidFillFlag=(short)(solid?1:0),HatchPatternType=0,HatchScaleOrSpacing=1,NumberOfBoundaries=1,NumberOfPatternDefinitions=(short)(solid?0:1),PatternDefinitions=solid?new List<CadHatchPatternData>():new List<CadHatchPatternData>{pattern},BoundaryPaths=new List<CadHatchBoundaryPathContainer>{new CadHatchBoundaryPathContainer {PathType=0,BoundaryPath=new List<ICadBoundaryPath>{edges},SourceBoundaryObjects=new List<string>()}}};
  }
-
-
  static bool Segment(double ax,double ay,double bx,double by) {
   double lo=0,hi=1,dx=bx-ax,dy=by-ay;
   double[] p={-dx,dx,-dy,dy},q={ax,100-ax,ay,50-ay};
@@ -67,23 +65,31 @@ class Program {
 
 
 
+
+ static CadLwPolyline Rectangle(double x) {return new CadLwPolyline {ObjectHandle=Handle(),PointCount=4,Flag=CadLwPolylineFlag.Closed,Coordinates=new List<Cad2DPoint>{new Cad2DPoint(x,0),new Cad2DPoint(x+100,0),new Cad2DPoint(x+100,50),new Cad2DPoint(x,50)}};}
+
+
+
+
+
  static int Main(string[] args) {try {
+string input="input.dxf";if(!Input(input))return 0;Directory.CreateDirectory("output");
 
- string input="input.dxf";if(!Input(input))return 0;Directory.CreateDirectory("output");
- string[] kept,removed;string hatchHandle;
+ string[] kept,selectedHandles;string rectangleHandle,hatchHandle;
  using(var cad=(CadImage)Image.Load(input)) {
-  var source=cad.Entities.ToArray();var selected=source.Where(e=>Intersects(cad,e)).ToHashSet();
-  kept=source.Where(e=>!selected.Contains(e)).Select(e=>e.ObjectHandle).ToArray();removed=selected.Select(e=>e.ObjectHandle).ToArray();
+  var original=cad.Entities.ToArray();
+  // Exact XY intersection for lines, circles and straight coplanar LWPOLYLINEs.
+  // The broad-phase bounds test only excludes disjoint unsupported types; overlapping unsupported types fail before save.
+  var selected=original.Where(e=>Intersects(cad,e)).ToHashSet();selectedHandles=selected.Select(e=>e.ObjectHandle).ToArray();kept=original.Where(e=>!selected.Contains(e)).Select(e=>e.ObjectHandle).ToArray();
   Remove(cad,selected);
-  var rectangle=new CadLwPolyline {ObjectHandle=Handle(),PointCount=4,Flag=CadLwPolylineFlag.Closed,Coordinates=new List<Cad2DPoint>{new Cad2DPoint(0,0),new Cad2DPoint(100,0),new Cad2DPoint(100,50),new Cad2DPoint(0,50)}};
-  var hatch=Hatch(Model(cad).BlockTableRecordHandle,0,1,true);hatchHandle=hatch.ObjectHandle;Add(cad,rectangle,hatch);SaveCad(cad,"output/deleted.dxf");
+
+  var rectangle=Rectangle(0);var hatch=Hatch(Model(cad).BlockTableRecordHandle,0,4,true);Add(cad,rectangle,hatch);rectangleHandle=rectangle.ObjectHandle;hatchHandle=hatch.ObjectHandle;
+  Console.WriteLine("Selected intersecting original entities: "+selected.Count);SaveCad(cad,"output/selection.dxf");
  }
- using(var saved=(CadImage)Image.Load("output/deleted.dxf")) {
-  var handles=saved.Entities.Select(e=>e.ObjectHandle).ToHashSet();
-  Require(kept.All(handles.Contains)&&removed.All(h=>!handles.Contains(h))&&handles.Contains(hatchHandle),"Deletion lost retained entities or retained a removed entity.");
-  Console.WriteLine("Removed "+removed.Length+"; preserved "+kept.Length+" original entities.");
+ using(var saved=(CadImage)Image.Load("output/selection.dxf")) {var handles=saved.Entities.Select(e=>e.ObjectHandle).ToHashSet();Require(kept.All(handles.Contains)&&handles.Contains(rectangleHandle)&&handles.Contains(hatchHandle),"Selection operation lost unrelated geometry or its hatch-filled rectangle.");
+  Require(selectedHandles.All(h=>!handles.Contains(h)),"Deleted entities survived reload.");
  }
 
- Console.WriteLine("Verified task 45345");return 0;
+Console.WriteLine("Verified task 45345");return 0;
 } catch(Exception ex) {Console.Error.WriteLine(ex.Message);return 1;} }
 }

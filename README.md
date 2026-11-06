@@ -201,3 +201,8 @@ All examples use [Aspose.CAD for .NET](https://products.aspose.com/cad/net/) and
 
 ---
 *Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-11-04*
+
+
+## November 6 rerun repairs
+
+Twenty-two existing examples were repaired and checked with native drawing input, saved-output assertions and failure controls. The inventory remains **1,905 examples / 54 withheld**. Task 44046 (PDF blind watermarking) remains withheld. See [verification scope](VALIDATION.md#november-6-rerun-repairs).

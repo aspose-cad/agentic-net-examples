@@ -69,3 +69,38 @@ python .github/scripts/validate_example_corpus.py --repo . --shards 1 --shard 0 
 ```
 
 Keep .NET 8 and the pinned Aspose.CAD 26.9.0 package when reproducing this evidence. Framework dependencies are restored by NuGet. No SDK DLLs, credentials, licenses, generated build workspaces or customer drawings are committed.
+
+
+## November 6 rerun repairs
+
+The November 5–6 generation run ended with 23 failures. This branch replaces 22
+existing sources; it adds no examples and removes no previously published source.
+The inventory remains 1,905 examples across 45 categories, with 54 tasks withheld.
+The original run summary is preserved; repaired local evidence is separate.
+
+All 22 exact sources compiled and executed against a controlled native DWG/DXF and
+PNG input on Aspose.CAD 26.9.0 / .NET 8. Native-save samples reload their outputs
+and assert entity membership, references, ownership, widths or hatch data. Render
+samples check callback completion/PDF signatures or TIFF dimensions. Thirteen
+controls exercise missing/corrupt inputs, absent entities, unsupported overlapping
+arcs and block-only polylines. Independent geometry checks verify the identify-only
+and deletion distinction, preserve an AABB-overlapping line that misses the
+rectangle, and confirm rectangle-fill replacement preserves outlines.
+
+Collection semantics are explicit: definitions are CadBaseObject entries in
+Objects; raster instances are CadEntityBase entries in Entities. Task 45240 sets
+missing-text glyph fallback, not a font on hatch line geometry. Task 45184 handles
+linked raster definitions, not all DWG XREF/underlay formats. Rectangle operations
+support exact XY lines, circles and straight coplanar lightweight polylines;
+unsupported overlapping geometry fails before save instead of deleting by bounds.
+
+Task 44046 remains withheld: a fresh PDF probe rendered successfully but embedding
+stayed PENDING and CAD could not reload the PDF for known-payload validation.
+The paired native DXF control passed correct-payload and wrong-payload checks;
+that is not PDF watermark proof.
+
+Full-corpus Linux CI for this new source commit is pending. Earlier corpus CI
+belongs to earlier commits; most corpus runtime cases are missing-input smoke
+checks, distinct from the representative drawing evidence for these 22 repairs.
+
+Tracking: https://issue.support.dynabic.com/issues/137635
