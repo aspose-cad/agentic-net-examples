@@ -49,7 +49,7 @@ class Program {
 
 
  static int Main(string[] args) {try {
-string input="input.dxf";if(!Input(input))return 0;Directory.CreateDirectory("output");
+string input="input.dwg";if(!Input(input))return 0;Directory.CreateDirectory("output");
 
  if(!Input("background.png"))return 0;
  using(var cad=(CadImage)Image.Load(input)) {

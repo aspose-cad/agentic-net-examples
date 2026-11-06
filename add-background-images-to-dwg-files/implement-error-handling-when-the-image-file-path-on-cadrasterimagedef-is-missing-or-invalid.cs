@@ -49,7 +49,7 @@ class Program {
 
 
  static int Main(string[] args) {try {
-string input="input.dxf";if(!Input(input))return 0;Directory.CreateDirectory("output");
+string input="input.dwg";if(!Input(input))return 0;Directory.CreateDirectory("output");
 
  string raster=args.Length>0?args[0]:"background.png";if(!File.Exists(raster))throw new FileNotFoundException("Background image path is missing or invalid.",raster);
  using(var cad=(CadImage)Image.Load(input)) {var image=AddRaster(cad,raster);Require(cad.Objects.OfType<CadRasterImageDef>().Any(d=>d.ObjectHandle==image.ImageDefReference),"Raster definition missing.");SaveCad(cad,"output/background.dxf");}

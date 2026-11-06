@@ -78,7 +78,7 @@ existing sources; it adds no examples and removes no previously published source
 The inventory remains 1,905 examples across 45 categories, with 54 tasks withheld.
 The original run summary is preserved; repaired local evidence is separate.
 
-All 22 exact sources compiled and executed against a controlled native DXF and
+All 22 exact sources compiled and executed against a controlled native DWG/DXF and
 PNG input on Aspose.CAD 26.9.0 / .NET 8. Native-save samples reload their outputs
 and assert entity membership, references, ownership, widths or hatch data. Render
 samples check callback completion/PDF signatures or TIFF dimensions. Thirteen
