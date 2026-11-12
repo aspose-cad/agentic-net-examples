@@ -88,3 +88,8 @@ See the root [AGENTS.md](../AGENTS.md) for repository-wide conventions.
 ## November 6 verified repairs
 
 Tasks 45056, 45058 have refreshed native drawing-input verification and persisted-output checks. See [repair evidence and limits](../VALIDATION.md#november-6-rerun-repairs).
+
+
+## November 12 stopped-run verification
+
+Tasks 45056 have renewed native-input verification, including applicable reload/output and failure controls. See [repair scope and limits](../VALIDATION.md#november-12-stopped-run-repairs).

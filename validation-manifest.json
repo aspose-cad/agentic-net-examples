@@ -946,8 +946,8 @@
       "sha256": "d5ad13dfd5b4fac7006b063c903c4b7f31008da22833c91b15788520d4d840fd",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
-      "verified_on": "2026-11-06"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45045",
@@ -1736,10 +1736,11 @@
       "title": "Insert the polyline into the entity collection of the chosen layout to ensure proper placement.",
       "category": "Add Polylines",
       "path": "add-polylines/insert-the-polyline-into-the-entity-collection-of-the-chosen-layout-to-ensure-proper-placement.cs",
-      "sha256": "25a04e1e1d50139c9b03717832971a182b953e3bfbc80e0dcec028df0eb6598d",
+      "sha256": "e7d5b4b07068bad694c501f72ea13af57e9dbc2c55df6fc8a3ed89af85eb0483",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "44976",
@@ -1866,10 +1867,11 @@
       "title": "Verify that the inserted CadLwPolyline appears on the correct layer and with the assigned color.",
       "category": "Add Polylines",
       "path": "add-polylines/verify-that-the-inserted-cadlwpolyline-appears-on-the-correct-layer-and-with-the-assigned-color.cs",
-      "sha256": "8ade0bbf01b0a5f71521835144044d69e92fc1449a05d47ae2979f769b2ee545",
+      "sha256": "6ed429481d903d7b531e5ecb375879b481df7b0ee52c25b7270efa8c0f0fe02f",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "44986",
@@ -3360,10 +3362,11 @@
       "title": "Combine property modifications with developer tips to ensure consistent polyline appearance across multiple CAD drawings.",
       "category": "Change Polyline Width",
       "path": "change-polyline-width/combine-property-modifications-with-developer-tips-to-ensure-consistent-polyline-appearance-across-multiple-cad-drawi.cs",
-      "sha256": "9d2b0b912c33a7e9de2b6690b12c80c8bc7a640331ba5337fdde939fd8a2c5e8",
+      "sha256": "8e38cac6a81c8b86f70bb0c1250652464be799a327bb75c924df3b932d26287e",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45212",
@@ -4523,10 +4526,11 @@
       "title": "Use Quality group to centrally manage parameters, simplifying future adjustments across projects.",
       "category": "Configure Quality Options for Text, Hatches, and Arcs",
       "path": "configure-quality-options-for-text-hatches-and-arcs/use-quality-group-to-centrally-manage-parameters-simplifying-future-adjustments-across-projects.cs",
-      "sha256": "8263adb2b61a20f10aa1dd5abdb9e9ac0882d052ff4fb33c7bca851b98195dd3",
+      "sha256": "3bdb918c2875e88f20747066e7dda77cc1e0b1c22b048724e9a8abe27887c4a4",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45957",
@@ -4757,7 +4761,8 @@
       "sha256": "0169b2390a490241ed3afee81ebdead676b2ee5a222527b990ee3d3414afa353",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45977",
@@ -5038,8 +5043,8 @@
       "sha256": "bf61f06a42b7b826341e6cd3dc7f359dada05abca2749abf0da2c4c34a2a3460",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
-      "verified_on": "2026-11-06"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45337",
@@ -5190,10 +5195,11 @@
       "title": "Use CadEdgeBoundaryPath to connect the CadLwPolyline edges and define the hatch boundary.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/use-cadedgeboundarypath-to-connect-the-cadlwpolyline-edges-and-define-the-hatch-boundary.cs",
-      "sha256": "fa0f1e56e294130728c0e4f1e8d36fc8a6d2bd1c53d0725121b38b5dd32a43b5",
+      "sha256": "70bc76288b0e8e4b672b8f4ef7ce5861e62f2a621f10852fc4da849147f0d9ee",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Compile/run with controlled drawing inputs; console diagnostics checked. This is not proof for every real-world drawing."
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45332",
@@ -5211,10 +5217,11 @@
       "title": "Utilize CadHatchPatternData to define a custom hatch pattern with specific line spacing.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/utilize-cadhatchpatterndata-to-define-a-custom-hatch-pattern-with-specific-line-spacing.cs",
-      "sha256": "0e53823f7f09c47342a0153f74e1f38c0d324c4d586713ecde43c4b157743b5c",
+      "sha256": "77a9019d03308bd6484f9b9a83c8f39a6c75e46da2ceb37781478923999bff42",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45363",
@@ -5974,10 +5981,11 @@
       "title": "Handle any callback errors during export to ensure robust execution.",
       "category": "Exclude Hidden and Named Layers from Export",
       "path": "exclude-hidden-and-named-layers-from-export/handle-any-callback-errors-during-export-to-ensure-robust-execution.cs",
-      "sha256": "86b73077519ac0107b511dce62e0a590474ccfccbd3479c23a6f3a0ddee16d13",
+      "sha256": "b2c23cc8f10fac9f9f94444b0b56541d48c29b1d2e4d94674378e460cc7088e3",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45370",
@@ -6194,10 +6202,11 @@
       "title": "Confirm that the PDF/A file size remains within acceptable limits after applying high\u2011quality text and hatch settings.",
       "category": "Export CAD Drawings to PDF/A",
       "path": "export-cad-drawings-to-pdf-a/confirm-that-the-pdf-a-file-size-remains-within-acceptable-limits-after-applying-high-quality-text-and-hatch-settings.cs",
-      "sha256": "cc3aa4719bb90138eaed2fc0ed550c453728204a7dd063ba37cdda826d055874",
+      "sha256": "b689445e3a2b349e2af2f36a3b8a627b0e1390a1f08d9bac095fd616359efeba",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45594",
@@ -7224,10 +7233,11 @@
       "title": "Insert DXF/DWG drawings into other drawings to create composite CAD models for analysis.",
       "category": "Export Full Layout Content",
       "path": "export-full-layout-content/insert-dxf-dwg-drawings-into-other-drawings-to-create-composite-cad-models-for-analysis.cs",
-      "sha256": "abf936b731e86ed63885e69e189c8b24ebbc290e68603dd46680be4bb3f9491b",
+      "sha256": "fe83e96ae200b83d955e1155eda2ec3cb4fb1a76d86d40d65904eb0d0af3297c",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45492",

@@ -43,3 +43,8 @@ Build-validated Aspose.CAD for .NET examples for `export-cad-drawings-to-pdf-a`.
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+
+## November 12 stopped-run verification
+
+Tasks 45612 have renewed native-input verification, including applicable reload/output and failure controls. See [repair scope and limits](../VALIDATION.md#november-12-stopped-run-repairs).

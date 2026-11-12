@@ -104,3 +104,51 @@ belongs to earlier commits; most corpus runtime cases are missing-input smoke
 checks, distinct from the representative drawing evidence for these 22 repairs.
 
 Tracking: https://issue.support.dynabic.com/issues/137635
+
+
+## November 12 stopped-run repairs
+
+Stopped run 20261111_174822_766873_5aebc600 records 13 failures. Its aggregate
+counters show 780 started / 766 successes / 13 failures, while the per-task table
+contains 767 passes / 13 failures. These historical records are preserved and
+are not represented as a completed 1,959-task run.
+
+Twelve repaired/restored sources pass exact-source compile/run with native
+DWG/DXF or public DWF input. Seventeen input/output controls pass, including
+paper-space placement, curved-outline rejection, missing batch/donor inputs,
+DWG donors, unsupported import dependencies, hidden layers and PDF size limits.
+Four further assertions on the compiled callback/layer helpers reject incomplete
+renders and reported failures and verify the actual visibility/exclusion policy.
+Original input hashes remain unchanged.
+
+The twelve include three unchanged sources restored from existing verified
+examples (45056, 45328 and 45986) and nine newly changed source files. Together
+with the earlier branch's 22 changes, this review now updates 31 source files,
+not 34 additions. All paths/discovery counts remain unchanged: 1,905 examples
+and 54 withheld tasks.
+
+Polyline insertion verifies geometry, layer, color and selected model/paper
+layout ownership after native reload. Native serialization can expand omitted
+bulges to explicit zeros; comparisons preserve that logical equivalence while
+retaining genuine curved values. Hatch samples retain actual line-family data
+and reject unsupported curved outlines. Composite import preserves the existing
+target and supports bounded LINE/CIRCLE/TEXT dependencies, not arbitrary models.
+DWF font mapping checks actual typed font names and retained text/positions;
+host font installation and general glyph appearance are not universally certified.
+The configured high-quality PDF/A output has part 1/conformance A XMP and is
+checked against a caller-specified size limit; independent conformance validation
+is not claimed.
+
+Task 45026 remains withheld: native DXF payload validation and a PDF margin
+preview do not verify an invisible watermark's alleged visible border placement.
+A reused image reports SUCCESS after native DXF then PDF, while fresh-image PDF
+export reports PENDING in the diagnostic. Status on a reused image is not proof
+of payload persistence in the exact PDF. No overlay or native-DXF substitution
+is counted as the missing operation.
+
+Current-source Linux full-corpus CI is pending for this expanded branch. Earlier
+CI belongs to its earlier source commit. Most corpus runtime cases remain
+missing-input smoke checks, separate from the native drawing checks above.
+
+Tracking: https://issue.support.dynabic.com/issues/137921
+Generator review: https://gitlab.recruitize.ai/sialkot/gujrat-examples/aspose-cad-examples-generator-v1/-/merge_requests/16

@@ -101,3 +101,8 @@ Success = exit code 0 and no `CS####` compiler errors.
 ## November 6 rerun repairs
 
 Twenty-two existing examples were repaired and checked with native drawing input, saved-output assertions and failure controls. The inventory remains **1,905 examples / 54 withheld**. Task 44046 (PDF blind watermarking) remains withheld. See [verification scope](VALIDATION.md#november-6-rerun-repairs).
+
+
+## November 12 stopped-run repairs
+
+Twelve recorded failures have repaired/restored sources with native-input checks; nine source files change beyond the previous repair branch, while three existing verified sources are restored unchanged. The combined review branch updates **31 existing examples**, with no inventory additions. The inventory remains **1,905 examples / 54 withheld**. Task 45026 stays withheld. See [verification limits](VALIDATION.md#november-12-stopped-run-repairs).

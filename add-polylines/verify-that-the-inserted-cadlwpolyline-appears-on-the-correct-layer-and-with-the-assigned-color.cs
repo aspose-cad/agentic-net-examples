@@ -1,111 +1,49 @@
 using System;
 using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.Diagnostics;
 using Aspose.CAD;
 using Aspose.CAD.ImageOptions;
 using Aspose.CAD.FileFormats.Cad;
 using Aspose.CAD.FileFormats.Cad.CadObjects;
+using Aspose.CAD.FileFormats.Cad.CadObjects.Hatch;
+using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;
+using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
+using Aspose.CAD.Primitives;
+using Aspose.CAD.WatermarkGuard;
+using Aspose.CAD.FileFormats.Tiff.Enums;
 
-class Program
-{
-    static void Main()
-    {
-        try
-        {
-            // Input and output file paths
-            string inputPath = "input.dwg";
-            string outputPath = "output.dwg";
+class Program {
 
-            // Verify input file exists
-            if (!File.Exists(inputPath))
-            {
-                Console.Error.WriteLine($"Input file not found: {inputPath}");
-                return;
-            }
+ static void Require(bool ok,string message) {if(!ok)throw new InvalidOperationException(message);}
+ static bool Input(string path) {if(File.Exists(path))return true;Console.WriteLine("Input file not found: "+path);return false;}
+ static string Handle() {return "F"+Guid.NewGuid().ToString("N").Substring(0,14).ToUpperInvariant();}
 
-            // Load CAD image
-            using (CadImage cadImage = (CadImage)Image.Load(inputPath))
-            {
-                // Create a lightweight polyline
-                CadLwPolyline polyline = new CadLwPolyline();
+ static void SaveCad(CadImage cad,string path) {cad.Save(path,new DxfOptions {OutputMode=CadOutputMode.Convert});}
 
-                // Define vertices (X, Y) pairs
-                polyline.Coordinates.Add(new Cad2DPoint(0.0, 0.0));
-                polyline.Coordinates.Add(new Cad2DPoint(100.0, 0.0));
-                polyline.Coordinates.Add(new Cad2DPoint(100.0, 100.0));
-                polyline.Coordinates.Add(new Cad2DPoint(0.0, 100.0));
-                // Close the polyline (set flag if property exists)
-                // If the Closed property is unavailable, the polyline will remain open;
-                // this does not affect layer or color verification.
-                try
-                {
-                    var closedProp = typeof(CadLwPolyline).GetProperty("Closed");
-                    if (closedProp != null && closedProp.CanWrite)
-                        closedProp.SetValue(polyline, true);
-                }
-                catch { }
+ static void AddTo(CadImage cad,CadLayout layout,CadEntityBase entity) {
+  string owner=layout.BlockTableRecordHandle;var block=cad.BlockEntities.Values.Cast<CadBlockEntity>().Single(b=>b.CadBlockTableObject?.ObjectHandle==owner);
+  entity.SoftOwner=owner;if(string.IsNullOrEmpty(entity.ObjectHandle))entity.ObjectHandle=Handle();block.AddEntity(entity);cad.Entities=cad.Entities.Concat(new[]{entity}).ToArray();
+ }
+ static CadLwPolyline Rectangle() {return new CadLwPolyline {Flag=CadLwPolylineFlag.Closed,PointCount=4,Coordinates=new List<Cad2DPoint>{new Cad2DPoint(10,10),new Cad2DPoint(110,10),new Cad2DPoint(110,60),new Cad2DPoint(10,60)},LayerName="0",ColorId=3,ConstantWidth=1.25};}
+ static IEnumerable<CadLwPolyline> Polylines(CadImage cad) {return cad.Entities.Concat(cad.BlockEntities.Values.Cast<CadBlockEntity>().SelectMany(b=>b.Entities)).OfType<CadLwPolyline>().GroupBy(p=>p.ObjectHandle).Select(g=>g.First());}
+ static string Geometry(CadLwPolyline p) {return p.Flag+"|"+p.Elevation+"|"+string.Join(";",p.Coordinates.Select(v=>v.X+","+v.Y))+"|"+string.Join(",",Enumerable.Range(0,p.Coordinates.Count).Select(i=>p.Bugle!=null&&i<p.Bugle.Count?p.Bugle[i]:0));}
 
-                // Assign layer and color (ACI color index)
-                polyline.LayerName = "MyLayer";
-                // Set color number if the property exists
-                try
-                {
-                    var colorProp = typeof(CadEntityBase).GetProperty("ColorNumber");
-                    if (colorProp != null && colorProp.CanWrite)
-                        colorProp.SetValue(polyline, (short)1); // Red (ACI 1)
-                }
-                catch { }
+ static int Main(string[] args) {try {
+string input="input.dxf";if(!Input(input))return 0;Directory.CreateDirectory("output");
 
-                // Retrieve Model Space block
-                if (!cadImage.BlockEntities.TryGetValue("*Model_Space", out CadBlockEntity modelSpace))
-                {
-                    Console.Error.WriteLine("Model space block not found.");
-                    return;
-                }
+ string layoutName=args.Length>0?args[0]:"Model";string handle,owner,shape;string[] original;
+ using(var cad=(CadImage)Image.Load(input)) {
+  CadLayout layout=cad.Layouts.Values.SingleOrDefault(l=>l.LayoutName.Equals(layoutName,StringComparison.OrdinalIgnoreCase));Require(layout!=null,"Requested layout does not exist: "+layoutName);owner=layout.BlockTableRecordHandle;original=cad.Entities.Select(e=>e.ObjectHandle).ToArray();
+  var polyline=Rectangle();AddTo(cad,layout,polyline);handle=polyline.ObjectHandle;shape=Geometry(polyline);SaveCad(cad,"output/polyline.dxf");
+ }
+ using(var saved=(CadImage)Image.Load("output/polyline.dxf")) {
+  var polyline=Polylines(saved).Single(p=>p.ObjectHandle==handle);Require(polyline.SoftOwner==owner&&polyline.LayerName=="0"&&polyline.ColorId==3&&polyline.ConstantWidth==1.25&&polyline.PointCount==4&&Geometry(polyline)==shape,"Polyline geometry, layer/color, width or layout ownership did not persist.");
+  Require(original.All(saved.Entities.Select(e=>e.ObjectHandle).Contains),"Existing entities were lost.");Console.WriteLine("Verified layer 0 / color 3 in layout "+layoutName);
+ }
 
-                // Add polyline to Model Space
-                modelSpace.Entities.Add(polyline);
-
-                // Verify that the polyline was added with correct layer and color
-                bool verificationPassed = false;
-                foreach (CadEntityBase entity in modelSpace.Entities)
-                {
-                    if (entity is CadLwPolyline pl &&
-                        pl.LayerName == "MyLayer")
-                    {
-                        // Verify color if possible
-                        bool colorMatches = true;
-                        try
-                        {
-                            var colorProp = typeof(CadEntityBase).GetProperty("ColorNumber");
-                            if (colorProp != null)
-                            {
-                                var val = (short)colorProp.GetValue(pl);
-                                colorMatches = val == 1;
-                            }
-                        }
-                        catch { }
-
-                        if (colorMatches)
-                        {
-                            verificationPassed = true;
-                            break;
-                        }
-                    }
-                }
-
-                Console.WriteLine(verificationPassed
-                    ? "Polyline added and verified successfully."
-                    : "Verification failed: polyline not found with expected properties.");
-
-                // Save the modified CAD file
-                DwgOptions dwgOptions = new DwgOptions();
-                cadImage.Save(outputPath, dwgOptions);
-                Console.WriteLine($"Modified CAD saved to: {outputPath}");
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"Error: {ex.Message}");
-        }
-    }
+ Console.WriteLine("Verified task 45007");return 0;
+} catch(Exception ex){Console.Error.WriteLine(ex.Message);return 1;} }
 }

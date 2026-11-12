@@ -48,3 +48,8 @@ Build-validated Aspose.CAD for .NET examples for `create-hatched-rectangles-from
 ## November 6 verified repairs
 
 Tasks 45313, 45319, 45321, 45326, 45328, 45332, 45337 have refreshed native drawing-input verification and persisted-output checks. See [repair evidence and limits](../VALIDATION.md#november-6-rerun-repairs).
+
+
+## November 12 stopped-run verification
+
+Tasks 45305, 45318, 45328 have renewed native-input verification, including applicable reload/output and failure controls. See [repair scope and limits](../VALIDATION.md#november-12-stopped-run-repairs).
