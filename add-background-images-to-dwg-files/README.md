@@ -44,7 +44,6 @@ Build-validated Aspose.CAD for .NET examples for `add-background-images-to-dwg-f
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
 
-
 ## November 6 verified repairs
 
 Tasks 45056, 45058 have refreshed native drawing-input verification and persisted-output checks. See [repair evidence and limits](../VALIDATION.md#november-6-rerun-repairs).

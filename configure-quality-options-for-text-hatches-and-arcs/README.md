@@ -16,9 +16,9 @@ Build-validated Aspose.CAD for .NET examples for `configure-quality-options-for-
 - `Aspose.CAD` (29 example(s))
 - `Aspose.CAD.ImageOptions` (29 example(s))
 - `Aspose.CAD.FileFormats.Cad` (9 example(s))
-- `System.Diagnostics` (4 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (3 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects.Hatch` (3 example(s))
+- `System.Diagnostics` (5 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (4 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects.Hatch` (4 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -43,7 +43,6 @@ Build-validated Aspose.CAD for .NET examples for `configure-quality-options-for-
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
-
 
 ## November 12 stopped-run verification
 

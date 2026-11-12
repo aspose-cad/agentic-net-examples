@@ -2,9 +2,9 @@
 
 ## Publication counts
 
-This branch proposes **1,905 examples across 45 categories** from the 1,959-task catalog; **54 tasks are withheld**. Relative to merged main's 1,904 examples, it adds the native SAT-container layout reader **45173**. No previously published source is removed.
+This branch proposes **1,906 examples across 45 categories** from the 1,959-task catalog; **53 tasks are withheld**. Relative to merged main's 1,905 examples, it replaces 31 existing sources and adds owner-clarified visible-watermark task **45026**. No previously published source is removed.
 
-The earlier checkpoints were 1,864 + 60 added IDs - 30 withheld IDs = 1,894, followed by 45757 to 1,895, eight native watermark examples to 1,903 and DGN comparison 44122 to 1,904. This branch adds one: **1,904 + 1 = 1,905**. Publication counts differ from historical catalog-run statistics.
+The earlier checkpoints were 1,864 + 60 added IDs - 30 withheld IDs = 1,894, followed by 45757 to 1,895, eight native watermark examples to 1,903 and DGN comparison 44122 to 1,904. The SAT reader brought the inventory to **1,904 + 1 = 1,905**. The November 12 owner-clarified visible annotation adds one further example: **1,905 + 1 = 1,906**. Publication counts differ from historical catalog-run statistics.
 
 The original completed run processed 1,959 tasks with 1,920 successes and 39 failures. Subsequent repair batches recovered 35 of those failures; four PDF/PNG watermark operations remain unresolved. The prior nine repairs and this SAT-container reader come from the wider withheld inventory and do not change that 35/39 figure.
 
@@ -108,6 +108,8 @@ Tracking: https://issue.support.dynabic.com/issues/137635
 
 ## November 12 stopped-run repairs
 
+This initial 12/13 checkpoint preceded the owner clarification below. Its 1,905/54 inventory and withheld status for 45026 are historical; the [visible annotation follow-up](#visible-watermark-scope-clarification--november-12) supersedes them with 1,906/53.
+
 Stopped run 20261111_174822_766873_5aebc600 records 13 failures. Its aggregate
 counters show 780 started / 766 successes / 13 failures, while the per-task table
 contains 767 passes / 13 failures. These historical records are preserved and
@@ -152,3 +154,16 @@ missing-input smoke checks, separate from the native drawing checks above.
 
 Tracking: https://issue.support.dynabic.com/issues/137921
 Generator review: https://gitlab.recruitize.ai/sialkot/gujrat-examples/aspose-cad-examples-generator-v1/-/merge_requests/16
+
+
+## Visible watermark scope clarification — November 12
+
+After the initial 12/13 repair checkpoint, the owner explicitly requested **visible watermark text inside the border** for task 45026. Preserve the original blind-watermark failure/diagnostic as history; the new source, title, path, manifest and discovery metadata explicitly describe visible annotation. This does not establish PDF blind-watermark embedding or repair the separate unresolved protection tasks.
+
+The sample appends a closed border and a CadText in a reserved caption strip around the finite native drawing extents. It registers both entities in model space without moving the original drawing, saves DXF in Convert mode, reloads to verify text, coordinates, ownership, original entity membership and layouts, and exports the reloaded drawing with margins and render callback checks. Existing outputs are rejected; captions are bounded to 1–40 printable ASCII characters.
+
+Three final-source drawing executions pass: DWG with the default caption, DXF and DWG with a longer caption. Independent PDFKit text extraction and rasterization plus pixel checks locate the red caption strictly inside the blue border, with the border strictly inside the page. A separate native DXF comparison preserves geometry groups, text, layer, flags, handles and owner on all ten original entities. Nine final-source controls pass (two drawing positives, six rejection cases and a no-input smoke check). Evaluation-mode decorations remain visible and are excluded from the color-based placement measurement. Broader font, encoding, layout and drawing coverage is not certified.
+
+Inventory progression: **1,905 + 1 = 1,906 examples**, **54 - 1 = 53 withheld**. The combined review replaces 31 existing C# sources and adds this one example; it does not add 32 examples. Current-source corpus CI must be read from the PR checks; the earlier 1,905-source CI applies to its earlier commit. Most corpus executions are missing-input checks, separate from these three real-input runs.
+
+Generator regressions: 349 focused passes; full required suite 691 passed, 43 unchanged inherited failures, 136 passing subtests, 84.76% coverage. Source/control/visual evidence and metrics receipts are linked from the PR and task #137921.

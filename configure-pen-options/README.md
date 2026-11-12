@@ -15,10 +15,10 @@ Build-validated Aspose.CAD for .NET examples for `configure-pen-options`.
 - `System.IO` (33 example(s))
 - `Aspose.CAD` (33 example(s))
 - `Aspose.CAD.ImageOptions` (33 example(s))
-- `Aspose.CAD.FileFormats.Cad` (27 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (6 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (4 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadConsts` (2 example(s))
+- `Aspose.CAD.FileFormats.Cad` (28 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (7 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadTables` (5 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadConsts` (3 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -43,7 +43,6 @@ Build-validated Aspose.CAD for .NET examples for `configure-pen-options`.
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
-
 
 ## November 6 verified repairs
 

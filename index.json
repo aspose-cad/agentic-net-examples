@@ -4,9 +4,9 @@
   "framework": "net8.0",
   "package": "Aspose.CAD",
   "package_version": "26.9.0",
-  "total_examples": 1905,
+  "total_examples": 1906,
   "total_categories": 45,
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-12",
   "categories": [
     {
       "name": "access-entities-inside-block-objects",
@@ -3702,6 +3702,7 @@
             "csharp",
             "dotnet8",
             "dwg",
+            "enums",
             "fileformats",
             "files",
             "hatch",
@@ -3709,9 +3710,9 @@
             "images",
             "primitives",
             "standalone-example",
+            "tiff",
             "to",
-            "underlaydefinition",
-            "watermarkguard"
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -3736,7 +3737,7 @@
             "Aspose.CAD.FileFormats.Cad.CadTables",
             "Aspose.CAD.FileFormats.Cad.CadConsts",
             "Aspose.CAD.Primitives",
-            "Aspose.CAD.WatermarkGuard"
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -4391,22 +4392,29 @@
           "category": "add-background-images-to-dwg-files",
           "path": "add-background-images-to-dwg-files/validate-that-cadimage-objects-contains-both-cadrasterimage-and-cadbaseobject-after-insertion-and-before-saving.cs",
           "file": "validate-that-cadimage-objects-contains-both-cadrasterimage-and-cadbaseobject-after-insertion-and-before-saving.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "aspose-cad",
             "background",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "dwg",
+            "enums",
             "fileformats",
             "files",
+            "hatch",
             "imageoptions",
             "images",
+            "primitives",
             "standalone-example",
-            "to"
+            "tiff",
+            "to",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -4418,13 +4426,20 @@
           ],
           "namespaces": [
             "System",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -4576,31 +4591,35 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 5
+          "count": 6
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 4
+          "count": 5
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 4
+          "count": 5
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 4
+          "count": 5
         },
         {
           "name": "System.Diagnostics",
-          "count": 3
+          "count": 4
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-          "count": 3
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
+          "count": 2
         },
         {
           "name": "Aspose.CAD.WatermarkGuard",
-          "count": 3
+          "count": 2
         }
       ],
       "key_apis": [
@@ -4613,7 +4632,7 @@
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.Primitives",
         "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-        "Aspose.CAD.WatermarkGuard"
+        "Aspose.CAD.FileFormats.Tiff.Enums"
       ]
     },
     {
@@ -4663,16 +4682,23 @@
             "aspose-cad",
             "background",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "dxf",
+            "enums",
             "fileformats",
             "files",
+            "hatch",
             "imageoptions",
             "images",
+            "primitives",
             "standalone-example",
-            "to"
+            "tiff",
+            "to",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -4684,13 +4710,20 @@
           ],
           "namespaces": [
             "System",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -4794,16 +4827,23 @@
             "aspose-cad",
             "background",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "dxf",
+            "enums",
             "fileformats",
             "files",
+            "hatch",
             "imageoptions",
             "images",
+            "primitives",
             "standalone-example",
-            "to"
+            "tiff",
+            "to",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -4814,14 +4854,21 @@
             "Aspose.CAD for .NET add-background-images-to-dxf-files example"
           ],
           "namespaces": [
-            "System.Linq",
             "System",
-            "System.Collections.Generic",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -6044,39 +6091,43 @@
           "count": 20
         },
         {
-          "name": "System.Collections.Generic",
-          "count": 13
-        },
-        {
           "name": "System.Linq",
           "count": 13
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 5
+          "name": "System.Collections.Generic",
+          "count": 13
         },
         {
-          "name": "System.Collections",
-          "count": 1
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 7
         },
         {
           "name": "System.Diagnostics",
-          "count": 1
+          "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 1
+          "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-          "count": 1
+          "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 1
+          "count": 3
         },
         {
           "name": "Aspose.CAD.Primitives",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
+          "count": 2
+        },
+        {
+          "name": "System.Collections",
           "count": 1
         },
         {
@@ -6094,17 +6145,18 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.Primitives",
-        "Aspose.CAD.WatermarkGuard"
+        "Aspose.CAD.FileFormats.Tiff.Enums"
       ]
     },
     {
       "name": "add-margins-to-cad-drawings",
-      "file_count": 27,
+      "file_count": 28,
       "files": [
         "access-entities-inside-block-objects-adjust-their-positions-and-add-margins-to-the-overall-layout.cs",
         "access-external-file-references-in-a-dwg-drawing-and-include-them-when-setting-margins-for-export.cs",
         "access-layout-information-to-determine-which-layout-requires-larger-margins-based-on-its-dimensions.cs",
         "add-margins-to-a-cad-drawing-then-extract-the-resulting-pdf-to-verify-border-dimensions.cs",
+        "add-visible-watermark-text-inside-a-drawing-border-with-export-margins.cs",
         "adjust-cad-properties-such-as-line-weight-before-applying-margins-to-ensure-visual-consistency-in-the-pdf.cs",
         "adjust-margin-values-for-each-layout-individually-using-cadrasterizationoptions-to-match-varying-drawing-sizes.cs",
         "combine-multiple-dxf-drawings-set-unified-margins-and-export-the-assembled-composition-as-a-single-pdf-file.cs",
@@ -6292,6 +6344,55 @@
             "System",
             "System.IO",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions"
+          ],
+          "standalone": true,
+          "validated": true,
+          "framework": "net8.0",
+          "package": "Aspose.CAD",
+          "package_version": "26.9.0"
+        },
+        {
+          "title": "Add Visible Watermark Text Inside A Drawing Border with Export Margins",
+          "category": "add-margins-to-cad-drawings",
+          "path": "add-margins-to-cad-drawings/add-visible-watermark-text-inside-a-drawing-border-with-export-margins.cs",
+          "file": "add-visible-watermark-text-inside-a-drawing-border-with-export-margins.cs",
+          "api_area": "Cad",
+          "tags": [
+            "add",
+            "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
+            "csharp",
+            "dotnet8",
+            "drawings",
+            "fileformats",
+            "imageoptions",
+            "margins",
+            "standalone-example",
+            "to"
+          ],
+          "formats": [],
+          "search_phrases": [
+            "Add Visible Watermark Text Inside A Drawing Border with Export Margins in C#",
+            "Add Visible Watermark Text Inside A Drawing Border with Export Margins using Aspose.CAD for .NET",
+            "Add Visible Watermark Text Inside A Drawing Border with Export Margins Aspose.CAD .NET example",
+            "AI generated .net code to Add Visible Watermark Text Inside A Drawing Border with Export Margins",
+            "Aspose.CAD for .NET add-margins-to-cad-drawings example"
+          ],
+          "namespaces": [
+            "System",
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Text.Json",
+            "Aspose.CAD",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
             "Aspose.CAD.ImageOptions"
           ],
           "standalone": true,
@@ -7282,38 +7383,46 @@
       "required_namespaces": [
         {
           "name": "System",
-          "count": 27
+          "count": 28
         },
         {
           "name": "System.IO",
-          "count": 27
+          "count": 28
         },
         {
           "name": "Aspose.CAD",
-          "count": 25
+          "count": 26
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 22
+          "count": 23
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 11
+          "count": 12
         },
         {
           "name": "System.Collections.Generic",
-          "count": 6
+          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 5
+          "count": 6
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 3
+          "count": 4
         },
         {
           "name": "System.Linq",
+          "count": 2
+        },
+        {
+          "name": "System.Text.Json",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
           "count": 1
         },
         {
@@ -7326,7 +7435,8 @@
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadConsts"
       ]
     },
     {
@@ -8155,19 +8265,26 @@
           "category": "add-polylines",
           "path": "add-polylines/insert-the-polyline-into-the-entity-collection-of-the-chosen-layout-to-ensure-proper-placement.cs",
           "file": "insert-the-polyline-into-the-entity-collection-of-the-chosen-layout-to-ensure-proper-placement.cs",
-          "api_area": "Cad.CadConsts",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
+            "hatch",
             "imageoptions",
             "polylines",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "tiff",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -8178,14 +8295,22 @@
             "Aspose.CAD for .NET add-polylines example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "System",
-            "System.Collections.Generic",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -8710,13 +8835,21 @@
             "add",
             "aspose-cad",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
+            "hatch",
             "imageoptions",
             "polylines",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "tiff",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -8729,10 +8862,20 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -8812,7 +8955,7 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 17
+          "count": 18
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
@@ -8820,15 +8963,23 @@
         },
         {
           "name": "System.Linq",
-          "count": 11
+          "count": 13
         },
         {
           "name": "System.Collections.Generic",
-          "count": 11
+          "count": 12
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 5
+          "count": 7
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 3
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
@@ -8839,15 +8990,23 @@
           "count": 2
         },
         {
+          "name": "System.Diagnostics",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
+          "count": 2
+        },
+        {
           "name": "System.Reflection",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.Primitives",
           "count": 1
         }
       ],
@@ -8859,9 +9018,9 @@
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
         "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-        "Aspose.CAD.Primitives"
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
       ]
     },
     {
@@ -9016,22 +9175,30 @@
           "category": "add-text-and-mtext-entities-beside-existing-text",
           "path": "add-text-and-mtext-entities-beside-existing-text/add-the-new-cadtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs",
           "file": "add-the-new-cadtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "and",
             "aspose-cad",
             "beside",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "entities",
+            "enums",
             "existing",
             "fileformats",
+            "hatch",
+            "imageoptions",
             "mtext",
+            "primitives",
             "standalone-example",
-            "text"
+            "text",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -9045,9 +9212,18 @@
             "System",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -9312,22 +9488,30 @@
           "category": "add-text-and-mtext-entities-beside-existing-text",
           "path": "add-text-and-mtext-entities-beside-existing-text/create-cadbaseentity-objects-as-a-base-before-instantiating-specific-cadmtext-or-cadtext-types.cs",
           "file": "create-cadbaseentity-objects-as-a-base-before-instantiating-specific-cadmtext-or-cadtext-types.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "and",
             "aspose-cad",
             "beside",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "entities",
+            "enums",
             "existing",
             "fileformats",
+            "hatch",
+            "imageoptions",
             "mtext",
+            "primitives",
             "standalone-example",
-            "text"
+            "text",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -9341,9 +9525,18 @@
             "System",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -9634,19 +9827,30 @@
           "category": "add-text-and-mtext-entities-beside-existing-text",
           "path": "add-text-and-mtext-entities-beside-existing-text/handle-any-load-callbacks-for-errors-that-may-occur-when-reloading-the-drawing-with-new-entities.cs",
           "file": "handle-any-load-callbacks-for-errors-that-may-occur-when-reloading-the-drawing-with-new-entities.cs",
-          "api_area": "Add Text And Mtext Entities Beside Existing Text",
+          "api_area": "ImageOptions",
           "tags": [
             "add",
             "and",
             "aspose-cad",
             "beside",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "entities",
+            "enums",
             "existing",
+            "fileformats",
+            "hatch",
+            "imageoptions",
             "mtext",
+            "primitives",
             "standalone-example",
-            "text"
+            "text",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -9658,7 +9862,20 @@
           ],
           "namespaces": [
             "System",
-            "System.IO"
+            "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
+            "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -10532,55 +10749,59 @@
         },
         {
           "name": "Aspose.CAD",
-          "count": 34
+          "count": 35
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 34
+          "count": 35
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 33
+          "count": 34
         },
         {
           "name": "Aspose.CAD.ImageOptions",
-          "count": 17
+          "count": 20
         },
         {
           "name": "System.Linq",
-          "count": 15
+          "count": 16
         },
         {
           "name": "System.Collections.Generic",
-          "count": 8
+          "count": 11
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 8
+          "count": 11
         },
         {
           "name": "System.Diagnostics",
-          "count": 4
+          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 4
+          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-          "count": 4
+          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 4
+          "count": 7
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 4
+          "count": 7
         },
         {
           "name": "Aspose.CAD.WatermarkGuard",
           "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
+          "count": 3
         },
         {
           "name": "System.Collections",
@@ -14251,16 +14472,23 @@
             "and",
             "aspose-cad",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "change",
             "csharp",
             "dotnet8",
             "emergency",
+            "enums",
             "fileformats",
             "fonts",
+            "hatch",
             "imageoptions",
+            "primitives",
             "standalone-example",
-            "style"
+            "style",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -14273,9 +14501,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -15388,7 +15626,7 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 25
+          "count": 26
         },
         {
           "name": "Aspose.CAD.ImageOptions",
@@ -15400,30 +15638,38 @@
         },
         {
           "name": "System.Linq",
-          "count": 4
+          "count": 5
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 3
+          "count": 4
         },
         {
           "name": "System.Collections.Generic",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 2
+          "count": 3
         },
         {
           "name": "System.Diagnostics",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Aspose.CAD.Primitives",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
           "count": 1
         }
       ],
@@ -15435,7 +15681,9 @@
         "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-        "Aspose.CAD.Primitives"
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.FileFormats.Tiff.Enums"
       ]
     },
     {
@@ -15657,10 +15905,16 @@
             "change",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
+            "hatch",
             "imageoptions",
             "polyline",
+            "primitives",
             "standalone-example",
+            "tiff",
+            "underlaydefinition",
+            "watermarkguard",
             "width"
           ],
           "formats": [],
@@ -15675,12 +15929,19 @@
             "System",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
             "Aspose.CAD.FileFormats.Cad.CadTables",
-            "Aspose.CAD.FileFormats.Cad.CadConsts"
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -16574,14 +16835,21 @@
           "tags": [
             "aspose-cad",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "change",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
+            "hatch",
             "imageoptions",
             "polyline",
+            "primitives",
             "standalone-example",
+            "tiff",
+            "underlaydefinition",
             "width"
           ],
           "formats": [],
@@ -16594,12 +16862,20 @@
           ],
           "namespaces": [
             "System",
-            "System.Collections.Generic",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -16806,19 +17082,39 @@
         },
         {
           "name": "System.Linq",
-          "count": 11
+          "count": 12
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 8
+          "count": 9
         },
         {
           "name": "System.Collections.Generic",
-          "count": 7
+          "count": 8
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 4
+          "count": 5
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
+          "count": 2
         },
         {
           "name": "System.Reflection",
@@ -16827,6 +17123,10 @@
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
           "count": 2
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 1
         }
       ],
       "key_apis": [
@@ -16837,7 +17137,9 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadTables",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices"
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.Primitives"
       ]
     },
     {
@@ -17016,20 +17318,28 @@
           "category": "change-the-observer-point",
           "path": "change-the-observer-point/access-external-file-references-update-their-paths-and-export-the-drawing-to-pdf-to-verify-links.cs",
           "file": "access-external-file-references-update-their-paths-and-export-the-drawing-to-pdf-to-verify-links.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "change",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
+            "hatch",
             "imageoptions",
             "observer",
             "pdf",
             "point",
+            "primitives",
             "standalone-example",
-            "the"
+            "the",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [
             "pdf"
@@ -17043,11 +17353,21 @@
             "Aspose.CAD PDF C# example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad",
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -18289,38 +18609,50 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 10
+          "count": 11
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 8
         },
         {
           "name": "Aspose.CAD.FileFormats",
           "count": 8
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 7
+          "name": "System.Collections.Generic",
+          "count": 4
         },
         {
           "name": "Aspose.CAD.WatermarkGuard",
           "count": 4
         },
         {
-          "name": "System.Collections.Generic",
-          "count": 3
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 1
-        },
-        {
           "name": "System.Linq",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 1
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 2
         },
         {
           "name": "Aspose.CAD.Primitives",
+          "count": 2
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
           "count": 1
         }
       ],
@@ -18329,11 +18661,11 @@
         "Aspose.CAD.FileFormats.Cad",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
-        "Aspose.CAD.FileFormats",
         "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats",
         "Aspose.CAD.WatermarkGuard",
-        "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.Primitives"
       ]
     },
@@ -18995,13 +19327,23 @@
           "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "configure",
             "csharp",
             "dotnet8",
+            "enums",
+            "fileformats",
+            "hatch",
             "imageoptions",
             "options",
             "pen",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -19014,8 +19356,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -19704,22 +20057,42 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 27
+          "count": 28
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 6
+          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 4
+          "count": 5
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 2
+          "count": 3
         },
         {
           "name": "System.Collections.Generic",
+          "count": 3
+        },
+        {
+          "name": "System.Linq",
+          "count": 2
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
           "count": 2
         },
         {
@@ -19727,27 +20100,11 @@
           "count": 1
         },
         {
-          "name": "System.Linq",
-          "count": 1
-        },
-        {
-          "name": "System.Diagnostics",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-          "count": 1
-        },
-        {
-          "name": "Aspose.CAD.Primitives",
-          "count": 1
-        },
-        {
           "name": "Aspose.CAD.WatermarkGuard",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
           "count": 1
         },
         {
@@ -20905,17 +21262,26 @@
             "arcs",
             "aspose-cad",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "configure",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
             "for",
+            "hatch",
             "hatches",
             "imageoptions",
             "options",
+            "primitives",
             "quality",
             "standalone-example",
-            "text"
+            "text",
+            "tiff",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -20928,9 +21294,20 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad"
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -21088,46 +21465,50 @@
         },
         {
           "name": "System.Diagnostics",
-          "count": 4
+          "count": 5
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 3
+          "count": 4
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 3
+          "count": 4
         },
         {
           "name": "System.Linq",
-          "count": 2
+          "count": 3
         },
         {
           "name": "System.Collections.Generic",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Aspose.CAD.WatermarkGuard",
-          "count": 2
+          "count": 3
         },
         {
           "name": "System.Reflection",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
           "count": 1
         }
       ],
@@ -21639,19 +22020,28 @@
           "tags": [
             "and",
             "aspose-cad",
+            "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "convert",
             "csharp",
             "dotnet8",
             "drawings",
             "dwg",
             "dxf",
+            "enums",
+            "fileformats",
+            "hatch",
             "imageoptions",
             "images",
             "pdf",
+            "primitives",
             "raster",
             "standalone-example",
             "tiff",
-            "to"
+            "to",
+            "underlaydefinition"
           ],
           "formats": [
             "tiff"
@@ -21667,8 +22057,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -22728,14 +23129,30 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 17
+          "count": 18
         },
         {
           "name": "System.Collections.Generic",
-          "count": 4
+          "count": 5
         },
         {
           "name": "System.Linq",
+          "count": 5
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
           "count": 4
         },
         {
@@ -22743,19 +23160,7 @@
           "count": 3
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 3
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 3
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 3
-        },
-        {
-          "name": "Aspose.CAD.Primitives",
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
           "count": 3
         },
         {
@@ -22763,15 +23168,15 @@
           "count": 2
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "name": "System.Diagnostics",
           "count": 2
         },
         {
-          "name": "System.Diagnostics",
-          "count": 1
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 2
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
           "count": 1
         },
         {
@@ -22787,13 +23192,13 @@
         "Aspose.CAD",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
-        "Aspose.CAD.FileFormats.Dwf",
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
         "Aspose.CAD.Primitives",
-        "Aspose.CAD.FileFormats.Dwf.Whip.Objects",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Dwf",
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Dwf.Whip.Objects"
       ]
     },
     {
@@ -22842,22 +23247,28 @@
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/add-multiple-cadlwpolyline-rectangles-to-the-drawing-and-fill-each-with-distinct-cadhatch-configurations.cs",
           "file": "add-multiple-cadlwpolyline-rectangles-to-the-drawing-and-fill-each-with-distinct-cadhatch-configurations.cs",
-          "api_area": "Cad.CadConsts",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "create",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
             "from",
+            "hatch",
             "hatched",
             "imageoptions",
             "polylines",
+            "primitives",
             "rectangles",
-            "standalone-example"
+            "standalone-example",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -22868,16 +23279,21 @@
             "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "System",
-            "System.Collections.Generic",
+            "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
-            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-            "Aspose.CAD.ImageOptions",
-            "System.IO"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -23674,15 +24090,17 @@
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/export-the-drawing-after-applying-multiple-cadhatch-entities-to-verify-all-patterns-render-correctly.cs",
           "file": "export-the-drawing-after-applying-multiple-cadhatch-entities-to-verify-all-patterns-render-correctly.cs",
-          "api_area": "Cad.CadConsts",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "create",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
             "from",
             "hatch",
@@ -23691,7 +24109,9 @@
             "polylines",
             "primitives",
             "rectangles",
-            "standalone-example"
+            "standalone-example",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -23702,17 +24122,21 @@
             "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "System",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.Primitives"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -23725,15 +24149,17 @@
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/export-the-final-drawing-after-applying-hatch-to-ensure-patterns-are-retained-across-formats.cs",
           "file": "export-the-final-drawing-after-applying-hatch-to-ensure-patterns-are-retained-across-formats.cs",
-          "api_area": "Cad.CadConsts",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "create",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
             "from",
             "hatch",
@@ -23742,7 +24168,9 @@
             "polylines",
             "primitives",
             "rectangles",
-            "standalone-example"
+            "standalone-example",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -23753,18 +24181,21 @@
             "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "System",
-            "System.Collections",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-            "Aspose.CAD.Primitives"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -23960,15 +24391,17 @@
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/load-a-cad-drawing-locate-existing-cadlwpolyline-rectangles-and-replace-their-fill-with-a-new-cadhatch.cs",
           "file": "load-a-cad-drawing-locate-existing-cadlwpolyline-rectangles-and-replace-their-fill-with-a-new-cadhatch.cs",
-          "api_area": "Cad.CadConsts",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "create",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
             "from",
             "hatch",
@@ -23977,7 +24410,9 @@
             "polylines",
             "primitives",
             "rectangles",
-            "standalone-example"
+            "standalone-example",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -23988,17 +24423,21 @@
             "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "System",
-            "System.Collections.Generic",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.Primitives"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -24102,15 +24541,17 @@
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/replace-an-existing-cadhatch-in-a-drawing-with-a-new-one-using-different-cadhatchpatterndata.cs",
           "file": "replace-an-existing-cadhatch-in-a-drawing-with-a-new-one-using-different-cadhatchpatterndata.cs",
-          "api_area": "Cad.CadConsts",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "create",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
             "from",
             "hatch",
@@ -24119,7 +24560,9 @@
             "polylines",
             "primitives",
             "rectangles",
-            "standalone-example"
+            "standalone-example",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -24130,17 +24573,21 @@
             "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "System",
             "System.IO",
             "System.Linq",
             "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "Aspose.CAD.Primitives",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -24260,23 +24707,28 @@
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/set-both-hatch-angle-and-color-simultaneously-on-cadhatch-to-achieve-patterned-shading.cs",
           "file": "set-both-hatch-angle-and-color-simultaneously-on-cadhatch-to-achieve-patterned-shading.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "create",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
             "from",
             "hatch",
             "hatched",
             "imageoptions",
             "polylines",
+            "primitives",
             "rectangles",
-            "standalone-example"
+            "standalone-example",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -24290,12 +24742,18 @@
             "System",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.FileFormats.Cad.CadConsts"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -24403,15 +24861,17 @@
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/use-cadedgeboundarypath-to-connect-the-cadlwpolyline-edges-and-define-the-hatch-boundary.cs",
           "file": "use-cadedgeboundarypath-to-connect-the-cadlwpolyline-edges-and-define-the-hatch-boundary.cs",
-          "api_area": "Cad.CadConsts",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "create",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
             "from",
             "hatch",
@@ -24420,7 +24880,10 @@
             "polylines",
             "primitives",
             "rectangles",
-            "standalone-example"
+            "standalone-example",
+            "tiff",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -24431,17 +24894,22 @@
             "Aspose.CAD for .NET create-hatched-rectangles-from-polylines example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "System",
-            "System.Collections.Generic",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "Aspose.CAD.Primitives",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.WatermarkGuard",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -24454,14 +24922,17 @@
           "category": "create-hatched-rectangles-from-polylines",
           "path": "create-hatched-rectangles-from-polylines/use-cadedgeboundarypath-to-create-multiple-hatch-boundaries-within-a-single-drawing-for-varied-regions.cs",
           "file": "use-cadedgeboundarypath-to-create-multiple-hatch-boundaries-within-a-single-drawing-for-varied-regions.cs",
-          "api_area": "Cad",
+          "api_area": "ImageOptions",
           "tags": [
             "aspose-cad",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "create",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
             "from",
             "hatch",
@@ -24470,7 +24941,9 @@
             "polylines",
             "primitives",
             "rectangles",
-            "standalone-example"
+            "standalone-example",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -24485,12 +24958,17 @@
             "System.IO",
             "System.Linq",
             "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
             "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-            "Aspose.CAD.ImageOptions",
-            "Aspose.CAD.Primitives"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -24513,6 +24991,7 @@
             "create",
             "csharp",
             "dotnet8",
+            "enums",
             "fileformats",
             "from",
             "hatch",
@@ -24522,6 +25001,7 @@
             "primitives",
             "rectangles",
             "standalone-example",
+            "tiff",
             "underlaydefinition",
             "watermarkguard"
           ],
@@ -24548,7 +25028,8 @@
             "Aspose.CAD.FileFormats.Cad.CadTables",
             "Aspose.CAD.FileFormats.Cad.CadConsts",
             "Aspose.CAD.Primitives",
-            "Aspose.CAD.WatermarkGuard"
+            "Aspose.CAD.WatermarkGuard",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -24571,11 +25052,11 @@
           "count": 35
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
+          "name": "System.IO",
           "count": 34
         },
         {
-          "name": "System.IO",
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
           "count": 34
         },
         {
@@ -24584,51 +25065,51 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 28
+          "count": 29
         },
         {
           "name": "System.Linq",
-          "count": 25
+          "count": 26
         },
         {
           "name": "System.Collections.Generic",
-          "count": 24
+          "count": 25
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 24
+          "count": 25
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 17
+          "count": 19
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 10
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 10
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
+          "count": 10
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
+          "count": 9
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-          "count": 9
+          "count": 7
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
           "count": 6
         },
         {
-          "name": "System.Diagnostics",
-          "count": 2
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-          "count": 2
-        },
-        {
-          "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 2
-        },
-        {
           "name": "Aspose.CAD.WatermarkGuard",
-          "count": 2
-        },
-        {
-          "name": "System.Collections",
-          "count": 1
+          "count": 3
         }
       ],
       "key_apis": [
@@ -24639,9 +25120,9 @@
         "Aspose.CAD.FileFormats.Cad.CadConsts",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
         "Aspose.CAD.Primitives",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition"
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Tiff.Enums"
       ]
     },
     {
@@ -24884,6 +25365,7 @@
             "delete",
             "dotnet8",
             "entities",
+            "enums",
             "fileformats",
             "hatch",
             "imageoptions",
@@ -24891,8 +25373,8 @@
             "primitives",
             "rectangle",
             "standalone-example",
-            "underlaydefinition",
-            "watermarkguard"
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -24917,7 +25399,7 @@
             "Aspose.CAD.FileFormats.Cad.CadTables",
             "Aspose.CAD.FileFormats.Cad.CadConsts",
             "Aspose.CAD.Primitives",
-            "Aspose.CAD.WatermarkGuard"
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -25071,23 +25553,28 @@
           "category": "delete-entities-inside-a-rectangle",
           "path": "delete-entities-inside-a-rectangle/create-a-hatch-filled-rectangle-polyline-and-use-it-to-identify-intersecting-entities.cs",
           "file": "create-a-hatch-filled-rectangle-polyline-and-use-it-to-identify-intersecting-entities.cs",
-          "api_area": "Cad.CadConsts",
+          "api_area": "ImageOptions",
           "tags": [
             "a",
             "aspose-cad",
             "cad",
             "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "delete",
             "dotnet8",
             "entities",
+            "enums",
             "fileformats",
+            "hatch",
             "imageoptions",
             "inside",
-            "polylines",
+            "primitives",
             "rectangle",
-            "standalone-example"
+            "standalone-example",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -25098,15 +25585,21 @@
             "Aspose.CAD for .NET delete-entities-inside-a-rectangle example"
           ],
           "namespaces": [
-            "Aspose.CAD.FileFormats.Cad.CadConsts",
             "System",
-            "System.Collections.Generic",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
+            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
             "Aspose.CAD.FileFormats.Cad.CadObjects",
-            "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -25124,16 +25617,23 @@
             "a",
             "aspose-cad",
             "cad",
+            "cadconsts",
             "cadobjects",
+            "cadtables",
             "csharp",
             "delete",
             "dotnet8",
             "entities",
+            "enums",
             "fileformats",
+            "hatch",
             "imageoptions",
             "inside",
+            "primitives",
             "rectangle",
-            "standalone-example"
+            "standalone-example",
+            "tiff",
+            "underlaydefinition"
           ],
           "formats": [],
           "search_phrases": [
@@ -25146,10 +25646,19 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -26143,51 +26652,55 @@
         },
         {
           "name": "System.Collections.Generic",
-          "count": 26
+          "count": 27
         },
         {
           "name": "System.Linq",
-          "count": 23
+          "count": 25
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
-          "count": 18
+          "count": 17
         },
         {
           "name": "Aspose.CAD.ImageOptions",
           "count": 17
         },
         {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 14
+        },
+        {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
           "count": 14
         },
         {
-          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 13
-        },
-        {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 10
+          "count": 12
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 3
+          "count": 5
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 3
+          "count": 5
         },
         {
           "name": "System.Diagnostics",
-          "count": 2
+          "count": 4
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-          "count": 2
+          "count": 4
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
+          "count": 3
         },
         {
           "name": "Aspose.CAD.WatermarkGuard",
-          "count": 2
+          "count": 1
         }
       ],
       "key_apis": [
@@ -26196,8 +26709,8 @@
         "Aspose.CAD.FileFormats.Cad.CadObjects",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Polylines",
         "Aspose.CAD.ImageOptions",
-        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
         "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Vertices",
         "Aspose.CAD.FileFormats.Cad.CadTables",
         "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
         "Aspose.CAD.Primitives"
@@ -28234,18 +28747,26 @@
             "and",
             "aspose-cad",
             "cad",
+            "cadconsts",
+            "cadobjects",
             "cadtables",
             "csharp",
             "dotnet8",
+            "enums",
             "exclude",
             "export",
             "fileformats",
             "from",
+            "hatch",
             "hidden",
             "imageoptions",
             "layers",
             "named",
-            "standalone-example"
+            "primitives",
+            "standalone-example",
+            "tiff",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [],
           "search_phrases": [
@@ -28256,14 +28777,22 @@
             "Aspose.CAD for .NET exclude-hidden-and-named-layers-from-export example"
           ],
           "namespaces": [
-            "System.Linq",
             "System",
-            "System.Collections.Generic",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
             "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadTables"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -28962,13 +29491,51 @@
         {
           "name": "System.Collections.Generic",
           "count": 29
+        },
+        {
+          "name": "System.Diagnostics",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.Primitives",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.WatermarkGuard",
+          "count": 1
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
+          "count": 1
         }
       ],
       "key_apis": [
         "Aspose.CAD",
         "Aspose.CAD.ImageOptions",
         "Aspose.CAD.FileFormats.Cad",
-        "Aspose.CAD.FileFormats.Cad.CadTables"
+        "Aspose.CAD.FileFormats.Cad.CadTables",
+        "Aspose.CAD.FileFormats.Cad.CadObjects",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+        "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+        "Aspose.CAD.FileFormats.Cad.CadConsts",
+        "Aspose.CAD.Primitives",
+        "Aspose.CAD.WatermarkGuard"
       ]
     },
     {
@@ -29315,14 +29882,24 @@
             "a",
             "aspose-cad",
             "cad",
+            "cadconsts",
+            "cadobjects",
+            "cadtables",
             "csharp",
             "dotnet8",
             "drawings",
+            "enums",
             "export",
+            "fileformats",
+            "hatch",
             "imageoptions",
             "pdf",
+            "primitives",
             "standalone-example",
-            "to"
+            "tiff",
+            "to",
+            "underlaydefinition",
+            "watermarkguard"
           ],
           "formats": [
             "pdf"
@@ -29338,8 +29915,20 @@
           "namespaces": [
             "System",
             "System.IO",
+            "System.Linq",
+            "System.Collections.Generic",
+            "System.Diagnostics",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions"
+            "Aspose.CAD.ImageOptions",
+            "Aspose.CAD.FileFormats.Cad",
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
+            "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
+            "Aspose.CAD.FileFormats.Cad.CadTables",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.Primitives",
+            "Aspose.CAD.WatermarkGuard",
+            "Aspose.CAD.FileFormats.Tiff.Enums"
           ],
           "standalone": true,
           "validated": true,
@@ -30184,46 +30773,50 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad",
-          "count": 7
+          "count": 8
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadTables",
-          "count": 3
+          "count": 4
         },
         {
           "name": "System.Linq",
-          "count": 3
+          "count": 4
         },
         {
           "name": "System.Collections.Generic",
-          "count": 2
+          "count": 3
         },
         {
           "name": "System.Diagnostics",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Aspose.CAD.Primitives",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Aspose.CAD.WatermarkGuard",
+          "count": 2
+        },
+        {
+          "name": "Aspose.CAD.FileFormats.Tiff.Enums",
           "count": 1
         }
       ],
@@ -33850,10 +34443,11 @@
           "category": "export-full-layout-content",
           "path": "export-full-layout-content/insert-dxf-dwg-drawings-into-other-drawings-to-create-composite-cad-models-for-analysis.cs",
           "file": "insert-dxf-dwg-drawings-into-other-drawings-to-create-composite-cad-models-for-analysis.cs",
-          "api_area": "ImageOptions",
+          "api_area": "Cad",
           "tags": [
             "aspose-cad",
             "cad",
+            "cadconsts",
             "cadobjects",
             "content",
             "csharp",
@@ -33884,10 +34478,13 @@
             "System",
             "System.IO",
             "System.Linq",
+            "System.Collections.Generic",
+            "System.Globalization",
             "Aspose.CAD",
-            "Aspose.CAD.ImageOptions",
             "Aspose.CAD.FileFormats.Cad",
-            "Aspose.CAD.FileFormats.Cad.CadObjects"
+            "Aspose.CAD.FileFormats.Cad.CadObjects",
+            "Aspose.CAD.FileFormats.Cad.CadConsts",
+            "Aspose.CAD.ImageOptions"
           ],
           "standalone": true,
           "validated": true,
@@ -34806,11 +35403,11 @@
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadConsts",
-          "count": 6
+          "count": 7
         },
         {
           "name": "System.Collections.Generic",
-          "count": 5
+          "count": 6
         },
         {
           "name": "Aspose.CAD.FileFormats.Cad.CadObjects.Hatch",
@@ -34835,6 +35432,10 @@
         {
           "name": "Aspose.CAD.Primitives",
           "count": 3
+        },
+        {
+          "name": "System.Globalization",
+          "count": 1
         },
         {
           "name": "System.Reflection",

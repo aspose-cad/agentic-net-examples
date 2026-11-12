@@ -15,10 +15,10 @@ Build-validated Aspose.CAD for .NET examples for `export-cad-drawings-to-pdf-a`.
 - `System.IO` (27 example(s))
 - `Aspose.CAD` (27 example(s))
 - `Aspose.CAD.ImageOptions` (27 example(s))
-- `Aspose.CAD.FileFormats.Cad` (7 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (3 example(s))
-- `System.Linq` (3 example(s))
-- `System.Collections.Generic` (2 example(s))
+- `Aspose.CAD.FileFormats.Cad` (8 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadTables` (4 example(s))
+- `System.Linq` (4 example(s))
+- `System.Collections.Generic` (3 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -30,7 +30,7 @@ Build-validated Aspose.CAD for .NET examples for `export-cad-drawings-to-pdf-a`.
 | [Compare PDF A Output Quality When using Default Versus Customized Quality Options for Text Rendering](./compare-pdf-a-output-quality-when-using-default-versus-customized-quality-options-for-text-rendering.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, imageoptions |
 | [Configure Layout Settings Within Corepdfoptions to Control Page Size and Orientation for The PDF A Document](./configure-layout-settings-within-corepdfoptions-to-control-page-size-and-orientation-for-the-pdf-a-document.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, imageoptions |
 | [Confirm That All Visible CAD Layers Are Included in The Exported PDF A File](./confirm-that-all-visible-cad-layers-are-included-in-the-exported-pdf-a-file.cs) | ImageOptions | a, aspose-cad, cad, cadtables, csharp, dotnet8, drawings, export |
-| [Confirm That The PDF A File Size Remains Within Acceptable Limits After Applying High Quality Text and Hatch Settings](./confirm-that-the-pdf-a-file-size-remains-within-acceptable-limits-after-applying-high-quality-text-and-hatch-settings.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, imageoptions |
+| [Confirm That The PDF A File Size Remains Within Acceptable Limits After Applying High Quality Text and Hatch Settings](./confirm-that-the-pdf-a-file-size-remains-within-acceptable-limits-after-applying-high-quality-text-and-hatch-settings.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, dotnet8 |
 | [Create A Pdfoptions Object to Configure PDF A Export Settings for The Loaded CAD Drawing](./create-a-pdfoptions-object-to-configure-pdf-a-export-settings-for-the-loaded-cad-drawing.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, imageoptions |
 | [Document Steps Required to Enable PDF A 1a Compliance using Corepdfoptions Compliance Property](./document-steps-required-to-enable-pdf-a-1a-compliance-using-corepdfoptions-compliance-property.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, dotnet8 |
 | [Export The Drawing using The Configured Pdfoptions to Generate A PDF A File At The Specified Path](./export-the-drawing-using-the-configured-pdfoptions-to-generate-a-pdf-a-file-at-the-specified-path.cs) | ImageOptions | a, aspose-cad, cad, csharp, dotnet8, drawings, export, imageoptions |
@@ -43,7 +43,6 @@ Build-validated Aspose.CAD for .NET examples for `export-cad-drawings-to-pdf-a`.
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
-
 
 ## November 12 stopped-run verification
 

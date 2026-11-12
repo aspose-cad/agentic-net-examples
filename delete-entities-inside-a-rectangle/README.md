@@ -16,9 +16,9 @@ Build-validated Aspose.CAD for .NET examples for `delete-entities-inside-a-recta
 - `Aspose.CAD` (29 example(s))
 - `Aspose.CAD.FileFormats.Cad` (29 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (29 example(s))
-- `System.Collections.Generic` (26 example(s))
-- `System.Linq` (23 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects.Polylines` (18 example(s))
+- `System.Collections.Generic` (27 example(s))
+- `System.Linq` (25 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects.Polylines` (17 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -31,8 +31,8 @@ Build-validated Aspose.CAD for .NET examples for `delete-entities-inside-a-recta
 | [Batch Remove All Entities That Are Confirmed to Be Inside The Rectangle](./batch-remove-all-entities-that-are-confirmed-to-be-inside-the-rectangle.cs) | Cad | a, aspose-cad, cad, cadobjects, csharp, delete, dotnet8, entities |
 | [Check Each Entity for Rectangle Containment and Programmatically Remove Those That Satisfy The Condition](./check-each-entity-for-rectangle-containment-and-programmatically-remove-those-that-satisfy-the-condition.cs) | Cad | a, aspose-cad, cad, cadobjects, csharp, delete, dotnet8, entities |
 | [Check If Each Entity Is in The Rectangle You Want and Delete Those That Return True](./check-if-each-entity-is-in-the-rectangle-you-want-and-delete-those-that-return-true.cs) | Cad | a, aspose-cad, cad, cadobjects, csharp, delete, dotnet8, entities |
-| [Create A Hatch Filled Rectangle Polyline and Use It to Identify Intersecting Entities](./create-a-hatch-filled-rectangle-polyline-and-use-it-to-identify-intersecting-entities.cs) | Cad.CadConsts | a, aspose-cad, cad, cadconsts, cadobjects, csharp, delete, dotnet8 |
-| [Create A Polyline Rectangle Apply Hatch Fill and Delete All Intersecting Entities](./create-a-polyline-rectangle-apply-hatch-fill-and-delete-all-intersecting-entities.cs) | ImageOptions | a, aspose-cad, cad, cadobjects, csharp, delete, dotnet8, entities |
+| [Create A Hatch Filled Rectangle Polyline and Use It to Identify Intersecting Entities](./create-a-hatch-filled-rectangle-polyline-and-use-it-to-identify-intersecting-entities.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, delete |
+| [Create A Polyline Rectangle Apply Hatch Fill and Delete All Intersecting Entities](./create-a-polyline-rectangle-apply-hatch-fill-and-delete-all-intersecting-entities.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, delete |
 | [Create A Rectangle as A Polyline Fill It with Hatch Then Batch Remove Entities Inside The Hatch](./create-a-rectangle-as-a-polyline-fill-it-with-hatch-then-batch-remove-entities-inside-the-hatch.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, delete |
 | [Create A Rectangle as A Polyline Fill with Hatch and Remove All Entities That Lie Within The Hatch](./create-a-rectangle-as-a-polyline-fill-with-hatch-and-remove-all-entities-that-lie-within-the-hatch.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, csharp, delete, dotnet8 |
 | [Create A Rectangle Defined as A Polyline to Serve as The Deletion Region](./create-a-rectangle-defined-as-a-polyline-to-serve-as-the-deletion-region.cs) | ImageOptions | a, aspose-cad, cad, cadconsts, cadobjects, csharp, delete, dotnet8 |
@@ -43,7 +43,6 @@ Build-validated Aspose.CAD for .NET examples for `delete-entities-inside-a-recta
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
-
 
 ## November 6 verified repairs
 

@@ -16,7 +16,7 @@ Examples are organized by feature category:
 - `access-polyline-and-3dface-vertices/` - 29 example(s)
 - `add-background-images-to-dwg-files/` - 33 example(s)
 - `add-background-images-to-dxf-files/` - 30 example(s)
-- `add-margins-to-cad-drawings/` - 27 example(s)
+- `add-margins-to-cad-drawings/` - 28 example(s)
 - `add-polylines/` - 34 example(s)
 - `add-text-and-mtext-entities-beside-existing-text/` - 35 example(s)
 - `adjust-cad-drawing-properties/` - 34 example(s)
@@ -200,8 +200,7 @@ Other Aspose products with agentic, build-validated example repositories:
 All examples use [Aspose.CAD for .NET](https://products.aspose.com/cad/net/) and require a valid license for production use. See [licensing options](https://purchase.aspose.com/buy).
 
 ---
-*Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-11-04*
-
+*Generated and validated by a product-specific examples generator using shared Examples RAG/MCP infrastructure. See the [agentic examples metrics section](https://metrics.aspose.com/agents/sections/examples) | For AI-friendly guidance, see [AGENTS.md](./AGENTS.md) | Last updated: 2026-11-12*
 
 ## November 6 rerun repairs
 
@@ -210,4 +209,4 @@ Twenty-two existing examples were repaired and checked with native drawing input
 
 ## November 12 stopped-run repairs
 
-Twelve recorded failures have repaired/restored sources with native-input checks; nine source files change beyond the previous repair branch, while three existing verified sources are restored unchanged. The combined review branch updates **31 existing examples**, with no inventory additions. The inventory remains **1,905 examples / 54 withheld**. Task 45026 stays withheld. See [verification limits](VALIDATION.md#november-12-stopped-run-repairs).
+Twelve original-scope repairs/restorations pass native-input checks. The owner then clarified task **45026** as **visible watermark text inside the border**. That separately verified annotation is now added under an explicit visible-text filename; blind-watermark embedding is not claimed. The review replaces **31 existing sources and adds one example**. Inventory: **1,906 examples / 53 withheld**. See [scope and evidence](VALIDATION.md#visible-watermark-scope-clarification--november-12).

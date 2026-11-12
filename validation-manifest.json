@@ -2,10 +2,10 @@
   "schema_version": 1,
   "product": "Aspose.CAD",
   "package_version": "26.9.0",
-  "verified_on": "2026-11-04",
+  "verified_on": "2026-11-12",
   "catalog_total": 1959,
-  "published_total": 1905,
-  "withheld_total": 54,
+  "published_total": 1906,
+  "withheld_total": 53,
   "examples": [
     {
       "task_id": "44926",
@@ -1310,6 +1310,23 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "45026",
+      "title": "Add visible watermark text inside a drawing border after configuring export margins, preserving existing CAD entities and layouts.",
+      "original_task": "Apply blind watermark after margin addition to ensure the watermark appears within the defined drawing border.",
+      "scope_clarification": {
+        "recorded_on": "2026-11-12",
+        "owner_response": "Visible watermark text inside the border",
+        "operation": "Visible CAD annotation, not blind watermark embedding"
+      },
+      "category": "Add Margins to CAD Drawings",
+      "path": "add-margins-to-cad-drawings/add-visible-watermark-text-inside-a-drawing-border-with-export-margins.cs",
+      "sha256": "3a42cb9f7adeecee1432a9a808020947373fd259c3db8ff11ae433157f758c1b",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verified_on": "2026-11-12",
+      "verification": "Exact-source native DWG/DXF compile/run; native caption, border and layout ownership persist; three independent PDF text/pixel checks place the caption strictly inside the border/page; nine final-source input/output controls pass. Original DXF entity geometry and identities are unchanged."
     },
     {
       "task_id": "45031",

@@ -15,10 +15,10 @@ Build-validated Aspose.CAD for .NET examples for `convert-dwg-and-dxf-drawings-t
 - `System.IO` (30 example(s))
 - `Aspose.CAD` (30 example(s))
 - `Aspose.CAD.ImageOptions` (30 example(s))
-- `Aspose.CAD.FileFormats.Cad` (17 example(s))
-- `System.Collections.Generic` (4 example(s))
-- `System.Linq` (4 example(s))
-- `Aspose.CAD.FileFormats.Dwf` (3 example(s))
+- `Aspose.CAD.FileFormats.Cad` (18 example(s))
+- `System.Collections.Generic` (5 example(s))
+- `System.Linq` (5 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (4 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -32,7 +32,7 @@ Build-validated Aspose.CAD for .NET examples for `convert-dwg-and-dxf-drawings-t
 | [Enable Tracking and Capture Rendering Details While Converting A CAD Drawing to PDF for Debugging](./enable-tracking-and-capture-rendering-details-while-converting-a-cad-drawing-to-pdf-for-debugging.cs) | ImageOptions | and, aspose-cad, convert, csharp, dotnet8, drawings, dwg, dxf |
 | [Enable Tracking By Setting Enabletracking True and Observe Rendering Progress While Saving as PNG](./enable-tracking-by-setting-enabletracking-true-and-observe-rendering-progress-while-saving-as-png.cs) | ImageOptions | and, aspose-cad, convert, csharp, dotnet8, drawings, dwg, dxf |
 | [Enable Tracking Set Background Color to Light Gray and Convert A CAD File to BMP for Visual Inspection](./enable-tracking-set-background-color-to-light-gray-and-convert-a-cad-file-to-bmp-for-visual-inspection.cs) | ImageOptions | and, aspose-cad, bmp, convert, csharp, dotnet8, drawings, dwg |
-| [Handle Imagesaveexception By Ensuring Pagewidth and Pageheight Are Set Before Saving as TIFF](./handle-imagesaveexception-by-ensuring-pagewidth-and-pageheight-are-set-before-saving-as-tiff.cs) | ImageOptions | and, aspose-cad, convert, csharp, dotnet8, drawings, dwg, dxf |
+| [Handle Imagesaveexception By Ensuring Pagewidth and Pageheight Are Set Before Saving as TIFF](./handle-imagesaveexception-by-ensuring-pagewidth-and-pageheight-are-set-before-saving-as-tiff.cs) | ImageOptions | and, aspose-cad, cad, cadconsts, cadobjects, cadtables, convert, csharp |
 | [Iterate Cadimage Layers and Save Each Layer Individually as Separate PNG Files for Analysis](./iterate-cadimage-layers-and-save-each-layer-individually-as-separate-png-files-for-analysis.cs) | ImageOptions | and, aspose-cad, cad, convert, csharp, dotnet8, drawings, dwg |
 | [Iterate Over Cadimage Layers Apply Unique Background Colors Per Layer and Export Each as Separate Gif Files](./iterate-over-cadimage-layers-apply-unique-background-colors-per-layer-and-export-each-as-separate-gif-files.cs) | ImageOptions | and, aspose-cad, cad, cadtables, convert, csharp, dotnet8, drawings |
 | [Iterate Through Cadimage Layers Apply Individual Cadrasterizationoptions and Save Each Layer as Separate TIFF Files](./iterate-through-cadimage-layers-apply-individual-cadrasterizationoptions-and-save-each-layer-as-separate-tiff-files.cs) | ImageOptions | and, aspose-cad, cad, cadconsts, cadobjects, cadtables, convert, csharp |
@@ -43,7 +43,6 @@ Build-validated Aspose.CAD for .NET examples for `convert-dwg-and-dxf-drawings-t
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
-
 
 ## November 6 verified repairs
 
