@@ -17,7 +17,7 @@ Build-validated Aspose.CAD for .NET examples for `add-polylines`.
 - `System.IO` (32 example(s))
 - `Aspose.CAD.FileFormats.Cad` (32 example(s))
 - `Aspose.CAD.ImageOptions` (19 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadConsts` (17 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadConsts` (18 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects.Polylines` (17 example(s))
 
 ## Representative Examples
@@ -43,3 +43,7 @@ Build-validated Aspose.CAD for .NET examples for `add-polylines`.
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+## November 12 stopped-run verification
+
+Tasks 44992, 45007 have renewed native-input verification, including applicable reload/output and failure controls. See [repair scope and limits](../VALIDATION.md#november-12-stopped-run-repairs).

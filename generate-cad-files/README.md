@@ -17,8 +17,8 @@ Build-validated Aspose.CAD for .NET examples for `generate-cad-files`.
 - `Aspose.CAD.FileFormats.Cad` (30 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (30 example(s))
 - `Aspose.CAD.ImageOptions` (30 example(s))
-- `System.Linq` (23 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects.Vertices` (9 example(s))
+- `System.Linq` (24 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadConsts` (9 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -43,3 +43,8 @@ Build-validated Aspose.CAD for .NET examples for `generate-cad-files`.
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+
+## November 13 native-input verification
+
+Tasks 44701, 44705 are verified against the active SDK with representative files and applicable reload/render checks. See [controls and limitations](../VALIDATION.md#november-13-failure-repairs).

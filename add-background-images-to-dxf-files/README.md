@@ -17,16 +17,16 @@ Build-validated Aspose.CAD for .NET examples for `add-background-images-to-dxf-f
 - `Aspose.CAD.FileFormats.Cad` (25 example(s))
 - `Aspose.CAD.ImageOptions` (22 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (20 example(s))
-- `System.Collections.Generic` (13 example(s))
 - `System.Linq` (13 example(s))
+- `System.Collections.Generic` (13 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
 |---------|----------|------|
-| [Access Entities Inside A Block Add A Background Image and Then Adjust Hatch Origin Point](./access-entities-inside-a-block-add-a-background-image-and-then-adjust-hatch-origin-point.cs) | ImageOptions | add, aspose-cad, background, cad, cadobjects, csharp, dotnet8, dxf |
+| [Access Entities Inside A Block Add A Background Image and Then Adjust Hatch Origin Point](./access-entities-inside-a-block-add-a-background-image-and-then-adjust-hatch-origin-point.cs) | ImageOptions | add, aspose-cad, background, cad, cadconsts, cadobjects, cadtables, csharp |
 | [Access Entities Inside A Block to Modify Their Appearance After Adding A Background Image](./access-entities-inside-a-block-to-modify-their-appearance-after-adding-a-background-image.cs) | ImageOptions | add, aspose-cad, background, cad, cadobjects, cadtables, csharp, dotnet8 |
 | [Add A Background Image to A DXF Drawing and Then Export The File using The Export Workflow](./add-a-background-image-to-a-dxf-drawing-and-then-export-the-file-using-the-export-workflow.cs) | Add Background Images To Dxf Files | add, aspose-cad, background, csharp, dotnet8, dxf, files, images |
-| [Add New Mtext Entities Beside Existing Text After Placing The Background Image in The Drawing](./add-new-mtext-entities-beside-existing-text-after-placing-the-background-image-in-the-drawing.cs) | ImageOptions | add, aspose-cad, background, cad, cadobjects, csharp, dotnet8, dxf |
+| [Add New Mtext Entities Beside Existing Text After Placing The Background Image in The Drawing](./add-new-mtext-entities-beside-existing-text-after-placing-the-background-image-in-the-drawing.cs) | ImageOptions | add, aspose-cad, background, cad, cadconsts, cadobjects, cadtables, csharp |
 | [Add New Text Entities to The Right of Existing Ones After Inserting The Background Image](./add-new-text-entities-to-the-right-of-existing-ones-after-inserting-the-background-image.cs) | Cad | add, aspose-cad, background, cad, cadobjects, csharp, dotnet8, dxf |
 | [After Adding A Background Image Retrieve Layout Names and Layer List to Verify Drawing Structure](./after-adding-a-background-image-retrieve-layout-names-and-layer-list-to-verify-drawing-structure.cs) | Cad | add, aspose-cad, background, cad, cadobjects, cadtables, csharp, dotnet8 |
 | [Create A Cadrasterimagedef Instantiate Cadrasterimage and Insert It Before Adding New Text Entities](./create-a-cadrasterimagedef-instantiate-cadrasterimage-and-insert-it-before-adding-new-text-entities.cs) | Cad | add, aspose-cad, background, cad, cadobjects, cadtables, csharp, dotnet8 |
@@ -43,3 +43,7 @@ Build-validated Aspose.CAD for .NET examples for `add-background-images-to-dxf-f
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+## November 6 verified repairs
+
+Tasks 45079, 45101 have refreshed native drawing-input verification and persisted-output checks. See [repair evidence and limits](../VALIDATION.md#november-6-rerun-repairs).

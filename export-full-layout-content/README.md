@@ -18,7 +18,7 @@ Build-validated Aspose.CAD for .NET examples for `export-full-layout-content`.
 - `Aspose.CAD.FileFormats.Cad` (28 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (12 example(s))
 - `System.Linq` (7 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadConsts` (6 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadConsts` (7 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -43,3 +43,7 @@ Build-validated Aspose.CAD for .NET examples for `export-full-layout-content`.
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+## November 12 stopped-run verification
+
+Tasks 45480 have renewed native-input verification, including applicable reload/output and failure controls. See [repair scope and limits](../VALIDATION.md#november-12-stopped-run-repairs).

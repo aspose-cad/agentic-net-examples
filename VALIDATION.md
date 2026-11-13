@@ -2,9 +2,9 @@
 
 ## Publication counts
 
-This branch proposes **1,905 examples across 45 categories** from the 1,959-task catalog; **54 tasks are withheld**. Relative to merged main's 1,904 examples, it adds the native SAT-container layout reader **45173**. No previously published source is removed.
+This branch proposes **1,906 examples across 45 categories** from the 1,959-task catalog; **53 tasks are withheld**. Relative to merged main's 1,905 examples, it replaces 45 existing sources and adds owner-clarified visible-watermark task **45026**. No previously published source is removed.
 
-The earlier checkpoints were 1,864 + 60 added IDs - 30 withheld IDs = 1,894, followed by 45757 to 1,895, eight native watermark examples to 1,903 and DGN comparison 44122 to 1,904. This branch adds one: **1,904 + 1 = 1,905**. Publication counts differ from historical catalog-run statistics.
+The earlier checkpoints were 1,864 + 60 added IDs - 30 withheld IDs = 1,894, followed by 45757 to 1,895, eight native watermark examples to 1,903 and DGN comparison 44122 to 1,904. The SAT reader brought the inventory to **1,904 + 1 = 1,905**. The November 12 owner-clarified visible annotation adds one further example: **1,905 + 1 = 1,906**. Publication counts differ from historical catalog-run statistics.
 
 The original completed run processed 1,959 tasks with 1,920 successes and 39 failures. Subsequent repair batches recovered 35 of those failures; four PDF/PNG watermark operations remain unresolved. The prior nine repairs and this SAT-container reader come from the wider withheld inventory and do not change that 35/39 figure.
 
@@ -69,3 +69,123 @@ python .github/scripts/validate_example_corpus.py --repo . --shards 1 --shard 0 
 ```
 
 Keep .NET 8 and the pinned Aspose.CAD 26.9.0 package when reproducing this evidence. Framework dependencies are restored by NuGet. No SDK DLLs, credentials, licenses, generated build workspaces or customer drawings are committed.
+
+
+## November 6 rerun repairs
+
+The November 5–6 generation run ended with 23 failures. This branch replaces 22
+existing sources; it adds no examples and removes no previously published source.
+The inventory remains 1,905 examples across 45 categories, with 54 tasks withheld.
+The original run summary is preserved; repaired local evidence is separate.
+
+All 22 exact sources compiled and executed against a controlled native DWG/DXF and
+PNG input on Aspose.CAD 26.9.0 / .NET 8. Native-save samples reload their outputs
+and assert entity membership, references, ownership, widths or hatch data. Render
+samples check callback completion/PDF signatures or TIFF dimensions. Thirteen
+controls exercise missing/corrupt inputs, absent entities, unsupported overlapping
+arcs and block-only polylines. Independent geometry checks verify the identify-only
+and deletion distinction, preserve an AABB-overlapping line that misses the
+rectangle, and confirm rectangle-fill replacement preserves outlines.
+
+Collection semantics are explicit: definitions are CadBaseObject entries in
+Objects; raster instances are CadEntityBase entries in Entities. Task 45240 sets
+missing-text glyph fallback, not a font on hatch line geometry. Task 45184 handles
+linked raster definitions, not all DWG XREF/underlay formats. Rectangle operations
+support exact XY lines, circles and straight coplanar lightweight polylines;
+unsupported overlapping geometry fails before save instead of deleting by bounds.
+
+Task 44046 remains withheld: a fresh PDF probe rendered successfully but embedding
+stayed PENDING and CAD could not reload the PDF for known-payload validation.
+The paired native DXF control passed correct-payload and wrong-payload checks;
+that is not PDF watermark proof.
+
+Full-corpus Linux CI for this new source commit is pending. Earlier corpus CI
+belongs to earlier commits; most corpus runtime cases are missing-input smoke
+checks, distinct from the representative drawing evidence for these 22 repairs.
+
+Tracking: https://issue.support.dynabic.com/issues/137635
+
+
+## November 12 stopped-run repairs
+
+This initial 12/13 checkpoint preceded the owner clarification below. Its 1,905/54 inventory and withheld status for 45026 are historical; the [visible annotation follow-up](#visible-watermark-scope-clarification--november-12) supersedes them with 1,906/53.
+
+Stopped run 20261111_174822_766873_5aebc600 records 13 failures. Its aggregate
+counters show 780 started / 766 successes / 13 failures, while the per-task table
+contains 767 passes / 13 failures. These historical records are preserved and
+are not represented as a completed 1,959-task run.
+
+Twelve repaired/restored sources pass exact-source compile/run with native
+DWG/DXF or public DWF input. Seventeen input/output controls pass, including
+paper-space placement, curved-outline rejection, missing batch/donor inputs,
+DWG donors, unsupported import dependencies, hidden layers and PDF size limits.
+Four further assertions on the compiled callback/layer helpers reject incomplete
+renders and reported failures and verify the actual visibility/exclusion policy.
+Original input hashes remain unchanged.
+
+The twelve include three unchanged sources restored from existing verified
+examples (45056, 45328 and 45986) and nine newly changed source files. Together
+with the earlier branch's 22 changes, this review now updates 31 source files,
+not 34 additions. All paths/discovery counts remain unchanged: 1,905 examples
+and 54 withheld tasks.
+
+Polyline insertion verifies geometry, layer, color and selected model/paper
+layout ownership after native reload. Native serialization can expand omitted
+bulges to explicit zeros; comparisons preserve that logical equivalence while
+retaining genuine curved values. Hatch samples retain actual line-family data
+and reject unsupported curved outlines. Composite import preserves the existing
+target and supports bounded LINE/CIRCLE/TEXT dependencies, not arbitrary models.
+DWF font mapping checks actual typed font names and retained text/positions;
+host font installation and general glyph appearance are not universally certified.
+The configured high-quality PDF/A output has part 1/conformance A XMP and is
+checked against a caller-specified size limit; independent conformance validation
+is not claimed.
+
+Task 45026 remains withheld: native DXF payload validation and a PDF margin
+preview do not verify an invisible watermark's alleged visible border placement.
+A reused image reports SUCCESS after native DXF then PDF, while fresh-image PDF
+export reports PENDING in the diagnostic. Status on a reused image is not proof
+of payload persistence in the exact PDF. No overlay or native-DXF substitution
+is counted as the missing operation.
+
+Current-source Linux full-corpus CI is pending for this expanded branch. Earlier
+CI belongs to its earlier source commit. Most corpus runtime cases remain
+missing-input smoke checks, separate from the native drawing checks above.
+
+Tracking: https://issue.support.dynabic.com/issues/137921
+Generator review: https://gitlab.recruitize.ai/sialkot/gujrat-examples/aspose-cad-examples-generator-v1/-/merge_requests/16
+
+
+## Visible watermark scope clarification — November 12
+
+After the initial 12/13 repair checkpoint, the owner explicitly requested **visible watermark text inside the border** for task 45026. Preserve the original blind-watermark failure/diagnostic as history; the new source, title, path, manifest and discovery metadata explicitly describe visible annotation. This does not establish PDF blind-watermark embedding or repair the separate unresolved protection tasks.
+
+The sample appends a closed border and a CadText in a reserved caption strip around the finite native drawing extents. It registers both entities in model space without moving the original drawing, saves DXF in Convert mode, reloads to verify text, coordinates, ownership, original entity membership and layouts, and exports the reloaded drawing with margins and render callback checks. Existing outputs are rejected; captions are bounded to 1–40 printable ASCII characters.
+
+Three final-source drawing executions pass: DWG with the default caption, DXF and DWG with a longer caption. Independent PDFKit text extraction and rasterization plus pixel checks locate the red caption strictly inside the blue border, with the border strictly inside the page. A separate native DXF comparison preserves geometry groups, text, layer, flags, handles and owner on all ten original entities. Nine final-source controls pass (two drawing positives, six rejection cases and a no-input smoke check). Evaluation-mode decorations remain visible and are excluded from the color-based placement measurement. Broader font, encoding, layout and drawing coverage is not certified.
+
+Inventory progression: **1,905 + 1 = 1,906 examples**, **54 - 1 = 53 withheld**. The combined review replaces 31 existing C# sources and adds this one example; it does not add 32 examples. Current-source corpus CI must be read from the PR checks; the earlier 1,905-source CI applies to its earlier commit. Most corpus executions are missing-input checks, separate from these three real-input runs.
+
+Generator regressions: 349 focused passes; full required suite 691 passed, 43 unchanged inherited failures, 136 passing subtests, 84.76% coverage. Source/control/visual evidence and metrics receipts are linked from the PR and task #137921.
+
+
+## November 13 failure repairs
+
+The interrupted November 12–13 run recorded 18 failures after 779 cached tasks and 832 new starts: 1,592 successes including cache, 18 failures, with the original run still marked running when its owner exited. The process and local API are no longer running. Original run/failure records are retained; this is not a completed 1,959-task pass. The orphaned usage state was recovered through the existing metrics API path: 4,474 LLM calls / 16,997,662 tokens / 949 MCP generation calls / 5,423 total API calls, acknowledgment recorded. API recovery status follows its existing interrupted-run reporting policy and does not assert full catalog completion.
+
+Fourteen current exact standalone sources pass static validation, restore, compile and real-file runtime checks. All 25 final-source controls pass, including application callback failure, color range, model/paper layout references, unknown layout, actual transient HTTP retry, exhaustion/non-transient/corrupt responses, wrong models and native SAT deletion rejection controls. Three additional assertions against the exact compiled reference method verify cyclic traversal/underlay resolution/unlinked exclusion, missing definition rejection and ambiguous paper ownership rejection. Inputs remain unchanged.
+
+Quality export sets the real text/hatch/arc quality group and verifies PDF callbacks without changing drawing geometry. Layer-selection measurement temporarily assigns the selected array, checks the other geometry and layer definitions and restores the original collection in finally. Native DwgImage.AddLayer is required to register generated layers. Only AC1032 DWG output is verified in this SDK; AC1027 and AC1018 writer calls are unimplemented and are explicitly rejected before final output. The controlled 3DFACE retains zero-Z first/second corners and nonzero-Z third/fourth corners; arbitrary face orientations are not certified.
+
+Block/insert examples preserve the small fixture's original geometry, handles and layouts on native reload. A larger capacity fixture loses entities through this SDK writer in the current environment; all three preservation controls reject it and publish no final DWG. The examples support bounded geometry/dependencies, not arbitrary large drawings. Pending files remain distinguishable from verified output. The existing DXF-to-DWG importer retains LINE/CIRCLE/TEXT dependency checks.
+
+The external-reference logger follows actual layout ownership, including owner-less DXF model semantics, through insert blocks with cycle detection. Raster and underlay paths resolve through real definition handles. Model and paper references remain separated; unused definitions are excluded. DRC retry notifications are application callbacks around real HTTP failures, not invented SDK load callbacks. DWFx PNG and DWF JPEG checks inspect actual exported dimensions; DWF layer names and JPEG bytes are recorded.
+
+The SAT task operates on native CAD containing text ACIS/SAT data. Its explicitly labelled application RemoveEntityAt helper uses actual SDK removal/collections. Reload verifies one deletion, the remaining ten entity identities/ACIS payloads, viewport geometry and layout ownership. Standalone SAT/SAB and unsupported preservation comparisons are rejected.
+
+Four tasks remain unverified: 44331 (FBX batch to protected PDF), 44332 (IFC batch to protected PNG), 44345/44351 (IFC line pattern/default line type). Fresh FBX/IFC embedding remains PENDING; reloaded PNG payload validation is FAILURE; the SDK cannot reload the diagnostic PDFs. A fresh 36-export IFC pixel probe has real geometry/color controls but no curve-font pattern effect. Successful rendering, status queries or alternate operations are not counted as their repair.
+
+Full required generator suite: 704 passed / 43 unchanged inherited failures / 136 passing subtests, 84.81% coverage; full suite is not green. Generator MR17 and task138019 carry source/control/fixture/usage evidence. This review cumulatively replaces **45 existing sources and adds 1** (the earlier owner-clarified visible annotation), with inventory unchanged at **1,906 / 53 withheld**. Current-source corpus CI must be read from PR checks; prior source results do not cover these changes.
+
+Tracking: https://issue.support.dynabic.com/issues/138019
+Generator review: https://gitlab.recruitize.ai/sialkot/gujrat-examples/aspose-cad-examples-generator-v1/-/merge_requests/17

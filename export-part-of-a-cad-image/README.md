@@ -15,10 +15,10 @@ Build-validated Aspose.CAD for .NET examples for `export-part-of-a-cad-image`.
 - `System.IO` (30 example(s))
 - `Aspose.CAD` (30 example(s))
 - `Aspose.CAD.ImageOptions` (29 example(s))
-- `Aspose.CAD.FileFormats.Cad` (21 example(s))
-- `System.Linq` (7 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (4 example(s))
-- `System.Collections.Generic` (4 example(s))
+- `Aspose.CAD.FileFormats.Cad` (22 example(s))
+- `System.Linq` (8 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (5 example(s))
+- `System.Collections.Generic` (5 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -43,3 +43,8 @@ Build-validated Aspose.CAD for .NET examples for `export-part-of-a-cad-image`.
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+
+## November 13 native-input verification
+
+Tasks 45578 are verified against the active SDK with representative files and applicable reload/render checks. See [controls and limitations](../VALIDATION.md#november-13-failure-repairs).

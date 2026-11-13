@@ -58,7 +58,7 @@ class Program
         if (entity is CadLine line) return "line:"+Point(line.FirstPoint)+":"+Point(line.SecondPoint)+":"+Point(line.ExtrusionDirection)+":"+Number(line.Thickness);
         if (entity is CadText text) return "text:"+text.DefaultValue+":"+Point(text.FirstAlignment)+":"+Point(text.SecondAlignmentPoint)+":"+Number(text.TextHeight)+":"+Number(text.TextRotation);
         if (entity is CadMText mtext) return "mtext:"+mtext.Text+":"+Point(mtext.InsertionPoint)+":"+Number(mtext.InitialTextHeight)+":"+Number(mtext.RotationAngleRad);
-        if (entity is CadLwPolyline poly) return "lwpoly:"+poly.Flag+":"+Number(poly.Elevation)+":"+string.Join(";",poly.Coordinates.Select(p=>Number(p.X)+","+Number(p.Y)))+":"+string.Join(",",(poly.Bugle??new List<double>()).Select(Number));
+        if (entity is CadLwPolyline poly) return "lwpoly:"+poly.Flag+":"+Number(poly.Elevation)+":"+string.Join(";",poly.Coordinates.Select(p=>Number(p.X)+","+Number(p.Y)))+":"+string.Join(",",Enumerable.Range(0,poly.Coordinates.Count).Select(i=>Number(poly.Bugle!=null&&i<poly.Bugle.Count?poly.Bugle[i]:0)));
         if (entity is CadInsertObject insert) return "insert:"+insert.Name+":"+Point(insert.InsertionPoint)+":"+Number(insert.ScaleX)+":"+Number(insert.ScaleY)+":"+Number(insert.ScaleZ)+":"+Number(insert.RotationAngle);
         // Arbitrary geometry needs a type-specific comparison, not a count-only assertion.
         throw new NotSupportedException("This bounded example cannot verify preservation of "+entity.TypeName+".");

@@ -14,16 +14,16 @@ Build-validated Aspose.CAD for .NET examples for `create-hatched-rectangles-from
 - `System` (35 example(s))
 - `Aspose.CAD` (35 example(s))
 - `Aspose.CAD.FileFormats.Cad` (35 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (34 example(s))
 - `System.IO` (34 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (34 example(s))
 - `Aspose.CAD.ImageOptions` (32 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadConsts` (28 example(s))
-- `System.Linq` (25 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadConsts` (29 example(s))
+- `System.Linq` (26 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
 |---------|----------|------|
-| [Add Multiple Cadlwpolyline Rectangles to The Drawing and Fill Each with Distinct Cadhatch Configurations](./add-multiple-cadlwpolyline-rectangles-to-the-drawing-and-fill-each-with-distinct-cadhatch-configurations.cs) | Cad.CadConsts | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
+| [Add Multiple Cadlwpolyline Rectangles to The Drawing and Fill Each with Distinct Cadhatch Configurations](./add-multiple-cadlwpolyline-rectangles-to-the-drawing-and-fill-each-with-distinct-cadhatch-configurations.cs) | ImageOptions | aspose-cad, cad, cadconsts, cadobjects, cadtables, create, csharp, dotnet8 |
 | [Add The Cadhatch Entity After Defining All Cadlwpolyline Objects to Ensure Proper Layering](./add-the-cadhatch-entity-after-defining-all-cadlwpolyline-objects-to-ensure-proper-layering.cs) | Cad | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
 | [Add The Configured Cadhatch Entity to The Drawing Entity Collection](./add-the-configured-cadhatch-entity-to-the-drawing-entity-collection.cs) | Cad.CadConsts | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
 | [Adjust The Hatch Angle of Cadhatch to 45 Degrees for A Standard Diagonal Hatch](./adjust-the-hatch-angle-of-cadhatch-to-45-degrees-for-a-standard-diagonal-hatch.cs) | Cad | aspose-cad, cad, cadconsts, cadobjects, create, csharp, dotnet8, fileformats |
@@ -43,3 +43,12 @@ Build-validated Aspose.CAD for .NET examples for `create-hatched-rectangles-from
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+## November 6 verified repairs
+
+Tasks 45313, 45319, 45321, 45326, 45328, 45332, 45337 have refreshed native drawing-input verification and persisted-output checks. See [repair evidence and limits](../VALIDATION.md#november-6-rerun-repairs).
+
+
+## November 12 stopped-run verification
+
+Tasks 45305, 45318, 45328 have renewed native-input verification, including applicable reload/output and failure controls. See [repair scope and limits](../VALIDATION.md#november-12-stopped-run-repairs).

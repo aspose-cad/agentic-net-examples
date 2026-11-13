@@ -1,40 +1,33 @@
 using System;
 using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Text.Json;
 using Aspose.CAD;
+using Aspose.CAD.ImageOptions;
+using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
+using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;
+using Aspose.CAD.FileFormats.Dwf;
 
-namespace AsposeCadExample
+class Program
 {
-    class Program
+    static void Require(bool condition, string message)
+    { if (!condition) throw new InvalidOperationException(message); }
+
+    static bool Input(string path, bool explicitInput) {if(File.Exists(path))return true;Console.Error.WriteLine("Input file not found: "+path);return false;}
+    static int Main(string[] args)
     {
-        static void Main(string[] args)
+        try
         {
-            // Placeholder path to the DWF file
-            string inputFilePath = "input.dwf";
+            string input=args.Length>0?args[0]:"input.dwf";if(!Input(input,args.Length>0))return args.Length==0?0:1;
+            using(Image image=Image.Load(input)){Require(image is DwfImage,"The input is not a DWF/DWFx model.");var dwf=(DwfImage)image;Console.WriteLine("Loaded DWF: "+image.Width+" x "+image.Height+"; pages "+dwf.Pages.Length);Require(dwf.Pages.Length>0,"DWF has no pages.");}
 
-            try
-            {
-                // Verify that the input file exists
-                if (!File.Exists(inputFilePath))
-                {
-                    Console.Error.WriteLine($"Error: File not found - {inputFilePath}");
-                    return;
-                }
-
-                // Load the DWF drawing using the standard Aspose.CAD loader
-                using (Image dwfImage = Image.Load(inputFilePath))
-                {
-                    // Output basic information about the loaded drawing
-                    Console.WriteLine($"Successfully loaded DWF file: {inputFilePath}");
-                    Console.WriteLine($"Image size: {dwfImage.Width} x {dwfImage.Height}");
-                    // FileFormat property is not available; display the image type instead
-                    Console.WriteLine($"Image type: {dwfImage.GetType().Name}");
-                }
-            }
-            catch (Exception ex)
-            {
-                // Print concise error information without crashing
-                Console.Error.WriteLine($"An error occurred: {ex.Message}");
-            }
+            Console.WriteLine("Verified task 44123");return 0;
         }
+        catch(Exception ex){Console.Error.WriteLine(ex.Message);return 1;}
     }
 }

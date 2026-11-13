@@ -18,7 +18,7 @@ Build-validated Aspose.CAD for .NET examples for `change-polyline-width`.
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (28 example(s))
 - `Aspose.CAD.ImageOptions` (27 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects.Polylines` (14 example(s))
-- `System.Linq` (11 example(s))
+- `System.Linq` (12 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -43,3 +43,12 @@ Build-validated Aspose.CAD for .NET examples for `change-polyline-width`.
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+## November 6 verified repairs
+
+Tasks 45208 have refreshed native drawing-input verification and persisted-output checks. See [repair evidence and limits](../VALIDATION.md#november-6-rerun-repairs).
+
+
+## November 12 stopped-run verification
+
+Tasks 45224 have renewed native-input verification, including applicable reload/output and failure controls. See [repair scope and limits](../VALIDATION.md#november-12-stopped-run-repairs).

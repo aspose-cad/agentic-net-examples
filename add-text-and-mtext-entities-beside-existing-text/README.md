@@ -13,25 +13,25 @@ Build-validated Aspose.CAD for .NET examples for `add-text-and-mtext-entities-be
 ## Common Namespaces
 - `System` (35 example(s))
 - `System.IO` (35 example(s))
-- `Aspose.CAD` (34 example(s))
-- `Aspose.CAD.FileFormats.Cad` (34 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (33 example(s))
-- `Aspose.CAD.ImageOptions` (17 example(s))
-- `System.Linq` (15 example(s))
-- `System.Collections.Generic` (8 example(s))
+- `Aspose.CAD` (35 example(s))
+- `Aspose.CAD.FileFormats.Cad` (35 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (34 example(s))
+- `Aspose.CAD.ImageOptions` (20 example(s))
+- `System.Linq` (16 example(s))
+- `System.Collections.Generic` (11 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
 |---------|----------|------|
 | [Add New Entities to The Drawing Entities Collection After Inserting Them into The Model Space Block](./add-new-entities-to-the-drawing-entities-collection-after-inserting-them-into-the-model-space-block.cs) | ImageOptions | add, and, aspose-cad, beside, cad, cadconsts, cadobjects, cadtables |
 | [Add The New Cadmtext Entity to The Drawing Entities Collection for Proper Inclusion](./add-the-new-cadmtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs) | Cad | add, and, aspose-cad, beside, cad, cadobjects, csharp, dotnet8 |
-| [Add The New Cadtext Entity to The Drawing Entities Collection for Proper Inclusion](./add-the-new-cadtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs) | Cad | add, and, aspose-cad, beside, cad, cadobjects, csharp, dotnet8 |
+| [Add The New Cadtext Entity to The Drawing Entities Collection for Proper Inclusion](./add-the-new-cadtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs) | ImageOptions | add, and, aspose-cad, beside, cad, cadconsts, cadobjects, cadtables |
 | [Assign Softowner After Creating The Cadmtext Entity to Ensure Correct Ownership Within The Model Layout](./assign-softowner-after-creating-the-cadmtext-entity-to-ensure-correct-ownership-within-the-model-layout.cs) | Cad | add, and, aspose-cad, beside, cad, cadobjects, csharp, dotnet8 |
 | [Assign The Softowner Property of The New Cadmtext Entity using The Obtained Block Table Record Handle](./assign-the-softowner-property-of-the-new-cadmtext-entity-using-the-obtained-block-table-record-handle.cs) | ImageOptions | add, and, aspose-cad, beside, cad, cadconsts, cadobjects, cadtables |
 | [Assign The Softowner Property of The New Cadtext Entity using The Obtained Block Table Record Handle](./assign-the-softowner-property-of-the-new-cadtext-entity-using-the-obtained-block-table-record-handle.cs) | Cad | add, and, aspose-cad, beside, cad, cadobjects, csharp, dotnet8 |
 | [Confirm That Each New Entity Is Added to The Model Space Block to Appear in Model Space](./confirm-that-each-new-entity-is-added-to-the-model-space-block-to-appear-in-model-space.cs) | ImageOptions | add, and, aspose-cad, beside, cad, cadconsts, cadobjects, cadtables |
 | [Create A Cadbaseentity Instance to Serve as The Base for New Text Entities](./create-a-cadbaseentity-instance-to-serve-as-the-base-for-new-text-entities.cs) | Cad | add, and, aspose-cad, beside, cad, cadobjects, csharp, dotnet8 |
-| [Create Cadbaseentity Objects as A Base Before Instantiating Specific Cadmtext or Cadtext Types](./create-cadbaseentity-objects-as-a-base-before-instantiating-specific-cadmtext-or-cadtext-types.cs) | Cad | add, and, aspose-cad, beside, cad, cadobjects, csharp, dotnet8 |
+| [Create Cadbaseentity Objects as A Base Before Instantiating Specific Cadmtext or Cadtext Types](./create-cadbaseentity-objects-as-a-base-before-instantiating-specific-cadmtext-or-cadtext-types.cs) | ImageOptions | add, and, aspose-cad, beside, cad, cadconsts, cadobjects, cadtables |
 | [Ensure Softowner References The Model Layout Block Table Record Handle for Each Newly Added Entity](./ensure-softowner-references-the-model-layout-block-table-record-handle-for-each-newly-added-entity.cs) | Cad | add, and, aspose-cad, beside, cad, cadobjects, csharp, dotnet8 |
 | [Ensure That Each New Cadmtext Entity Softowner Matches The Model Layout Block Table Record Handle](./ensure-that-each-new-cadmtext-entity-softowner-matches-the-model-layout-block-table-record-handle.cs) | Cad | add, and, aspose-cad, beside, cad, cadobjects, csharp, dotnet8 |
 | [Ensure That Each New Cadtext Entity Softowner Matches The Model Layout Block Table Record Handle](./ensure-that-each-new-cadtext-entity-softowner-matches-the-model-layout-block-table-record-handle.cs) | ImageOptions | add, and, aspose-cad, beside, cad, cadobjects, cadtables, csharp |
@@ -43,3 +43,7 @@ Build-validated Aspose.CAD for .NET examples for `add-text-and-mtext-entities-be
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+## November 6 verified repairs
+
+Tasks 45108, 45121, 45135 have refreshed native drawing-input verification and persisted-output checks. See [repair evidence and limits](../VALIDATION.md#november-6-rerun-repairs).

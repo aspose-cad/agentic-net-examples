@@ -27,7 +27,7 @@ Build-validated Aspose.CAD for .NET examples for `export-selected-layers-with-re
 | [Apply Updatesize After Assigning Entities to Guarantee Correct Scaling Before Export](./apply-updatesize-after-assigning-entities-to-guarantee-correct-scaling-before-export.cs) | ImageOptions | aspose-cad, cad, csharp, dotnet8, export, fileformats, imageoptions, layers |
 | [Assign The Cadbaseentity Array to The Drawing Entities Collection Before Export](./assign-the-cadbaseentity-array-to-the-drawing-entities-collection-before-export.cs) | Cad | aspose-cad, cad, cadobjects, csharp, dotnet8, export, fileformats, imageoptions |
 | [Call The Updatesize Method to Apply Rescaling to The Selected Layers](./call-the-updatesize-method-to-apply-rescaling-to-the-selected-layers.cs) | ImageOptions | aspose-cad, cad, cadtables, csharp, dotnet8, export, fileformats, imageoptions |
-| [Check That Calling Updatesize After Assigning Entities Does Not Affect Layers Not in The Cadbaseentity Array](./check-that-calling-updatesize-after-assigning-entities-does-not-affect-layers-not-in-the-cadbaseentity-array.cs) | ImageOptions | aspose-cad, cad, cadobjects, cadtables, csharp, dotnet8, export, fileformats |
+| [Check That Calling Updatesize After Assigning Entities Does Not Affect Layers Not in The Cadbaseentity Array](./check-that-calling-updatesize-after-assigning-entities-does-not-affect-layers-not-in-the-cadbaseentity-array.cs) | ImageOptions | aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, dotnet8, dwf |
 | [Compare The Exported Layout Size with The Original using Get Size of The Layout](./compare-the-exported-layout-size-with-the-original-using-get-size-of-the-layout.cs) | Cad | aspose-cad, cad, cadobjects, csharp, dotnet8, export, fileformats, imageoptions |
 | [Configure Export Options to Include Only Layers Present in The Cadbaseentity Array](./configure-export-options-to-include-only-layers-present-in-the-cadbaseentity-array.cs) | ImageOptions | aspose-cad, cad, cadobjects, csharp, dotnet8, export, fileformats, imageoptions |
 | [Create A Cadbaseentity Array Instance to Hold The Selected Layer Objects](./create-a-cadbaseentity-array-instance-to-hold-the-selected-layer-objects.cs) | Cad | aspose-cad, cad, cadobjects, csharp, dotnet8, export, fileformats, layers |
@@ -43,3 +43,8 @@ Build-validated Aspose.CAD for .NET examples for `export-selected-layers-with-re
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+
+## November 13 native-input verification
+
+Tasks 45559 are verified against the active SDK with representative files and applicable reload/render checks. See [controls and limitations](../VALIDATION.md#november-13-failure-repairs).

@@ -14,17 +14,17 @@ Build-validated Aspose.CAD for .NET examples for `change-emergency-fonts-and-sty
 - `Aspose.CAD` (28 example(s))
 - `System` (28 example(s))
 - `System.IO` (28 example(s))
-- `Aspose.CAD.FileFormats.Cad` (25 example(s))
+- `Aspose.CAD.FileFormats.Cad` (26 example(s))
 - `Aspose.CAD.ImageOptions` (22 example(s))
 - `Aspose.CAD.FileFormats.Cad.CadObjects` (9 example(s))
-- `System.Linq` (4 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadTables` (3 example(s))
+- `System.Linq` (5 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadTables` (4 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
 |---------|----------|------|
 | [Adjust The Emergency Font Setting to Improve Readability of Annotations When Exporting to High Resolution Images](./adjust-the-emergency-font-setting-to-improve-readability-of-annotations-when-exporting-to-high-resolution-images.cs) | Cad | and, aspose-cad, cad, change, csharp, dotnet8, emergency, fileformats |
-| [Apply A Custom Emergency Font to Hatch Patterns By Assigning The Defaultfont Field Before Rendering](./apply-a-custom-emergency-font-to-hatch-patterns-by-assigning-the-defaultfont-field-before-rendering.cs) | ImageOptions | and, aspose-cad, cad, cadobjects, change, csharp, dotnet8, emergency |
+| [Apply A Custom Emergency Font to Hatch Patterns By Assigning The Defaultfont Field Before Rendering](./apply-a-custom-emergency-font-to-hatch-patterns-by-assigning-the-defaultfont-field-before-rendering.cs) | ImageOptions | and, aspose-cad, cad, cadconsts, cadobjects, cadtables, change, csharp |
 | [Apply A New Defaultfont to All Text Styles and Confirm That Block References Inherit The Updated Font](./apply-a-new-defaultfont-to-all-text-styles-and-confirm-that-block-references-inherit-the-updated-font.cs) | Cad.CadTables | and, aspose-cad, cad, cadobjects, cadtables, change, csharp, dotnet8 |
 | [Apply The Defaultfont Change to Text Entities Within Nested Blocks to Ensure Uniform Font Usage](./apply-the-defaultfont-change-to-text-entities-within-nested-blocks-to-ensure-uniform-font-usage.cs) | Cad | and, aspose-cad, cad, cadobjects, change, csharp, dotnet8, emergency |
 | [Assess Performance Impact When Applying The Defaultfont Change to Large Drawings with Many Text Entities](./assess-performance-impact-when-applying-the-defaultfont-change-to-large-drawings-with-many-text-entities.cs) | Cad | and, aspose-cad, cad, cadobjects, change, csharp, dotnet8, emergency |
@@ -43,3 +43,7 @@ Build-validated Aspose.CAD for .NET examples for `change-emergency-fonts-and-sty
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+## November 6 verified repairs
+
+Tasks 45240 have refreshed native drawing-input verification and persisted-output checks. See [repair evidence and limits](../VALIDATION.md#november-6-rerun-repairs).

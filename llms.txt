@@ -2,11 +2,11 @@
 
 > Build-validated, standalone C# examples for Aspose.CAD for .NET and .NET 8.
 
-- Examples: 1905
+- Examples: 1906
 - Categories: 45
 - Framework: net8.0
 - Package: Aspose.CAD 26.9.0
-- Last updated: 2026-11-04
+- Last updated: 2026-11-13
 - Coding-agent instructions: ./AGENTS.md
 - Structured index: ./index.json
 - Search discovery index: ./search-index.json
@@ -21,7 +21,7 @@
 - [access-polyline-and-3dface-vertices](./access-polyline-and-3dface-vertices/): 29 standalone examples; instructions in [AGENTS.md](./access-polyline-and-3dface-vertices/AGENTS.md); guide in [README.md](./access-polyline-and-3dface-vertices/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [add-background-images-to-dwg-files](./add-background-images-to-dwg-files/): 33 standalone examples; instructions in [AGENTS.md](./add-background-images-to-dwg-files/AGENTS.md); guide in [README.md](./add-background-images-to-dwg-files/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [add-background-images-to-dxf-files](./add-background-images-to-dxf-files/): 30 standalone examples; instructions in [AGENTS.md](./add-background-images-to-dxf-files/AGENTS.md); guide in [README.md](./add-background-images-to-dxf-files/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [add-margins-to-cad-drawings](./add-margins-to-cad-drawings/): 27 standalone examples; instructions in [AGENTS.md](./add-margins-to-cad-drawings/AGENTS.md); guide in [README.md](./add-margins-to-cad-drawings/README.md); common namespaces: System, System.IO, Aspose.CAD
+- [add-margins-to-cad-drawings](./add-margins-to-cad-drawings/): 28 standalone examples; instructions in [AGENTS.md](./add-margins-to-cad-drawings/AGENTS.md); guide in [README.md](./add-margins-to-cad-drawings/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [add-polylines](./add-polylines/): 34 standalone examples; instructions in [AGENTS.md](./add-polylines/AGENTS.md); guide in [README.md](./add-polylines/README.md); common namespaces: System, Aspose.CAD, Aspose.CAD.FileFormats.Cad.CadObjects
 - [add-text-and-mtext-entities-beside-existing-text](./add-text-and-mtext-entities-beside-existing-text/): 35 standalone examples; instructions in [AGENTS.md](./add-text-and-mtext-entities-beside-existing-text/AGENTS.md); guide in [README.md](./add-text-and-mtext-entities-beside-existing-text/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [adjust-cad-drawing-properties](./adjust-cad-drawing-properties/): 34 standalone examples; instructions in [AGENTS.md](./adjust-cad-drawing-properties/AGENTS.md); guide in [README.md](./adjust-cad-drawing-properties/README.md); common namespaces: System, System.IO, Aspose.CAD
@@ -47,7 +47,7 @@
 - [generate-cad-files](./generate-cad-files/): 35 standalone examples; instructions in [AGENTS.md](./generate-cad-files/AGENTS.md); guide in [README.md](./generate-cad-files/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [get-cad-layer-list](./get-cad-layer-list/): 30 standalone examples; instructions in [AGENTS.md](./get-cad-layer-list/AGENTS.md); guide in [README.md](./get-cad-layer-list/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [get-cad-layout-names](./get-cad-layout-names/): 30 standalone examples; instructions in [AGENTS.md](./get-cad-layout-names/AGENTS.md); guide in [README.md](./get-cad-layout-names/README.md); common namespaces: System, System.IO, Aspose.CAD
-- [get-cad-layout-size](./get-cad-layout-size/): 35 standalone examples; instructions in [AGENTS.md](./get-cad-layout-size/AGENTS.md); guide in [README.md](./get-cad-layout-size/README.md); common namespaces: System, Aspose.CAD, System.IO
+- [get-cad-layout-size](./get-cad-layout-size/): 35 standalone examples; instructions in [AGENTS.md](./get-cad-layout-size/AGENTS.md); guide in [README.md](./get-cad-layout-size/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [get-external-file-references](./get-external-file-references/): 31 standalone examples; instructions in [AGENTS.md](./get-external-file-references/AGENTS.md); guide in [README.md](./get-external-file-references/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [insert-dxf-or-dwg-drawings-into-dwg-files](./insert-dxf-or-dwg-drawings-into-dwg-files/): 30 standalone examples; instructions in [AGENTS.md](./insert-dxf-or-dwg-drawings-into-dwg-files/AGENTS.md); guide in [README.md](./insert-dxf-or-dwg-drawings-into-dwg-files/README.md); common namespaces: System, System.IO, Aspose.CAD
 - [optimize-hatch-origin-for-better-performance](./optimize-hatch-origin-for-better-performance/): 29 standalone examples; instructions in [AGENTS.md](./optimize-hatch-origin-for-better-performance/AGENTS.md); guide in [README.md](./optimize-hatch-origin-for-better-performance/README.md); common namespaces: Aspose.CAD, System, System.IO
@@ -77,7 +77,7 @@
 - [Add A Cadbaseobject That References The Cadrasterimage to Establish A Relationship Between Them](./add-background-images-to-dwg-files/add-a-cadbaseobject-that-references-the-cadrasterimage-to-establish-a-relationship-between-them.cs) - ImageOptions; tags: add, aspose-cad, background, cad, cadobjects, csharp
 - [Add The Cadrasterimage to The Cadimage Objects Collection to Include It in The Drawing](./add-background-images-to-dwg-files/add-the-cadrasterimage-to-the-cadimage-objects-collection-to-include-it-in-the-drawing.cs) - Cad; tags: add, aspose-cad, background, cad, cadobjects, csharp
 ### add-background-images-to-dxf-files
-- [Access Entities Inside A Block Add A Background Image and Then Adjust Hatch Origin Point](./add-background-images-to-dxf-files/access-entities-inside-a-block-add-a-background-image-and-then-adjust-hatch-origin-point.cs) - ImageOptions; tags: add, aspose-cad, background, cad, cadobjects, csharp
+- [Access Entities Inside A Block Add A Background Image and Then Adjust Hatch Origin Point](./add-background-images-to-dxf-files/access-entities-inside-a-block-add-a-background-image-and-then-adjust-hatch-origin-point.cs) - ImageOptions; tags: add, aspose-cad, background, cad, cadconsts, cadobjects
 - [Access Entities Inside A Block to Modify Their Appearance After Adding A Background Image](./add-background-images-to-dxf-files/access-entities-inside-a-block-to-modify-their-appearance-after-adding-a-background-image.cs) - ImageOptions; tags: add, aspose-cad, background, cad, cadobjects, cadtables
 - [Add A Background Image to A DXF Drawing and Then Export The File using The Export Workflow](./add-background-images-to-dxf-files/add-a-background-image-to-a-dxf-drawing-and-then-export-the-file-using-the-export-workflow.cs) - Add Background Images To Dxf Files; tags: add, aspose-cad, background, csharp, dotnet8, dxf
 ### add-margins-to-cad-drawings
@@ -91,7 +91,7 @@
 ### add-text-and-mtext-entities-beside-existing-text
 - [Add New Entities to The Drawing Entities Collection After Inserting Them into The Model Space Block](./add-text-and-mtext-entities-beside-existing-text/add-new-entities-to-the-drawing-entities-collection-after-inserting-them-into-the-model-space-block.cs) - ImageOptions; tags: add, and, aspose-cad, beside, cad, cadconsts
 - [Add The New Cadmtext Entity to The Drawing Entities Collection for Proper Inclusion](./add-text-and-mtext-entities-beside-existing-text/add-the-new-cadmtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs) - Cad; tags: add, and, aspose-cad, beside, cad, cadobjects
-- [Add The New Cadtext Entity to The Drawing Entities Collection for Proper Inclusion](./add-text-and-mtext-entities-beside-existing-text/add-the-new-cadtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs) - Cad; tags: add, and, aspose-cad, beside, cad, cadobjects
+- [Add The New Cadtext Entity to The Drawing Entities Collection for Proper Inclusion](./add-text-and-mtext-entities-beside-existing-text/add-the-new-cadtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs) - ImageOptions; tags: add, and, aspose-cad, beside, cad, cadconsts
 ### adjust-cad-drawing-properties
 - [Assess Performance Impact of Automatic Sizing Compared to Manual Width and Height Specifications](./adjust-cad-drawing-properties/assess-performance-impact-of-automatic-sizing-compared-to-manual-width-and-height-specifications.cs) - ImageOptions; tags: adjust, aspose-cad, cad, csharp, dotnet8, drawing
 - [Assess Whether Automatic Sizing Respects The Original Drawing Aspect Ratio](./adjust-cad-drawing-properties/assess-whether-automatic-sizing-respects-the-original-drawing-aspect-ratio.cs) - Cad; tags: adjust, aspose-cad, cad, csharp, dotnet8, drawing
@@ -106,7 +106,7 @@
 - [Catch and Log Any Exceptions Thrown During Radius Extraction to Maintain Robust Error Handling](./calculate-circle-area-and-circumference/catch-and-log-any-exceptions-thrown-during-radius-extraction-to-maintain-robust-error-handling.cs) - Calculate Circle Area And Circumference; tags: and, area, aspose-cad, calculate, circle, circumference
 ### change-emergency-fonts-and-style-fonts
 - [Adjust The Emergency Font Setting to Improve Readability of Annotations When Exporting to High Resolution Images](./change-emergency-fonts-and-style-fonts/adjust-the-emergency-font-setting-to-improve-readability-of-annotations-when-exporting-to-high-resolution-images.cs) - Cad; tags: and, aspose-cad, cad, change, csharp, dotnet8
-- [Apply A Custom Emergency Font to Hatch Patterns By Assigning The Defaultfont Field Before Rendering](./change-emergency-fonts-and-style-fonts/apply-a-custom-emergency-font-to-hatch-patterns-by-assigning-the-defaultfont-field-before-rendering.cs) - ImageOptions; tags: and, aspose-cad, cad, cadobjects, change, csharp
+- [Apply A Custom Emergency Font to Hatch Patterns By Assigning The Defaultfont Field Before Rendering](./change-emergency-fonts-and-style-fonts/apply-a-custom-emergency-font-to-hatch-patterns-by-assigning-the-defaultfont-field-before-rendering.cs) - ImageOptions; tags: and, aspose-cad, cad, cadconsts, cadobjects, cadtables
 - [Apply A New Defaultfont to All Text Styles and Confirm That Block References Inherit The Updated Font](./change-emergency-fonts-and-style-fonts/apply-a-new-defaultfont-to-all-text-styles-and-confirm-that-block-references-inherit-the-updated-font.cs) - Cad.CadTables; tags: and, aspose-cad, cad, cadobjects, cadtables, change
 ### change-polyline-width
 - [Adjust The Lineweight Property of Non Lwpolyline Entities to Modify Visual Thickness](./change-polyline-width/adjust-the-lineweight-property-of-non-lwpolyline-entities-to-modify-visual-thickness.cs) - Cad; tags: aspose-cad, cad, cadobjects, change, csharp, dotnet8
@@ -129,7 +129,7 @@
 - [Apply Scalemethod Shrinktofit to Automatically Adjust Dimensions When Converting DWG to TIFF](./convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/apply-scalemethod-shrinktofit-to-automatically-adjust-dimensions-when-converting-dwg-to-tiff.cs) - ImageOptions; tags: and, aspose-cad, cad, convert, csharp, dotnet8
 - [Convert A DWG File to PDF While Preserving Default Model Layout and Automatic Scaling](./convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/convert-a-dwg-file-to-pdf-while-preserving-default-model-layout-and-automatic-scaling.cs) - ImageOptions; tags: and, aspose-cad, convert, csharp, dotnet8, drawings
 ### create-hatched-rectangles-from-polylines
-- [Add Multiple Cadlwpolyline Rectangles to The Drawing and Fill Each with Distinct Cadhatch Configurations](./create-hatched-rectangles-from-polylines/add-multiple-cadlwpolyline-rectangles-to-the-drawing-and-fill-each-with-distinct-cadhatch-configurations.cs) - Cad.CadConsts; tags: aspose-cad, cad, cadconsts, cadobjects, create, csharp
+- [Add Multiple Cadlwpolyline Rectangles to The Drawing and Fill Each with Distinct Cadhatch Configurations](./create-hatched-rectangles-from-polylines/add-multiple-cadlwpolyline-rectangles-to-the-drawing-and-fill-each-with-distinct-cadhatch-configurations.cs) - ImageOptions; tags: aspose-cad, cad, cadconsts, cadobjects, cadtables, create
 - [Add The Cadhatch Entity After Defining All Cadlwpolyline Objects to Ensure Proper Layering](./create-hatched-rectangles-from-polylines/add-the-cadhatch-entity-after-defining-all-cadlwpolyline-objects-to-ensure-proper-layering.cs) - Cad; tags: aspose-cad, cad, cadconsts, cadobjects, create, csharp
 - [Add The Configured Cadhatch Entity to The Drawing Entity Collection](./create-hatched-rectangles-from-polylines/add-the-configured-cadhatch-entity-to-the-drawing-entity-collection.cs) - Cad.CadConsts; tags: aspose-cad, cad, cadconsts, cadobjects, create, csharp
 ### delete-entities-inside-a-rectangle
@@ -195,7 +195,7 @@
 ### insert-dxf-or-dwg-drawings-into-dwg-files
 - [Access and Manipulate The Cadblockdictionary to Remove An Unwanted Block Entity from The Drawing](./insert-dxf-or-dwg-drawings-into-dwg-files/access-and-manipulate-the-cadblockdictionary-to-remove-an-unwanted-block-entity-from-the-drawing.cs) - Cad; tags: aspose-cad, cad, csharp, dotnet8, drawings, dwg
 - [Add The Cadblockdictionary to The Drawing Blockentities Collection for Block Management During The Insertion Process](./insert-dxf-or-dwg-drawings-into-dwg-files/add-the-cadblockdictionary-to-the-drawing-blockentities-collection-for-block-management-during-the-insertion-process.cs) - Cad; tags: aspose-cad, cad, cadobjects, csharp, dotnet8, drawings
-- [Add The Cadblockentity to The Cadblockdictionary to Make It Available in The Drawing](./insert-dxf-or-dwg-drawings-into-dwg-files/add-the-cadblockentity-to-the-cadblockdictionary-to-make-it-available-in-the-drawing.cs) - Cad; tags: aspose-cad, cad, cadobjects, csharp, dotnet8, drawings
+- [Add The Cadblockentity to The Cadblockdictionary to Make It Available in The Drawing](./insert-dxf-or-dwg-drawings-into-dwg-files/add-the-cadblockentity-to-the-cadblockdictionary-to-make-it-available-in-the-drawing.cs) - ImageOptions; tags: aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp
 ### optimize-hatch-origin-for-better-performance
 - [Assign The X Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint X](./optimize-hatch-origin-for-better-performance/assign-the-x-coordinate-of-the-new-point2d-to-cadhatchpatterndata-linebasepoint-x.cs) - Cad.CadObjects.Hatch; tags: aspose-cad, better, cad, cadobjects, csharp, dotnet8
 - [Assign The Y Coordinate of The New Point2d to Cadhatchpatterndata Linebasepoint Y](./optimize-hatch-origin-for-better-performance/assign-the-y-coordinate-of-the-new-point2d-to-cadhatchpatterndata-linebasepoint-y.cs) - Cad.CadObjects; tags: aspose-cad, better, cad, cadobjects, csharp, dotnet8

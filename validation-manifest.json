@@ -2,10 +2,10 @@
   "schema_version": 1,
   "product": "Aspose.CAD",
   "package_version": "26.9.0",
-  "verified_on": "2026-11-04",
+  "verified_on": "2026-11-12",
   "catalog_total": 1959,
-  "published_total": 1905,
-  "withheld_total": 54,
+  "published_total": 1906,
+  "withheld_total": 53,
   "examples": [
     {
       "task_id": "44926",
@@ -792,10 +792,11 @@
       "title": "Implement error handling when the image file path on CadRasterImageDef is missing or invalid.",
       "category": "Add Background Images to DWG Files",
       "path": "add-background-images-to-dwg-files/implement-error-handling-when-the-image-file-path-on-cadrasterimagedef-is-missing-or-invalid.cs",
-      "sha256": "d40622f186a75e95ec94c0ad7ae984e5f3c2faf3cda7ea788d7b87c9ada48a33",
+      "sha256": "70b0dd887a8c6c5ae9fc7ffc85cb1ccd30b3bcce1e549e94970d692a9f9f7d61",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45048",
@@ -942,10 +943,11 @@
       "title": "Validate that cadImage.Objects contains both CadRasterImage and CadBaseObject after insertion and before saving.",
       "category": "Add Background Images to DWG Files",
       "path": "add-background-images-to-dwg-files/validate-that-cadimage-objects-contains-both-cadrasterimage-and-cadbaseobject-after-insertion-and-before-saving.cs",
-      "sha256": "2a754b148ef2d537f18f95dbae0ef43ba2d0f9409ad9c258aa46b822fdf8953d",
+      "sha256": "d5ad13dfd5b4fac7006b063c903c4b7f31008da22833c91b15788520d4d840fd",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45045",
@@ -972,10 +974,11 @@
       "title": "Access entities inside a block, add a background image, and then adjust hatch origin point.",
       "category": "Add Background Images to DXF Files",
       "path": "add-background-images-to-dxf-files/access-entities-inside-a-block-add-a-background-image-and-then-adjust-hatch-origin-point.cs",
-      "sha256": "fb7fa0b018bf80da326a858c72c4a00bc04ff25514b48284741baf08063f5775",
+      "sha256": "2f6e7d3ca3cd96d15e760c6f7bec466c4f1de18686a73838910f32d902b36dc2",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45083",
@@ -1002,10 +1005,11 @@
       "title": "Add new MTEXT entities beside existing text after placing the background image in the drawing.",
       "category": "Add Background Images to DXF Files",
       "path": "add-background-images-to-dxf-files/add-new-mtext-entities-beside-existing-text-after-placing-the-background-image-in-the-drawing.cs",
-      "sha256": "f6d9f8a2efc5ec4da20ba0f07bd1c0da352a6b92f753683738aaa8cb94779eba",
+      "sha256": "bab7aa8535623295bb3402bee7d0b14bcdb7435be381139ed0fd1d0d4e578f06",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45078",
@@ -1306,6 +1310,23 @@
       "compile_status": "passed",
       "runtime_status": "passed",
       "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+    },
+    {
+      "task_id": "45026",
+      "title": "Add visible watermark text inside a drawing border after configuring export margins, preserving existing CAD entities and layouts.",
+      "original_task": "Apply blind watermark after margin addition to ensure the watermark appears within the defined drawing border.",
+      "scope_clarification": {
+        "recorded_on": "2026-11-12",
+        "owner_response": "Visible watermark text inside the border",
+        "operation": "Visible CAD annotation, not blind watermark embedding"
+      },
+      "category": "Add Margins to CAD Drawings",
+      "path": "add-margins-to-cad-drawings/add-visible-watermark-text-inside-a-drawing-border-with-export-margins.cs",
+      "sha256": "3a42cb9f7adeecee1432a9a808020947373fd259c3db8ff11ae433157f758c1b",
+      "compile_status": "passed",
+      "runtime_status": "passed",
+      "verified_on": "2026-11-12",
+      "verification": "Exact-source native DWG/DXF compile/run; native caption, border and layout ownership persist; three independent PDF text/pixel checks place the caption strictly inside the border/page; nine final-source input/output controls pass. Original DXF entity geometry and identities are unchanged."
     },
     {
       "task_id": "45031",
@@ -1732,10 +1753,11 @@
       "title": "Insert the polyline into the entity collection of the chosen layout to ensure proper placement.",
       "category": "Add Polylines",
       "path": "add-polylines/insert-the-polyline-into-the-entity-collection-of-the-chosen-layout-to-ensure-proper-placement.cs",
-      "sha256": "25a04e1e1d50139c9b03717832971a182b953e3bfbc80e0dcec028df0eb6598d",
+      "sha256": "e7d5b4b07068bad694c501f72ea13af57e9dbc2c55df6fc8a3ed89af85eb0483",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "44976",
@@ -1862,10 +1884,11 @@
       "title": "Verify that the inserted CadLwPolyline appears on the correct layer and with the assigned color.",
       "category": "Add Polylines",
       "path": "add-polylines/verify-that-the-inserted-cadlwpolyline-appears-on-the-correct-layer-and-with-the-assigned-color.cs",
-      "sha256": "8ade0bbf01b0a5f71521835144044d69e92fc1449a05d47ae2979f769b2ee545",
+      "sha256": "6ed429481d903d7b531e5ecb375879b481df7b0ee52c25b7270efa8c0f0fe02f",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "44986",
@@ -1902,10 +1925,11 @@
       "title": "Add the new CadText entity to the drawing's entities collection for proper inclusion.",
       "category": "Add TEXT and MTEXT Entities Beside Existing Text",
       "path": "add-text-and-mtext-entities-beside-existing-text/add-the-new-cadtext-entity-to-the-drawing-entities-collection-for-proper-inclusion.cs",
-      "sha256": "e34bcb5be700ced22c0f3b30d05bb9a4e006137549959757b7981cd409f0764d",
+      "sha256": "856637dd828c681f8eaf71ceb23c475d7c17a956d86b01d46e7dd9dcb9db1366",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45113",
@@ -1962,10 +1986,11 @@
       "title": "Create CadBaseEntity objects as a base before instantiating specific CadMText or CadText types.",
       "category": "Add TEXT and MTEXT Entities Beside Existing Text",
       "path": "add-text-and-mtext-entities-beside-existing-text/create-cadbaseentity-objects-as-a-base-before-instantiating-specific-cadmtext-or-cadtext-types.cs",
-      "sha256": "8f785cae52eb56734e535d5e6aaf434e76bfc58aff113c810702509045b9feca",
+      "sha256": "a2633d43f22313a5f776513a5eadf49f00e639baa1f9fd8acd5422ddc536e03b",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45114",
@@ -2032,10 +2057,11 @@
       "title": "Handle any load callbacks for errors that may occur when reloading the drawing with new entities.",
       "category": "Add TEXT and MTEXT Entities Beside Existing Text",
       "path": "add-text-and-mtext-entities-beside-existing-text/handle-any-load-callbacks-for-errors-that-may-occur-when-reloading-the-drawing-with-new-entities.cs",
-      "sha256": "d634f380a3188b6e839acda009e97cb238e7f9e261653a4ab913116338e14553",
+      "sha256": "cfbb9d45922b1123aff61650c0f075ffb629aeb0dbb5ab0e0ba10a40a3a8ee46",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45130",
@@ -3042,10 +3068,11 @@
       "title": "Apply a custom emergency font to hatch patterns by assigning the DefaultFont field before rendering.",
       "category": "Change Emergency Fonts and Style Fonts",
       "path": "change-emergency-fonts-and-style-fonts/apply-a-custom-emergency-font-to-hatch-patterns-by-assigning-the-defaultfont-field-before-rendering.cs",
-      "sha256": "38a748d1444151d34bd8f014b2f36bd4bc38005bb3288592c54b90e0f2d6476f",
+      "sha256": "a5d2ff229a9fca9a730fe9bdfcb80a67d9b61e6aca720bdda4ca888506a3435b",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45257",
@@ -3352,10 +3379,11 @@
       "title": "Combine property modifications with developer tips to ensure consistent polyline appearance across multiple CAD drawings.",
       "category": "Change Polyline Width",
       "path": "change-polyline-width/combine-property-modifications-with-developer-tips-to-ensure-consistent-polyline-appearance-across-multiple-cad-drawi.cs",
-      "sha256": "9d2b0b912c33a7e9de2b6690b12c80c8bc7a640331ba5337fdde939fd8a2c5e8",
+      "sha256": "8e38cac6a81c8b86f70bb0c1250652464be799a327bb75c924df3b932d26287e",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45212",
@@ -3562,10 +3590,11 @@
       "title": "Use CadLwPolyline.ConstantWidth to assign varying widths to LWPOLYLINE entities based on custom criteria.",
       "category": "Change Polyline Width",
       "path": "change-polyline-width/use-cadlwpolyline-constantwidth-to-assign-varying-widths-to-lwpolyline-entities-based-on-custom-criteria.cs",
-      "sha256": "2c9cb6ff9a2bea326170a799df58c4edaa7057918d9cf7961988205268bc20df",
+      "sha256": "d3b49151dab696e20d670819cf1bd1426d0c8ddb4b29c4b35356a2dc51333ef2",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45204",
@@ -3642,10 +3671,11 @@
       "title": "Access external file references, update their paths, and export the drawing to PDF to verify links.",
       "category": "Change the Observer Point",
       "path": "change-the-observer-point/access-external-file-references-update-their-paths-and-export-the-drawing-to-pdf-to-verify-links.cs",
-      "sha256": "d2ec751f748053a99630f9017f3efd2b9c1421a0a8190b2bc2a3f08fab16a6b3",
+      "sha256": "c87d99875b43259b3482140e90492eeaa0b857a2a9dc5a21a3f39c67aecfd228",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45197",
@@ -4082,10 +4112,11 @@
       "title": "Dispose of RasterizationOptions and rendering objects after image generation to release resources.",
       "category": "Configure Pen Options",
       "path": "configure-pen-options/dispose-of-rasterizationoptions-and-rendering-objects-after-image-generation-to-release-resources.cs",
-      "sha256": "6ce35ded13847b9edba0c3957736503d1989bc98f9853ff55258fd0d4739c1ee",
+      "sha256": "c5b7a6b9d98b3c9fc2b94644b5c6f469863f9de57e56832f9c36a7c842ad094e",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45924",
@@ -4512,10 +4543,11 @@
       "title": "Use Quality group to centrally manage parameters, simplifying future adjustments across projects.",
       "category": "Configure Quality Options for Text, Hatches, and Arcs",
       "path": "configure-quality-options-for-text-hatches-and-arcs/use-quality-group-to-centrally-manage-parameters-simplifying-future-adjustments-across-projects.cs",
-      "sha256": "8263adb2b61a20f10aa1dd5abdb9e9ac0882d052ff4fb33c7bca851b98195dd3",
+      "sha256": "3bdb918c2875e88f20747066e7dda77cc1e0b1c22b048724e9a8abe27887c4a4",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45957",
@@ -4642,10 +4674,11 @@
       "title": "Handle ImageSaveException by ensuring PageWidth and PageHeight are set before saving as TIFF.",
       "category": "Convert DWG and DXF Drawings to PDF and Raster Images",
       "path": "convert-dwg-and-dxf-drawings-to-pdf-and-raster-images/handle-imagesaveexception-by-ensuring-pagewidth-and-pageheight-are-set-before-saving-as-tiff.cs",
-      "sha256": "e99365fb10720bb079c2042bd8adb9d69ad374ace6934d9fedf704d50b89e226",
+      "sha256": "603cbce8c215e4556c05b032b31a64dacc328764edf48b706e7a0d73d2a5f97c",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45993",
@@ -4745,7 +4778,8 @@
       "sha256": "0169b2390a490241ed3afee81ebdead676b2ee5a222527b990ee3d3414afa353",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Exact-source compile/run with controlled drawing inputs and task-specific assertions. Font-host appearance and PDF element completeness require review beyond the recorded diagnostics."
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45977",
@@ -4852,10 +4886,11 @@
       "title": "Add multiple CadLwPolyline rectangles to the drawing and fill each with distinct CadHatch configurations.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/add-multiple-cadlwpolyline-rectangles-to-the-drawing-and-fill-each-with-distinct-cadhatch-configurations.cs",
-      "sha256": "0c45dd3b12f54ea2387cd9734ce0bf6f36aea65cebd3ac59a255fd674ec01d12",
+      "sha256": "72cf6aa3dda118e8f19ae7558eafee156c1587b859e05e3ea2d331d2a87ed7e3",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45324",
@@ -5022,20 +5057,22 @@
       "title": "Export the drawing after applying multiple CadHatch entities to verify all patterns render correctly.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/export-the-drawing-after-applying-multiple-cadhatch-entities-to-verify-all-patterns-render-correctly.cs",
-      "sha256": "28fa23544ec428548e09c96984c4acf715c34ca1bb5904c1aa8ff8cb37a38397",
+      "sha256": "bf61f06a42b7b826341e6cd3dc7f359dada05abca2749abf0da2c4c34a2a3460",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45337",
       "title": "Export the final drawing after applying hatch to ensure patterns are retained across formats.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/export-the-final-drawing-after-applying-hatch-to-ensure-patterns-are-retained-across-formats.cs",
-      "sha256": "ab566b5613b100e666ae66d37ed5a86fdbcf8d5b48bacbc892f615e80bae6d47",
+      "sha256": "9d9103a30601b918f508b73b2f495d1ef0515d78aa846ea083e6b6a49950ed80",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45312",
@@ -5082,10 +5119,11 @@
       "title": "Load a CAD drawing, locate existing CadLwPolyline rectangles, and replace their fill with a new CadHatch.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/load-a-cad-drawing-locate-existing-cadlwpolyline-rectangles-and-replace-their-fill-with-a-new-cadhatch.cs",
-      "sha256": "13329b8806f0e4d8fbb75dcd1ea071c50cbf9d5651ba471124c25c30c899467e",
+      "sha256": "e7177d433e7cca45849f57c6c53190f7831a4890ebb26bb0d078b6161ea8d62d",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45325",
@@ -5112,10 +5150,11 @@
       "title": "Replace an existing CadHatch in a drawing with a new one using different CadHatchPatternData.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/replace-an-existing-cadhatch-in-a-drawing-with-a-new-one-using-different-cadhatchpatterndata.cs",
-      "sha256": "707cd77381aa349dacdc1c385d7da5d9d6816ad60a3c6303f2918c34869cc799",
+      "sha256": "9e3c26a7450f97995b4f71b27500e2e7e7002c6046407bffd11983ad47a05004",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Compile/run with controlled drawing inputs; console diagnostics checked. This is not proof for every real-world drawing."
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45336",
@@ -5142,10 +5181,11 @@
       "title": "Set both hatch angle and color simultaneously on CadHatch to achieve patterned shading.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/set-both-hatch-angle-and-color-simultaneously-on-cadhatch-to-achieve-patterned-shading.cs",
-      "sha256": "d29638e5f9d9e8128f53d9c5aa36f79684c319793bb0d42facb6e2c9c8fe83e8",
+      "sha256": "48f1e08afb0ec65bf09560afa7f2e761a7f4d4fab5fceedd64c6d2df10441abb",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45307",
@@ -5172,30 +5212,33 @@
       "title": "Use CadEdgeBoundaryPath to connect the CadLwPolyline edges and define the hatch boundary.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/use-cadedgeboundarypath-to-connect-the-cadlwpolyline-edges-and-define-the-hatch-boundary.cs",
-      "sha256": "fa0f1e56e294130728c0e4f1e8d36fc8a6d2bd1c53d0725121b38b5dd32a43b5",
+      "sha256": "70bc76288b0e8e4b672b8f4ef7ce5861e62f2a621f10852fc4da849147f0d9ee",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Compile/run with controlled drawing inputs; console diagnostics checked. This is not proof for every real-world drawing."
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45332",
       "title": "Use CadEdgeBoundaryPath to create multiple hatch boundaries within a single drawing for varied regions.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/use-cadedgeboundarypath-to-create-multiple-hatch-boundaries-within-a-single-drawing-for-varied-regions.cs",
-      "sha256": "ad02c0660a59af6e9247110ea2a7d60f6e83ee0784c3a3fe9e80fdf113016811",
+      "sha256": "728fb31b90935af03b33c140fa92c02eca292d79cd11be31ba122179e5b8d111",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45318",
       "title": "Utilize CadHatchPatternData to define a custom hatch pattern with specific line spacing.",
       "category": "Create Hatched Rectangles from Polylines",
       "path": "create-hatched-rectangles-from-polylines/utilize-cadhatchpatterndata-to-define-a-custom-hatch-pattern-with-specific-line-spacing.cs",
-      "sha256": "0e53823f7f09c47342a0153f74e1f38c0d324c4d586713ecde43c4b157743b5c",
+      "sha256": "77a9019d03308bd6484f9b9a83c8f39a6c75e46da2ceb37781478923999bff42",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45363",
@@ -5242,10 +5285,11 @@
       "title": "Batch delete all entities that intersect the hatch\u2011filled rectangle area.",
       "category": "Delete Entities Inside a Rectangle",
       "path": "delete-entities-inside-a-rectangle/batch-delete-all-entities-that-intersect-the-hatch-filled-rectangle-area.cs",
-      "sha256": "135e23f1c9573594c2e2262877cf7979d3016a177abab789a11bf5e64318ce51",
+      "sha256": "b4fa8f3a6eef8802b7ea56ef31af7911459d41b7a8686f580346a9682ab88bcf",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Exact-source .NET 8/Aspose.CAD 26.9 compile/run with controlled drawing inputs, operation assertions and output checks. Raster/hatch/text persistence uses editable DXF output; PDF/A certification and visual-quality review are separate."
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45341",
@@ -5282,20 +5326,22 @@
       "title": "Create a hatch\u2011filled rectangle polyline and use it to identify intersecting entities.",
       "category": "Delete Entities Inside a Rectangle",
       "path": "delete-entities-inside-a-rectangle/create-a-hatch-filled-rectangle-polyline-and-use-it-to-identify-intersecting-entities.cs",
-      "sha256": "06dde3f6baa98321727f4892af5249add193da7c4664518322c0683de75ed13d",
+      "sha256": "3daf77ac638f4855d9ca9c0b695df734bea8c4a6b06bda256238630baae6051a",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45353",
       "title": "Create a polyline rectangle, apply hatch fill, and delete all intersecting entities.",
       "category": "Delete Entities Inside a Rectangle",
       "path": "delete-entities-inside-a-rectangle/create-a-polyline-rectangle-apply-hatch-fill-and-delete-all-intersecting-entities.cs",
-      "sha256": "281aa88ba7a17c20167946f1d68f89be836c869f79648abfaadf4b6e3577264c",
+      "sha256": "cd3438199928a7b42b9e846a1c5443a727b449766308e6c0d6fe45a24bcd26d9",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with controlled native DXF input, saved-output/reload assertions; November 6 repair evidence.",
+      "verified_on": "2026-11-06"
     },
     {
       "task_id": "45364",
@@ -5952,10 +5998,11 @@
       "title": "Handle any callback errors during export to ensure robust execution.",
       "category": "Exclude Hidden and Named Layers from Export",
       "path": "exclude-hidden-and-named-layers-from-export/handle-any-callback-errors-during-export-to-ensure-robust-execution.cs",
-      "sha256": "86b73077519ac0107b511dce62e0a590474ccfccbd3479c23a6f3a0ddee16d13",
+      "sha256": "b2c23cc8f10fac9f9f94444b0b56541d48c29b1d2e4d94674378e460cc7088e3",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45370",
@@ -6172,10 +6219,11 @@
       "title": "Confirm that the PDF/A file size remains within acceptable limits after applying high\u2011quality text and hatch settings.",
       "category": "Export CAD Drawings to PDF/A",
       "path": "export-cad-drawings-to-pdf-a/confirm-that-the-pdf-a-file-size-remains-within-acceptable-limits-after-applying-high-quality-text-and-hatch-settings.cs",
-      "sha256": "cc3aa4719bb90138eaed2fc0ed550c453728204a7dd063ba37cdda826d055874",
+      "sha256": "b689445e3a2b349e2af2f36a3b8a627b0e1390a1f08d9bac095fd616359efeba",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45594",
@@ -7202,10 +7250,11 @@
       "title": "Insert DXF/DWG drawings into other drawings to create composite CAD models for analysis.",
       "category": "Export Full Layout Content",
       "path": "export-full-layout-content/insert-dxf-dwg-drawings-into-other-drawings-to-create-composite-cad-models-for-analysis.cs",
-      "sha256": "abf936b731e86ed63885e69e189c8b24ebbc290e68603dd46680be4bb3f9491b",
+      "sha256": "fe83e96ae200b83d955e1155eda2ec3cb4fb1a76d86d40d65904eb0d0af3297c",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native CAD/DWF inputs and output/preservation checks; November 12 stopped-run repair evidence.",
+      "verified_on": "2026-11-12"
     },
     {
       "task_id": "45492",
@@ -7682,10 +7731,11 @@
       "title": "Set quality options for text, hatches, and arcs to improve visual fidelity in PDF output.",
       "category": "Export Part of a CAD Image",
       "path": "export-part-of-a-cad-image/set-quality-options-for-text-hatches-and-arcs-to-improve-visual-fidelity-in-pdf-output.cs",
-      "sha256": "7d40d6bc9724b0be47f564928808be2ca9ca260b4f4ecb224888918ee58d8bbb",
+      "sha256": "852e36e15684f3e6bf95658e34be6b5111da322383e53be512bb12e4746e142d",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45573",
@@ -8102,10 +8152,11 @@
       "title": "Check that calling UpdateSize after assigning entities does not affect layers not in the CadBaseEntity array.",
       "category": "Export Selected Layers with Rescaling",
       "path": "export-selected-layers-with-rescaling/check-that-calling-updatesize-after-assigning-entities-does-not-affect-layers-not-in-the-cadbaseentity-array.cs",
-      "sha256": "57bea26de3c03c7c055010161001665b1c918e4003da5159fd0a607ddddde03c",
+      "sha256": "7fa8b147a357b164cf11246f40e31a184396f547898644d9e3cf2ca41dfd9577",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45544",
@@ -8662,10 +8713,11 @@
       "title": "Specify a custom DWG version when saving a drawing that contains 3DFACE entities.",
       "category": "Generate CAD Files",
       "path": "generate-cad-files/specify-a-custom-dwg-version-when-saving-a-drawing-that-contains-3dface-entities.cs",
-      "sha256": "c9106be9635f03c82c57c38a5ccaa7335ebb2436759d66d7972acece0cd4fe4f",
+      "sha256": "0eeba9c7394ea40af5f9328ddf6efb909f34654ba17e2bb522360223f3485b59",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Explicit AC1032 native DWG header and reloaded controlled 3DFACE geometry verified. AC1027/AC1018 are unimplemented in tested SDK and are explicitly rejected before final output.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44702",
@@ -8682,10 +8734,11 @@
       "title": "Use callback error handling during DWG export while adding multiple entities.",
       "category": "Generate CAD Files",
       "path": "generate-cad-files/use-callback-error-handling-during-dwg-export-while-adding-multiple-entities.cs",
-      "sha256": "e764f4f07b4ba2116ddd18c55751f42322afbfa0264d74ce310bd74b3ddb10aa",
+      "sha256": "a23674f357222a2d9f9fb9e30f6d5b1e7a8e58b02a0a7afa6c28b250837b169d",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44706",
@@ -9402,10 +9455,11 @@
       "title": "Generate a CAD file programmatically, add layers, and compute its layout size before saving.",
       "category": "Get CAD Layout Size",
       "path": "get-cad-layout-size/generate-a-cad-file-programmatically-add-layers-and-compute-its-layout-size-before-saving.cs",
-      "sha256": "f7e585bd3c50ed727c843381b2684e68bf0c5a13fd3549f3c05462ab86eccd9e",
+      "sha256": "bf7b98a7c97d95a0adbb39a5dfe9fe6645387a8e4e681b0c577e2193f88d1290",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45716",
@@ -9562,10 +9616,11 @@
       "title": "Obtain external file references from a layout and log each reference path.",
       "category": "Get CAD Layout Size",
       "path": "get-cad-layout-size/obtain-external-file-references-from-a-layout-and-log-each-reference-path.cs",
-      "sha256": "1b74504cda594fe5df20c2e8d139b2fe7c0eac7fefbf0746a4743f60ffcbdf21",
+      "sha256": "70418cd8a5b25a372d79743a4d3022315719f043a06ef2e9296eb1c0a74336a5",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45729",
@@ -9982,20 +10037,22 @@
       "title": "Add the CadBlockEntity to the CadBlockDictionary to make it available in the drawing.",
       "category": "Insert DXF or DWG Drawings into DWG Files",
       "path": "insert-dxf-or-dwg-drawings-into-dwg-files/add-the-cadblockentity-to-the-cadblockdictionary-to-make-it-available-in-the-drawing.cs",
-      "sha256": "78fac9dc87d2af9dd5fcaecc931ec6b6b68888d479a318ba4c8118007ffd96df",
+      "sha256": "9ef12cba2a45d819696b3c34d45a4fcc72cf362e02d977d4b0c3c4b73c4a77ed",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45756",
       "title": "Add the configured CadInsertObject to the drawing's entity collection.",
       "category": "Insert DXF or DWG Drawings into DWG Files",
       "path": "insert-dxf-or-dwg-drawings-into-dwg-files/add-the-configured-cadinsertobject-to-the-drawing-entity-collection.cs",
-      "sha256": "7d56ccb72d6a3fdb2749aa6a35a34f7b580cbf6ba666b7d0f62dddb621c1605a",
+      "sha256": "2a7d1a690f42cd44a4bc126a7b17b1d95d648c517b5ca28708490ff2571ce822",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45755",
@@ -10132,10 +10189,11 @@
       "title": "Insert a DXF drawing into a DWG file by using a CadInsertObject reference.",
       "category": "Insert DXF or DWG Drawings into DWG Files",
       "path": "insert-dxf-or-dwg-drawings-into-dwg-files/insert-a-dxf-drawing-into-a-dwg-file-by-using-a-cadinsertobject-reference.cs",
-      "sha256": "140f2b028a128ea8156693a483717cd4d549f7b60155ee1c31cea6a311f651eb",
+      "sha256": "0692d541778639518f10ab733701977a113cd213f14975abeca8ae30df9892c7",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Exact-source .NET 8 / Aspose.CAD 26.9.0 drawing-input tests: native DwgImage writer preserves an existing DWG, geometry, handles, layouts, block ownership, paper-space entities and a rotated insert after DWG reload. Bounded external importer supports LINE/CIRCLE/TEXT; unsupported dependencies are rejected."
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45766",
@@ -11042,10 +11100,11 @@
       "title": "Load drawing with SAT/SAB structure, access block objects, and delete a block entity using RemoveEntityAt.",
       "category": "Remove CAD Entities",
       "path": "remove-cad-entities/load-drawing-with-sat-sab-structure-access-block-objects-and-delete-a-block-entity-using-removeentityat.cs",
-      "sha256": "519ad4e55e43eaa789023be2849c7d7d0ec639bd89871d93cedeb55e206109f1",
+      "sha256": "74057e41864a217f89335165510cbabcc71ed3f452120f4fec1b9df942ee3acb",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Native DXF containing text ACIS/SAT: application index-removal helper uses real SDK/collections, preserves exact remaining ACIS payloads, viewport geometry, entity identities and layouts on reload. Standalone SAT/SAB and arbitrary geometry are outside scope.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45854",
@@ -13142,10 +13201,11 @@
       "title": "Create a script that loads a DWF drawing, extracts layers, exports to JPEG, and records file size.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-jpeg-and-records-file-size.cs",
-      "sha256": "b495df4e59933b4e29c5db0eb3053443317662dfdad31a9b486d8b6e331a30c5",
+      "sha256": "65be4e47e1f42451204d460bb9f58e06d0677d1267f02d126576f8894b06b1d8",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Compile/run with controlled drawing inputs; console diagnostics checked. This is not proof for every real-world drawing."
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44187",
@@ -15202,10 +15262,11 @@
       "title": "Load a DWF drawing file using the standard loading method.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/load-a-dwf-drawing-file-using-the-standard-loading-method.cs",
-      "sha256": "de87265927d6017f2cca26d469e10dddd5b9a6a46145c881d5ba5c54f4115b40",
+      "sha256": "861ae96e906a5013d2f085e71ab7de98e447c478590c23be6c20cd9db31f7628",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44153",
@@ -15252,10 +15313,11 @@
       "title": "Load a DWFx drawing, render it, and retrieve image dimensions to assess quality.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/load-a-dwfx-drawing-render-it-and-retrieve-image-dimensions-to-assess-quality.cs",
-      "sha256": "904694a2f0a1d0bc57eb94fef24fed1442c9632421c05bd8f9aa6fb2a8e02dda",
+      "sha256": "5e2688517ce8f05468f55b707fc410d0f23b4676f2aa02599468a3f98aaeffec",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44143",
@@ -17052,10 +17114,11 @@
       "title": "Use error handling callbacks to retry loading a DRC file after a transient network failure.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/use-error-handling-callbacks-to-retry-loading-a-drc-file-after-a-transient-network-failure.cs",
-      "sha256": "0545c774b70b451a08987c246342ba1406d90c14da32a3804a3342a01a0768a6",
+      "sha256": "61e658fc3aff3776b1f5287d98abdfd43c56341ec6274cdc0c6ae763263028b5",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44081",
