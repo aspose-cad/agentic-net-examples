@@ -7731,10 +7731,11 @@
       "title": "Set quality options for text, hatches, and arcs to improve visual fidelity in PDF output.",
       "category": "Export Part of a CAD Image",
       "path": "export-part-of-a-cad-image/set-quality-options-for-text-hatches-and-arcs-to-improve-visual-fidelity-in-pdf-output.cs",
-      "sha256": "7d40d6bc9724b0be47f564928808be2ca9ca260b4f4ecb224888918ee58d8bbb",
+      "sha256": "852e36e15684f3e6bf95658e34be6b5111da322383e53be512bb12e4746e142d",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45573",
@@ -8151,10 +8152,11 @@
       "title": "Check that calling UpdateSize after assigning entities does not affect layers not in the CadBaseEntity array.",
       "category": "Export Selected Layers with Rescaling",
       "path": "export-selected-layers-with-rescaling/check-that-calling-updatesize-after-assigning-entities-does-not-affect-layers-not-in-the-cadbaseentity-array.cs",
-      "sha256": "57bea26de3c03c7c055010161001665b1c918e4003da5159fd0a607ddddde03c",
+      "sha256": "7fa8b147a357b164cf11246f40e31a184396f547898644d9e3cf2ca41dfd9577",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45544",
@@ -8711,10 +8713,11 @@
       "title": "Specify a custom DWG version when saving a drawing that contains 3DFACE entities.",
       "category": "Generate CAD Files",
       "path": "generate-cad-files/specify-a-custom-dwg-version-when-saving-a-drawing-that-contains-3dface-entities.cs",
-      "sha256": "c9106be9635f03c82c57c38a5ccaa7335ebb2436759d66d7972acece0cd4fe4f",
+      "sha256": "0eeba9c7394ea40af5f9328ddf6efb909f34654ba17e2bb522360223f3485b59",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Explicit AC1032 native DWG header and reloaded controlled 3DFACE geometry verified. AC1027/AC1018 are unimplemented in tested SDK and are explicitly rejected before final output.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44702",
@@ -8731,10 +8734,11 @@
       "title": "Use callback error handling during DWG export while adding multiple entities.",
       "category": "Generate CAD Files",
       "path": "generate-cad-files/use-callback-error-handling-during-dwg-export-while-adding-multiple-entities.cs",
-      "sha256": "e764f4f07b4ba2116ddd18c55751f42322afbfa0264d74ce310bd74b3ddb10aa",
+      "sha256": "a23674f357222a2d9f9fb9e30f6d5b1e7a8e58b02a0a7afa6c28b250837b169d",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44706",
@@ -9451,10 +9455,11 @@
       "title": "Generate a CAD file programmatically, add layers, and compute its layout size before saving.",
       "category": "Get CAD Layout Size",
       "path": "get-cad-layout-size/generate-a-cad-file-programmatically-add-layers-and-compute-its-layout-size-before-saving.cs",
-      "sha256": "f7e585bd3c50ed727c843381b2684e68bf0c5a13fd3549f3c05462ab86eccd9e",
+      "sha256": "bf7b98a7c97d95a0adbb39a5dfe9fe6645387a8e4e681b0c577e2193f88d1290",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45716",
@@ -9611,10 +9616,11 @@
       "title": "Obtain external file references from a layout and log each reference path.",
       "category": "Get CAD Layout Size",
       "path": "get-cad-layout-size/obtain-external-file-references-from-a-layout-and-log-each-reference-path.cs",
-      "sha256": "1b74504cda594fe5df20c2e8d139b2fe7c0eac7fefbf0746a4743f60ffcbdf21",
+      "sha256": "70418cd8a5b25a372d79743a4d3022315719f043a06ef2e9296eb1c0a74336a5",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45729",
@@ -10031,20 +10037,22 @@
       "title": "Add the CadBlockEntity to the CadBlockDictionary to make it available in the drawing.",
       "category": "Insert DXF or DWG Drawings into DWG Files",
       "path": "insert-dxf-or-dwg-drawings-into-dwg-files/add-the-cadblockentity-to-the-cadblockdictionary-to-make-it-available-in-the-drawing.cs",
-      "sha256": "78fac9dc87d2af9dd5fcaecc931ec6b6b68888d479a318ba4c8118007ffd96df",
+      "sha256": "9ef12cba2a45d819696b3c34d45a4fcc72cf362e02d977d4b0c3c4b73c4a77ed",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45756",
       "title": "Add the configured CadInsertObject to the drawing's entity collection.",
       "category": "Insert DXF or DWG Drawings into DWG Files",
       "path": "insert-dxf-or-dwg-drawings-into-dwg-files/add-the-configured-cadinsertobject-to-the-drawing-entity-collection.cs",
-      "sha256": "7d56ccb72d6a3fdb2749aa6a35a34f7b580cbf6ba666b7d0f62dddb621c1605a",
+      "sha256": "2a7d1a690f42cd44a4bc126a7b17b1d95d648c517b5ca28708490ff2571ce822",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45755",
@@ -10181,10 +10189,11 @@
       "title": "Insert a DXF drawing into a DWG file by using a CadInsertObject reference.",
       "category": "Insert DXF or DWG Drawings into DWG Files",
       "path": "insert-dxf-or-dwg-drawings-into-dwg-files/insert-a-dxf-drawing-into-a-dwg-file-by-using-a-cadinsertobject-reference.cs",
-      "sha256": "140f2b028a128ea8156693a483717cd4d549f7b60155ee1c31cea6a311f651eb",
+      "sha256": "0692d541778639518f10ab733701977a113cd213f14975abeca8ae30df9892c7",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Exact-source .NET 8 / Aspose.CAD 26.9.0 drawing-input tests: native DwgImage writer preserves an existing DWG, geometry, handles, layouts, block ownership, paper-space entities and a rotated insert after DWG reload. Bounded external importer supports LINE/CIRCLE/TEXT; unsupported dependencies are rejected."
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45766",
@@ -11091,10 +11100,11 @@
       "title": "Load drawing with SAT/SAB structure, access block objects, and delete a block entity using RemoveEntityAt.",
       "category": "Remove CAD Entities",
       "path": "remove-cad-entities/load-drawing-with-sat-sab-structure-access-block-objects-and-delete-a-block-entity-using-removeentityat.cs",
-      "sha256": "519ad4e55e43eaa789023be2849c7d7d0ec639bd89871d93cedeb55e206109f1",
+      "sha256": "74057e41864a217f89335165510cbabcc71ed3f452120f4fec1b9df942ee3acb",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Native DXF containing text ACIS/SAT: application index-removal helper uses real SDK/collections, preserves exact remaining ACIS payloads, viewport geometry, entity identities and layouts on reload. Standalone SAT/SAB and arbitrary geometry are outside scope.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "45854",
@@ -13191,10 +13201,11 @@
       "title": "Create a script that loads a DWF drawing, extracts layers, exports to JPEG, and records file size.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/create-a-script-that-loads-a-dwf-drawing-extracts-layers-exports-to-jpeg-and-records-file-size.cs",
-      "sha256": "b495df4e59933b4e29c5db0eb3053443317662dfdad31a9b486d8b6e331a30c5",
+      "sha256": "65be4e47e1f42451204d460bb9f58e06d0677d1267f02d126576f8894b06b1d8",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "Compile/run with controlled drawing inputs; console diagnostics checked. This is not proof for every real-world drawing."
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44187",
@@ -15251,10 +15262,11 @@
       "title": "Load a DWF drawing file using the standard loading method.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/load-a-dwf-drawing-file-using-the-standard-loading-method.cs",
-      "sha256": "de87265927d6017f2cca26d469e10dddd5b9a6a46145c881d5ba5c54f4115b40",
+      "sha256": "861ae96e906a5013d2f085e71ab7de98e447c478590c23be6c20cd9db31f7628",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44153",
@@ -15301,10 +15313,11 @@
       "title": "Load a DWFx drawing, render it, and retrieve image dimensions to assess quality.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/load-a-dwfx-drawing-render-it-and-retrieve-image-dimensions-to-assess-quality.cs",
-      "sha256": "904694a2f0a1d0bc57eb94fef24fed1442c9632421c05bd8f9aa6fb2a8e02dda",
+      "sha256": "5e2688517ce8f05468f55b707fc410d0f23b4676f2aa02599468a3f98aaeffec",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44143",
@@ -17101,10 +17114,11 @@
       "title": "Use error handling callbacks to retry loading a DRC file after a transient network failure.",
       "category": "Work with CAD and BIM Drawing Formats",
       "path": "work-with-cad-and-bim-drawing-formats/use-error-handling-callbacks-to-retry-loading-a-drc-file-after-a-transient-network-failure.cs",
-      "sha256": "0545c774b70b451a08987c246342ba1406d90c14da32a3804a3342a01a0768a6",
+      "sha256": "61e658fc3aff3776b1f5287d98abdfd43c56341ec6274cdc0c6ae763263028b5",
       "compile_status": "passed",
       "runtime_status": "passed",
-      "verification": "compile-and-run smoke test; real inputs are required for drawing correctness"
+      "verification": "Exact-source compile/run with representative native DWG/DXF, DWF/DWFx or DRACO input; saved-output/preservation and failure controls. Scope limits documented in November13 repair evidence.",
+      "verified_on": "2026-11-13"
     },
     {
       "task_id": "44081",

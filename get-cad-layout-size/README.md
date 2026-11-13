@@ -11,13 +11,13 @@ Build-validated Aspose.CAD for .NET examples for `get-cad-layout-size`.
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (35 example(s))
-- `Aspose.CAD` (35 example(s))
+- `System` (34 example(s))
 - `System.IO` (34 example(s))
-- `Aspose.CAD.FileFormats.Cad` (33 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (25 example(s))
-- `Aspose.CAD.ImageOptions` (18 example(s))
-- `System.Collections.Generic` (15 example(s))
+- `Aspose.CAD` (34 example(s))
+- `Aspose.CAD.FileFormats.Cad` (32 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (24 example(s))
+- `Aspose.CAD.ImageOptions` (19 example(s))
+- `System.Collections.Generic` (16 example(s))
 - `System.Linq` (8 example(s))
 
 ## Representative Examples
@@ -33,7 +33,7 @@ Build-validated Aspose.CAD for .NET examples for `get-cad-layout-size`.
 | [Export CAD Files to PDF with Custom Quality Settings and Verify Layout Dimensions Match Original Sizes](./export-cad-files-to-pdf-with-custom-quality-settings-and-verify-layout-dimensions-match-original-sizes.cs) | ImageOptions | aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, dotnet8, fileformats |
 | [Export CAD Layouts to PDF with Custom Text Quality Settings and Verify Layout Size Consistency](./export-cad-layouts-to-pdf-with-custom-text-quality-settings-and-verify-layout-size-consistency.cs) | Cad | aspose-cad, cad, csharp, dotnet8, fileformats, get, imageoptions, layout |
 | [Generate A CAD File Insert External References and Calculate Layout Size Including Referenced Content](./generate-a-cad-file-insert-external-references-and-calculate-layout-size-including-referenced-content.cs) | ImageOptions | aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, dotnet8, fileformats |
-| [Generate A CAD File Programmatically Add Layers and Compute Its Layout Size Before Saving](./generate-a-cad-file-programmatically-add-layers-and-compute-its-layout-size-before-saving.cs) | Cad | aspose-cad, cad, cadobjects, cadtables, csharp, dotnet8, fileformats, get |
+| [Generate A CAD File Programmatically Add Layers and Compute Its Layout Size Before Saving](./generate-a-cad-file-programmatically-add-layers-and-compute-its-layout-size-before-saving.cs) | ImageOptions | aspose-cad, cad, cadconsts, cadobjects, cadtables, csharp, dotnet8, dwf |
 | [Handle Errors During CAD File Load and Provide Detailed Messages for Missing Layouts](./handle-errors-during-cad-file-load-and-provide-detailed-messages-for-missing-layouts.cs) | ImageOptions | aspose-cad, cad, cadobjects, csharp, dotnet8, fileformats, get, imageoptions |
 | [Handle Errors While Exporting CAD to PDF and Log Layout Size Information for Successful Exports](./handle-errors-while-exporting-cad-to-pdf-and-log-layout-size-information-for-successful-exports.cs) | ImageOptions | aspose-cad, cad, csharp, dotnet8, get, imageoptions, layout, pdf |
 | [Insert A DWG Drawing Inside Another DXF and Retrieve Layout Names of The Combined Drawing](./insert-a-dwg-drawing-inside-another-dxf-and-retrieve-layout-names-of-the-combined-drawing.cs) | Cad | aspose-cad, cad, cadobjects, csharp, dotnet8, dwg, dxf, fileformats |
@@ -43,3 +43,8 @@ Build-validated Aspose.CAD for .NET examples for `get-cad-layout-size`.
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+
+## November 13 native-input verification
+
+Tasks 45727, 45730 are verified against the active SDK with representative files and applicable reload/render checks. See [controls and limitations](../VALIDATION.md#november-13-failure-repairs).

@@ -2,7 +2,7 @@
 
 ## Publication counts
 
-This branch proposes **1,906 examples across 45 categories** from the 1,959-task catalog; **53 tasks are withheld**. Relative to merged main's 1,905 examples, it replaces 31 existing sources and adds owner-clarified visible-watermark task **45026**. No previously published source is removed.
+This branch proposes **1,906 examples across 45 categories** from the 1,959-task catalog; **53 tasks are withheld**. Relative to merged main's 1,905 examples, it replaces 45 existing sources and adds owner-clarified visible-watermark task **45026**. No previously published source is removed.
 
 The earlier checkpoints were 1,864 + 60 added IDs - 30 withheld IDs = 1,894, followed by 45757 to 1,895, eight native watermark examples to 1,903 and DGN comparison 44122 to 1,904. The SAT reader brought the inventory to **1,904 + 1 = 1,905**. The November 12 owner-clarified visible annotation adds one further example: **1,905 + 1 = 1,906**. Publication counts differ from historical catalog-run statistics.
 
@@ -167,3 +167,25 @@ Three final-source drawing executions pass: DWG with the default caption, DXF an
 Inventory progression: **1,905 + 1 = 1,906 examples**, **54 - 1 = 53 withheld**. The combined review replaces 31 existing C# sources and adds this one example; it does not add 32 examples. Current-source corpus CI must be read from the PR checks; the earlier 1,905-source CI applies to its earlier commit. Most corpus executions are missing-input checks, separate from these three real-input runs.
 
 Generator regressions: 349 focused passes; full required suite 691 passed, 43 unchanged inherited failures, 136 passing subtests, 84.76% coverage. Source/control/visual evidence and metrics receipts are linked from the PR and task #137921.
+
+
+## November 13 failure repairs
+
+The interrupted November 12–13 run recorded 18 failures after 779 cached tasks and 832 new starts: 1,592 successes including cache, 18 failures, with the original run still marked running when its owner exited. The process and local API are no longer running. Original run/failure records are retained; this is not a completed 1,959-task pass. The orphaned usage state was recovered through the existing metrics API path: 4,474 LLM calls / 16,997,662 tokens / 949 MCP generation calls / 5,423 total API calls, acknowledgment recorded. API recovery status follows its existing interrupted-run reporting policy and does not assert full catalog completion.
+
+Fourteen current exact standalone sources pass static validation, restore, compile and real-file runtime checks. All 25 final-source controls pass, including application callback failure, color range, model/paper layout references, unknown layout, actual transient HTTP retry, exhaustion/non-transient/corrupt responses, wrong models and native SAT deletion rejection controls. Three additional assertions against the exact compiled reference method verify cyclic traversal/underlay resolution/unlinked exclusion, missing definition rejection and ambiguous paper ownership rejection. Inputs remain unchanged.
+
+Quality export sets the real text/hatch/arc quality group and verifies PDF callbacks without changing drawing geometry. Layer-selection measurement temporarily assigns the selected array, checks the other geometry and layer definitions and restores the original collection in finally. Native DwgImage.AddLayer is required to register generated layers. Only AC1032 DWG output is verified in this SDK; AC1027 and AC1018 writer calls are unimplemented and are explicitly rejected before final output. The controlled 3DFACE retains zero-Z first/second corners and nonzero-Z third/fourth corners; arbitrary face orientations are not certified.
+
+Block/insert examples preserve the small fixture's original geometry, handles and layouts on native reload. A larger capacity fixture loses entities through this SDK writer in the current environment; all three preservation controls reject it and publish no final DWG. The examples support bounded geometry/dependencies, not arbitrary large drawings. Pending files remain distinguishable from verified output. The existing DXF-to-DWG importer retains LINE/CIRCLE/TEXT dependency checks.
+
+The external-reference logger follows actual layout ownership, including owner-less DXF model semantics, through insert blocks with cycle detection. Raster and underlay paths resolve through real definition handles. Model and paper references remain separated; unused definitions are excluded. DRC retry notifications are application callbacks around real HTTP failures, not invented SDK load callbacks. DWFx PNG and DWF JPEG checks inspect actual exported dimensions; DWF layer names and JPEG bytes are recorded.
+
+The SAT task operates on native CAD containing text ACIS/SAT data. Its explicitly labelled application RemoveEntityAt helper uses actual SDK removal/collections. Reload verifies one deletion, the remaining ten entity identities/ACIS payloads, viewport geometry and layout ownership. Standalone SAT/SAB and unsupported preservation comparisons are rejected.
+
+Four tasks remain unverified: 44331 (FBX batch to protected PDF), 44332 (IFC batch to protected PNG), 44345/44351 (IFC line pattern/default line type). Fresh FBX/IFC embedding remains PENDING; reloaded PNG payload validation is FAILURE; the SDK cannot reload the diagnostic PDFs. A fresh 36-export IFC pixel probe has real geometry/color controls but no curve-font pattern effect. Successful rendering, status queries or alternate operations are not counted as their repair.
+
+Full required generator suite: 704 passed / 43 unchanged inherited failures / 136 passing subtests, 84.81% coverage; full suite is not green. Generator MR17 and task138019 carry source/control/fixture/usage evidence. This review cumulatively replaces **45 existing sources and adds 1** (the earlier owner-clarified visible annotation), with inventory unchanged at **1,906 / 53 withheld**. Current-source corpus CI must be read from PR checks; prior source results do not cover these changes.
+
+Tracking: https://issue.support.dynabic.com/issues/138019
+Generator review: https://gitlab.recruitize.ai/sialkot/gujrat-examples/aspose-cad-examples-generator-v1/-/merge_requests/17

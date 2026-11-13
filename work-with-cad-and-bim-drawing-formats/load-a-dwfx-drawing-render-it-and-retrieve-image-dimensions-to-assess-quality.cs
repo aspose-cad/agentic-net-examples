@@ -1,63 +1,35 @@
 using System;
-using Aspose.CAD;
-using Aspose.CAD.FileFormats.Cad;
-using Aspose.CAD.ImageOptions;
 using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Text.Json;
+using Aspose.CAD;
+using Aspose.CAD.ImageOptions;
+using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
+using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Cad.CadObjects.UnderlayDefinition;
+using Aspose.CAD.FileFormats.Dwf;
 
 class Program
 {
-    static void Main()
+    static void Require(bool condition, string message)
+    { if (!condition) throw new InvalidOperationException(message); }
+
+    static bool Input(string path, bool explicitInput) {if(File.Exists(path))return true;Console.Error.WriteLine("Input file not found: "+path);return false;}
+
+    static int Main(string[] args)
     {
         try
         {
-                // Paths to the source DWFx file and the rendered PNG output
-                string inputPath = "drawing.dwf";
-        
-                if (!File.Exists(inputPath))
-                {
-                    Console.WriteLine($"Input file not found: {inputPath}");
-                    return;
-                }
-        string outputPath = "rendered.png";
+            string input=args.Length>0?args[0]:"input.dwfx";if(!Input(input,args.Length>0))return args.Length==0?0:1;Directory.CreateDirectory("output");
+            using(Image image=Image.Load(input)){Require(image is DwfImage,"DWFx input is required.");bool complete=false;int failures=0;var raster=new CadRasterizationOptions{PageWidth=800,PageHeight=600,RenderResult=r=>{complete=r.IsRenderComplete;failures+=r.Failures.Count;}};image.Save("output/rendered.png",new PngOptions{VectorRasterizationOptions=raster});Require(complete&&failures==0,"DWFx rendering failed.");}
+            using(Image png=Image.Load("output/rendered.png")){Require(png.Width==800&&png.Height==600,"Exported PNG dimensions differ.");Console.WriteLine("Rendered PNG dimensions: "+png.Width+"x"+png.Height);}
 
-                // Load the DWFx drawing
-                using (Image cadImage = CadImage.Load(inputPath))
-                {
-                    // Configure rasterization options
-                    var raster = new CadRasterizationOptions
-                    {
-                        UnitType = UnitType.Centimenter,   // SDK spelling
-                        LineScale = 1.0f,                  // Adjust as needed
-                        Quality = new RasterizationQuality
-                        {
-                            Text = RasterizationQualityValue.High,
-                            Hatch = RasterizationQualityValue.High,
-                            Arc = RasterizationQualityValue.High
-                        }
-                    };
-
-                    // Set up PNG export options and assign rasterization settings
-                    var pngOptions = new PngOptions
-                    {
-                        VectorRasterizationOptions = raster
-                    };
-
-                    // Render the drawing to PNG
-                    cadImage.Save(outputPath, pngOptions);
-
-                    // Retrieve rendered image dimensions
-                    int width = cadImage.Width;
-                    int height = cadImage.Height;
-
-                    // Output dimensions for quality assessment
-                    Console.WriteLine($"Rendered image dimensions: {width}x{height}");
-                }
-    
+            Console.WriteLine("Verified task 44154");return 0;
         }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"CAD processing failed: {ex.Message}");
-            return;
-        }
-}
+        catch(Exception ex){Console.Error.WriteLine(ex.Message);return 1;}
+    }
 }

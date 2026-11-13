@@ -11,14 +11,14 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-and-bim-drawing-
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (527 example(s))
-- `System.IO` (526 example(s))
-- `Aspose.CAD` (526 example(s))
+- `System` (526 example(s))
+- `System.IO` (525 example(s))
+- `Aspose.CAD` (525 example(s))
 - `Aspose.CAD.ImageOptions` (487 example(s))
-- `Aspose.CAD.FileFormats.Cad` (245 example(s))
-- `System.Collections.Generic` (50 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (45 example(s))
-- `System.Linq` (38 example(s))
+- `Aspose.CAD.FileFormats.Cad` (246 example(s))
+- `System.Collections.Generic` (53 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (48 example(s))
+- `System.Linq` (41 example(s))
 
 ## Representative Examples
 | Example | API area | Tags |
@@ -43,3 +43,8 @@ Build-validated Aspose.CAD for .NET examples for `work-with-cad-and-bim-drawing-
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+
+## November 13 native-input verification
+
+Tasks 44118, 44123, 44154, 44188 are verified against the active SDK with representative files and applicable reload/render checks. See [controls and limitations](../VALIDATION.md#november-13-failure-repairs).

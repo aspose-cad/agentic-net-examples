@@ -11,12 +11,12 @@ Build-validated Aspose.CAD for .NET examples for `remove-cad-entities`.
 - Validation: compile-and-run generated examples
 
 ## Common Namespaces
-- `System` (29 example(s))
-- `System.IO` (29 example(s))
-- `Aspose.CAD` (29 example(s))
-- `Aspose.CAD.FileFormats.Cad` (29 example(s))
-- `Aspose.CAD.FileFormats.Cad.CadObjects` (28 example(s))
-- `System.Linq` (25 example(s))
+- `System` (28 example(s))
+- `System.IO` (28 example(s))
+- `Aspose.CAD` (28 example(s))
+- `Aspose.CAD.FileFormats.Cad` (28 example(s))
+- `Aspose.CAD.FileFormats.Cad.CadObjects` (27 example(s))
+- `System.Linq` (24 example(s))
 - `Aspose.CAD.ImageOptions` (16 example(s))
 - `System.Collections.Generic` (10 example(s))
 
@@ -43,3 +43,8 @@ Build-validated Aspose.CAD for .NET examples for `remove-cad-entities`.
 - Prefer the local `AGENTS.md` instructions for category-specific rules.
 - Treat every `.cs` file as a standalone console application.
 - Use `index.json` and root `llms.txt` for machine-readable repository navigation.
+
+
+## November 13 native-input verification
+
+Tasks 45841 are verified against the active SDK with representative files and applicable reload/render checks. See [controls and limitations](../VALIDATION.md#november-13-failure-repairs).

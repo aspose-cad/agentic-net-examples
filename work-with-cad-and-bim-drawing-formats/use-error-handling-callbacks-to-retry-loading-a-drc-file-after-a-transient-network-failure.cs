@@ -1,129 +1,17 @@
-using System;
-using System.IO;
-using System.Net.Http;
-using System.Threading.Tasks;
-using Aspose.CAD;
-using Aspose.CAD.ImageOptions;
-using Aspose.CAD.FileFormats.Cad;
-
-class Program
-{
-    static async Task Main()
-    {
-        // URL of the DRC file to download
-        string url = "https://example.com/files/model.drc";
-
-        // Temporary local path for the downloaded file
-        string tempFile = Path.Combine(Path.GetTempPath(), "model.drc");
-
-        const int maxRetries = 3;
-        int attempt = 0;
-        bool downloaded = false;
-
-        // Download with retry logic for transient network failures
-        using (HttpClient client = new HttpClient())
-        {
-            while (attempt < maxRetries && !downloaded)
-            {
-                try
-                {
-                    attempt++;
-                    byte[] data = await client.GetByteArrayAsync(url);
-                    File.WriteAllBytes(tempFile, data);
-                    downloaded = true;
-                }
-                catch (HttpRequestException e)
-                {
-                    Console.Error.WriteLine($"Attempt {attempt} failed: {e.Message}");
-                    if (attempt >= maxRetries)
-                    {
-                        Console.Error.WriteLine("Maximum retry attempts reached. Exiting.");
-                        return;
-                    }
-                    await Task.Delay(2000);
-                }
-            }
-        }
-
-        // Guard: ensure the file exists before loading
-        if (!File.Exists(tempFile))
-        {
-            Console.Error.WriteLine($"File not found after download: {tempFile}");
-            return;
-        }
-
-        // Configure load options
-        var loadOptions = new LoadOptions
-        {
-            IgnoreErrors = true
-        };
-
-        CadImage cadImage = null;
-        try
-        {
-            // Load the DRC file using Aspose.CAD
-            cadImage = (CadImage)Image.Load(tempFile, loadOptions);
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"Failed to load DRC file: {ex.Message}");
-            return;
-        }
-
-        // Report any load errors collected in LoadOptions.Errors
-        foreach (var err in loadOptions.Errors)
-        {
-            Console.Error.WriteLine($"Load error {err.RenderCode}: {err.Message}");
-        }
-
-        // Set up rasterization options with a render result callback
-        var rasterOptions = new CadRasterizationOptions
-        {
-            PageWidth = 1600,
-            PageHeight = 1200,
-            RenderResult = result =>
-            {
-                if (!result.IsRenderComplete)
-                {
-                    Console.Error.WriteLine("Rendering incomplete.");
-                }
-                foreach (var failure in result.Failures)
-                {
-                    Console.Error.WriteLine($"Render failure {failure.RenderCode}: {failure.Message}");
-                }
-            }
-        };
-
-        // Configure PNG export options
-        var pngOptions = new PngOptions
-        {
-            VectorRasterizationOptions = rasterOptions
-        };
-
-        string outPath = Path.Combine(Environment.CurrentDirectory, "model.png");
-        // Ensure output directory exists
-        string outDir = Path.GetDirectoryName(outPath);
-        if (!string.IsNullOrEmpty(outDir))
-        {
-            Directory.CreateDirectory(outDir);
-        }
-
-        try
-        {
-            // Save the rendered image
-            cadImage.Save(outPath, pngOptions);
-            Console.WriteLine($"Image saved to {outPath}");
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"Failed to save PNG: {ex.Message}");
-        }
-        finally
-        {
-            cadImage?.Dispose();
-
-            // Clean up the temporary file
-            try { File.Delete(tempFile); } catch { }
-        }
-    }
+using System;using System.IO;using System.Net;using System.Net.Http;using System.Threading.Tasks;using Aspose.CAD;
+class Program {
+ static bool Transient(HttpStatusCode code)=>code==HttpStatusCode.RequestTimeout||code==(HttpStatusCode)429||(int)code>=500;
+ static async Task<string> DownloadWithRetry(Uri uri,Action<int,string> onRetry) {
+  if(uri.Scheme!="https"&&!(uri.IsLoopback&&uri.Scheme=="http"))throw new ArgumentException("Use HTTPS, or loopback HTTP for a local retry test.");
+  Directory.CreateDirectory("output");string path="output/downloaded.drc";
+  using(var client=new HttpClient{Timeout=TimeSpan.FromSeconds(10)}) {
+   for(int attempt=1;attempt<=3;attempt++) {
+    try {using(var response=await client.GetAsync(uri)){response.EnsureSuccessStatusCode();byte[] bytes=await response.Content.ReadAsByteArrayAsync();if(bytes.Length<5||bytes.Length>16*1024*1024||System.Text.Encoding.ASCII.GetString(bytes,0,5)!="DRACO")throw new InvalidDataException("The response is not a bounded DRACO file.");File.WriteAllBytes(path,bytes);return path;}}
+    catch(HttpRequestException ex)when(!ex.StatusCode.HasValue||Transient(ex.StatusCode.Value)){onRetry(attempt,ex.Message);if(attempt==3)throw;await Task.Delay(50);}
+    catch(TaskCanceledException ex){onRetry(attempt,ex.Message);if(attempt==3)throw;await Task.Delay(50);}
+   }
+  }
+  throw new InvalidOperationException("Retry attempts exhausted.");
+ }
+ static async Task<int> Main(string[] args){try{if(args.Length>1)throw new ArgumentException("Usage: example [https://host/model.drc]");string input=args.Length>0?await DownloadWithRetry(new Uri(args[0]),(attempt,message)=>Console.Error.WriteLine("Application retry callback "+attempt+": "+message)):"input.drc";if(!File.Exists(input)){Console.Error.WriteLine("Input file not found: "+input);return args.Length==0?0:1;}using(Image image=Image.Load(input)){Console.WriteLine("Loaded DRACO model: "+image.GetType().FullName);}Console.WriteLine("Verified task 44118");return 0;}catch(Exception ex){Console.Error.WriteLine(ex.Message);return 1;}}
 }
